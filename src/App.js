@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
+
+const App = () => (
+  <React.Fragment>
+    <PerseidsHeader>
+      Example Treebanks
+    </PerseidsHeader>
+    <div className="container text-center">
+      <h1 className="h3 pt-4 mb-1 font-weight-normal">
+        Hello World
+      </h1>
+    </div>
+    <PerseidsFooter
+      github="https://github.com/perseids-publications/treebank-template"
+      report="https://github.com/perseids-publications/treebank-template/issues"
+    />
+  </React.Fragment>
+);
 
 export default App;
