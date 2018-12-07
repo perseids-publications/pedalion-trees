@@ -1,17 +1,17 @@
 import React from 'react';
-
 import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
+
+import Hero from './Hero';
+import TreebankCollection from './TreebankCollection';
 
 const App = () => (
   <React.Fragment>
     <PerseidsHeader>
       Example Treebanks
     </PerseidsHeader>
-    <div className="container text-center">
-      <h1 className="h3 pt-4 mb-1 font-weight-normal">
-        Hello World
-      </h1>
-    </div>
+    <Hero />
+    <TreebankCollection label="Collection 1" />
+    <TreebankCollection label="Collection 2" />
     <PerseidsFooter
       github="https://github.com/perseids-publications/treebank-template"
       report="https://github.com/perseids-publications/treebank-template/issues"
