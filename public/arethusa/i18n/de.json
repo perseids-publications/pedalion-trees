@@ -1,0 +1,195 @@
+{
+  "date": "Datum",
+  "preview": "Vorschau",
+  "download": "Download",
+  "submit": "Absenden",
+  "search_documents": "Suche Dokumente",
+  "loadInProgress": "Lade...",
+  "loadComplete": "Laden erfolgreich!",
+  "language": "Deutsch",
+  "help": "Hilfe",
+  "contactUs": "Schreib uns",
+  "messages": "Benachrichtigungen",
+  "menu": "Menü",
+  "deselectAll": "Alle deselektieren",
+  "settings": "Einstellungen",
+  "save": "Speichern",
+  "reset": "Rücksetzen",
+  "items": "Elemente",
+  "useCases": "Anwendung",
+  "gettingStarted": "Erste Schritte",
+  "development": "Entwicklung",
+  "depTrees": "Dependenz-Bäume",
+  "review": "Überprüfen",
+  "Treebanking": "Treebanking",
+  "markdownEnabled": "Markdown-Eingabe aktiviert!",
+  "apply": "Anwenden",
+  "create": "Erstellen",
+  "list": "Liste",
+  "delete": "Löschen",
+  "sidepanel": {
+    "fold": "Panel verbergen",
+    "show": "Panel anzeigen"
+  },
+  "history": {
+    "redoSuccess": "Änderung wiederhergestellt",
+    "undoSuccess": "Änderung zurückgesetzt",
+    "undo": "Rückgängig",
+    "redo": "Wiederherstellen",
+    "noRecords": "Keine Ereignisse aufgenommen.",
+    "fromTo": "von {{ from }} zu {{ to }}",
+    "add": {
+      "start": "Einfügen von",
+      "end": ""
+    },
+    "remove": {
+      "start": "Entfernen von",
+      "end": ""
+    },
+    "change": {
+      "start": "Änderung der <strong>{{ property }}</strong> von",
+      "end": ""
+    }
+  },
+  "search": {
+    "foundTokens": "Gefundene Tokens",
+    "searchByToken": "nach Token"
+  },
+  "saver": {
+    "previewAndDownload": "Vorschau und Download",
+    "success": "Dokument gespeichert!",
+    "error": "Speichern fehlgeschlagen! Versuch's nochmal?",
+    "inProgress": "Speichere...",
+    "nothingToSave": "Noch nichts zu speichern!",
+    "confirmNote": "Du hast ungespeicherte Änderungen!",
+    "confirmQuestion": "Bist du sicher, dass du gehen willst?"
+  },
+  "landing": {
+    "awards": "Auszeichnungen",
+    "description": "Ein backend-unabhängiges client-side Annotations-Framework",
+    "modularNature": "Aufgrund seiner Modularität kann Arethusa unterschiedlich konfiguriert werden, um verschiedenen Anforderungen gerecht zu werden.",
+    "moreScreencasts": "Weitere Screencasts",
+    "devDescription": "Arethusa wurde mit <a href=\"https://angularjs.org/angular.js\">AngularJS</a>, einem Javascript Web Application Framework, entwickelt und ermöglicht mit seiner Back-end unabhängigen Plugin-Infrastruktur leichten Zugang zu Texten, Annotationen und linguistischen Services von zahlreicher und unterschiedlicher Herkunft. Die einfache Erweiterung ist das Leitmotiv der Entwicklung - Arethusa stellt Tools zur Verfügung, die das Grundgerüst für neue Plugins automatisch erstellen (<a href=\"https://github.com/latin-language-toolkit/arethusa-cli\">Arethusa::CLI</a>) und bietet Hilfestellungen an: Anleitungen zur Weiterentwicklung sind derzeit in Arbeit, wobei wir hoffen, dass andere WissenschaftlerInnen sich die Plattform zu Nutze machen können, um verschiedene Annotationstypen, Sprachen, Back-ends und weitere 'workflow engines' zu unterstützen.",
+    "partners": "Partner",
+    "funders": "Förderung",
+    "fundersDescription": "Dieses Projekt erhielt Unterstützung von der <a href=\"http://www.mellon.org/\">Andrew W. Mellon Foundation</a>, dem <a href=\"http://imls.gov/\">Institute of Museum and Library Services</a> und dem <a href=\"http://ec.europa.eu/esf/home.jsp\">European Social Fund</a>.",
+    "tryYourself": "Ausprobieren!"
+  },
+  "auth": {
+    "notLoggedIn": "Du bist nicht angemeldet!"
+  },
+  "uth": {
+    "count": "{{ count }} von {{ total }} unbenutzt",
+    "tooltip": "Linksklick um hervorzuheben<br>Doppelklick um zu selektieren"
+  },
+  "selector": {
+    "selection": "Auswahl",
+    "selectionTooltip": "Schaltflächen rechts dienen zum Ändern der Auswahl und des Hervorhebens",
+    "all": "Alle",
+    "none": "Keines",
+    "noneTooltip": "Linksklick um Auswahl aufzuheben",
+    "unused": "{{ count }} unbenutzt",
+    "unusedTooltip": "Linksklick um Unbenutze zu selektieren",
+    "highlightUnused": "Unbenutzte hervorheben",
+    "highlightUnusedTooltip": "Linksklick um Unbenutze hervorzuheben"
+  },
+  "tree": {
+    "changeDir": "Ändere Richtung",
+    "focusRoot": "Fokusiere Root",
+    "focusSel": "Fokusiere Selektion",
+    "centerTree": "Baum zentrieren",
+    "perfectWidth": "Breite anpassen",
+    "compact": "Baum verdichten",
+    "widen": "Baum ausdehnen",
+    "disconnect": "trennen",
+    "toRoot": "zum Root",
+    "makeHead": "als Head setzen"
+  },
+  "grid": {
+    "dragging": "Ziehen",
+    "pushing": "Schieben",
+    "resizing": "Größe ändern",
+    "floating": "Anpassen"
+  },
+  "depTree": {
+    "errorAcrossSentences": "Heads können nicht über Satzgrenzen hinweg verändert werden"
+  },
+  "helpPanel": {
+    "about": "Über Arethusa",
+    "revision": "Revision",
+    "keyboardShortcuts": "Tastaturkürzel",
+    "colorLegends": "Farblegenden"
+  },
+  "relation": {
+    "changeAll": "Alle verändern",
+    "searchByLabel": "nach Label"
+  },
+  "comments": {
+    "newComment": "Neuer Kommentar",
+    "fullTextSearch": "Volltext Suche",
+    "filterSelected": "Filtere Selektion",
+    "successMessage": "Kommentar erstellt!",
+    "errorMessage": "Kommentieren fehlgeschlagen",
+    "selectFirst": "Tokenselektion erfordert",
+    "count": "{{ count }} von {{ total }} kommentiert",
+    "docLevelComm": "Kommentare auf Dokumentebene",
+    "on": "zu"
+  },
+  "editors": {
+    "noEditorsPresent": "Keine Bearbeiter bekannt.",
+    "title": "Bearbeiter"
+  },
+  "plugins": {
+    "alreadyLoaded": "{{ name }} ist bereits geladen!",
+    "failed": "Laden von {{ name }} gescheitert",
+    "added": "{{ name }} Plugin hinzugefügt!"
+  },
+  "aT": {
+    "insertInFront": "vor",
+    "insertBehind": "hinter",
+    "addToken": "Token hinzufügen",
+    "visualRepresentation": "Visuelle Repräsentation des neuen Tokens (optional)",
+    "noArtTokensPresent": "Keine artifizielle Tokens vorhanden",
+    "insertionPoint": "Einfügungspunkt",
+    "insertBehindHint": "hinter Token einfügen (Klick zum Umschalten)",
+    "insertInFrontHint": "vor Token einfügen (Klick zum Umschalten)"
+  },
+  "globalSettings": {
+    "layoutLoaded": "{{ layout }} Layout geladen!",
+    "persistSettings": "Einstellungen speichern",
+    "title": "Globale Einstellungen",
+    "alwaysDeselect": "Deselektiere nach jeder Annotations-Aktion",
+    "disableKeyboardMappings": "Deaktiviere Tastaturmappings in Eingabefeldern",
+    "colorizer": "Token einfärben nach",
+    "layout": "Layout",
+    "clickAction": "Klickverhalten",
+    "chunkMode": "Teilungsmodus",
+    "pluginSettings": "Plugin Einstellungen"
+  },
+  "navigator": {
+    "goToFirst": "erster Abschnitt",
+    "goToLast": "letzter Abschnitt",
+    "goToPrev": "vorheriger Abschnitt {{ prevChunkKey }}",
+    "goToNext": "nächster Abschnitt {{ nextChunkKey }}",
+    "chunkSizeError": "Es werden nur Teilungsgrößen zwischen 1 und {{ max }} unterstützt"
+  },
+  "morph": {
+    "createSuccess": "Form für  {{ form }} hinzugefügt",
+    "lemmaTranslation": "Lemma-Übersetzung",
+    "lemmaHint": "Dieses Lemma wurde automatisch eingetragen!\nÜberprüfe es bevor du speicherst!",
+    "createError": "Kann unvollständige Form nicht speichern",
+    "createNewForm": "Neue Form erstellen",
+    "searchByForm": "nach Form",
+    "matchAll": "alle"
+  },
+  "exitHandler": {
+    "exitTo": "Aussteigen zu {{ title }}"
+  },
+  "errorDialog": {
+    "close" : "Schließen"
+  },
+  "relocateHandler": {
+    "title" : "Alternative Versionen",
+    "noLocations" : "Nicht verfügbar"
+  }
+}

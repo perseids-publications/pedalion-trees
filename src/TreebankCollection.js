@@ -2,7 +2,7 @@ import React from 'react';
 
 const TreebankCollection = ({ label, treebanks }) => (
   <div className="container">
-    <div class="row col-12 pb-3">
+    <div className="row col-12 pb-3">
       {label && <h2>{label}</h2>}
       <table className="table">
         <thead className="thead-light">
@@ -16,18 +16,18 @@ const TreebankCollection = ({ label, treebanks }) => (
         <tbody>
           <tr>
             <th scope="row">Aeschines</th>
-            <td>Against Ctesiphon</td>
+            <td>Against Timarchus</td>
             <td>Vanessa Gorman, Bob Gorman</td>
             <td>
-              <a href="">1-260</a>
+              <a href="/aeschines">1-50</a>
             </td>
           </tr>
           <tr>
             <th scope="row">Lysias</th>
-            <td>Against Philon</td>
+            <td>Against Agoratus</td>
             <td>Vanessa Gorman</td>
             <td>
-              <a href="">1-50</a>
+              <a href="/lysias">1-261</a>
             </td>
           </tr>
         </tbody>
