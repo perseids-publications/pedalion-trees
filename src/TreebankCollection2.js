@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TreebankCollection = ({ label, treebanks }) => (
+const TreebankCollection2 = ({ label, treebanks }) => (
   <div className="container">
     <div class="row col-12 pb-3">
       {label && <h2>{label}</h2>}
@@ -15,19 +15,11 @@ const TreebankCollection = ({ label, treebanks }) => (
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Aeschines</th>
-            <td>Against Ctesiphon</td>
-            <td>Vanessa Gorman, Bob Gorman</td>
+            <th scope="row">Polybius</th>
+            <td>Histories</td>
+            <td>Bob Gorman</td>
             <td>
-              <a href="">1-260</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Lysias</th>
-            <td>Against Philon</td>
-            <td>Vanessa Gorman</td>
-            <td>
-              <a href="">1-50</a>
+              <a href="">100-200</a>
             </td>
           </tr>
         </tbody>
@@ -36,4 +28,4 @@ const TreebankCollection = ({ label, treebanks }) => (
   </div>
 );
 
-export default TreebankCollection;
+export default TreebankCollection2;
