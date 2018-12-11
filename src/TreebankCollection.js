@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TreebankCollection = ({ label, treebanks }) => (
   <div className="container">
@@ -19,7 +20,7 @@ const TreebankCollection = ({ label, treebanks }) => (
             <td>Against Timarchus</td>
             <td>Vanessa Gorman, Bob Gorman</td>
             <td>
-              <a href="/aeschines/1">1-50</a>
+              <Link to="/aeschines/1">1-50</Link>
             </td>
           </tr>
           <tr>
@@ -27,7 +28,7 @@ const TreebankCollection = ({ label, treebanks }) => (
             <td>Against Agoratus</td>
             <td>Vanessa Gorman</td>
             <td>
-              <a href="/lysias">1-261</a>
+              <Link to="/lysias">1-261</Link>
             </td>
           </tr>
         </tbody>

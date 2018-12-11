@@ -86,27 +86,3 @@ class ControlPanel extends Component {
 }
 
 export default ControlPanel;
-
-
-  // render () {
-  //   return (
-  //     <div>
-  //       <i class="fi-previous" />
-  //       <i class="fi-arrow-left" />
-  //       <i class="fi-arrow-right" />
-  //       <i class="fi-next" />
-  //     </div>
-  //   );
-  // }
-//
-//
-// render () {
-//             <li className="nav-item dropdown">
-//               <a className="nav-link dropdown-toggle" href="https://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-//               <div className="dropdown-menu" aria-labelledby="dropdown10">
-//                 <a className="dropdown-item" href="#">Action</a>
-//                 <a className="dropdown-item" href="#">Another action</a>
-//                 <a className="dropdown-item" href="#">Something else here</a>
-//               </div>
-//             </li>
-//             }

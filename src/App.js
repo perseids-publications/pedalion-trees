@@ -2,10 +2,13 @@ import React from 'react';
 import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
+import ArethusaWrapper from './lib/ArethusaWrapper';
 import Hero from './Hero';
 import TreebankCollection from './TreebankCollection';
 import TreebankCollection2 from './TreebankCollection2';
 import Treebank from './Treebank';
+
+const arethusa = new ArethusaWrapper();
 
 const Index = () => (
   <React.Fragment>
@@ -28,9 +31,9 @@ const Aeschines = ({ match }) => (
       </span>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/">
+          <a className="nav-link" href="/">
             Home
-          </Link>
+          </a>
         </li>
       </ul>
     </PerseidsHeader>
@@ -67,7 +70,7 @@ const Aeschines = ({ match }) => (
         </tbody>
       </table>
       <div style={{ "minHeight": "400px" }}>
-        <Treebank url="aeschines.xml" match={match} />
+        <Treebank url="aeschines.xml" match={match} arethusa={arethusa} />
       </div>
     </div>
   </React.Fragment>
@@ -83,9 +86,9 @@ const Lysias = () => (
       </span>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/">
+          <a className="nav-link" href="/">
             Home
-          </Link>
+          </a>
         </li>
       </ul>
     </PerseidsHeader>
@@ -138,9 +141,9 @@ const Polybius = () => (
       </span>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/">
+          <a className="nav-link" href="/">
             Home
-          </Link>
+          </a>
         </li>
       </ul>
     </PerseidsHeader>
@@ -193,9 +196,9 @@ const Polybius2 = () => (
       </span>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/">
+          <a className="nav-link" href="/">
             Home
-          </Link>
+          </a>
         </li>
       </ul>
     </PerseidsHeader>
