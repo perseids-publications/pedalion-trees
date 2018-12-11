@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import ControlPanel from './ControlPanel';
 
 const tbpub = {
   "main": {
@@ -137,21 +138,24 @@ class Treebank extends Component {
       deps,
     ]
 
-    window.loadArethusaWidget(
-      "treebank_container",
-      "/arethusa/",
-      tbpub,
-      { doc: base, chunk: id },
-      deps,
-    );
+    // window.loadArethusaWidget(
+    //   "treebank_container",
+    //   "/arethusa/",
+    //   tbpub,
+    //   { doc: base, chunk: id },
+    //   deps,
+    // );
   }
 
   render() {
     return (
-      <div className="__artsa">
-        <div id="treebank_container" style={{ position: "relative" }}>
+      <React.Fragment>
+        <ControlPanel />
+        <div className="__artsa">
+          <div id="treebank_container" style={{ position: "relative" }}>
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
