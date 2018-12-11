@@ -67,7 +67,7 @@ const Aeschines = ({ match }) => (
         </tbody>
       </table>
       <div style={{ "minHeight": "400px" }}>
-        <Treebank url="aeschines.xml" params={match.params} />
+        <Treebank url="aeschines.xml" match={match} />
       </div>
     </div>
   </React.Fragment>

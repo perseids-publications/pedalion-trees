@@ -107,7 +107,7 @@ const tbpub = {
 };
 
 class Treebank extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
 
     this.state = {
@@ -116,7 +116,7 @@ class Treebank extends Component {
   }
 
   componentDidMount() {
-    const { id } = this.props.params;
+    const { id } = this.props.match.params;
     const base = this.props.url;
     const deps = {
       "css": {  
@@ -150,7 +150,10 @@ class Treebank extends Component {
   render() {
     return (
       <React.Fragment>
-        <ControlPanel />
+        <ControlPanel
+          match={this.props.match}
+          lines={["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
+        />
         <div className="__artsa">
           <div id="treebank_container" style={{ position: "relative" }}>
           </div>
