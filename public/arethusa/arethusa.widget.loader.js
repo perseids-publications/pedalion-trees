@@ -14,7 +14,7 @@
     };
 })(jQuery);
 
-function loadArethusaWidget (elementId,remoteUrl,appConf,resourceConf,deps) {
+function loadArethusaWidget (elementId,remoteUrl,appConf,resourceConf,deps,callback) {
     $.when(
         $.getStylesheet(deps.css.arethusa), //arethusa.min.css
         $.getStylesheet(deps.css.foundation), //vendor/foundation-icons/foundation-icons.css
@@ -24,6 +24,7 @@ function loadArethusaWidget (elementId,remoteUrl,appConf,resourceConf,deps) {
 //            $.getScript(deps.js.arethusa) //arethusa.min.js
         ).then(function () {
             var widget = new Arethusa();
+            window.widget = widget;
             widget.on(elementId).from(remoteUrl).with(appConf).start(resourceConf);
         })
 //    )

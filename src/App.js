@@ -18,7 +18,7 @@ const Index = () => (
   </React.Fragment>
 );
 
-const Aeschines = () => (
+const Aeschines = ({ match }) => (
   <React.Fragment>
     <PerseidsHeader>
       <span>
@@ -67,7 +67,7 @@ const Aeschines = () => (
         </tbody>
       </table>
       <div style={{ "minHeight": "400px" }}>
-        <Treebank url="aeschines.xml" />
+        <Treebank url="aeschines.xml" params={match.params} />
       </div>
     </div>
   </React.Fragment>
@@ -243,7 +243,7 @@ const App = () => (
     <React.Fragment>
       <Switch>
         <Route exact path="/" component={Index} />
-        <Route exact path="/aeschines" component={Aeschines} />
+        <Route path="/aeschines/:id" component={Aeschines} />
         <Route exact path="/lysias" component={Lysias} />
         <Route exact path="/polybius" component={Polybius} />
         <Route exact path="/polybius-2" component={Polybius2} />

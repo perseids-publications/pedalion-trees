@@ -19,7 +19,7 @@ const TreebankCollection = ({ label, treebanks }) => (
             <td>Against Timarchus</td>
             <td>Vanessa Gorman, Bob Gorman</td>
             <td>
-              <a href="/aeschines">1-50</a>
+              <a href="/aeschines/1">1-50</a>
             </td>
           </tr>
           <tr>

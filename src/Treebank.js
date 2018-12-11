@@ -35,14 +35,14 @@ const tbpub = {
   },
   "navbar": {
     "template": "js\/templates\/navbar.widget.html",
-    "search": true,
-    "notifier": true,
-    "navigation": true,
-    "logo": "images\/arethusa-icon-small.png"
+    "search": false,
+    "notifier": false,
+    "navigation": false,
+    "logo": "/images\/arethusa-icon-small.png"
   },
   "resources": {
     "Gardener": {
-      "route": "./:doc",
+      "route": "/:doc",
       "params": [
         "doc"
       ]
@@ -108,9 +108,14 @@ const tbpub = {
 class Treebank extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      id: null,
+    };
   }
 
   componentDidMount() {
+    const { id } = this.props.params;
     const base = this.props.url;
     const deps = {
       "css": {  
@@ -124,13 +129,20 @@ class Treebank extends Component {
         "packages":"/arethusa/javascripts/arethusa.packages.min.js"
       }
     };
+    window.args = [
+      "treebank_container",
+      "/arethusa/",
+      tbpub,
+      { doc: base, chunk: id },
+      deps,
+    ]
 
     window.loadArethusaWidget(
       "treebank_container",
-      "arethusa/",
+      "/arethusa/",
       tbpub,
-      { doc: base },
-      deps
+      { doc: base, chunk: id },
+      deps,
     );
   }
 
