@@ -5,10 +5,15 @@ class ArethusaWrapper {
   remoteUrl = "/arethusa/";
   appConf = conf; 
 
+  removeToastContainer() {
+    window.$("#toast-container").remove();
+  }
+
   render(doc, chunk) {
     if (this.widget) {
       if (this.doc === doc && this.chunk !== chunk) {
         window.arethusaGoto(chunk);
+        this.removeToastContainer();
       }
     } else {
       this.widget = new window.Arethusa();
