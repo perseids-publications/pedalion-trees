@@ -40,7 +40,7 @@
   },
   "resources": {
     "Gardener": {
-      "route": "/:doc",
+      "route": "/xml/:doc",
       "params": [
         "doc"
       ]

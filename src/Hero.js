@@ -2,19 +2,21 @@ import React from 'react';
 
 import './Hero.css';
 
-const Hero = () => (
+const renderSubtitle = (subtitle) => (
+  <p>
+    <span>
+      {subtitle}
+    </span>
+  </p>
+);
+
+const Hero = ({ title, subtitle }) => (
   <div className="jumbotron jumbotron-fluid jumbotron-small bg-dark">
     <div className="container text-light">
       <h1 className="display-4">
-        Example Treebanks
+        {title}
       </h1>
-      <p>
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </span>
-      </p>
+      {subtitle && renderSubtitle(subtitle)}
     </div>
   </div>
 );

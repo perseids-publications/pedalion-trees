@@ -12,26 +12,25 @@ class Treebank extends Component {
   }
 
   componentDidMount() {
-    const { id } = this.props.match.params;
-    const base = this.props.url;
+    const { chunk } = this.props.match.params;
+    const base = this.props.xml;
 
-    this.props.arethusa.render(base, id)
+    this.props.arethusa.render(base, chunk)
   }
 
   componentDidUpdate() {
-    const { id } = this.props.match.params;
-    const base = this.props.url;
+    const { chunk } = this.props.match.params;
+    const base = this.props.xml;
 
-    this.props.arethusa.render(base, id)
+    this.props.arethusa.render(base, chunk)
   }
 
   render() {
+    const { chunks, match } = this.props;
+
     return (
       <React.Fragment>
-        <ControlPanel
-          match={this.props.match}
-          lines={["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
-        />
+        <ControlPanel match={match} chunks={chunks} />
         <div className="__artsa">
           <div id="treebank_container" style={{ position: "relative" }}>
           </div>

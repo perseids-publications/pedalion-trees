@@ -1,0 +1,80 @@
+{
+  "title": "Treebank Template",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "collections": [
+    {
+      "title": "Collection 1", 
+      "publications": [
+        {
+          "path": "on-the-murder-of-eratosthenes",
+          "author": "Lysias",
+          "work": "On the Murder of Eratosthenes",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-50",
+              "path": "on-the-murder-of-eratosthenes-1-50",
+              "xml": "lysias-1-1-50.xml",
+              "link": "https://www.example.com",
+              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "chunks": { "start": 1, "end": 134 }
+            }
+          ]
+        },
+        {
+          "path": "on-the-crown",
+          "author": "Demosthenes",
+          "work": "On the Crown",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-50",
+              "path": "on-the-crown-1-50",
+              "xml": "demosthenes-18-1-50.xml",
+              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "chunks": { "start": 1, "end": 160 }
+            },
+            {
+              "locus": "51-100",
+              "path": "on-the-crown-51-100",
+              "xml": "demosthenes-18-51-100.xml",
+              "chunks": { "start": 1, "end": 149 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Collection 2",
+      "publications": [
+        {
+          "path": "histories",
+          "author": "Herodotus",
+          "work": "The Histories",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "40-59",
+              "path": "histories-40-59",
+              "xml": "herodotus-1-40-59.xml",
+              "chunks": { "start": 1, "end": 100 }
+            },
+            {
+              "locus": "60-79",
+              "path": "histories-60-79",
+              "xml": "herodotus-1-60-79.xml",
+              "chunks": { "start": 1, "end": 166 }
+            },
+            {
+              "locus": "80-99",
+              "path": "histories-80-99",
+              "xml": "herodotus-1-80-99.xml",
+              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "chunks": { "start": 1, "end": 185 }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
