@@ -69,7 +69,7 @@ const Aeschines = ({ match }) => (
           </tr>
         </tbody>
       </table>
-      <div style={{ "minHeight": "400px" }}>
+      <div style={{ "minHeight": "350px" }}>
         <Treebank url="aeschines.xml" match={match} arethusa={arethusa} />
       </div>
     </div>
@@ -179,7 +179,7 @@ const Polybius = () => (
           </tr>
         </tbody>
       </table>
-      <div style={{ "minHeight": "400px" }}>
+      <div style={{ "minHeight": "350px" }}>
         <Treebank url="polybius.xml" />
       </div>
     </div>
@@ -234,7 +234,7 @@ const Polybius2 = () => (
           </tr>
         </tbody>
       </table>
-      <div style={{ "minHeight": "400px" }}>
+      <div style={{ "minHeight": "350px" }}>
         <Treebank url="polybius2.xml" />
       </div>
     </div>

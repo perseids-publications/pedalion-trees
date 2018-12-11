@@ -1,5 +1,7 @@
 import conf from './conf.json';
 
+import './custom.css';
+
 class ArethusaWrapper {
   elementId = "treebank_container";
   remoteUrl = "/arethusa/";
