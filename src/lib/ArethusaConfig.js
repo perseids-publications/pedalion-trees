@@ -1,4 +1,4 @@
-{
+const ArethusaConfig =  {
   "main": {
     "debug": false,
     "showKeys": false,
@@ -34,7 +34,7 @@
   "navbar": false,
   "resources": {
     "Gardener": {
-      "route": "/treebank-template/xml/:doc",
+      "route": `${process.env.PUBLIC_URL}/xml/:doc`,
       "params": [
         "doc"
       ]
@@ -100,3 +100,5 @@
     "keys": {}
   }
 }
+
+export default ArethusaConfig;

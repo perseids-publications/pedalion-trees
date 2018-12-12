@@ -1,11 +1,11 @@
-import config from './arethusa.json';
+import ArethusaConfig from './ArethusaConfig';
 
 import './custom.css';
 
 class ArethusaWrapper {
   elementId = "treebank_container";
-  remoteUrl = "/treebank-template/arethusa/";
-  appConf = config; 
+  remoteUrl = `${process.env.PUBLIC_URL}/arethusa/`;
+  appConf = ArethusaConfig;
 
   removeToastContainer() {
     window.$("#toast-container").remove();

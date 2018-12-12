@@ -54,7 +54,7 @@ class Publication extends Component {
           </span>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/treebank-template">
+              <a className="nav-link" href={`${process.env.PUBLIC_URL}/`}>
                 Home
               </a>
             </li>
