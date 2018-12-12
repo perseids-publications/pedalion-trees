@@ -80,6 +80,11 @@ class Publication extends Component {
           <div style={{ "minHeight": "350px" }}>
             <Treebank xml={xml} chunks={chunks} match={match} arethusa={this.arethusa} />
           </div>
+          <div className="pt-1 pb-4 text-right">
+            <a href={`/xml/${xml}`} target="_black">
+              View XML
+            </a>
+          </div>
         </div>
       </React.Fragment>
     );
