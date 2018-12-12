@@ -3,7 +3,7 @@ const ArethusaConfig =  {
     "debug": false,
     "showKeys": false,
     "chunkParam": "chunk",
-    "auxConfPath": "https:\/\/services.perseids.org\/arethusa-configs",
+    "auxConfPath": "https://services.perseids.org/arethusa-configs",
     "retrievers": {
       "TreebankRetriever": {
         "resource": "Gardener",
@@ -20,7 +20,7 @@ const ArethusaConfig =  {
     "layouts": [
       {
         "name": "widget",
-        "template": "js\/templates\/widget.html"
+        "template": "js/templates/widget.html"
       }
     ]
   },
@@ -40,28 +40,28 @@ const ArethusaConfig =  {
       ]
     },
     "lexInvFusekiEndpoint": {
-      "route": "http:\/\/fuseki.perseids.org\/fuseki\/ds\/query?format=json"
+      "route": "http://fuseki.perseids.org/fuseki/ds/query?format=json"
     },
     "morphologyServiceLat": {
-      "route": "http:\/\/services.perseids.org\/bsp\/morphologyservice\/analysis\/word?lang=lat&engine=morpheuslat"
+      "route": "http://services.perseids.org/bsp/morphologyservice/analysis/word?lang=lat&engine=morpheuslat"
     },
     "newMorphologyServiceLat": {
-      "route": "http:\/\/morph.perseids.org\/analysis\/word?lang=lat&engine=morpheuslat"
+      "route": "http://morph.perseids.org/analysis/word?lang=lat&engine=morpheuslat"
     },
     "morphologyServiceGrc": {
-      "route": "http:\/\/services.perseids.org\/bsp\/morphologyservice\/analysis\/word?lang=grc&engine=morpheusgrc"
+      "route": "http://services.perseids.org/bsp/morphologyservice/analysis/word?lang=grc&engine=morpheusgrc"
     },
     "newMorphologyServiceGrc": {
-      "route": "http:\/\/morph.perseids.org\/analysis\/word?lang=grc&engine=morpheusgrc"
+      "route": "http://morph.perseids.org/analysis/word?lang=grc&engine=morpheusgrc"
     },
     "morphologyServicePer": {
-      "route": "http:\/\/localhost\/extapi\/morphologyservice\/analysis\/word?lang=per&engine=hazm"
+      "route": "http://localhost/extapi/morphologyservice/analysis/word?lang=per&engine=hazm"
     },
     "citeMapper": {
-      "route": "http:\/\/services.perseids.org\/cite_mapper\/find_cite"
+      "route": "http://services.perseids.org/cite_mapper/find_cite"
     },
     "sgGrammar": {
-      "route": "http:\/\/services.perseids.org\/sg\/:doc.html"
+      "route": "http://services.perseids.org/sg/:doc.html"
     }
   },
   "plugins": {
@@ -72,8 +72,8 @@ const ArethusaConfig =  {
     "depTree": {
       "main": true,
       "contextMenu": false,
-      "contextMenuTemplate": "js\/arethusa.dep_tree\/templates\/context_menu.html",
-      "template": "js\/templates\/dep_tree.html"
+      "contextMenuTemplate": "js/arethusa.dep_tree/templates/context_menu.html",
+      "template": "js/templates/dep_tree.html"
     },
     "morph": {
       "noRetrieval": "online",
