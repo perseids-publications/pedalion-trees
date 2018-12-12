@@ -5,3 +5,13 @@
 #main-body {
   width: 100% !important;
 }
+
+.canvas-border {
+  height: 0 !important;
+}
+
+.__artsa .panel {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}

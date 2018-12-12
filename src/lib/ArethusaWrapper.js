@@ -1,11 +1,11 @@
-import conf from './conf.json';
+import config from './arethusa.json';
 
 import './custom.css';
 
 class ArethusaWrapper {
   elementId = "treebank_container";
   remoteUrl = "/arethusa/";
-  appConf = conf; 
+  appConf = config; 
 
   removeToastContainer() {
     window.$("#toast-container").remove();

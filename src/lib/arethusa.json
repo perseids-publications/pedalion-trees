@@ -31,13 +31,7 @@
   "navigator": {
     "chunkSize": 1
   },
-  "navbar": {
-    "template": "js\/templates\/navbar.widget.html",
-    "search": false,
-    "notifier": false,
-    "navigation": false,
-    "logo": "/images\/arethusa-icon-small.png"
-  },
+  "navbar": false,
   "resources": {
     "Gardener": {
       "route": "/xml/:doc",

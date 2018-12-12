@@ -55,21 +55,21 @@ class ControlPanel extends Component {
     const lines = this.getLines();
 
     return (
-      <nav className="navbar navbar-expand navbar-light bg-light">
+      <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="collapse navbar-collapse justify-content-center" id="navbarsExample10">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href={`./${first}`}>
+              <a className="nav-link text-light" href={`./${first}`}>
                 &laquo; First
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`./${back}`}>
+              <a className="nav-link text-light" href={`./${back}`}>
                 &#8249; Back
               </a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded={this.state.isOpen} onClick={this.toggleOpen} style={{ cursor: "pointer" }}>
+              <a className="nav-link text-light dropdown-toggle" aria-haspopup="true" aria-expanded={this.state.isOpen} onClick={this.toggleOpen} style={{ cursor: "pointer" }}>
                 {current}
               </a>
               <div className={`dropdown-menu dropdown-scroll ${this.state.isOpen ? "show" : ""}`}>
@@ -83,12 +83,12 @@ class ControlPanel extends Component {
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`./${next}`}>
+              <a className="nav-link text-light" href={`./${next}`}>
                 Next &#8250;
               </a>
             </li>
             <li>
-              <a className="nav-link" href={`./${last}`}>
+              <a className="nav-link text-light" href={`./${last}`}>
                 Last &raquo;
               </a>
             </li>
