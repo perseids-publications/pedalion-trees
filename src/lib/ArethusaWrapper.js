@@ -4,7 +4,7 @@ import './custom.css';
 
 class ArethusaWrapper {
   elementId = "treebank_container";
-  remoteUrl = "/arethusa/";
+  remoteUrl = "/treebank-template/arethusa/";
   appConf = config; 
 
   removeToastContainer() {

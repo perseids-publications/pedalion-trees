@@ -34,7 +34,7 @@
   "navbar": false,
   "resources": {
     "Gardener": {
-      "route": "/xml/:doc",
+      "route": "/treebank-template/xml/:doc",
       "params": [
         "doc"
       ]
