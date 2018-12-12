@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class Collection extends Component {
   renderSection(section) {
-    window.boo = section;
     const { locus, path, chunks } = section;
     const { start } = chunks;
 
@@ -32,7 +31,6 @@ class Collection extends Component {
   }
 
   render() {
-    window.foo = this.props;
     const { title, publications } = this.props;
 
     return (

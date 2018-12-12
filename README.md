@@ -7,7 +7,7 @@ All other configuration is done using `./src/config.json`.
 
 ## Try it Out
 
-[https://perseids-publications.github.io/lsj-js/](https://perseids-publications.github.io/treebank-template/)
+[https://perseids-publications.github.io/treebank-template/](https://perseids-publications.github.io/treebank-template/)
 
 ## Installation
 
