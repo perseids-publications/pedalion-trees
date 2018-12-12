@@ -21,7 +21,7 @@ class Collection extends Component {
 
     return (
       <tr key={path}>
-        <th scope="row">{author}</th>
+        <th scope="row" style={{ wordBreak: "break-word", hyphens: "auto" }}>{author}</th>
         <td>{work}</td>
         <td>{editors}</td>
         <td>
