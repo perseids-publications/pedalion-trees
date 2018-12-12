@@ -81,7 +81,7 @@ class Publication extends Component {
             <Treebank xml={xml} chunks={chunks} match={match} arethusa={this.arethusa} />
           </div>
           <div className="pt-1 pb-4 text-right">
-            <a href={`/xml/${xml}`} target="_black">
+            <a href={`${process.env.PUBLIC_URL}/xml/${xml}`} target="_black">
               View XML
             </a>
           </div>
