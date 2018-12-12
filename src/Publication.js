@@ -48,9 +48,7 @@ class Publication extends Component {
       <React.Fragment>
         <PerseidsHeader>
           <span>
-            {author}
-            <i> {work} </i>
-            {locus}
+            <i>{work}</i>
           </span>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
@@ -72,6 +70,7 @@ class Publication extends Component {
             <tbody>
               {author && this.renderRow("Author", author)}
               {work && this.renderRow("Work", work)}
+              {locus && this.renderRow("Locus", locus)}
               {editors && this.renderRow("Editors", editors)}
               {link && this.renderLinkRow("Link", link)}
               {notes && this.renderRow("Notes", notes)}
