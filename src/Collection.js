@@ -35,21 +35,23 @@ class Collection extends Component {
 
     return (
       <div className="container">
-        <div className="row col-12 pb-3">
-          {title && <h2>{title}</h2>}
-          <table className="table">
-            <thead className="thead-light">
-              <tr>
-                <th scope="col">Author</th>
-                <th scope="col">Work</th>
-                <th scope="col">Editors</th>
-                <th scope="col">Locus</th>
-              </tr>
-            </thead>
-            <tbody>
-              {publications.map((p) => this.renderRow(p))}
-            </tbody>
-          </table>
+        <div className="row pb-3">
+          <div className="col-12">
+            {title && <h2>{title}</h2>}
+            <table className="table">
+              <thead className="thead-light">
+                <tr>
+                  <th scope="col">Author</th>
+                  <th scope="col">Work</th>
+                  <th scope="col">Editors</th>
+                  <th scope="col">Locus</th>
+                </tr>
+              </thead>
+              <tbody>
+                {publications.map((p) => this.renderRow(p))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     );
