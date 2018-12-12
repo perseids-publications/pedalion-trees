@@ -2,8 +2,8 @@
   "title": "Treebank Publication Template",
   "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "copyright": "The Perseids Project 2018",
-  "issues": "https://github.com/perseids-publications/treebank-template/issues",
-  "report": "https://github.com/perseids-publications/treebank-template/",
+  "report": "https://github.com/perseids-publications/treebank-template/issues",
+  "github": "https://github.com/perseids-publications/treebank-template/",
   "twitter": "https://twitter.com/PerseidsProject",
   "collections": [
     {
