@@ -70,6 +70,8 @@ class Publication extends Component {
           </h2>
           <table className="table">
             <tbody>
+              {author && this.renderRow("Author", author)}
+              {work && this.renderRow("Work", work)}
               {editors && this.renderRow("Editors", editors)}
               {link && this.renderLinkRow("Link", link)}
               {notes && this.renderRow("Notes", notes)}

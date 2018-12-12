@@ -52,7 +52,6 @@ class ControlPanel extends Component {
 
   render () {
     const [first, back, current, next, last] = this.getFbcnl();
-    const { url } = this.props.match;
     const lines = this.getLines();
 
     return (
