@@ -69,9 +69,9 @@ class ControlPanel extends Component {
               </a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link text-light dropdown-toggle" aria-haspopup="true" aria-expanded={this.state.isOpen} onClick={this.toggleOpen} style={{ cursor: "pointer" }}>
+              <button className="btn btn-link nav-link text-light dropdown-toggle" aria-haspopup="true" aria-expanded={this.state.isOpen} onClick={this.toggleOpen} style={{ cursor: "pointer" }}>
                 {current}
-              </a>
+              </button>
               <div className={`dropdown-menu dropdown-scroll ${this.state.isOpen ? "show" : ""}`}>
                 {
                   lines.map((n) => (
