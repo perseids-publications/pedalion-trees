@@ -27,10 +27,6 @@ For example, if you want to deploy it at `www.example.com/` then run `PUBLIC_URL
 If you want to deploy it at `www.example.com/lexica/lsj` then run
 `PUBLIC_URL='./lexica/lsj' yarn build`.
 
-## Linting the code
-
-`yarn lint`
-
 ## Deploying a new version to github.io
 
 `yarn deploy`

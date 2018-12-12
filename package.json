@@ -2,8 +2,10 @@
   "name": "treebank-template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://perseids-publications.github.io/treebank-template/",
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1",
     "perseids-react-components": "^0.0.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -11,6 +13,8 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
