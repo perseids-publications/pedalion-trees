@@ -1,0 +1,4 @@
+.dropdown-scroll {
+  max-height: 400px;
+  overflow: scroll;
+}

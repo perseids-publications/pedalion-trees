@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ControlPanel.css';
+
 const min = (a, b) => (a < b ? a : b);
 const max = (a, b) => (a > b ? a : b);
 
@@ -71,7 +73,7 @@ class ControlPanel extends Component {
               <a className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded={this.state.isOpen} onClick={this.toggleOpen} style={{ cursor: "pointer" }}>
                 {current}
               </a>
-              <div className={`dropdown-menu ${this.state.isOpen ? "show" : ""}`}>
+              <div className={`dropdown-menu dropdown-scroll ${this.state.isOpen ? "show" : ""}`}>
                 {
                   lines.map((n) => (
                     <a className="dropdown-item" key={n} href={n} onClick={this.toggleOpen}>
