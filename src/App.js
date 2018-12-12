@@ -6,6 +6,7 @@ import config from './config.json';
 
 import Home from './Home';
 import PublicationDirector from './PublicationDirector';
+import NotFound from './NotFound';
 
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
@@ -13,6 +14,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={() => <Home config={config} />} />
         <Route path="/:publication/:chunk" render={(props) => <PublicationDirector {...props} config={config} />} />
+        <Route component={NotFound} />
       </Switch>
       <PerseidsFooter
         github="https://github.com/perseids-publications/treebank-template"
