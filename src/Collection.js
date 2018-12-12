@@ -22,7 +22,7 @@ class Collection extends Component {
       <tr className="d-flex" key={path}>
         <th className="col-md-3 d-none d-md-block" scope="row">{author}</th>
         <td className="col-md-4 d-none d-md-block">{work}</td>
-        <td className="col-8 col-sm-6 d-block d-md-none" scope="col">
+        <td className="col-8 col-sm-6 d-block d-md-none">
           <strong>{author}</strong>, <em>{work}</em>
         </td>
         <td className="col-sm-3 col-lg-4 d-none d-sm-block">{editors}</td>

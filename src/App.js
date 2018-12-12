@@ -8,6 +8,8 @@ import Home from './Home';
 import PublicationDirector from './PublicationDirector';
 import NotFound from './NotFound';
 
+const { copyright, report, github, twitter } = config;
+
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <React.Fragment>
@@ -17,8 +19,10 @@ const App = () => (
         <Route component={NotFound} />
       </Switch>
       <PerseidsFooter
-        github="https://github.com/perseids-publications/treebank-template"
-        report="https://github.com/perseids-publications/treebank-template/issues"
+        copyright={copyright}
+        report={report}
+        github={github}
+        twitter={twitter}
       />
     </React.Fragment>
   </Router>
