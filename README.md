@@ -23,6 +23,12 @@ git push -u origin master
 * Update the `src/config.json` file
 * Update `name` and `homepage` in `package.json`
 
+### Updating
+
+* `git pull source master`
+* Fix merge conflicts
+* `git push origin master`
+
 ## Installation
 
 `yarn install`
