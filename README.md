@@ -9,6 +9,20 @@ All other configuration is done using `./src/config.json`.
 
 [https://perseids-publications.github.io/treebank-template/](https://perseids-publications.github.io/treebank-template/)
 
+## How to configure with your own treebanks
+
+```
+git clone git@github.com:perseids-publications/treebank-template.git my-trees
+cd my-trees
+git remote rename origin source
+git remote add origin <my-trees origin>
+git push -u origin master
+```
+
+* Copy all your trees into `public/xml`
+* Update the `src/config.json` file
+* Update `name` and `homepage` in `package.json`
+
 ## Installation
 
 `yarn install`
