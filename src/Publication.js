@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { PerseidsHeader } from 'perseids-react-components';
 
-import { chunksType, matchType } from './types';
+import { chunksType, publicationMatchType } from './types';
 
 import ArethusaWrapper from './lib/ArethusaWrapper';
 import Treebank from './Treebank';
@@ -23,8 +23,22 @@ const renderLinkRow = (title, link) => (
   </tr>
 );
 
+const renderLocusRow = (title, text, publicationPath) => (
+  <tr>
+    <th scope="col">{title}</th>
+    <td style={{ width: '100%' }}>
+      {text}
+      {' '}
+      <a href={`../${publicationPath}`}>
+        (See all)
+      </a>
+    </td>
+  </tr>
+);
+
 class Publication extends Component {
   static propTypes = {
+    publicationPath: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     work: PropTypes.string.isRequired,
     editors: PropTypes.string.isRequired,
@@ -33,7 +47,7 @@ class Publication extends Component {
     notes: PropTypes.string,
     xml: PropTypes.string.isRequired,
     chunks: chunksType.isRequired,
-    match: matchType.isRequired,
+    match: publicationMatchType.isRequired,
   };
 
   static defaultProps = {
@@ -49,6 +63,7 @@ class Publication extends Component {
 
   render() {
     const {
+      publicationPath,
       author,
       work,
       editors,
@@ -78,7 +93,7 @@ class Publication extends Component {
           <h2>
             <span>
               {author}
-,
+              ,
               <i>
                 {' '}
                 {work}
@@ -91,7 +106,7 @@ class Publication extends Component {
             <tbody>
               {author && renderRow('Author', author)}
               {work && renderRow('Work', work)}
-              {locus && renderRow('Locus', locus)}
+              {locus && renderLocusRow('Locus', locus, publicationPath)}
               {editors && renderRow('Editors', editors)}
               {link && renderLinkRow('Link', link)}
               {notes && renderRow('Notes', notes)}

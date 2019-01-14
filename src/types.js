@@ -1,5 +1,5 @@
 import {
-  arrayOf, number, shape, string,
+  arrayOf, number, shape, string, oneOfType, element,
 } from 'prop-types';
 
 export const chunksType = shape({
@@ -25,12 +25,12 @@ export const publicationType = shape({
 });
 
 export const collectionType = shape({
-  title: string.isRequired,
+  title: oneOfType([string, element]).isRequired,
   publications: arrayOf(publicationType).isRequired,
 });
 
 export const configType = shape({
-  title: string.isRequired,
+  title: oneOfType([string, element]).isRequired,
   subtitle: string.isRequired,
   copyright: string,
   report: string,
@@ -39,8 +39,14 @@ export const configType = shape({
   collections: arrayOf(collectionType).isRequired,
 });
 
-export const matchType = shape({
+export const publicationMatchType = shape({
   params: shape({
     chunk: string.isRequired,
+  }).isRequired,
+});
+
+export const publicationGroupMatchType = shape({
+  params: shape({
+    publication: string.isRequired,
   }).isRequired,
 });

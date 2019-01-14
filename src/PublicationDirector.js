@@ -11,7 +11,9 @@ class PublicationDirector extends Component {
 
     config.collections.forEach((collection) => {
       collection.publications.forEach((publication) => {
-        const { author, work, editors } = publication;
+        const {
+          author, work, editors, path: publicationPath,
+        } = publication;
 
         publication.sections.forEach((section) => {
           const {
@@ -19,6 +21,7 @@ class PublicationDirector extends Component {
           } = section;
 
           argsLookup[path] = {
+            publicationPath,
             author,
             work,
             editors,

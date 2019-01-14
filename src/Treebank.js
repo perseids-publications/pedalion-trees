@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { chunksType, matchType } from './types';
+import { chunksType, publicationMatchType } from './types';
 import ArethusaWrapper from './lib/ArethusaWrapper';
 
 import ControlPanel from './ControlPanel';
@@ -10,7 +10,7 @@ class Treebank extends Component {
   static propTypes = {
     arethusa: PropTypes.instanceOf(ArethusaWrapper).isRequired,
     chunks: chunksType.isRequired,
-    match: matchType.isRequired,
+    match: publicationMatchType.isRequired,
     xml: PropTypes.string.isRequired,
   };
 

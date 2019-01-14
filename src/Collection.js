@@ -67,7 +67,7 @@ const Collection = ({ title, publications }) => (
 );
 
 Collection.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   publications: PropTypes.arrayOf(publicationType).isRequired,
 };
 

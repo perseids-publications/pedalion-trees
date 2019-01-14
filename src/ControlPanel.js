@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { chunksType, matchType } from './types';
+import { chunksType, publicationMatchType } from './types';
 
 import './ControlPanel.css';
 
@@ -10,7 +10,7 @@ const max = (a, b) => (a > b ? a : b);
 class ControlPanel extends Component {
   static propTypes = {
     chunks: chunksType.isRequired,
-    match: matchType.isRequired,
+    match: publicationMatchType.isRequired,
   };
 
   state = {
