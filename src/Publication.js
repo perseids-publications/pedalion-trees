@@ -1,34 +1,50 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { PerseidsHeader } from 'perseids-react-components';
+
+import { chunksType, matchType } from './types';
 
 import ArethusaWrapper from './lib/ArethusaWrapper';
 import Treebank from './Treebank';
 
+const renderRow = (title, text) => (
+  <tr>
+    <th scope="col">{title}</th>
+    <td>{text}</td>
+  </tr>
+);
+
+const renderLinkRow = (title, link) => (
+  <tr>
+    <th scope="col">{title}</th>
+    <td>
+      <a href={link}>{link}</a>
+    </td>
+  </tr>
+);
+
 class Publication extends Component {
+  static propTypes = {
+    author: PropTypes.string.isRequired,
+    work: PropTypes.string.isRequired,
+    editors: PropTypes.string.isRequired,
+    locus: PropTypes.string.isRequired,
+    link: PropTypes.string,
+    notes: PropTypes.string,
+    xml: PropTypes.string.isRequired,
+    chunks: chunksType.isRequired,
+    match: matchType.isRequired,
+  };
+
+  static defaultProps = {
+    link: undefined,
+    notes: undefined,
+  };
+
   constructor(props) {
     super(props);
 
     this.arethusa = new ArethusaWrapper();
-  }
-
-  renderRow(title, text) {
-    return (
-      <tr>
-        <th scope="col">{title}</th>
-        <td>{text}</td>
-      </tr>
-    );
-  }
-
-  renderLinkRow(title, link) {
-    return (
-      <tr>
-        <th scope="col">{title}</th>
-        <td>
-          <a href={link}>{link}</a>
-        </td>
-      </tr>
-    );
   }
 
   render() {
@@ -61,22 +77,27 @@ class Publication extends Component {
         <div className="container pt-3">
           <h2>
             <span>
-              {author},
-              <i> {work} </i>
+              {author}
+,
+              <i>
+                {' '}
+                {work}
+                {' '}
+              </i>
               {locus}
             </span>
           </h2>
           <table className="table">
             <tbody>
-              {author && this.renderRow("Author", author)}
-              {work && this.renderRow("Work", work)}
-              {locus && this.renderRow("Locus", locus)}
-              {editors && this.renderRow("Editors", editors)}
-              {link && this.renderLinkRow("Link", link)}
-              {notes && this.renderRow("Notes", notes)}
+              {author && renderRow('Author', author)}
+              {work && renderRow('Work', work)}
+              {locus && renderRow('Locus', locus)}
+              {editors && renderRow('Editors', editors)}
+              {link && renderLinkRow('Link', link)}
+              {notes && renderRow('Notes', notes)}
             </tbody>
           </table>
-          <div style={{ "minHeight": "350px" }}>
+          <div style={{ minHeight: '350px' }}>
             <Treebank xml={xml} chunks={chunks} match={match} arethusa={this.arethusa} />
           </div>
           <div className="pt-1 pb-4 text-right">

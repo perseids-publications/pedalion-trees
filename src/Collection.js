@@ -1,64 +1,74 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class Collection extends Component {
-  renderSection(section) {
-    const { locus, path, chunks } = section;
-    const { start } = chunks;
+import { publicationType } from './types';
 
-    return (
-      <React.Fragment key={path}>
-        <a href={`${path}/${start}`}>
-          {locus}
-        </a>
-        <br />
-      </React.Fragment>
-    );
-  }
+const renderSection = (section) => {
+  const { locus, path, chunks } = section;
+  const { start } = chunks;
 
-  renderRow(publication) {
-    const { path, author, work, editors, sections } = publication;
+  return (
+    <React.Fragment key={path}>
+      <a href={`${path}/${start}`}>
+        {locus}
+      </a>
+      <br />
+    </React.Fragment>
+  );
+};
 
-    return (
-      <tr className="d-flex" key={path}>
-        <th className="col-md-3 d-none d-md-block" scope="row">{author}</th>
-        <td className="col-md-4 d-none d-md-block">{work}</td>
-        <td className="col-8 col-sm-6 d-block d-md-none">
-          <strong>{author}</strong>, <em>{work}</em>
-        </td>
-        <td className="col-sm-3 col-lg-4 d-none d-sm-block">{editors}</td>
-        <td className="col-4 col-sm-3 col-md-2 col-lg-1">
-          {sections.map((s) => this.renderSection(s))}
-        </td>
-      </tr>
-    );
-  }
+const renderRow = (publication) => {
+  const {
+    path,
+    author,
+    work,
+    editors,
+    sections,
+  } = publication;
 
-  render() {
-    const { title, publications } = this.props;
+  return (
+    <tr className="d-flex" key={path}>
+      <th className="col-md-3 d-none d-md-block" scope="row">{author}</th>
+      <td className="col-md-4 d-none d-md-block">{work}</td>
+      <td className="col-8 col-sm-6 d-block d-md-none">
+        <strong>{author}</strong>
+        ,
+        <em>{work}</em>
+      </td>
+      <td className="col-sm-3 col-lg-4 d-none d-sm-block">{editors}</td>
+      <td className="col-4 col-sm-3 col-md-2 col-lg-1">
+        {sections.map(s => renderSection(s))}
+      </td>
+    </tr>
+  );
+};
 
-    return (
-      <div className="container">
-        <div className="row pb-3">
-          <div className="col-12">
-            {title && <h2>{title}</h2>}
-            <table className="table">
-              <thead className="thead-light">
-                <tr className="d-flex">
-                  <th className="col-md-3 d-none d-md-block" scope="col">Author</th>
-                  <th className="col-8 col-sm-6 col-md-4" scope="col">Work</th>
-                  <th className="col-sm-3 col-lg-4 d-none d-sm-block" scope="col">Editors</th>
-                  <th className="col-4 col-sm-3 col-md-2 col-lg-1" scope="col">Locus</th>
-                </tr>
-              </thead>
-              <tbody>
-                {publications.map((p) => this.renderRow(p))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+const Collection = ({ title, publications }) => (
+  <div className="container">
+    <div className="row pb-3">
+      <div className="col-12">
+        {title && <h2>{title}</h2>}
+        <table className="table">
+          <thead className="thead-light">
+            <tr className="d-flex">
+              <th className="col-md-3 d-none d-md-block" scope="col">Author</th>
+              <th className="col-8 col-sm-6 col-md-4" scope="col">Work</th>
+              <th className="col-sm-3 col-lg-4 d-none d-sm-block" scope="col">Editors</th>
+              <th className="col-4 col-sm-3 col-md-2 col-lg-1" scope="col">Locus</th>
+            </tr>
+          </thead>
+          <tbody>
+            {publications.map(p => renderRow(p))}
+          </tbody>
+        </table>
       </div>
-    );
-  };
+    </div>
+  </div>
+);
+
+Collection.propTypes = {
+  title: PropTypes.string.isRequired,
+  publications: PropTypes.arrayOf(publicationType).isRequired,
 };
 
 export default Collection;

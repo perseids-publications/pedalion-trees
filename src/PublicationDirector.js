@@ -7,14 +7,16 @@ class PublicationDirector extends Component {
     super(props);
 
     const { config } = props;
-    const argsLookup = {}
+    const argsLookup = {};
 
     config.collections.forEach((collection) => {
       collection.publications.forEach((publication) => {
         const { author, work, editors } = publication;
 
         publication.sections.forEach((section) => {
-          const { path, locus, link, notes, xml, chunks } = section;
+          const {
+            path, locus, link, notes, xml, chunks,
+          } = section;
 
           argsLookup[path] = {
             author,
@@ -40,6 +42,6 @@ class PublicationDirector extends Component {
 
     return <Publication {...args} match={match} />;
   }
-};
+}
 
 export default PublicationDirector;

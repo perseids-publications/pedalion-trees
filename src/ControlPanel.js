@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+import { chunksType, matchType } from './types';
+
 import './ControlPanel.css';
 
 const min = (a, b) => (a < b ? a : b);
 const max = (a, b) => (a > b ? a : b);
 
 class ControlPanel extends Component {
+  static propTypes = {
+    chunks: chunksType.isRequired,
+    match: matchType.isRequired,
+  };
+
   state = {
     isOpen: false,
   };
@@ -16,14 +23,8 @@ class ControlPanel extends Component {
     this.toggleOpen = this.toggleOpen.bind(this);
   }
 
-  toggleOpen() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
-
   getLines() {
-    const { start, end } = this.props.chunks;
+    const { chunks: { start, end } } = this.props;
 
     const lines = [];
     for (let ii = start; ii <= end; ii += 1) {
@@ -33,24 +34,26 @@ class ControlPanel extends Component {
     return lines;
   }
 
-  getFbcnl () {
-    const { chunks, match } = this.props;
-    const { chunk } = match.params;
-
+  getFbcnl() {
+    const { chunks: { start, end }, match } = this.props;
+    const { params: { chunk } } = match;
     const index = Number(chunk);
-    const start = chunks.start;
-    const end = chunks.end;
 
     return [
       start,
       max(start, index - 1),
       index,
       min(end, index + 1),
-      end
-    ]
+      end,
+    ];
   }
 
-  render () {
+  toggleOpen() {
+    this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
+  }
+
+  render() {
+    const { isOpen } = this.state;
     const [first, back, current, next, last] = this.getFbcnl();
     const lines = this.getLines();
 
@@ -69,12 +72,12 @@ class ControlPanel extends Component {
               </a>
             </li>
             <li className="nav-item dropdown">
-              <button className="btn btn-link nav-link text-light dropdown-toggle" aria-haspopup="true" aria-expanded={this.state.isOpen} onClick={this.toggleOpen} style={{ cursor: "pointer" }}>
+              <button className="btn btn-link nav-link text-light dropdown-toggle" type="button" aria-haspopup="true" aria-expanded={isOpen} onClick={this.toggleOpen} style={{ cursor: 'pointer' }}>
                 {current}
               </button>
-              <div className={`dropdown-menu dropdown-scroll ${this.state.isOpen ? "show" : ""}`}>
+              <div className={`dropdown-menu dropdown-scroll ${isOpen ? 'show' : ''}`}>
                 {
-                  lines.map((n) => (
+                  lines.map(n => (
                     <a className="dropdown-item" key={n} href={n} onClick={this.toggleOpen}>
                       {n}
                     </a>

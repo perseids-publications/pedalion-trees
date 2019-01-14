@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Hero.css';
 
-const renderSubtitle = (subtitle) => (
+const renderSubtitle = subtitle => (
   <p>
     <span>
       {subtitle}
@@ -20,5 +21,10 @@ const Hero = ({ title, subtitle }) => (
     </div>
   </div>
 );
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
 
 export default Hero;
