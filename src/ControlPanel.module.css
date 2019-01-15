@@ -1,0 +1,8 @@
+.dropdownButton {
+  cursor: pointer;
+}
+
+.dropdownScroll {
+  max-height: 400px;
+  overflow: scroll;
+}

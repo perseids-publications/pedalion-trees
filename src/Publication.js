@@ -4,13 +4,15 @@ import { PerseidsHeader } from 'perseids-react-components';
 
 import { chunksType, publicationMatchType } from './types';
 
+import styles from './Publication.module.css';
+
 import ArethusaWrapper from './lib/ArethusaWrapper';
 import Treebank from './Treebank';
 
 const renderRow = (title, text) => (
   <tr>
     <th scope="col">{title}</th>
-    <td>{text}</td>
+    <td className={styles.publicationRow}>{text}</td>
   </tr>
 );
 
@@ -26,7 +28,7 @@ const renderLinkRow = (title, link) => (
 const renderLocusRow = (title, text, publicationPath) => (
   <tr>
     <th scope="col">{title}</th>
-    <td style={{ width: '100%' }}>
+    <td className={styles.publicationRow}>
       {text}
       {' '}
       <a href={`../${publicationPath}`}>
@@ -112,7 +114,7 @@ class Publication extends Component {
               {notes && renderRow('Notes', notes)}
             </tbody>
           </table>
-          <div style={{ minHeight: '350px' }}>
+          <div className={styles.treebankWrapper}>
             <Treebank xml={xml} chunks={chunks} match={match} arethusa={this.arethusa} />
           </div>
           <div className="pt-1 pb-4 text-right">

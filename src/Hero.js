@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Hero.css';
+import styles from './Hero.module.css';
 
 const renderSubtitle = subtitle => (
   <p>
@@ -12,7 +12,7 @@ const renderSubtitle = subtitle => (
 );
 
 const Hero = ({ title, subtitle }) => (
-  <div className="jumbotron jumbotron-fluid jumbotron-small bg-dark">
+  <div className={`jumbotron jumbotron-fluid bg-dark ${styles.jumbotronSmall}`}>
     <div className="container text-light">
       <h1 className="display-4">
         {title}

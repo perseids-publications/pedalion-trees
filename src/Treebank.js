@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { chunksType, publicationMatchType } from './types';
 import ArethusaWrapper from './lib/ArethusaWrapper';
 
+import styles from './Treebank.module.css';
+
 import ControlPanel from './ControlPanel';
 
 class Treebank extends Component {
@@ -35,7 +37,7 @@ class Treebank extends Component {
       <React.Fragment>
         <ControlPanel match={match} chunks={chunks} />
         <div className="__artsa">
-          <div id="treebank_container" style={{ position: 'relative' }} />
+          <div id="treebank_container" className={styles.treebankContainer} />
         </div>
       </React.Fragment>
     );

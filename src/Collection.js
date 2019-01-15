@@ -35,8 +35,8 @@ const renderRow = (publication) => {
         ,
         <em>{work}</em>
       </td>
-      <td className="col-sm-3 col-lg-4 d-none d-sm-block">{editors}</td>
-      <td className="col-4 col-sm-3 col-md-2 col-lg-1">
+      <td className="col-sm-3 col-lg-3 d-none d-sm-block">{editors}</td>
+      <td className="col-4 col-sm-3 col-md-2 col-lg-2 text-right">
         {sections.map(s => renderSection(s))}
       </td>
     </tr>
@@ -53,8 +53,8 @@ const Collection = ({ title, publications }) => (
             <tr className="d-flex">
               <th className="col-md-3 d-none d-md-block" scope="col">Author</th>
               <th className="col-8 col-sm-6 col-md-4" scope="col">Work</th>
-              <th className="col-sm-3 col-lg-4 d-none d-sm-block" scope="col">Editors</th>
-              <th className="col-4 col-sm-3 col-md-2 col-lg-1" scope="col">Locus</th>
+              <th className="col-sm-3 col-lg-3 d-none d-sm-block" scope="col">Editors</th>
+              <th className="col-4 col-sm-3 col-md-2 col-lg-2" scope="col">Locus</th>
             </tr>
           </thead>
           <tbody>

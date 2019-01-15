@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { chunksType, publicationMatchType } from './types';
 
-import './ControlPanel.css';
+import styles from './ControlPanel.module.css';
 
 const min = (a, b) => (a < b ? a : b);
 const max = (a, b) => (a > b ? a : b);
@@ -72,10 +72,10 @@ class ControlPanel extends Component {
               </a>
             </li>
             <li className="nav-item dropdown">
-              <button className="btn btn-link nav-link text-light dropdown-toggle" type="button" aria-haspopup="true" aria-expanded={isOpen} onClick={this.toggleOpen} style={{ cursor: 'pointer' }}>
+              <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={isOpen} onClick={this.toggleOpen}>
                 {current}
               </button>
-              <div className={`dropdown-menu dropdown-scroll ${isOpen ? 'show' : ''}`}>
+              <div className={`dropdown-menu ${styles.dropdownScroll} ${isOpen ? 'show' : ''}`}>
                 {
                   lines.map(n => (
                     <a className="dropdown-item" key={n} href={n} onClick={this.toggleOpen}>
