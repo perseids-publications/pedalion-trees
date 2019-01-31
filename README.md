@@ -22,6 +22,7 @@ git push -u origin master
 * Copy all your trees into `public/xml`
 * Update the `src/config.json` file
 * Update `name` and `homepage` in `package.json`
+* Update the information in `.env`
 
 ### Updating
 

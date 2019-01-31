@@ -4,6 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+
+
+    <!--
+      The Open Graph protocol allows links to be expanded by Twitter, Facebook, and other platforms.
+      The variables specified here (and in title) are located in .env
+    -->
+    <meta property="og:image" content="%REACT_APP_IMAGE_URL%" />
+    <meta property="og:site_name" content="%REACT_APP_SITE_NAME%" />
+    <meta property="og:type" content="object" />
+    <meta property="og:title" content="%REACT_APP_TITLE%" />
+    <meta property="og:description" content="%REACT_APP_DESCRIPTION%" />
+    <meta property="og:url" content="%REACT_APP_URL%" />
+
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -19,7 +32,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Treebank Publication Template</title>
+    <title>%REACT_APP_TITLE%</title>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="%PUBLIC_URL%/arethusa/arethusa.packages.min.js"></script>
