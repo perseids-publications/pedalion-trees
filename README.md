@@ -1,34 +1,10 @@
-# Treebank Template
+# Pedalion Trees
 
-Template for publishing collections of treebanks.
-
-The treebanks themselves live in the `./public/xml` directory.
-All other configuration is done using `./src/config.json`.
+Work in progress
 
 ## Try it Out
 
-[https://perseids-publications.github.io/treebank-template/](https://perseids-publications.github.io/treebank-template/)
-
-## How to configure with your own treebanks
-
-```
-git clone git@github.com:perseids-publications/treebank-template.git my-trees
-cd my-trees
-git remote rename origin source
-git remote add origin <my-trees origin>
-git push -u origin master
-```
-
-* Copy all your trees into `public/xml`
-* Update the `src/config.json` file
-* Update `name` and `homepage` in `package.json`
-* Update the information in `.env`
-
-### Updating
-
-* `git pull source master`
-* Fix merge conflicts
-* `git push origin master`
+[https://perseids-publications.github.io/pedalion-trees/](https://perseids-publications.github.io/pedalion-trees/)
 
 ## Installation
 
@@ -40,13 +16,7 @@ git push -u origin master
 
 ## Building for deployment
 
-Before creating a production build you need to know the path where it will be accessed.
-Then run the command `PUBLIC_URL='./path/of/app' yarn build`.
-This will generate a set of static files in the `build/` directory that you can serve.
-
-For example, if you want to deploy it at `www.example.com/` then run `PUBLIC_URL='./' yarn build`.
-If you want to deploy it at `www.example.com/lexica/lsj` then run
-`PUBLIC_URL='./lexica/lsj' yarn build`.
+`yarn build`
 
 ## Deploying a new version to github.io
 
