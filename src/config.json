@@ -1,80 +1,197 @@
 {
-  "title": "Treebank Publication Template",
-  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "copyright": "The Perseids Project 2019",
-  "report": "https://github.com/perseids-publications/treebank-template/issues",
-  "github": "https://github.com/perseids-publications/treebank-template/",
-  "twitter": "https://twitter.com/PerseidsProject",
+  "title": "Pedalion Trees",
+  "subtitle": "*SUBTITLE*",
+  "report": "https://github.com/perseids-publications/pedalion-trees/issues",
+  "github": "https://github.com/perseids-publications/pedalion-trees",
+  "twitter": "",
   "collections": [
     {
-      "title": "Collection 1", 
+      "title": "*TREEBANK COLLECTION TITLE*",
       "publications": [
         {
-          "path": "on-the-murder-of-eratosthenes",
-          "author": "Lysias",
-          "work": "On the Murder of Eratosthenes",
-          "editors": "Vanessa Gorman",
+          "path": "euripides-medea",
+          "author": "Euripides",
+          "work": "Medea",
+          "editors": "",
           "sections": [
             {
-              "locus": "1-50",
-              "path": "on-the-murder-of-eratosthenes-1-50",
-              "xml": "lysias-1-1-50.xml",
-              "link": "https://www.example.com",
-              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "chunks": { "start": 1, "end": 134 }
+              "locus": "",
+              "path": "euripides_medea",
+              "xml": "euripides_medea.xml",
+              "chunks": {
+                "start": 1,
+                "end": 824
+              }
             }
           ]
         },
         {
-          "path": "on-the-crown",
-          "author": "Demosthenes",
-          "work": "On the Crown",
-          "editors": "Vanessa Gorman",
+          "path": "galen-on-the-natural-faculties-",
+          "author": "Galen",
+          "work": "On the Natural Faculties.",
+          "editors": "",
           "sections": [
             {
-              "locus": "1-50",
-              "path": "on-the-crown-1-50",
-              "xml": "demosthenes-18-1-50.xml",
-              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "chunks": { "start": 1, "end": 160 }
-            },
-            {
-              "locus": "51-100",
-              "path": "on-the-crown-51-100",
-              "xml": "demosthenes-18-51-100.xml",
-              "chunks": { "start": 1, "end": 149 }
+              "locus": "",
+              "path": "papyri",
+              "xml": "papyri.xml",
+              "chunks": {
+                "start": 1,
+                "end": 5
+              }
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Collection 2",
-      "publications": [
+        },
         {
-          "path": "histories",
-          "author": "Herodotus",
-          "work": "The Histories",
-          "editors": "Vanessa Gorman",
+          "path": "lucian-judicium-vocalium",
+          "author": "Lucian",
+          "work": "Judicium vocalium",
+          "editors": "",
           "sections": [
             {
-              "locus": "40-59",
-              "path": "histories-40-59",
-              "xml": "herodotus-1-40-59.xml",
-              "chunks": { "start": 1, "end": 100 }
-            },
+              "locus": null,
+              "path": "lucian_lis",
+              "xml": "lucian_lis.xml",
+              "chunks": {
+                "start": 1,
+                "end": 56
+              }
+            }
+          ]
+        },
+        {
+          "path": "lucian-prometheus",
+          "author": "Lucian",
+          "work": "Prometheus",
+          "editors": "",
+          "sections": [
             {
-              "locus": "60-79",
-              "path": "histories-60-79",
-              "xml": "herodotus-1-60-79.xml",
-              "chunks": { "start": 1, "end": 166 }
-            },
+              "locus": "1-40-",
+              "path": "lucian_prometheus",
+              "xml": "lucian_prometheus.xml",
+              "chunks": {
+                "start": 1,
+                "end": 76
+              }
+            }
+          ]
+        },
+        {
+          "path": "lucian-symposium",
+          "author": "Lucian",
+          "work": "Symposium",
+          "editors": "",
+          "sections": [
             {
-              "locus": "80-99",
-              "path": "histories-80-99",
-              "xml": "herodotus-1-80-99.xml",
-              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "chunks": { "start": 1, "end": 185 }
+              "locus": "1_1-226_1",
+              "path": "lucian_symposion",
+              "xml": "lucian_symposion.xml",
+              "chunks": {
+                "start": 1,
+                "end": 229
+              }
+            }
+          ]
+        },
+        {
+          "path": "lysias-on-the-refusal-of-a-pension",
+          "author": "Lysias",
+          "work": "On The Refusal Of A Pension",
+          "editors": "",
+          "sections": [
+            {
+              "locus": null,
+              "path": "lysias_or24",
+              "xml": "lysias_or24.xml",
+              "chunks": {
+                "start": 1,
+                "end": 81
+              }
+            }
+          ]
+        },
+        {
+          "path": "plato-cleitophon",
+          "author": "Plato",
+          "work": "Cleitophon",
+          "editors": "",
+          "sections": [
+            {
+              "locus": "",
+              "path": "pseudoplato_cleitophon",
+              "xml": "pseudoplato_cleitophon.xml",
+              "chunks": {
+                "start": 1,
+                "end": 75
+              }
+            }
+          ]
+        },
+        {
+          "path": "pseudo-lucian-the-ass",
+          "author": "Pseudo-Lucian",
+          "work": "The Ass",
+          "editors": "",
+          "sections": [
+            {
+              "locus": "",
+              "path": "pseudo-lucian_themule",
+              "xml": "pseudo-lucian_themule.xml",
+              "chunks": {
+                "start": 1,
+                "end": 543
+              }
+            }
+          ]
+        },
+        {
+          "path": "pseudo-menander-dyskolos",
+          "author": "Pseudo-Menander",
+          "work": "Dyskolos",
+          "editors": "",
+          "sections": [
+            {
+              "locus": "-968",
+              "path": "menander_dyskolos",
+              "xml": "menander_dyskolos.xml",
+              "chunks": {
+                "start": 1,
+                "end": 959
+              }
+            }
+          ]
+        },
+        {
+          "path": "semonides-types-of-women",
+          "author": "Semonides",
+          "work": "Types of Women",
+          "editors": "",
+          "sections": [
+            {
+              "locus": "test",
+              "path": "semonides",
+              "xml": "semonides.xml",
+              "chunks": {
+                "start": 1,
+                "end": 59
+              }
+            }
+          ]
+        },
+        {
+          "path": "septuaginta-genesis",
+          "author": "Septuaginta",
+          "work": "Genesis",
+          "editors": "",
+          "sections": [
+            {
+              "locus": "1-",
+              "path": "septuagint_genesis",
+              "xml": "septuagint_genesis.xml",
+              "chunks": {
+                "start": 1,
+                "end": 365
+              }
             }
           ]
         }
