@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <treebank xml:lang="grc" version="1.5" format="aldt" xmlns:saxon="http://saxon.sf.net/">
-<sentence id='1' document_id='0062-020' Author='Lucianus' subdoc='1-40' corrupt=''>
+<sentence id='1' document_id='0062-020' Author='Lucianus' subdoc='1-40'>
 <word ref='Leuven|0062-020|1|1' id='1' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='3' sem=''/>
 <word ref='Leuven|0062-020|1|2' id='2' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='3' sem=''/>
 <word ref='Leuven|0062-020|1|3' id='3' form='Καύκασος' lemma='Καύκασος' postag='n-s---mn-' relation='PNOM' head='0' sem=''/>
