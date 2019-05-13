@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" version="1.5" format="aldt" xmlns:saxon="http://saxon.sf.net/">
 <sentence id='1' document_id='0062-020' Author='Lucianus' subdoc='1-40'>
 <word ref='Leuven|0062-020|1|1' id='1' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='3' sem=''/>
