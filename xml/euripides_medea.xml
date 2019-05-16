@@ -1,7 +1,5 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
-  <date>2019-04-07</date>
-  <Title>Euripides, Medea: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
-<annotator>Toon Van Hal, Ba3-students KU Leuven 2018-2019, Alek Keersmaekers</annotator>
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
 
 <sentence id='1' document_id='0006-003' Author='Euripides' subdoc=''>
 <word ref='Leuven|0006-003|1|1' id='1' form='εἴθ’' lemma='εἴτε' postag='d--------' relation='AuxY' head='2' sem=''/>
