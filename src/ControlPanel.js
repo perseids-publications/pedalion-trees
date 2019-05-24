@@ -7,6 +7,18 @@ import styles from './ControlPanel.module.css';
 const min = (a, b) => (a < b ? a : b);
 const max = (a, b) => (a > b ? a : b);
 
+const getFbcnlFromNumbers = (chunk, numbers) => {
+  const index = numbers.indexOf(chunk);
+
+  return [
+    numbers[0],
+    numbers[max(0, index - 1)],
+    chunk,
+    numbers[min(numbers.length - 1, index + 1)],
+    numbers[numbers.length - 1],
+  ];
+};
+
 class ControlPanel extends Component {
   static propTypes = {
     chunks: chunksType.isRequired,
@@ -24,7 +36,11 @@ class ControlPanel extends Component {
   }
 
   getLines() {
-    const { chunks: { start, end } } = this.props;
+    const { chunks: { start, end, numbers } } = this.props;
+
+    if (numbers) {
+      return numbers;
+    }
 
     const lines = [];
     for (let ii = start; ii <= end; ii += 1) {
@@ -35,14 +51,18 @@ class ControlPanel extends Component {
   }
 
   getFbcnl() {
-    const { chunks: { start, end }, match } = this.props;
+    const { chunks: { start, end, numbers }, match } = this.props;
     const { params: { chunk } } = match;
     const index = Number(chunk);
+
+    if (numbers) {
+      return getFbcnlFromNumbers(chunk, numbers);
+    }
 
     return [
       start,
       max(start, index - 1),
-      index,
+      chunk,
       min(end, index + 1),
       end,
     ];
