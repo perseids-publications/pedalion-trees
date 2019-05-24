@@ -3,8 +3,9 @@ import {
 } from 'prop-types';
 
 export const chunksType = shape({
-  start: number.isRequired,
-  end: number.isRequired,
+  start: number,
+  end: number,
+  numbers: arrayOf(oneOfType([number, string])),
 });
 
 export const sectionType = shape({
