@@ -32,7 +32,7 @@
           "editors": "",
           "sections": [
             {
-              "locus": "",
+              "locus": "test",
               "path": "papyri",
               "xml": "papyri.xml",
               "chunks": {
@@ -49,7 +49,7 @@
           "editors": "",
           "sections": [
             {
-              "locus": null,
+              "locus": "test",
               "path": "lucian_lis",
               "xml": "lucian_lis.xml",
               "chunks": {
@@ -100,7 +100,7 @@
           "editors": "",
           "sections": [
             {
-              "locus": null,
+              "locus": "test",
               "path": "lysias_or24",
               "xml": "lysias_or24.xml",
               "chunks": {
@@ -117,7 +117,7 @@
           "editors": "",
           "sections": [
             {
-              "locus": "",
+              "locus": "test",
               "path": "pseudoplato_cleitophon",
               "xml": "pseudoplato_cleitophon.xml",
               "chunks": {
@@ -134,7 +134,7 @@
           "editors": "",
           "sections": [
             {
-              "locus": "",
+              "locus": "test",
               "path": "pseudo-lucian_themule",
               "xml": "pseudo-lucian_themule.xml",
               "chunks": {
