@@ -1,8 +1,7 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
-  <date>2019-04-07</date>
-  <Title>Menander, Dyskolos: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
-<annotator>Yoran Joosten, Alek Keersmaekers, Toon Van Hal</annotator>
-<sentence id='1' document_id='0541-007' >
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+
+<sentence id='1' document_id='0541-007' subdoc='entire text'>
 <word ref='Leuven|0541-007|1|1' id='1' form='τῆς' lemma='ὁ' postag='l-s---fg-' relation='ATR' head='2' sem=''/>
 <word ref='Leuven|0541-007|1|2' id='2' form='Ἀττικῆς' lemma='Ἀττική' postag='n-s---fg-' relation='ATR' head='6' sem='totality'/>
 <word ref='Leuven|0541-007|1|3' id='3' form='νομίζετ’' lemma='νομίζω' postag='v2ppma---' relation='PRED' head='0' sem=''/>
