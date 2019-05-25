@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
-  <Title>Lucian, lis vocalium: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
-<annotator>Sanderijn Gijbels, Toon Van Hal, Alek Keersmaekers</annotator>
+
 <sentence id='1' document_id='0062-014' subdoc='entire text'>
 <word ref='Leuven|0062-014|1|1' id='1' form='ἐπὶ' lemma='ἐπί' postag='r--------' relation='AuxP' head='11' sem=''/>
 <word ref='Leuven|0062-014|1|2' id='2' form='ἄρχοντος' lemma='ἄρχων' postag='n-s---mg-' relation='ADV' head='1' sem='time'/>
