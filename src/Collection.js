@@ -3,9 +3,19 @@ import PropTypes from 'prop-types';
 
 import { publicationType } from './types';
 
+const getStart = (chunks) => {
+  const { start, numbers } = chunks;
+
+  if (start) {
+    return start;
+  }
+
+  return numbers[0];
+};
+
 const renderSection = (section) => {
   const { locus, path, chunks } = section;
-  const { start } = chunks;
+  const start = getStart(chunks);
 
   return (
     <React.Fragment key={path}>
