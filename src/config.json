@@ -12,7 +12,7 @@
           "path": "euripides-medea",
           "author": "Euripides",
           "work": "Medea",
-          "editors": "",
+          "editors": "Toon Van Hal & students 2018-2019",
           "sections": [
             {
               "locus": "Entire work",
@@ -29,7 +29,7 @@
           "path": "Papyri",
           "author": "(Papyri)",
           "work": "Papyri",
-          "editors": "",
+          "editors": "Alek Keersmaekers (& Louis Verreth, students 2018-2019)",
           "sections": [
             {
               "locus": "test",
@@ -46,10 +46,10 @@
           "path": "lucian-judicium-vocalium",
           "author": "Lucian",
           "work": "Judicium vocalium",
-          "editors": "",
+          "editors": "Sanderijn Gijbels (& Toon Van Hal, Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "Entire work",
               "path": "lucian_lis",
               "xml": "lucian_lis.xml",
               "chunks": {
@@ -63,10 +63,10 @@
           "path": "lucian-prometheus",
           "author": "Lucian",
           "work": "Prometheus",
-          "editors": "",
+          "editors": "Toon Van Hal (& Students 2013-2014)",
           "sections": [
             {
-              "locus": "1-40-",
+              "locus": "Entire work",
               "path": "lucian_prometheus",
               "xml": "lucian_prometheus.xml",
               "chunks": {
@@ -80,10 +80,10 @@
           "path": "lucian-symposium",
           "author": "Lucian",
           "work": "Symposium",
-          "editors": "",
+          "editors": "Yoran Joosten (& Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "1_1-226_1",
+              "locus": "Entire work",
               "path": "lucian_symposion",
               "xml": "lucian_symposion.xml",
               "chunks": {
@@ -97,10 +97,10 @@
           "path": "lysias-on-the-refusal-of-a-pension",
           "author": "Lysias",
           "work": "On The Refusal Of A Pension",
-          "editors": "",
+          "editors": "Louis Verreth (& Toon Van Hal, Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "Entire work",
               "path": "lysias_or24",
               "xml": "lysias_or24.xml",
               "chunks": {
@@ -114,10 +114,10 @@
           "path": "plato-cleitophon",
           "author": "Plato",
           "work": "Cleitophon",
-          "editors": "",
+          "editors": "Wouter Mercelis (& Toon Van Hal, Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "Entire work",
               "path": "pseudoplato_cleitophon",
               "xml": "pseudoplato_cleitophon.xml",
               "chunks": {
@@ -131,7 +131,7 @@
           "path": "pseudo-lucian-the-ass",
           "author": "Pseudo-Lucian",
           "work": "The Ass",
-          "editors": "",
+          "editors": "Alek Keersmaekers",
           "sections": [
             {
               "locus": "test",
@@ -148,7 +148,7 @@
           "path": "pseudo-menander-dyskolos",
           "author": "Pseudo-Menander",
           "work": "Dyskolos",
-          "editors": "",
+          "editors": "Yoran Joosten (& Alek Keersmaekers)",
           "sections": [
             {
               "locus": "-968",
@@ -165,7 +165,7 @@
           "path": "semonides-types-of-women",
           "author": "Semonides",
           "work": "Types of Women",
-          "editors": "",
+          "editors": "Louis Verreth (& Toon Van Hal, Alek Keersmaekers)",
           "sections": [
             {
               "locus": "test",
