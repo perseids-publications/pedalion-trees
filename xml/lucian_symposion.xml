@@ -1,7 +1,5 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
-  <date>2019-04-07</date>
-  <Title>Lucian, Symposium: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
-<annotator>Yoran Joosten, Alek Keersmaekers, Toon Van Hal</annotator>
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
 <sentence id='1' document_id='0062-015' Author='Lucianus' subdoc='1_1' corrupt=''>
 <word ref='Leuven|0062-015|1|1' id='1' form='ποικίλην' lemma='ποικίλος' postag='a-s---fa-' relation='ATR' head='6' sem=''/>
 <word ref='Leuven|0062-015|1|2' id='2' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
