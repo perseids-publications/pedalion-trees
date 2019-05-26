@@ -12960,7 +12960,7 @@
 <word ref='Leuven|28934|2|27' id='27' form='μέλλει' lemma='μέλλω' postag='v3spia---' relation='OBJ' head='25' sem=''/>
 <word ref='Leuven|28934|2|28' id='28' form='πράσσειν' lemma='πράσσω' postag='v--pna---' relation='OBJ' head='27' sem=''/>
 <word ref='Leuven|28934|2|29' id='29' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-<word ref='Leuven|28934|2|30' id='30' form='[0]' lemma='' postag='---------' relation='ADV' head='11' sem='' artificial='elliptic'/>
+<word ref='Leuven|28934|2|30' id='30' form='[0]' lemma='' postag='---------' relation='ADV' head='11' sem='' artificial='elliptic' insertion_id='0001e'/>
 </sentence>
 <sentence id='3' document_id='28934' Author='' subdoc='' corrupt=''>
 <word ref='Leuven|28934|3|1' id='1' form='ἀσπάζεται' lemma='ἀσπάζομαι' postag='v3spie---' relation='PRED' head='0' sem=''/>
