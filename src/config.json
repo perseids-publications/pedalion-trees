@@ -26,15 +26,15 @@
           ]
         },
         {
-          "path": "Batracho",
+          "path": "batracho",
           "author": "(Pseudo-Homer)",
           "work": "Batrachomyomachia",
           "editors": "Colin Swaelens (& Alek Keersmaekers)",
           "sections": [
             {
               "locus": "test",
-              "path": "Batracho",
-              "xml": "Batrachomyomachia.xml",
+              "path": "batracho",
+              "xml": "batracho.xml",
               "chunks": {
                 "start": 1,
                 "end": 166
