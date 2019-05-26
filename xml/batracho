@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
 
-<--!
-Pseudo-Homer, Batrachomyomachia
-
-Who? Annotated by Colin Swaelens. Based on a preparsed text by Alek Keersmaekers.
-
-How much? ca. 2,2K tokens.
-
-First release? 2019.
-
- -->
 <sentence id='1' document_id='1220-001' Author='Pseudo-Homer' subdoc='' corrupt=''>
 <word ref='Leuven|1220-001|1|1' id='1' form='ἀρχόμενος' lemma='ἄρχω' postag='v-sppemn-' relation='ADV' head='11' sem='time'/>
 <word ref='Leuven|1220-001|1|2' id='2' form='πρώτης' lemma='πρῶτος' postag='a-s---fg-' relation='ATR' head='3' sem=''/>
