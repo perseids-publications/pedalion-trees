@@ -114,6 +114,40 @@
           ]
         },
 		{
+          "path": "iso",
+          "author": "Isocrates",
+          "work": "Letters",
+          "editors": "Toon Van Hal (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "test",
+              "path": "iso",
+              "xml": "iso.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1000
+              }
+            }
+          ]
+        },
+		{
+          "path": "longus",
+          "author": "Longus",
+          "work": "Daphnis & Chloë",
+          "editors": "Yoran Joosten (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "part 1",
+              "path": "longus",
+              "xml": "longus.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1000
+              }
+            }
+          ]
+        },
+		{
           "path": "aesop",
           "author": "(Pseudo-)Aesop",
           "work": "Fables",
