@@ -90,28 +90,10 @@
               "xml": "aesop1.xml",
               "chunks": {
                 "start": 1,
-                "end": 400
+                "end": 1400
               }
-			},
-			{
-              "locus": "Part 2",
-              "path": "aesop2",
-              "xml": "aesop2.xml",
-              "chunks": {
-                "start": 1,
-                "end": 400
-              }
-			},
-			{
-              "locus": "Mimnermus (fragments)",
-              "path": "mimn",
-              "xml": "mimn.xml",
-              "chunks": {
-                "start": 1,
-                "end": 70
-              }
-            }
-			
+			}
+					
           ]
         },
 		{
