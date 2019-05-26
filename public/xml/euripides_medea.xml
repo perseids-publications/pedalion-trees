@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
 
+<--! Euripides, *Medea* (complete)
+
+**What?**  
+
+**Who?** Annotated by Toon Van Hal, with student contributions by Mathieu Cuijpers; Sanderijn Gijbels; Yoran Joosten; Yordi Lenaerts; Eva Uffing; Chiara Van der Hasselt; Lisa Vanhee and Jolien Volders (KU Leuven Bachelor 3, 2018-2019). Based on a preparsed text by Alek Keersmaekers. Controlled by Toon Van Hal, Sanderijn Gijbels and Yoran Joosten.
+
+**How much?** ca. 10K tokens.
+
+**First release?** 2019
+-->
+
 <sentence id='1' document_id='0006-003' Author='Euripides' subdoc='entire text'>
 <word ref='Leuven|0006-003|1|1' id='1' form='εἴθ’' lemma='εἴτε' postag='d--------' relation='AuxY' head='2' sem=''/>
 <word ref='Leuven|0006-003|1|2' id='2' form='ὤφελ’' lemma='ὀφείλω' postag='v3saia---' relation='PRED_CO' head='22' sem=''/>
