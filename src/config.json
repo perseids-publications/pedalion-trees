@@ -43,6 +43,32 @@
           ]
         },
 		{
+          "path": "genesis",
+          "author": "Anon.",
+          "work": "Septuagint: Genesis",
+          "editors": "Jonas Roose (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "part 1",
+              "path": "genesis1",
+              "xml": "genesis1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1000
+              }
+            },
+			{
+              "locus": "part 2",
+              "path": "genesis2",
+              "xml": "genesis2.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1000
+              }
+            }
+          ]
+        },
+		{
           "path": "Papyri",
           "author": "(Papyri)",
           "work": "Papyri",
