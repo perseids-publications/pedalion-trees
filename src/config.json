@@ -26,6 +26,66 @@
           ]
         },
         {
+          "path": "thesmo",
+          "author": "Aristophanes",
+          "work": "Thesmopheriazusae",
+          "editors": "Sanderijn Gijbels (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "test",
+              "path": "thesmo",
+              "xml": "thesmo.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1000
+              }
+            }
+          ]
+        },
+		{
+          "path": "paean",
+          "author": "Paeanius",
+          "work": "Breviarium",
+          "editors": "Yoran Joosten (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "test",
+              "path": "paean",
+              "xml": "paean.xml",
+              "chunks": {
+                "start": 1,
+                "end": 500
+              }
+            }
+          ]
+        },
+		{
+          "path": "aesop",
+          "author": "(Pseudo-)Aesop",
+          "work": "Fables",
+          "editors": "Colin Swaelens, Eva Uffing (& Alek Keersmaekers, Toon Van Hal)",
+          "sections": [
+            {
+              "locus": "part 1",
+              "path": "aesop1",
+              "xml": "aesop1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 500
+              }
+            },
+			{
+              "locus": "part 2",
+              "path": "aesop2",
+              "xml": "aesop2.xml",
+              "chunks": {
+                "start": 1,
+                "end": 500
+              }
+            }
+          ]
+        },
+		{
           "path": "batracho",
           "author": "(Pseudo-Homer)",
           "work": "Batrachomyomachia",
