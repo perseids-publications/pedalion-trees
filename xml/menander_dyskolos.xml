@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+<--!
+Who? Annotated by Yoran Joosten. Based on a preparsed text by Alek Keersmaekers. Partially corrected by Alek Keersmaekers & Toon Van Hal
+How much? ca. 8K tokens.
+First release? 2019.
+ -->
 
 <sentence id='1' document_id='0541-007' subdoc='entire work'>
 <word ref='Leuven|0541-007|1|1' id='1' form='τῆς' lemma='ὁ' postag='l-s---fg-' relation='ATR' head='2' sem=''/>
