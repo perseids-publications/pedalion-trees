@@ -42,7 +42,7 @@
             }
           ]
         },
-		        {
+		{
           "path": "lyric",
           "author": "diverse authors",
           "work": "Lyric poetry",
@@ -55,16 +55,18 @@
               "chunks": {
                 "start": 1,
                 "end": 70
-              },
-			   {
+              }
+			},
+			{
               "locus": "Theocritus (fragments)",
               "path": "theoc",
               "xml": "theoc.xml",
               "chunks": {
                 "start": 1,
                 "end": 70
-              },
-			  {
+              }
+			},
+			{
               "locus": "Mimnermus (fragments)",
               "path": "mimn",
               "xml": "mimn.xml",
@@ -73,6 +75,43 @@
                 "end": 70
               }
             }
+			
+          ]
+        },
+				{
+          "path": "aesop",
+          "author": "Aesopus",
+          "work": "Fables",
+          "editors": "Colin Swaelens, Eva Uffing (& Alek Keersmaekers, Sanderijn Gijbels & Toon Van Hal)",
+          "sections": [
+            {
+              "locus": "Part 1",
+              "path": "aesop1",
+              "xml": "aesop1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 400
+              }
+			},
+			{
+              "locus": "Part 2",
+              "path": "aesop2",
+              "xml": "aesop2.xml",
+              "chunks": {
+                "start": 1,
+                "end": 400
+              }
+			},
+			{
+              "locus": "Mimnermus (fragments)",
+              "path": "mimn",
+              "xml": "mimn.xml",
+              "chunks": {
+                "start": 1,
+                "end": 70
+              }
+            }
+			
           ]
         },
 		{
