@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
 
+<!--
+Lucian, Lis vocalium (complete)
+What?
+Who? Annotated by Sanderijn Gijbels, corrected by Toon Van Hal. Based on a preparsed text by Alek Keersmaekers.
+How much? ca. 1300 tokens.
+First release? 2019
+-->
+
 <sentence id='1' document_id='0062-014' subdoc='entire text'>
 <word ref='Leuven|0062-014|1|1' id='1' form='ἐπὶ' lemma='ἐπί' postag='r--------' relation='AuxP' head='11' sem=''/>
 <word ref='Leuven|0062-014|1|2' id='2' form='ἄρχοντος' lemma='ἄρχων' postag='n-s---mg-' relation='ADV' head='1' sem='time'/>
@@ -1426,4 +1434,5 @@
 <word ref='Leuven|0062-014|56|20' id='20' form='τὴν' lemma='ὁ' postag='l-s---fa-' relation='ATR' head='21' sem=''/>
 <word ref='Leuven|0062-014|56|21' id='21' form='δίκην' lemma='δίκη' postag='n-s---fa-' relation='OBJ' head='22' sem=''/>
 <word ref='Leuven|0062-014|56|22' id='22' form='ὑποσχεῖν' lemma='ὑπέχω' postag='v--ana---' relation='APOS' head='6' sem=''/>
+</sentence>
 </treebank>
