@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+
+<!--
+
+### Mimnermus, fragments
+
+**What?**  
+
+**Who?** Annotated by Wouter Mercelis. Based on a preparsed text by Alek Keersmaekers
+
+**First release?** 2019
+-->
+
+<sentence id='1' document_id='Mimn1' Author='Mimnermus' subdoc='1' corrupt=''>
+<word ref='Leuven|Mimn1|1|1' id='1' form='τίς' lemma='τίς' postag='p-s---cn-' relation='ATR' head='3' sem=''/>
+<word ref='Leuven|Mimn1|1|2' id='2' form='δὲ' lemma='δέ' postag='d--------' relation='AuxY' head='3' sem=''/>
+<word ref='Leuven|Mimn1|1|3' id='3' form='βίος' lemma='βίος' postag='n-s---mn-' relation='SBJ_CO' head='6' sem=''/>
+<word ref='Leuven|Mimn1|1|4' id='4' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|1|5' id='5' form='τί' lemma='τίς' postag='p-s---na-' relation='ATR' head='7' sem=''/>
+<word ref='Leuven|Mimn1|1|6' id='6' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='12' sem=''/>
+<word ref='Leuven|Mimn1|1|7' id='7' form='τερπνὸν' lemma='τερπνός' postag='a-s---na-' relation='SBJ_CO' head='6' sem=''/>
+<word ref='Leuven|Mimn1|1|8' id='8' form='ἄτερ' lemma='ἄτερ' postag='r--------' relation='AuxP' head='12' sem=''/>
+<word ref='Leuven|Mimn1|1|9' id='9' form='χρυσέης' lemma='χρύσεος' postag='a-s---fg-' relation='ATR' head='10' sem=''/>
+<word ref='Leuven|Mimn1|1|10' id='10' form='Ἀφροδίτης' lemma='Ἀφροδίτη' postag='n-s---fg-' relation='ADV' head='8' sem=''/>
+<word ref='Leuven|Mimn1|1|11' id='11' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
+<word ref='Leuven|Mimn1|1|12' id='12' form='[0]' lemma='_' postag='-' relation='PRED' head='0' sem='' artificial='elliptic' insertion_id='0011e'/>
+</sentence>
+<sentence id='2' document_id='Mimn1' Author='Mimnermus' subdoc='2' corrupt=''>
+<word ref='Leuven|Mimn1|2|1' id='1' form='τεθναίην' lemma='θνῄσκω' postag='v1sroa---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn1|2|2' id='2' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|2|3' id='3' form='ὅτε' lemma='ὅτε' postag='c--------' relation='AuxC' head='1' sem=''/>
+<word ref='Leuven|Mimn1|2|4' id='4' form='μοι' lemma='ἐγώ' postag='p1s---cd-' relation='OBJ' head='7' sem=''/>
+<word ref='Leuven|Mimn1|2|5' id='5' form='μηκέτι' lemma='μηκέτι' postag='d--------' relation='ADV' head='7' sem=''/>
+<word ref='Leuven|Mimn1|2|6' id='6' form='ταῦτα' lemma='οὗτος' postag='p-p---nn-' relation='SBJ' head='7' sem=''/>
+<word ref='Leuven|Mimn1|2|7' id='7' form='μέλοι' lemma='μέλω' postag='v3spoa---' relation='ADV' head='3' sem=''/>
+<word ref='Leuven|Mimn1|2|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|2|9' id='9' form='κρυπταδίη' lemma='κρυπτάδιος' postag='a-s---fn-' relation='ATR' head='10' sem=''/>
+<word ref='Leuven|Mimn1|2|10' id='10' form='φιλότης' lemma='φιλότης' postag='n-s---fn-' relation='APOS_CO' head='14' sem=''/>
+<word ref='Leuven|Mimn1|2|11' id='11' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='14' sem=''/>
+<word ref='Leuven|Mimn1|2|12' id='12' form='μείλιχα' lemma='μείλιχος' postag='a-p---nn-' relation='ATR' head='13' sem=''/>
+<word ref='Leuven|Mimn1|2|13' id='13' form='δῶρα' lemma='δῶρον' postag='n-p---nn-' relation='APOS_CO' head='14' sem=''/>
+<word ref='Leuven|Mimn1|2|14' id='14' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='6' sem=''/>
+<word ref='Leuven|Mimn1|2|15' id='15' form='εὐνή' lemma='εὐνή' postag='n-s---fn-' relation='APOS_CO' head='14' sem=''/>
+<word ref='Leuven|Mimn1|2|16' id='16' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|2|17' id='17' form='οἷ’' lemma='οἷος' postag='p-p---nn-' relation='ATR' head='19' sem=''/>
+<word ref='Leuven|Mimn1|2|18' id='18' form='ἥβης' lemma='ἥβη' postag='n-s---fg-' relation='ATR' head='19' sem=''/>
+<word ref='Leuven|Mimn1|2|19' id='19' form='ἄνθεα' lemma='ἄνθος' postag='n-p---nn-' relation='SBJ' head='20' sem=''/>
+<word ref='Leuven|Mimn1|2|20' id='20' form='γίγνεται' lemma='γίγνομαι' postag='v3spie---' relation='ATR' head='6' sem=''/>
+<word ref='Leuven|Mimn1|2|21' id='21' form='ἁρπαλέα' lemma='ἁρπαλέος' postag='a-p---nn-' relation='PNOM' head='20' sem=''/>
+<word ref='Leuven|Mimn1|2|22' id='22' form='ἀνδράσιν' lemma='ἀνήρ' postag='n-p---md-' relation='ADV_CO' head='23' sem=''/>
+<word ref='Leuven|Mimn1|2|23' id='23' form='ἠδὲ' lemma='ἠδέ' postag='b--------' relation='COORD' head='21' sem=''/>
+<word ref='Leuven|Mimn1|2|24' id='24' form='γυναιξίν' lemma='γυνή' postag='n-p---fd-' relation='ADV_CO' head='23' sem=''/>
+<word ref='Leuven|Mimn1|2|25' id='25' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='3' document_id='Mimn1' Author='Mimnermus' subdoc='5' corrupt=''>
+<word ref='Leuven|Mimn1|3|1' id='1' form='ἐπεὶ' lemma='ἐπεί' postag='c--------' relation='AuxC' head='30' sem=''/>
+<word ref='Leuven|Mimn1|3|2' id='2' form='δ’' lemma='δέ' postag='d--------' relation='AuxY' head='14' sem=''/>
+<word ref='Leuven|Mimn1|3|3' id='3' form='ὀδυνηρὸν' lemma='ὀδυνηρός' postag='a-s---nn-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn1|3|4' id='4' form='ἐπέλθῃ' lemma='ἐπέρχομαι' postag='v3sasa---' relation='ADV' head='1' sem=''/>
+<word ref='Leuven|Mimn1|3|5' id='5' form='γῆρας' lemma='γῆρας' postag='n-s---nn-' relation='SBJ' head='4' sem=''/>
+<word ref='Leuven|Mimn1|3|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|7' id='7' form='ὅ' lemma='ὅς' postag='p-s---nn-' relation='SBJ' head='14' sem=''/>
+<word ref='Leuven|Mimn1|3|8' id='8' form='τ’' lemma='τε' postag='b--------' relation='AuxY' head='14' sem=''/>
+<word ref='Leuven|Mimn1|3|9' id='9' form='αἰσχρὸν' lemma='αἰσχρός' postag='a-s---ma-' relation='OCOMP' head='14' sem=''/>
+<word ref='Leuven|Mimn1|3|10' id='10' form='ὁμῶς' lemma='ὁμῶς' postag='d--------' relation='ADV' head='14' sem=''/>
+<word ref='Leuven|Mimn1|3|11' id='11' form='καὶ' lemma='καί' postag='d--------' relation='AuxZ' head='13' sem=''/>
+<word ref='Leuven|Mimn1|3|12' id='12' form='καλὸν' lemma='καλός' postag='a-s---ma-' relation='ATR' head='13' sem=''/>
+<word ref='Leuven|Mimn1|3|13' id='13' form='ἄνδρα' lemma='ἀνήρ' postag='n-s---ma-' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|Mimn1|3|14' id='14' form='τιθεῖ' lemma='τίθημι' postag='v3spia---' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn1|3|15' id='15' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|16' id='16' form='αἰεί' lemma='ἀεί' postag='d--------' relation='ADV' head='21' sem=''/>
+<word ref='Leuven|Mimn1|3|17' id='17' form='μιν' lemma='μιν' postag='p-s---ma-' relation='OBJ' head='21' sem=''/>
+<word ref='Leuven|Mimn1|3|18' id='18' form='φρένας' lemma='φρήν' postag='n-p---fa-' relation='ATR' head='19' sem=''/>
+<word ref='Leuven|Mimn1|3|19' id='19' form='ἀμφὶ' lemma='ἀμφί' postag='r--------' relation='AuxP' head='21' sem=''/>
+<word ref='Leuven|Mimn1|3|20' id='20' form='κακαὶ' lemma='κακός' postag='a-p---fn-' relation='ATR' head='22' sem=''/>
+<word ref='Leuven|Mimn1|3|21' id='21' form='τείρουσι' lemma='τείρω' postag='v3ppia---' relation='PRED_CO' head='30' sem=''/>
+<word ref='Leuven|Mimn1|3|22' id='22' form='μέριμναι' lemma='μέριμνα' postag='n-p---fn-' relation='SBJ' head='21' sem=''/>
+<word ref='Leuven|Mimn1|3|23' id='23' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|24' id='24' form='οὐδ’' lemma='οὐδέ' postag='d--------' relation='AuxZ' head='27' sem=''/>
+<word ref='Leuven|Mimn1|3|25' id='25' form='αὐγὰς' lemma='αὐγή' postag='n-p---fa-' relation='OBJ' head='26' sem=''/>
+<word ref='Leuven|Mimn1|3|26' id='26' form='προσορέων' lemma='προσοράω' postag='v-sppamn-' relation='ADV' head='27' sem=''/>
+<word ref='Leuven|Mimn1|3|27' id='27' form='τέρπεται' lemma='τέρπω' postag='v3spie---' relation='PRED_CO' head='30' sem=''/>
+<word ref='Leuven|Mimn1|3|28' id='28' form='ἠελίου' lemma='ἥλιος' postag='n-s---mg-' relation='ATR' head='25' sem=''/>
+<word ref='Leuven|Mimn1|3|29' id='29' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|30' id='30' form='ἀλλ’' lemma='ἀλλά' postag='b--------' relation='COORD' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|31' id='31' form='ἐχθρὸς' lemma='ἐχθρός' postag='a-s---mn-' relation='PNOM_CO' head='36' sem=''/>
+<word ref='Leuven|Mimn1|3|32' id='32' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='36' sem=''/>
+<word ref='Leuven|Mimn1|3|33' id='33' form='παισίν' lemma='παῖς' postag='n-p---cd-' relation='ADV' head='31' sem=''/>
+<word ref='Leuven|Mimn1|3|34' id='34' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|35' id='35' form='ἀτίμαστος' lemma='ἀτίμαστος' postag='a-s---mn-' relation='PNOM_CO' head='36' sem=''/>
+<word ref='Leuven|Mimn1|3|36' id='36' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='39' sem=''/>
+<word ref='Leuven|Mimn1|3|37' id='37' form='γυναιξίν' lemma='γυνή' postag='n-p---fd-' relation='ADV' head='35' sem=''/>
+<word ref='Leuven|Mimn1|3|38' id='38' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+<word ref='Leuven|Mimn1|3|39' id='39' form='[0]' lemma='_' postag='-' relation='PRED_CO' head='30' sem='' artificial='elliptic' insertion_id='0033e'/>
+</sentence>
+<sentence id='4' document_id='Mimn1' Author='Mimnermus' subdoc='10' corrupt=''>
+<word ref='Leuven|Mimn1|4|1' id='1' form='οὕτως' lemma='οὕτως' postag='d--------' relation='ADV' head='2' sem=''/>
+<word ref='Leuven|Mimn1|4|2' id='2' form='ἀργαλέον' lemma='ἀργαλέος' postag='a-s---na-' relation='OCOMP' head='4' sem=''/>
+<word ref='Leuven|Mimn1|4|3' id='3' form='γῆρας' lemma='γῆρας' postag='n-s---na-' relation='OBJ' head='4' sem=''/>
+<word ref='Leuven|Mimn1|4|4' id='4' form='ἔθηκε' lemma='τίθημι' postag='v3saia---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn1|4|5' id='5' form='θεός' lemma='θεός' postag='n-s---mn-' relation='SBJ' head='4' sem=''/>
+<word ref='Leuven|Mimn1|4|6' id='6' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='5' document_id='Mimn2' Author='Mimnermus' subdoc='1' corrupt=''>
+<word ref='Leuven|Mimn2|5|1' id='1' form='ἡμεῖς' lemma='ἐγώ' postag='p1p---cn-' relation='SBJ' head='25' sem=''/>
+<word ref='Leuven|Mimn2|5|2' id='2' form='δ’' lemma='δέ' postag='d--------' relation='AuxY' head='25' sem=''/>
+<word ref='Leuven|Mimn2|5|3' id='3' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|5|4' id='4' form='οἷά' lemma='οἷος' postag='p-p---na-' relation='ATR' head='6' sem=''/>
+<word ref='Leuven|Mimn2|5|5' id='5' form='τε' lemma='τε' postag='b--------' relation='AuxY' head='7' sem=''/>
+<word ref='Leuven|Mimn2|5|6' id='6' form='φύλλα' lemma='φύλλον' postag='n-p---na-' relation='OBJ' head='7' sem=''/>
+<word ref='Leuven|Mimn2|5|7' id='7' form='φύει' lemma='φύω' postag='v3spia---' relation='ATR' head='1' sem=''/>
+<word ref='Leuven|Mimn2|5|8' id='8' form='πολυάνθεμος' lemma='πολυάνθεμος' postag='a-s---fn-' relation='ATR' head='9' sem=''/>
+<word ref='Leuven|Mimn2|5|9' id='9' form='ὥρη' lemma='ὥρα' postag='n-s---fn-' relation='SBJ' head='7' sem=''/>
+<word ref='Leuven|Mimn2|5|10' id='10' form='ἔαρος' lemma='ἔαρ' postag='n-s---ng-' relation='ATR' head='9' sem=''/>
+<word ref='Leuven|Mimn2|5|11' id='11' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|5|12' id='12' form='ὅτ’' lemma='ὅτε' postag='c--------' relation='AuxC' head='7' sem=''/>
+<word ref='Leuven|Mimn2|5|13' id='13' form='αἶψ’' lemma='αἶψα' postag='d--------' relation='ADV' head='15' sem=''/>
+<word ref='Leuven|Mimn2|5|14' id='14' form='αὐγῇς' lemma='αὐγή' postag='n-p---fd-' relation='ADV' head='15' sem=''/>
+<word ref='Leuven|Mimn2|5|15' id='15' form='αὔξεται' lemma='αὐξάνω' postag='v3spie---' relation='ADV' head='12' sem=''/>
+<word ref='Leuven|Mimn2|5|16' id='16' form='ἠελίου' lemma='ἥλιος' postag='n-s---mg-' relation='ATR' head='14' sem=''/>
+<word ref='Leuven|Mimn2|5|17' id='17' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|5|18' id='18' form='τοῖς' lemma='ὁ' postag='l-p---md-' relation='OBJ' head='19' sem=''/>
+<word ref='Leuven|Mimn2|5|19' id='19' form='ἴκελοι' lemma='ἴκελος' postag='a-p---mn-' relation='ATR' head='1' sem=''/>
+<word ref='Leuven|Mimn2|5|20' id='20' form='πήχυιον' lemma='πήχυιος' postag='a-s---ma-' relation='ATR' head='22' sem=''/>
+<word ref='Leuven|Mimn2|5|21' id='21' form='ἐπὶ' lemma='ἐπί' postag='r--------' relation='AuxP' head='25' sem=''/>
+<word ref='Leuven|Mimn2|5|22' id='22' form='χρόνον' lemma='χρόνος' postag='n-s---ma-' relation='ADV' head='21' sem=''/>
+<word ref='Leuven|Mimn2|5|23' id='23' form='ἄνθεσιν' lemma='ἄνθος' postag='n-p---nd-' relation='OBJ' head='25' sem=''/>
+<word ref='Leuven|Mimn2|5|24' id='24' form='ἥβης' lemma='ἥβη' postag='n-s---fg-' relation='ATR' head='23' sem=''/>
+<word ref='Leuven|Mimn2|5|25' id='25' form='τερπόμεθα' lemma='τέρπω' postag='v1ppie---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|5|26' id='26' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|5|27' id='27' form='πρὸς' lemma='πρός' postag='r--------' relation='AuxP' head='29' sem=''/>
+<word ref='Leuven|Mimn2|5|28' id='28' form='θεῶν' lemma='θεός' postag='n-p---mg-' relation='ADV' head='27' sem=''/>
+<word ref='Leuven|Mimn2|5|29' id='29' form='εἰδότες' lemma='οἶδα' postag='v-prpamn-' relation='ADV' head='25' sem=''/>
+<word ref='Leuven|Mimn2|5|30' id='30' form='οὔτε' lemma='οὔτε' postag='b--------' relation='AuxY' head='32' sem=''/>
+<word ref='Leuven|Mimn2|5|31' id='31' form='κακὸν' lemma='κακός' postag='a-s---na-' relation='OBJ_CO' head='32' sem=''/>
+<word ref='Leuven|Mimn2|5|32' id='32' form='οὔτ’' lemma='οὔτε' postag='b--------' relation='COORD' head='29' sem=''/>
+<word ref='Leuven|Mimn2|5|33' id='33' form='ἀγαθόν' lemma='ἀγαθός' postag='a-s---na-' relation='OBJ_CO' head='32' sem=''/>
+<word ref='Leuven|Mimn2|5|34' id='34' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='6' document_id='Mimn2' Author='Mimnermus' subdoc='5' corrupt=''>
+<word ref='Leuven|Mimn2|6|1' id='1' form='Κῆρες' lemma='Κήρ' postag='n-p---fn-' relation='SBJ' head='3' sem=''/>
+<word ref='Leuven|Mimn2|6|2' id='2' form='δὲ' lemma='δέ' postag='d--------' relation='AuxY' head='3' sem=''/>
+<word ref='Leuven|Mimn2|6|3' id='3' form='παρεστήκασι' lemma='παρίστημι' postag='v3pria---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|6|4' id='4' form='μέλαιναι' lemma='μέλας' postag='a-p---fn-' relation='ATR' head='1' sem=''/>
+<word ref='Leuven|Mimn2|6|5' id='5' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|6|6' id='6' form='ἡ' lemma='ὁ' postag='l-s---fn-' relation='ATR' head='1' sem=''/>
+<word ref='Leuven|Mimn2|6|7' id='7' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='6' sem=''/>
+<word ref='Leuven|Mimn2|6|8' id='8' form='ἔχουσα' lemma='ἔχω' postag='v-sppafn-' relation='ADV' head='6' sem=''/>
+<word ref='Leuven|Mimn2|6|9' id='9' form='τέλος' lemma='τέλος' postag='n-s---na-' relation='OBJ' head='8' sem=''/>
+<word ref='Leuven|Mimn2|6|10' id='10' form='γήραος' lemma='γῆρας' postag='n-s---ng-' relation='ATR' head='9' sem=''/>
+<word ref='Leuven|Mimn2|6|11' id='11' form='ἀργαλέου' lemma='ἀργαλέος' postag='a-s---ng-' relation='ATR' head='10' sem=''/>
+<word ref='Leuven|Mimn2|6|12' id='12' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|6|13' id='13' form='ἡ' lemma='ὁ' postag='l-s---fn-' relation='ATR' head='1' sem=''/>
+<word ref='Leuven|Mimn2|6|14' id='14' form='δ’' lemma='δέ' postag='b--------' relation='AuxY' head='13' sem=''/>
+<word ref='Leuven|Mimn2|6|15' id='15' form='ἑτέρη' lemma='ἕτερος' postag='a-s---fn-' relation='ATR' head='13' sem=''/>
+<word ref='Leuven|Mimn2|6|16' id='16' form='θανάτοιο' lemma='θάνατος' postag='n-s---mg-' relation='ATR' head='19' sem=''/>
+<word ref='Leuven|Mimn2|6|17' id='17' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+<word ref='Leuven|Mimn2|6|18' id='18' form='[0]' lemma='_' postag='-' relation='ADV' head='13' sem='' artificial='elliptic' insertion_id='0015e'/>
+<word ref='Leuven|Mimn2|6|19' id='19' form='[1]' lemma='_' postag='-' relation='OBJ' head='18' sem='' artificial='elliptic' insertion_id='0015f'/>
+</sentence>
+<sentence id='7' document_id='Mimn2' Author='Mimnermus' subdoc='7' corrupt=''>
+<word ref='Leuven|Mimn2|7|1' id='1' form='μίνυνθα' lemma='μίνυνθα' postag='d--------' relation='ADV' head='3' sem=''/>
+<word ref='Leuven|Mimn2|7|2' id='2' form='δὲ' lemma='δέ' postag='d--------' relation='AuxY' head='3' sem=''/>
+<word ref='Leuven|Mimn2|7|3' id='3' form='γίνεται' lemma='γίγνομαι' postag='v3spie---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|7|4' id='4' form='ἥβης' lemma='ἥβη' postag='n-s---fg-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn2|7|5' id='5' form='καρπός' lemma='καρπός' postag='n-s---mn-' relation='SBJ' head='3' sem=''/>
+<word ref='Leuven|Mimn2|7|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|7|7' id='7' form='ὅσον' lemma='ὅσος' postag='p-s---ma-' relation='OBJ' head='11' sem=''/>
+<word ref='Leuven|Mimn2|7|8' id='8' form='τ’' lemma='τε' postag='b--------' relation='AuxY' head='11' sem=''/>
+<word ref='Leuven|Mimn2|7|9' id='9' form='ἐπὶ' lemma='ἐπί' postag='r--------' relation='AuxP' head='11' sem=''/>
+<word ref='Leuven|Mimn2|7|10' id='10' form='γῆν' lemma='γῆ' postag='n-s---fa-' relation='ADV' head='9' sem=''/>
+<word ref='Leuven|Mimn2|7|11' id='11' form='κίδναται' lemma='κίδναμαι' postag='v3spie---' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn2|7|12' id='12' form='ἠέλιος' lemma='ἥλιος' postag='n-s---mn-' relation='SBJ' head='11' sem=''/>
+<word ref='Leuven|Mimn2|7|13' id='13' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='8' document_id='Mimn2' Author='Mimnermus' subdoc='9' corrupt=''>
+<word ref='Leuven|Mimn2|8|1' id='1' form='αὐτὰρ' lemma='ἀτάρ' postag='d--------' relation='AuxY' head='2' sem=''/>
+<word ref='Leuven|Mimn2|8|2' id='2' form='ἐπὴν' lemma='ἐπήν' postag='c--------' relation='AuxC' head='11' sem=''/>
+<word ref='Leuven|Mimn2|8|3' id='3' form='δὴ' lemma='δή' postag='d--------' relation='AuxY' head='6' sem=''/>
+<word ref='Leuven|Mimn2|8|4' id='4' form='τοῦτο' lemma='οὗτος' postag='p-s---nn-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn2|8|5' id='5' form='τέλος' lemma='τέλος' postag='n-s---nn-' relation='SBJ' head='6' sem=''/>
+<word ref='Leuven|Mimn2|8|6' id='6' form='παραμείψεται' lemma='παραμείβω' postag='v3sasm---' relation='ADV' head='2' sem=''/>
+<word ref='Leuven|Mimn2|8|7' id='7' form='ὥρης' lemma='ὥρα' postag='n-s---fg-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn2|8|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|8|9' id='9' form='αὐτίκα' lemma='αὐτίκα' postag='d--------' relation='ADV' head='16' sem=''/>
+<word ref='Leuven|Mimn2|8|10' id='10' form='δὴ' lemma='δή' postag='d--------' relation='AuxY' head='16' sem=''/>
+<word ref='Leuven|Mimn2|8|11' id='11' form='τεθνάναι' lemma='θνῄσκω' postag='v--rna---' relation='SBJ' head='16' sem=''/>
+<word ref='Leuven|Mimn2|8|12' id='12' form='βέλτιον' lemma='ἀγαθός' postag='a-s---nnc' relation='PNOM' head='16' sem=''/>
+<word ref='Leuven|Mimn2|8|13' id='13' form='ἢ' lemma='ἤ' postag='c--------' relation='AuxC' head='12' sem=''/>
+<word ref='Leuven|Mimn2|8|14' id='14' form='βίοτος' lemma='βίοτος' postag='n-s---mn-' relation='ADV' head='13' sem=''/>
+<word ref='Leuven|Mimn2|8|15' id='15' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+<word ref='Leuven|Mimn2|8|16' id='16' form='[1]' lemma='_' postag='-' relation='PRED' head='0' sem='' artificial='elliptic' insertion_id='0016f'/>
+</sentence>
+<sentence id='9' document_id='Mimn2' Author='Mimnermus' subdoc='11' corrupt=''>
+<word ref='Leuven|Mimn2|9|1' id='1' form='πολλὰ' lemma='πολύς' postag='a-p---nn-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|Mimn2|9|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='6' sem=''/>
+<word ref='Leuven|Mimn2|9|3' id='3' form='ἐν' lemma='ἐν' postag='r--------' relation='AuxP' head='6' sem=''/>
+<word ref='Leuven|Mimn2|9|4' id='4' form='θυμῷ' lemma='θυμός' postag='n-s---md-' relation='ADV' head='3' sem=''/>
+<word ref='Leuven|Mimn2|9|5' id='5' form='κακὰ' lemma='κακός' postag='a-p---nn-' relation='SBJ' head='6' sem=''/>
+<word ref='Leuven|Mimn2|9|6' id='6' form='γίνεται' lemma='γίγνομαι' postag='v3spie---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|9|7' id='7' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='10' document_id='Mimn2' Author='Mimnermus' subdoc='11' corrupt=''>
+<word ref='Leuven|Mimn2|10|1' id='1' form='ἄλλοτε' lemma='ἄλλοτε' postag='d--------' relation='ADV' head='3' sem=''/>
+<word ref='Leuven|Mimn2|10|2' id='2' form='οἶκος' lemma='οἶκος' postag='n-s---mn-' relation='SBJ' head='3' sem=''/>
+<word ref='Leuven|Mimn2|10|3' id='3' form='τρυχοῦται' lemma='τρυχόω' postag='v3spie---' relation='PRED_CO' head='6' sem=''/>
+<word ref='Leuven|Mimn2|10|4' id='4' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|10|5' id='5' form='πενίης' lemma='πενία' postag='n-s---fg-' relation='ATR' head='7' sem=''/>
+<word ref='Leuven|Mimn2|10|6' id='6' form='δ’' lemma='δέ' postag='b--------' relation='COORD' head='0' sem=''/>
+<word ref='Leuven|Mimn2|10|7' id='7' form='ἔργ’' lemma='ἔργον' postag='n-p---nn-' relation='SBJ' head='9' sem=''/>
+<word ref='Leuven|Mimn2|10|8' id='8' form='ὀδυνηρὰ' lemma='ὀδυνηρός' postag='a-p---nn-' relation='ATR' head='7' sem=''/>
+<word ref='Leuven|Mimn2|10|9' id='9' form='πέλει' lemma='πέλω' postag='v3spia---' relation='PRED_CO' head='6' sem=''/>
+<word ref='Leuven|Mimn2|10|10' id='10' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='11' document_id='Mimn2' Author='Mimnermus' subdoc='13' corrupt=''>
+<word ref='Leuven|Mimn2|11|1' id='1' form='ἄλλος' lemma='ἄλλος' postag='p-s---mn-' relation='SBJ' head='5' sem=''/>
+<word ref='Leuven|Mimn2|11|2' id='2' form='δ’' lemma='δέ' postag='d--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|Mimn2|11|3' id='3' form='αὖ' lemma='αὖ' postag='d--------' relation='ADV' head='5' sem=''/>
+<word ref='Leuven|Mimn2|11|4' id='4' form='παίδων' lemma='παῖς' postag='n-p---cg-' relation='OBJ' head='5' sem=''/>
+<word ref='Leuven|Mimn2|11|5' id='5' form='ἐπιδεύεται' lemma='ἐπιδεύω' postag='v3spie---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|11|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|Mimn2|11|7' id='7' form='ὧν' lemma='ὅς' postag='p-p---mg-' relation='OBJ' head='10' sem=''/>
+<word ref='Leuven|Mimn2|11|8' id='8' form='τε' lemma='τε' postag='b--------' relation='AuxY' head='13' sem=''/>
+<word ref='Leuven|Mimn2|11|9' id='9' form='μάλιστα' lemma='μάλα' postag='d-------s' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|Mimn2|11|10' id='10' form='ἱμείρων' lemma='ἱμείρω' postag='v-sppamn-' relation='ADV' head='13' sem=''/>
+<word ref='Leuven|Mimn2|11|11' id='11' form='κατὰ' lemma='κατά' postag='r--------' relation='AuxP' head='13' sem=''/>
+<word ref='Leuven|Mimn2|11|12' id='12' form='γῆς' lemma='γῆ' postag='n-s---fg-' relation='ADV' head='11' sem=''/>
+<word ref='Leuven|Mimn2|11|13' id='13' form='ἔρχεται' lemma='ἔρχομαι' postag='v3spie---' relation='ATR' head='4' sem=''/>
+<word ref='Leuven|Mimn2|11|14' id='14' form='εἰς' lemma='εἰς' postag='r--------' relation='AuxP' head='13' sem=''/>
+<word ref='Leuven|Mimn2|11|15' id='15' form='Ἀΐδην' lemma='ᾍδης' postag='n-s---ma-' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|Mimn2|11|16' id='16' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='12' document_id='Mimn2' Author='Mimnermus' subdoc='15' corrupt=''>
+<word ref='Leuven|Mimn2|12|1' id='1' form='ἄλλος' lemma='ἄλλος' postag='p-s---mn-' relation='SBJ' head='3' sem=''/>
+<word ref='Leuven|Mimn2|12|2' id='2' form='νοῦσον' lemma='νόσος' postag='n-s---fa-' relation='OBJ' head='3' sem=''/>
+<word ref='Leuven|Mimn2|12|3' id='3' form='ἔχει' lemma='ἔχω' postag='v3spia---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|12|4' id='4' form='θυμοφθόρον' lemma='θυμοφθόρος' postag='a-s---fa-' relation='ATR' head='2' sem=''/>
+<word ref='Leuven|Mimn2|12|5' id='5' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='13' document_id='Mimn2' Author='Mimnermus' subdoc='15' corrupt=''>
+<word ref='Leuven|Mimn2|13|1' id='1' form='οὐδέ' lemma='οὐδέ' postag='d--------' relation='AuxZ' head='2' sem=''/>
+<word ref='Leuven|Mimn2|13|2' id='2' form='τίς' lemma='τις' postag='p-s---cn-' relation='SBJ' head='3' sem=''/>
+<word ref='Leuven|Mimn2|13|3' id='3' form='ἐστιν' lemma='εἰμί' postag='v3spia---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|Mimn2|13|4' id='4' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='ATR' head='2' sem=''/>
+<word ref='Leuven|Mimn2|13|5' id='5' form='ᾧ' lemma='ὅς' postag='p-s---md-' relation='OBJ' head='10' sem=''/>
+<word ref='Leuven|Mimn2|13|6' id='6' form='Ζεὺς' lemma='Ζεύς' postag='n-s---mn-' relation='SBJ' head='10' sem=''/>
+<word ref='Leuven|Mimn2|13|7' id='7' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='10' sem=''/>
+<word ref='Leuven|Mimn2|13|8' id='8' form='κακὰ' lemma='κακός' postag='a-p---na-' relation='OBJ' head='10' sem=''/>
+<word ref='Leuven|Mimn2|13|9' id='9' form='πολλὰ' lemma='πολύς' postag='a-p---na-' relation='ATR' head='8' sem=''/>
+<word ref='Leuven|Mimn2|13|10' id='10' form='διδοῖ' lemma='δίδωμι' postag='v3spia---' relation='ATR' head='2' sem=''/>
+<word ref='Leuven|Mimn2|13|11' id='11' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+
+
+
+</treebank>

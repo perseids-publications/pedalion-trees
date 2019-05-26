@@ -42,6 +42,39 @@
             }
           ]
         },
+		        {
+          "path": "lyric",
+          "author": "diverse authors",
+          "work": "Lyric poetry",
+          "editors": "Louis Verreth & Wouter Mercelis (& Alek Keersmaekers & Toon Van Hal)",
+          "sections": [
+            {
+              "locus": "Semonides (typology of women)",
+              "path": "semonides",
+              "xml": "semonides.xml",
+              "chunks": {
+                "start": 1,
+                "end": 70
+              },
+			   {
+              "locus": "Theocritus (fragments)",
+              "path": "theoc",
+              "xml": "theoc.xml",
+              "chunks": {
+                "start": 1,
+                "end": 70
+              },
+			  {
+              "locus": "Mimnermus (fragments)",
+              "path": "mimn",
+              "xml": "mimn.xml",
+              "chunks": {
+                "start": 1,
+                "end": 70
+              }
+            }
+          ]
+        },
 		{
           "path": "paean",
           "author": "Paeanius",
@@ -264,41 +297,7 @@
             }
           ]
         },
-        {
-          "path": "semonides-types-of-women",
-          "author": "Semonides",
-          "work": "Types of Women",
-          "editors": "Louis Verreth (& Toon Van Hal, Alek Keersmaekers)",
-          "sections": [
-            {
-              "locus": "test",
-              "path": "semonides",
-              "xml": "semonides.xml",
-              "chunks": {
-                "start": 1,
-                "end": 59
-              }
-            }
-          ]
-        },
-        {
-          "path": "septuaginta-genesis",
-          "author": "Septuaginta",
-          "work": "Genesis",
-          "editors": "Jonas Roose (& Alek Keersmaekers)",
-          "sections": [
-            {
-              "locus": "1-",
-              "path": "septuagint_genesis",
-              "xml": "septuagint_genesis.xml",
-              "chunks": {
-                "start": 1,
-                "end": 365
-              }
-            }
-          ]
-        },
-        {
+                {
           "path": "example-sentences",
           "author": "Various",
           "work": "Various",
