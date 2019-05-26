@@ -1,7 +1,13 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+
+<!--
   <date>2019-04-07</date>
   <Title>Lysias, Or. 24: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
 <annotator>Louis Verreth, Toon Van Hal, Alek Keersmaekers</annotator>
+
+-->
+
 <sentence id='1' document_id='0540-024' Author='Lysias'>
 <word ref='Leuven|0540-024|1|1' id='1' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='3' sem=''/>
 <word ref='Leuven|0540-024|1|2' id='2' form='πολλοῦ' lemma='πολύς' postag='a-s---ng-' relation='OBJ' head='3' sem=''/>

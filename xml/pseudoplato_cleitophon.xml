@@ -1,7 +1,11 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+
+<!--
   <date>2019-04-07</date>
   <Title>(Pseudo)Plato, Cleitophon: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
 <annotator>Wouter Mercelis, Toon Van Hal, Alek Keersmaekers</annotator>
+-->
 
 <sentence id='1' document_id='0059-00x' Author='Plato' subdoc=''>
 <word ref='Leuven|0059-00x|1|1' id='1' form='Κλειτοφῶντα' lemma='Κλειτοφῶν' postag='n-s---ma-' relation='OBJ' head='6' sem=''/>
