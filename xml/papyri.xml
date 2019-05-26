@@ -1,7 +1,12 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+<!--
   <date>2019-04-07</date>
   <Title>Menander, Dyskolos: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
 <annotator>Alek Keersmaekers and the Ba3 KU Leuven students, 2017-2018 and 2018-2019</annotator>
+
+-->
+
 <sentence id='1' document_id='11103' Author='' subdoc='' corrupt=''>
 <word ref='Leuven|11103|1|1' id='1' form='Παλᾶς' lemma='Παλᾶς' postag='n-s---mn-' relation='SBJ' head='7' sem=''/>
 <word ref='Leuven|11103|1|2' id='2' form='Ἡρωνείνῳ' lemma='Ἡρωνεῖνος' postag='n-s---md-' relation='OBJ' head='7' sem=''/>

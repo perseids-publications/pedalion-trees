@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
-<--!
+<!--
 Who? Annotated by Yoran Joosten. Based on a preparsed text by Alek Keersmaekers. Partially corrected by Alek Keersmaekers and Toon Van Hal.
 How much? ca. 5,5K tokens.
 First release? 2019

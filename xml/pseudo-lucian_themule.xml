@@ -1,7 +1,13 @@
-<treebank version='2' xml:lang='grc' direction='ltr' format='smyth3'>
-  <date>2019-04-07</date>
-  <Title>Pseudo-Lucian, The mule: a preliminary dependency treebank. See readme-file for more information and copyright issues</title>
-<annotator>Alek Keersmaekers</annotator>
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
+
+<!--
+(Pseudo-)Lucian, The mule (complete)
+What?
+Who? Annotated by Alek Keersmaekers
+How much? ca. 11K tokens.
+First release? 2018
+-->
 
 <sentence id='1' document_id='Ps-Luc' Author='Pseudo-Lucianus' subdoc='' corrupt=''>
 <word ref='Leuven|Ps-Luc|1|1' id='1' form='ἀπήιειν' lemma='ἄπειμι' postag='v1siia---' relation='PRED' head='0' sem=''/>
