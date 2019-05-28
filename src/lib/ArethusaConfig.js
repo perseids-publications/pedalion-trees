@@ -25,8 +25,7 @@ const ArethusaConfig = {
     ],
   },
   notifier: {
-    duration: '10',
-    maxMessages: 7,
+    disable: true,
   },
   navigator: {
     chunkSize: 1,
