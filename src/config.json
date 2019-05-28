@@ -1,12 +1,12 @@
 {
   "title": "Pedalion Trees",
-  "subtitle": "Pedalion subtitle test",
+  "subtitle": "Pedalion",
   "report": "https://github.com/perseids-publications/pedalion-trees/issues",
   "github": "https://github.com/perseids-publications/pedalion-trees",
   "twitter": "",
   "collections": [
     {
-      "title": "*TREEBANK COLLECTION TITLE*",
+      "title": "*Welcome*",
       "publications": [
         {
           "path": "euripides-medea",
@@ -143,32 +143,6 @@
               "chunks": {
                 "start": 1,
                 "end": 1000
-              }
-            }
-          ]
-        },
-		{
-          "path": "aesop",
-          "author": "(Pseudo-)Aesop",
-          "work": "Fables",
-          "editors": "Colin Swaelens, Eva Uffing (& Alek Keersmaekers, Toon Van Hal)",
-          "sections": [
-            {
-              "locus": "part 1",
-              "path": "aesop1",
-              "xml": "aesop1.xml",
-              "chunks": {
-                "start": 1,
-                "end": 500
-              }
-            },
-			{
-              "locus": "part 2",
-              "path": "aesop2",
-              "xml": "aesop2.xml",
-              "chunks": {
-                "start": 1,
-                "end": 500
               }
             }
           ]
