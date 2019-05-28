@@ -1,6 +1,6 @@
 {
-  "name": "treebank-template",
-  "version": "0.2.0",
+  "name": "pedalion-trees",
+  "version": "0.0.1",
   "private": true,
   "homepage": "https://perseids-publications.github.io/pedalion-trees/",
   "dependencies": {
