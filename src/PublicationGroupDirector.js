@@ -35,6 +35,7 @@ class PublicationGroupDirector extends Component {
                 <React.Fragment>
                   {author}
                   ,
+                  {' '}
                   <i>{work}</i>
                 </React.Fragment>
               ),
