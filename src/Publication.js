@@ -9,10 +9,29 @@ import styles from './Publication.module.css';
 import ArethusaWrapper from './lib/ArethusaWrapper';
 import Treebank from './Treebank';
 
+const renderText = (text) => {
+  if (Array.isArray(text)) {
+    return (
+      <div>
+        {text.map(t => (
+          <span key={t}>
+            {t}
+            <br />
+          </span>
+        ))}
+      </div>
+    );
+  }
+
+  return text;
+};
+
 const renderRow = (title, text) => (
   <tr>
     <th scope="col">{title}</th>
-    <td className={styles.publicationRow}>{text}</td>
+    <td className={styles.publicationRow}>
+      {renderText(text)}
+    </td>
   </tr>
 );
 
@@ -43,7 +62,10 @@ class Publication extends Component {
     publicationPath: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     work: PropTypes.string.isRequired,
-    editors: PropTypes.string.isRequired,
+    editors: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string),
+    ]).isRequired,
     locus: PropTypes.string.isRequired,
     link: PropTypes.string,
     notes: PropTypes.string,
