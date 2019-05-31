@@ -5,7 +5,7 @@ import {
 export const chunksType = shape({
   start: number,
   end: number,
-  numbers: arrayOf(oneOfType([number, string])),
+  numbers: arrayOf(oneOfType([string])),
 });
 
 export const sectionType = shape({

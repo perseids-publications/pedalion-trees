@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import { chunksType, publicationMatchType } from './types';
 
@@ -82,14 +83,14 @@ class ControlPanel extends Component {
         <div className="collapse navbar-collapse justify-content-center" id="navbarsExample10">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link text-light" href={`./${first}`}>
+              <Link className={`nav-link text-light ${styles.link}`} to={`./${first}`}>
                 &laquo; First
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href={`./${back}`}>
+              <Link className={`nav-link text-light ${styles.link}`} to={`./${back}`}>
                 &#8249; Back
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={isOpen} onClick={this.toggleOpen}>
@@ -98,22 +99,22 @@ class ControlPanel extends Component {
               <div className={`dropdown-menu ${styles.dropdownScroll} ${isOpen ? 'show' : ''}`}>
                 {
                   lines.map(n => (
-                    <a className="dropdown-item" key={n} href={n} onClick={this.toggleOpen}>
+                    <Link className="dropdown-item" key={n} to={`./${n}`} onClick={this.toggleOpen}>
                       {n}
-                    </a>
+                    </Link>
                   ))
                 }
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href={`./${next}`}>
+              <Link className={`nav-link text-light ${styles.link}`} to={`./${next}`}>
                 Next &#8250;
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link text-light" href={`./${last}`}>
+              <Link className={`nav-link text-light ${styles.link}`} to={`./${last}`}>
                 Last &raquo;
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

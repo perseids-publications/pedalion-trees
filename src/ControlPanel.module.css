@@ -2,7 +2,23 @@
   cursor: pointer;
 }
 
+.dropdownButton:focus {
+  color: #f8f9fa!important;
+}
+
+.dropdownButton:hover {
+  color: #dae0e5!important;
+}
+
 .dropdownScroll {
   max-height: 400px;
   overflow: scroll;
+}
+
+a.link:focus {
+  color: #f8f9fa!important;
+}
+
+a.link:hover {
+  color: #dae0e5!important;
 }
