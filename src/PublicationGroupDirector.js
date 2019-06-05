@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { configType, publicationGroupMatchType } from './types';
 
 import PublicationGroup from './PublicationGroup';
+import NotFound from './NotFound';
 
 class PublicationGroupDirector extends Component {
   static propTypes = {
@@ -53,6 +54,10 @@ class PublicationGroupDirector extends Component {
     const { match } = this.props;
     const { publication } = match.params;
     const newConfig = this.argsLookup[publication];
+
+    if (newConfig === undefined) {
+      return <NotFound />;
+    }
 
     return <PublicationGroup config={newConfig} />;
   }

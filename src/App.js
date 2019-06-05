@@ -7,7 +7,6 @@ import config from './config.json';
 import Home from './Home';
 import PublicationDirector from './PublicationDirector';
 import PublicationGroupDirector from './PublicationGroupDirector';
-import NotFound from './NotFound';
 
 const {
   copyright, report, github, twitter,
@@ -20,7 +19,6 @@ const App = () => (
         <Route exact path="/" component={() => <Home config={config} />} />
         <Route exact path="/:publication/" render={props => <PublicationGroupDirector {...props} config={config} />} />
         <Route exact path="/:publication/:chunk" render={props => <PublicationDirector {...props} config={config} />} />
-        <Route component={NotFound} />
       </Switch>
       <PerseidsFooter
         copyright={copyright}

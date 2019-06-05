@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Publication from './Publication';
+import NotFound from './NotFound';
 
 class PublicationDirector extends Component {
   constructor(props) {
@@ -42,6 +43,10 @@ class PublicationDirector extends Component {
     const { match } = this.props;
     const { publication } = match.params;
     const args = this.argsLookup[publication];
+
+    if (args === undefined) {
+      return <NotFound />;
+    }
 
     return <Publication {...args} match={match} />;
   }
