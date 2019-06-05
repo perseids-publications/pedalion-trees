@@ -2,11 +2,11 @@ import React from 'react';
 import { PerseidsFooter } from 'perseids-react-components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import config from './config.json';
+import config from '../../config.json';
 
-import Home from './Home';
-import PublicationDirector from './PublicationDirector';
-import PublicationGroupDirector from './PublicationGroupDirector';
+import Home from '../Home';
+import PublicationDirector from '../PublicationDirector';
+import PublicationGroupDirector from '../PublicationGroupDirector';
 
 const {
   copyright, report, github, twitter,

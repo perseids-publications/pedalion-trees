@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { chunksType, publicationMatchType } from './types';
+import { chunksType, publicationMatchType } from '../../lib/types';
 
 import styles from './ControlPanel.module.css';
 

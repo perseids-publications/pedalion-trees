@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import { configType, publicationGroupMatchType } from './types';
+import { configType, publicationGroupMatchType } from '../../lib/types';
 
-import PublicationGroup from './PublicationGroup';
-import NotFound from './NotFound';
+import PublicationGroup from '../PublicationGroup';
+import NotFound from '../NotFound';
 
 class PublicationGroupDirector extends Component {
   static propTypes = {

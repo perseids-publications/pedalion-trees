@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Publication from './Publication';
-import NotFound from './NotFound';
+import Publication from '../Publication';
+import NotFound from '../NotFound';
 
 class PublicationDirector extends Component {
   constructor(props) {

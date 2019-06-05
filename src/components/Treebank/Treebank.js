@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { chunksType, publicationMatchType } from './types';
-import ArethusaWrapper from './lib/ArethusaWrapper';
+import { chunksType, publicationMatchType } from '../../lib/types';
 
 import styles from './Treebank.module.css';
 
-import ControlPanel from './ControlPanel';
+import ArethusaWrapper from '../ArethusaWrapper';
+import ControlPanel from '../ControlPanel';
 
 class Treebank extends Component {
   static propTypes = {
