@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { configType, publicationMatchType } from '../../lib/types';
 
 import Publication from '../Publication';
 import NotFound from '../NotFound';
 
 class PublicationDirector extends Component {
+  static propTypes = {
+    config: configType.isRequired,
+    match: publicationMatchType.isRequired,
+  };
+
   constructor(props) {
     super(props);
 

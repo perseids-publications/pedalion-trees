@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { PerseidsFooter } from 'perseids-react-components';
 
+import { configType } from '../../lib/types';
+
 import Home from '../Home';
 import PublicationDirector from '../PublicationDirector';
 import PublicationGroupDirector from '../PublicationGroupDirector';
@@ -29,5 +31,9 @@ const Page = ({
     />
   </>
 );
+
+Page.propTypes = {
+  config: configType.isRequired,
+};
 
 export default Page;

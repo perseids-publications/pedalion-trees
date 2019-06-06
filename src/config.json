@@ -21,7 +21,7 @@
               "xml": "lysias-1-1-50.xml",
               "link": "https://www.example.com",
               "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "chunks": { "start": 1, "end": 134 }
+              "chunks": { "start": 1, "end": 483 }
             }
           ]
         },
