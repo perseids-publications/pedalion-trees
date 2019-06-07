@@ -1,10 +1,10 @@
 import React from 'react';
 import { PerseidsHeader } from 'perseids-react-components';
 
-import { configType } from './types';
+import { configType } from '../../lib/types';
 
-import Hero from './Hero';
-import Collection from './Collection';
+import Hero from '../Hero';
+import Collection from '../Collection';
 
 const renderCollection = (collection) => {
   const { title, publications } = collection;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { publicationType } from './types';
+import { publicationType } from '../../lib/types';
 
 const getStart = (chunks) => {
   const { start, numbers } = chunks;

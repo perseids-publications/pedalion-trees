@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { PerseidsHeader } from 'perseids-react-components';
 
-import { chunksType, publicationMatchType } from './types';
+import { chunksType, publicationMatchType } from '../../lib/types';
 
 import styles from './Publication.module.css';
 
-import ArethusaWrapper from './lib/ArethusaWrapper';
-import Treebank from './Treebank';
+import ArethusaWrapper from '../ArethusaWrapper';
+import Treebank from '../Treebank';
 
 const renderText = (text) => {
   if (Array.isArray(text)) {
