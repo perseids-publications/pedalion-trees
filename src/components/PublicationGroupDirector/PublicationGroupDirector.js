@@ -21,7 +21,7 @@ class PublicationGroupDirector extends Component {
     } = config;
 
     collections.forEach((collection) => {
-      collection.publications.forEach((publication) => {
+      (collection.publications || []).forEach((publication) => {
         const { path, author, work } = publication;
 
         argsLookup[path] = {

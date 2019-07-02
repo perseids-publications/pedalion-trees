@@ -4619,6 +4619,33 @@ Array [
         className="col-12"
       >
         <h2>
+          Information
+        </h2>
+        <p>
+          To learn more visit 
+          <a
+            href="https://www.perseids.org"
+          >
+            our homepage
+          </a>
+          .
+        </p>
+        <table
+          className="table"
+        />
+      </div>
+    </div>
+  </div>,
+  <div
+    className="container"
+  >
+    <div
+      className="row pb-3"
+    >
+      <div
+        className="col-12"
+      >
+        <h2>
           Collection 1
         </h2>
         <table

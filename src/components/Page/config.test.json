@@ -7,6 +7,10 @@
   "twitter": "https://twitter.com/PerseidsProject",
   "collections": [
     {
+      "title": "Information",
+      "text": "To learn more visit [our homepage](https://www.perseids.org)."
+    },
+    {
       "title": "Collection 1", 
       "publications": [
         {

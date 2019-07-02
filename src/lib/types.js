@@ -27,7 +27,8 @@ export const publicationType = shape({
 
 export const collectionType = shape({
   title: oneOfType([string, element]).isRequired,
-  publications: arrayOf(publicationType).isRequired,
+  publications: arrayOf(publicationType),
+  text: string,
 });
 
 export const configType = shape({

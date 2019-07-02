@@ -7,12 +7,13 @@ import Hero from '../Hero';
 import Collection from '../Collection';
 
 const renderCollection = (collection) => {
-  const { title, publications } = collection;
+  const { title, text, publications } = collection;
 
   return (
     <Collection
       key={title}
       title={title}
+      text={text}
       publications={publications}
     />
   );
