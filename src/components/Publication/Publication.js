@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { PerseidsHeader } from 'perseids-react-components';
+import ReactMarkdown from 'react-markdown';
 
 import { chunksType, publicationMatchType } from '../../lib/types';
 
@@ -40,6 +41,15 @@ const renderLinkRow = (title, link) => (
     <th scope="col">{title}</th>
     <td>
       <a href={link}>{link}</a>
+    </td>
+  </tr>
+);
+
+const renderMarkdownRow = (title, markdown) => (
+  <tr>
+    <th scope="col">{title}</th>
+    <td className={styles.publicationRow}>
+      <ReactMarkdown source={markdown} />
     </td>
   </tr>
 );
@@ -133,7 +143,7 @@ class Publication extends Component {
               {locus && renderLocusRow('Locus', locus, publicationPath)}
               {editors && renderRow('Editors', editors)}
               {link && renderLinkRow('Link', link)}
-              {notes && renderRow('Notes', notes)}
+              {notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>

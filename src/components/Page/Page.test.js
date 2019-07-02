@@ -27,6 +27,17 @@ it('renders a publication', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders a publication with markdown', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-crown-1-50/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders a publication with a numbers array', () => {
   const component = (
     <MemoryRouter initialEntries={['/philippic-1-51/1']}>
