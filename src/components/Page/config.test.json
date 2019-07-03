@@ -7,6 +7,10 @@
   "twitter": "https://twitter.com/PerseidsProject",
   "collections": [
     {
+      "title": "Information",
+      "text": "To learn more visit [our homepage](https://www.perseids.org) or view a [treebank](/on-the-murder-of-eratosthenes-1-50/1)."
+    },
+    {
       "title": "Collection 1", 
       "publications": [
         {
@@ -35,7 +39,7 @@
               "locus": "1-50",
               "path": "on-the-crown-1-50",
               "xml": "demosthenes-18-1-50.xml",
-              "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "notes": "Lorem ipsum dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               "chunks": { "start": 1, "end": 160 }
             },
             {

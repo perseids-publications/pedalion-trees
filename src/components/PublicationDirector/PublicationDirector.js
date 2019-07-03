@@ -17,7 +17,7 @@ class PublicationDirector extends Component {
     const argsLookup = {};
 
     config.collections.forEach((collection) => {
-      collection.publications.forEach((publication) => {
+      (collection.publications || []).forEach((publication) => {
         const {
           author, work, editors, path: publicationPath,
         } = publication;
