@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { PerseidsHeader } from 'perseids-react-components';
-import ReactMarkdown from 'react-markdown';
 
 import { chunksType, publicationMatchType } from '../../lib/types';
 
@@ -9,6 +8,7 @@ import styles from './Publication.module.css';
 
 import ArethusaWrapper from '../ArethusaWrapper';
 import Treebank from '../Treebank';
+import Markdown from '../Markdown';
 
 const renderText = (text) => {
   if (Array.isArray(text)) {
@@ -49,7 +49,7 @@ const renderMarkdownRow = (title, markdown) => (
   <tr>
     <th scope="col">{title}</th>
     <td className={styles.publicationRow}>
-      <ReactMarkdown source={markdown} />
+      <Markdown source={markdown} />
     </td>
   </tr>
 );

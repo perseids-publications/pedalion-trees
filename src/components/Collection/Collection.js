@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactMarkdown from 'react-markdown';
 
 import { publicationType } from '../../lib/types';
+
+import Markdown from '../Markdown';
 
 const getStart = (chunks) => {
   const { start, numbers } = chunks;
@@ -74,7 +75,7 @@ const Collection = ({ title, publications, text }) => (
     <div className="row pb-3">
       <div className="col-12">
         {title && <h2>{title}</h2>}
-        {text && <ReactMarkdown source={text} />}
+        {text && <Markdown source={text} />}
         <table className="table">
           {publications && (
             <>
