@@ -131,6 +131,57 @@
           ]
         },
 		{
+          "path": "chion",
+          "author": "Chion",
+          "work": "Letters",
+          "editors": "Sanderijn Gijbels (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "chion",
+              "xml": "chion.xml",
+              "chunks": {
+                "start": 1,
+                "end": 250
+              }
+            }
+          ]
+        },
+		{
+          "path": "epicurus1",
+          "author": "Epicurus",
+          "work": "Epistula ad Menoeceum",
+          "editors": "Jonas Roose (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "epicurus1",
+              "xml": "epicurus1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 250
+              }
+            }
+          ]
+        },
+		{
+          "path": "julian",
+          "author": "Julian",
+          "work": "Letter to Constantine",
+          "editors": "Jonas Roose (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "julian",
+              "xml": "julian.xml",
+              "chunks": {
+                "start": 1,
+                "end": 250
+              }
+            }
+          ]
+        },
+		{
           "path": "longus",
           "author": "Longus",
           "work": "Daphnis & Chloë",
@@ -314,6 +365,23 @@
               "chunks": {
                 "start": 1,
                 "end": 543
+              }
+            }
+          ]
+        },
+		{
+          "path": "xenmem",
+          "author": "Xenophon",
+          "work": "Memorabilia",
+          "editors": "Sanderijn Gijbels, Mathieu Cuijpers, Alek Keersmaekers",
+          "sections": [
+            {
+              "locus": "part 1",
+              "path": "xenmem",
+              "xml": "xenmem.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1343
               }
             }
           ]
