@@ -21,17 +21,12 @@ const getFbcnlFromNumbers = (chunk, numbers) => {
 };
 
 class ControlPanel extends Component {
-  static propTypes = {
-    chunks: chunksType.isRequired,
-    match: publicationMatchType.isRequired,
-  };
-
-  state = {
-    isOpen: false,
-  };
-
   constructor(props) {
     super(props);
+
+    this.state = {
+      isOpen: false,
+    };
 
     this.toggleOpen = this.toggleOpen.bind(this);
   }
@@ -98,7 +93,7 @@ class ControlPanel extends Component {
               </button>
               <div className={`dropdown-menu ${styles.dropdownScroll} ${isOpen ? 'show' : ''}`}>
                 {
-                  lines.map(n => (
+                  lines.map((n) => (
                     <Link className="dropdown-item" key={n} to={`./${n}`} onClick={this.toggleOpen}>
                       {n}
                     </Link>
@@ -122,5 +117,10 @@ class ControlPanel extends Component {
     );
   }
 }
+
+ControlPanel.propTypes = {
+  chunks: chunksType.isRequired,
+  match: publicationMatchType.isRequired,
+};
 
 export default ControlPanel;

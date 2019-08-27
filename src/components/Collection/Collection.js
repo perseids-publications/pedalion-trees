@@ -33,7 +33,7 @@ const renderEditors = (editors) => {
   if (Array.isArray(editors)) {
     return (
       <ul className="pl-1">
-        {editors.map(e => <li key={e}>{e}</li>)}
+        {editors.map((e) => <li key={e}>{e}</li>)}
       </ul>
     );
   }
@@ -64,7 +64,7 @@ const renderRow = (publication) => {
         {renderEditors(editors)}
       </td>
       <td className="col-4 col-sm-5 col-md-2 col-lg-2 text-right">
-        {sections.map(s => renderSection(s))}
+        {sections.map((s) => renderSection(s))}
       </td>
     </tr>
   );
@@ -88,7 +88,7 @@ const Collection = ({ title, publications, text }) => (
                 </tr>
               </thead>
               <tbody>
-                {publications.map(p => renderRow(p))}
+                {publications.map((p) => renderRow(p))}
               </tbody>
             </>
           )}

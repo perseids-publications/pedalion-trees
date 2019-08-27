@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Hero.module.css';
 
-const renderSubtitle = subtitle => (
+const renderSubtitle = (subtitle) => (
   <p>
     <span>
       {subtitle}

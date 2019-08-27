@@ -6,11 +6,6 @@ import PublicationGroup from '../PublicationGroup';
 import NotFound from '../NotFound';
 
 class PublicationGroupDirector extends Component {
-  static propTypes = {
-    config: configType.isRequired,
-    match: publicationGroupMatchType.isRequired,
-  };
-
   constructor(props) {
     super(props);
 
@@ -33,12 +28,12 @@ class PublicationGroupDirector extends Component {
           collections: [
             {
               title: (
-                <React.Fragment>
+                <>
                   {author}
                   ,
                   {' '}
                   <i>{work}</i>
-                </React.Fragment>
+                </>
               ),
               publications: [publication],
             },
@@ -62,5 +57,10 @@ class PublicationGroupDirector extends Component {
     return <PublicationGroup config={newConfig} />;
   }
 }
+
+PublicationGroupDirector.propTypes = {
+  config: configType.isRequired,
+  match: publicationGroupMatchType.isRequired,
+};
 
 export default PublicationGroupDirector;

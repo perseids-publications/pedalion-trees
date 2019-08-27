@@ -2,7 +2,7 @@ import React from 'react';
 import { PerseidsHeader } from 'perseids-react-components';
 
 const NotFound = () => (
-  <React.Fragment>
+  <>
     <PerseidsHeader>
       <span>
         Not Found
@@ -36,7 +36,7 @@ const NotFound = () => (
         </div>
       </div>
     </div>
-  </React.Fragment>
+  </>
 );
 
 export default NotFound;
