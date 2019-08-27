@@ -23,13 +23,13 @@ const Home = ({ config }) => {
   const { title, subtitle, collections } = config;
 
   return (
-    <React.Fragment>
+    <>
       <PerseidsHeader>
         {title}
       </PerseidsHeader>
       <Hero title={title} subtitle={subtitle} />
-      {collections.map(c => renderCollection(c))}
-    </React.Fragment>
+      {collections.map((c) => renderCollection(c))}
+    </>
   );
 };
 

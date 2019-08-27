@@ -14,7 +14,7 @@ const renderText = (text) => {
   if (Array.isArray(text)) {
     return (
       <div>
-        {text.map(t => (
+        {text.map((t) => (
           <span key={t}>
             {t}
             <br />
@@ -68,27 +68,6 @@ const renderLocusRow = (title, text, publicationPath) => (
 );
 
 class Publication extends Component {
-  static propTypes = {
-    publicationPath: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    work: PropTypes.string.isRequired,
-    editors: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.arrayOf(PropTypes.string),
-    ]).isRequired,
-    locus: PropTypes.string.isRequired,
-    link: PropTypes.string,
-    notes: PropTypes.string,
-    xml: PropTypes.string.isRequired,
-    chunks: chunksType.isRequired,
-    match: publicationMatchType.isRequired,
-  };
-
-  static defaultProps = {
-    link: undefined,
-    notes: undefined,
-  };
-
   constructor(props) {
     super(props);
 
@@ -110,7 +89,7 @@ class Publication extends Component {
     } = this.props;
 
     return (
-      <React.Fragment>
+      <>
         <PerseidsHeader>
           <span>
             <i>{work}</i>
@@ -155,9 +134,30 @@ class Publication extends Component {
             </a>
           </div>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }
+
+Publication.propTypes = {
+  publicationPath: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  work: PropTypes.string.isRequired,
+  editors: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
+  locus: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  notes: PropTypes.string,
+  xml: PropTypes.string.isRequired,
+  chunks: chunksType.isRequired,
+  match: publicationMatchType.isRequired,
+};
+
+Publication.defaultProps = {
+  link: undefined,
+  notes: undefined,
+};
 
 export default Publication;

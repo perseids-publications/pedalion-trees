@@ -9,13 +9,6 @@ import ArethusaWrapper from '../ArethusaWrapper';
 import ControlPanel from '../ControlPanel';
 
 class Treebank extends Component {
-  static propTypes = {
-    arethusa: PropTypes.instanceOf(ArethusaWrapper).isRequired,
-    chunks: chunksType.isRequired,
-    match: publicationMatchType.isRequired,
-    xml: PropTypes.string.isRequired,
-  };
-
   componentDidMount() {
     this.renderArethusa();
   }
@@ -34,14 +27,21 @@ class Treebank extends Component {
     const { chunks, match } = this.props;
 
     return (
-      <React.Fragment>
+      <>
         <ControlPanel match={match} chunks={chunks} />
         <div className="__artsa">
           <div id="treebank_container" className={styles.treebankContainer} />
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }
+
+Treebank.propTypes = {
+  arethusa: PropTypes.instanceOf(ArethusaWrapper).isRequired,
+  chunks: chunksType.isRequired,
+  match: publicationMatchType.isRequired,
+  xml: PropTypes.string.isRequired,
+};
 
 export default Treebank;

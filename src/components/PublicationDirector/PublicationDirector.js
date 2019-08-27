@@ -5,11 +5,6 @@ import Publication from '../Publication';
 import NotFound from '../NotFound';
 
 class PublicationDirector extends Component {
-  static propTypes = {
-    config: configType.isRequired,
-    match: publicationMatchType.isRequired,
-  };
-
   constructor(props) {
     super(props);
 
@@ -57,5 +52,10 @@ class PublicationDirector extends Component {
     return <Publication {...args} match={match} />;
   }
 }
+
+PublicationDirector.propTypes = {
+  config: configType.isRequired,
+  match: publicationMatchType.isRequired,
+};
 
 export default PublicationDirector;

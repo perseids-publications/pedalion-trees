@@ -20,8 +20,8 @@ const Page = ({
   <>
     <Switch>
       <Route exact path="/" component={() => <Home config={config} />} />
-      <Route exact path="/:publication/" render={props => <PublicationGroupDirector {...props} config={config} />} />
-      <Route exact path="/:publication/:chunk" render={props => <PublicationDirector {...props} config={config} />} />
+      <Route exact path="/:publication/" render={(props) => <PublicationGroupDirector {...props} config={config} />} />
+      <Route exact path="/:publication/:chunk" render={(props) => <PublicationDirector {...props} config={config} />} />
     </Switch>
     <PerseidsFooter
       copyright={copyright}

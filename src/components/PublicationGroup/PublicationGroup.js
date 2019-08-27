@@ -19,7 +19,7 @@ const renderCollection = (collection) => {
 };
 
 const PublicationGroup = ({ config: { title, subtitle, collections } }) => (
-  <React.Fragment>
+  <>
     <PerseidsHeader>
       {title}
       <ul className="navbar-nav ml-auto">
@@ -31,8 +31,8 @@ const PublicationGroup = ({ config: { title, subtitle, collections } }) => (
       </ul>
     </PerseidsHeader>
     <Hero title={title} subtitle={subtitle} />
-    {collections.map(c => renderCollection(c))}
-  </React.Fragment>
+    {collections.map((c) => renderCollection(c))}
+  </>
 );
 
 PublicationGroup.propTypes = {
