@@ -4,9 +4,9 @@
 Who? Supervised by Toon Van Hal, with student contributions by De Schutter, A.; Knapen, C.; Weets, C.; Van Nunen, E.; De Smet, Isabeau; Van Bever, L.; Valadou, M.; De Backer, Olympe; Keupers, S.; Vangenechten, Thomas; Valgaeren, Thomas; Nelis, Tilke.
 How much? ca. 2,5K tokens.
 First release? 2018
-Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek Keersmaekers.
+Updates? Updated file in April and August 2019, with corrections by Toon Van Hal and Alek Keersmaekers.
  -->
-<sentence id='1' document_id='0062-020' Author='Lucianus' subdoc='1-40'>
+<sentence id='1' document_id='0062-020' Author='Lucianus' subdoc='1-40' corrupt=''>
 <word ref='Leuven|0062-020|1|1' id='1' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='3' sem=''/>
 <word ref='Leuven|0062-020|1|2' id='2' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='3' sem=''/>
 <word ref='Leuven|0062-020|1|3' id='3' form='Καύκασος' lemma='Καύκασος' postag='n-s---mn-' relation='PNOM' head='0' sem=''/>
@@ -124,13 +124,30 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|6|9' id='9' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='0' sem=''/>
 <word ref='Leuven|0062-020|6|10' id='10' form='Ἑρμῆ' lemma='Ἑρμῆς' postag='n-s---mv-' relation='ExD_CO' head='9' sem=''/>
 <word ref='Leuven|0062-020|6|11' id='11' form=',' lemma=',' postag='u--------' relation='AuxX' head='9' sem=''/>
-<word ref='Leuven|0062-020|6|12' id='12' form='κατελεησατέ' lemma='καταλέεω' postag='v2paia---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|0062-020|6|12' id='12' form='κατελεήσατέ' lemma='κατελεέω' postag='v2paia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|6|13' id='13' form='με' lemma='ἐγώ' postag='p1s---ca-' relation='OBJ' head='12' sem=''/>
 <word ref='Leuven|0062-020|6|14' id='14' form='παρὰ' lemma='παρά' postag='r--------' relation='AuxP' head='17' sem=''/>
 <word ref='Leuven|0062-020|6|15' id='15' form='τὴν' lemma='ὁ' postag='l-s---fa-' relation='ATR' head='16' sem=''/>
 <word ref='Leuven|0062-020|6|16' id='16' form='ἀξίαν' lemma='ἀξία' postag='n-s---fa-' relation='ADV' head='14' sem=''/>
 <word ref='Leuven|0062-020|6|17' id='17' form='δυστυχοῦντα' lemma='δυστυχέω' postag='v-sppama-' relation='ATR' head='13' sem=''/>
 <word ref='Leuven|0062-020|6|18' id='18' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='7' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|7|1' id='1' form='τοῦτο' lemma='οὗτος' postag='p-s---na-' relation='OBJ' head='2' sem=''/>
+<word ref='Leuven|0062-020|7|2' id='2' form='φής' lemma='φημί' postag='v2spia---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|0062-020|7|3' id='3' form=',' lemma=',' postag='u--------' relation='AuxX' head='5' sem=''/>
+<word ref='Leuven|0062-020|7|4' id='4' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='5' sem=''/>
+<word ref='Leuven|0062-020|7|5' id='5' form='Προμηθεῦ' lemma='Προμηθεύς' postag='n-s---mv-' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|7|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='5' sem=''/>
+<word ref='Leuven|0062-020|7|7' id='7' form='ἀντὶ' lemma='ἀντί' postag='r--------' relation='AuxP' head='9' sem=''/>
+<word ref='Leuven|0062-020|7|8' id='8' form='σοῦ' lemma='σύ' postag='p2s---cg-' relation='ADV' head='7' sem=''/>
+<word ref='Leuven|0062-020|7|9' id='9' form='ἀνασκολοπισθῆναι' lemma='ἀνασκολοπίζω' postag='v--anp---' relation='ATR' head='1' sem=''/>
+<word ref='Leuven|0062-020|7|11' id='10' form='αὐτίκα' lemma='αὐτίκα' postag='d--------' relation='ADV' head='12' sem=''/>
+<word ref='Leuven|0062-020|7|12' id='11' form='μάλα' lemma='μάλα' postag='d--------' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|0062-020|7|13' id='12' form='παρακούσαντας' lemma='παρακούω' postag='v-papama-' relation='ADV' head='9' sem=''/>
+<word ref='Leuven|0062-020|7|14' id='13' form='τοῦ' lemma='ὁ' postag='l-s---ng-' relation='ATR' head='14' sem=''/>
+<word ref='Leuven|0062-020|7|15' id='14' form='ἐπιτάγματος' lemma='ἐπίταγμα' postag='n-s---ng-' relation='OBJ' head='12' sem=''/>
+<word ref='Leuven|0062-020|7|16' id='15' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='8' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|8|1' id='1' form='ἢ' lemma='ἤ' postag='b--------' relation='AuxY' head='6' sem=''/>
@@ -236,7 +253,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|14|6' id='6' form='δεινὸν' lemma='δεινός' postag='a-s---na-' relation='ATR' head='1' sem=''/>
 <word ref='Leuven|0062-020|14|7' id='7' form='εἰργάσω' lemma='ἐργάζομαι' postag='v2saim---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|14|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='16' sem=''/>
-<word ref='Leuven|0062-020|14|9' id='9' form='ὃς' lemma='ὅς' postag='p-s---mn-' relation='SBJ' head='16' sem=''/>
+<word ref='Leuven|0062-020|14|9' id='9' form='ὃς' lemma='ὅς' postag='p-s---mn-' relation='ADV' head='19' sem=''/>
 <word ref='Leuven|0062-020|14|10' id='10' form='πρῶτα' lemma='πρῶτος' postag='a-p---na-' relation='ADV' head='16' sem=''/>
 <word ref='Leuven|0062-020|14|11' id='11' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='19' sem=''/>
 <word ref='Leuven|0062-020|14|12' id='12' form='τὴν' lemma='ὁ' postag='l-s---fa-' relation='ATR' head='13' sem=''/>
@@ -246,8 +263,8 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|14|16' id='16' form='ἐγχειρισθεὶς' lemma='ἐγχειρίζω' postag='v-sappmn-' relation='ADV' head='7' sem=''/>
 <word ref='Leuven|0062-020|14|17' id='17' form='οὕτως' lemma='οὕτως' postag='d--------' relation='ADV' head='19' sem=''/>
 <word ref='Leuven|0062-020|14|18' id='18' form='ἄδικον' lemma='ἄδικος' postag='a-s---fa-' relation='ATR_CO' head='20' sem=''/>
-<word ref='Leuven|0062-020|14|19' id='19' form='ἐποιήσω' lemma='ποιέω' postag='v2saim---' relation='PRED_CO' head='7' sem=''/>
-<word ref='Leuven|0062-020|14|20' id='20' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='19' sem=''/>
+<word ref='Leuven|0062-020|14|19' id='19' form='ἐποιήσω' lemma='ποιέω' postag='v2saim---' relation='ADV' head='7' sem=''/>
+<word ref='Leuven|0062-020|14|20' id='20' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='13' sem=''/>
 <word ref='Leuven|0062-020|14|21' id='21' form='ἀπατηλήν' lemma='ἀπατηλός' postag='a-s---fa-' relation='ATR_CO' head='20' sem=''/>
 <word ref='Leuven|0062-020|14|22' id='22' form=',' lemma=',' postag='u--------' relation='AuxX' head='23' sem=''/>
 <word ref='Leuven|0062-020|14|23' id='23' form='ὡς' lemma='ὡς' postag='c--------' relation='AuxC' head='19' sem=''/>
@@ -263,7 +280,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|14|33' id='33' form='παραλογίσασθαι' lemma='παραλογίζομαι' postag='v--anm---' relation='ADV_CO' head='32' sem=''/>
 <word ref='Leuven|0062-020|14|34' id='34' form='ὀστᾶ' lemma='ὀστέον' postag='n-p---na-' relation='OBJ' head='35' sem=''/>
 <word ref='Leuven|0062-020|14|35' id='35' form='καλύψας' lemma='καλύπτω' postag='v-sapamn-' relation='ADV' head='33' sem=''/>
-<word ref='Leuven|0062-020|14|36' id='36' form='ἄργετι' lemma='ἀργής' postag='n-s---md-' relation='ATR' head='37' sem=''/>
+<word ref='Leuven|0062-020|14|36' id='36' form='ἀργέτι' lemma='ἀργής' postag='a-s---md-' relation='ATR' head='37' sem=''/>
 <word ref='Leuven|0062-020|14|37' id='37' form='δημῷ' lemma='δημός' postag='n-s---md-' relation='ADV' head='35' sem=''/>
 <word ref='Leuven|0062-020|14|38' id='38' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
@@ -285,7 +302,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|16|5' id='5' form='ἀνέπλασας' lemma='ἀναπλάσσω' postag='v2saia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|16|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|16|7' id='7' form='πανουργότατα' lemma='πάνουργος' postag='a-p---nas' relation='ATR' head='8' sem=''/>
-<word ref='Leuven|0062-020|16|8' id='8' form='ζῷα' lemma='ζῷον' postag='n-p---na-' relation='OBJ' head='4' sem=''/>
+<word ref='Leuven|0062-020|16|8' id='8' form='ζῷα' lemma='ζῷον' postag='n-p---na-' relation='!!!congruentiefout geslacht?!!!OBJ' head='4' sem=''/>
 <word ref='Leuven|0062-020|16|9' id='9' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|16|10' id='10' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='14' sem=''/>
 <word ref='Leuven|0062-020|16|11' id='11' form='μάλιστά' lemma='μάλα' postag='d-------s' relation='ADV' head='14' sem=''/>
@@ -306,7 +323,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|17|9' id='9' form='τὸ' lemma='ὁ' postag='l-s---na-' relation='ATR' head='10' sem=''/>
 <word ref='Leuven|0062-020|17|10' id='10' form='πῦρ' lemma='πῦρ' postag='n-s---na-' relation='APOS' head='6' sem=''/>
 <word ref='Leuven|0062-020|17|11' id='11' form='κλέψας' lemma='κλέπτω' postag='v2saia---' relation='ADV' head='15' sem=''/>
-<word ref='Leuven|0062-020|17|12' id='12' form=',' lemma=',' postag='u--------' relation='AuxX' head='13' sem=''/>
+<word ref='Leuven|0062-020|17|12' id='12' form=',' lemma=',' postag='u--------' relation='!!!head heeft AuxZ of AuxY!!!AuxX' head='13' sem=''/>
 <word ref='Leuven|0062-020|17|13' id='13' form='καὶ' lemma='καί' postag='d--------' relation='AuxZ' head='14' sem=''/>
 <word ref='Leuven|0062-020|17|14' id='14' form='τοῦτο' lemma='οὗτος' postag='p-s---na-' relation='OBJ' head='15' sem=''/>
 <word ref='Leuven|0062-020|17|15' id='15' form='ἔδωκας' lemma='δίδωμι' postag='v2saia---' relation='PRED' head='0' sem=''/>
@@ -415,10 +432,10 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|21|27' id='27' form='τοῦ' lemma='ὁ' postag='l-s---mg-' relation='ATR' head='28' sem=''/>
 <word ref='Leuven|0062-020|21|28' id='28' form='Καυκάσου' lemma='Καύκασος' postag='n-s---mg-' relation='ADV' head='26' sem=''/>
 <word ref='Leuven|0062-020|21|29' id='29' form=',' lemma=',' postag='u--------' relation='AuxX' head='31' sem=''/>
-<word ref='Leuven|0062-020|21|30' id='30' form='οἴκτιστον' lemma='οἴκτιστος' postag='a-s---nn-' relation='ATR' head='31' sem=''/>
+<word ref='Leuven|0062-020|21|30' id='30' form='οἴκτιστον' lemma='οἰκτρός' postag='a-s---nn-' relation='ATR' head='31' sem=''/>
 <word ref='Leuven|0062-020|21|31' id='31' form='θέαμα' lemma='θέαμα' postag='n-s---nn-' relation='ExD' head='0' sem=''/>
 <word ref='Leuven|0062-020|21|32' id='32' form='πᾶσι' lemma='πᾶς' postag='a-p---md-' relation='ATR' head='33' sem=''/>
-<word ref='Leuven|0062-020|21|33' id='33' form='Σκύθαις' lemma='Σκύθης' postag='n-p---md-' relation='ADV' head='31' sem=''/>
+<word ref='Leuven|0062-020|21|33' id='33' form='Σκύθαις' lemma='Σκύθης' postag='n-p---md-' relation='!!!congruentiefout geslacht?!!!ADV' head='31' sem=''/>
 <word ref='Leuven|0062-020|21|34' id='34' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='23' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
@@ -439,6 +456,32 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|23|15' id='15' form='ἥπατος' lemma='ἧπαρ' postag='n-s---ng-' relation='OBJ' head='12' sem=''/>
 <word ref='Leuven|0062-020|23|16' id='16' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
+<sentence id='24' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|24|1' id='1' form='τὴν' lemma='ὁ' postag='l-s---fa-' relation='ATR' head='7' sem=''/>
+<word ref='Leuven|0062-020|24|2' id='2' form='ἐν' lemma='ἐν' postag='r--------' relation='AuxP' head='7' sem=''/>
+<word ref='Leuven|0062-020|24|3' id='3' form='τῷ' lemma='ὁ' postag='l-s---nd-' relation='ATR' head='4' sem=''/>
+<word ref='Leuven|0062-020|24|4' id='4' form='μέσῳ' lemma='μέσος' postag='a-s---nd-' relation='ADV' head='2' sem=''/>
+<word ref='Leuven|0062-020|24|5' id='5' form='δὴ' lemma='δή' postag='d--------' relation='AuxY' head='4' sem=''/>
+<word ref='Leuven|0062-020|24|6' id='6' form='ταύτην' lemma='οὗτος' postag='p-s---fa-' relation='ATR' head='7' sem=''/>
+<word ref='Leuven|0062-020|24|7' id='7' form='σχολὴν' lemma='σχολή' postag='n-s---fa-' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|0062-020|24|8' id='8' form='καλῶς' lemma='καλός' postag='d--------' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|0062-020|24|9' id='9' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='11' sem=''/>
+<word ref='Leuven|0062-020|24|10' id='10' form='ἔχον' lemma='ἔχω' postag='v-sppana-' relation='PNOM' head='11' sem=''/>
+<word ref='Leuven|0062-020|24|11' id='11' form='εἴη' lemma='εἰμί' postag='v3spoa---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|0062-020|24|13' id='12' form='εἰς' lemma='εἰς' postag='r--------' relation='AuxP' head='14' sem=''/>
+<word ref='Leuven|0062-020|24|14' id='13' form='ἀκρόασιν' lemma='ἀκρόασις' postag='n-s---fa-' relation='ADV' head='12' sem=''/>
+<word ref='Leuven|0062-020|24|15' id='14' form='καταχρήσασθαι' lemma='καταχράω' postag='v--anm---' relation='SBJ' head='11' sem=''/>
+<word ref='Leuven|0062-020|24|16' id='15' form='σοφιστικήν' lemma='σοφιστικός' postag='a-s---fa-' relation='ATR' head='13' sem=''/>
+<word ref='Leuven|0062-020|24|17' id='16' form=',' lemma=',' postag='u--------' relation='AuxX' head='18' sem=''/>
+<word ref='Leuven|0062-020|24|18' id='17' form='οἷος' lemma='οἷος' postag='p-s---mn-' relation='SBJ' head='18' sem=''/>
+<word ref='Leuven|0062-020|24|19' id='18' form='εἶ' lemma='εἰμί' postag='v2spia---' relation='ATR' head='15' sem=''/>
+<word ref='Leuven|0062-020|24|20' id='19' form='σὺ' lemma='σύ' postag='p2s---cn-' relation='ATR' head='17' sem=''/>
+<word ref='Leuven|0062-020|24|21' id='20' form='πανουργότατος' lemma='πανοῦργος' postag='a-s---mns' relation='PNOM' head='18' sem=''/>
+<word ref='Leuven|0062-020|24|22' id='21' form='ἐν' lemma='ἐν' postag='r--------' relation='AuxP' head='20' sem=''/>
+<word ref='Leuven|0062-020|24|23' id='22' form='τοῖς' lemma='ὁ' postag='l-p---md-' relation='ATR' head='23' sem=''/>
+<word ref='Leuven|0062-020|24|24' id='23' form='λόγοις' lemma='λόγος' postag='n-p---md-' relation='ADV' head='21' sem=''/>
+<word ref='Leuven|0062-020|24|25' id='24' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
 <sentence id='25' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|25|1' id='1' form='πρότερος' lemma='πρότερος' postag='a-s---mn-' relation='ADV' head='7' sem=''/>
 <word ref='Leuven|0062-020|25|2' id='2' form='οὖν' lemma='οὖν' postag='d--------' relation='AuxY' head='7' sem=''/>
@@ -449,12 +492,12 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|25|7' id='7' form='λέγε' lemma='λέγω' postag='v2spma---' relation='PRED_CO' head='9' sem=''/>
 <word ref='Leuven|0062-020|25|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='7' sem=''/>
 <word ref='Leuven|0062-020|25|9' id='9' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='0' sem=''/>
-<word ref='Leuven|0062-020|25|10' id='10' form='ὅπως' lemma='ὅπως' postag='c--------' relation='AuxC' head='9' sem=''/>
+<word ref='Leuven|0062-020|25|10' id='10' form='ὅπως' lemma='ὅπως' postag='c--------' relation='AuxY' head='15' sem=''/>
 <word ref='Leuven|0062-020|25|11' id='11' form='μου' lemma='ἐγώ' postag='p1s---cg-' relation='OBJ' head='14' sem=''/>
 <word ref='Leuven|0062-020|25|12' id='12' form='ὡς' lemma='ὡς' postag='d--------' relation='AuxZ' head='13' sem=''/>
 <word ref='Leuven|0062-020|25|13' id='13' form='δεινότατα' lemma='δεινός' postag='a-p---nas' relation='ADV' head='14' sem=''/>
 <word ref='Leuven|0062-020|25|14' id='14' form='κατηγορήσῃς' lemma='κατηγορέω' postag='v2sasa---' relation='PRED_CO' head='15' sem=''/>
-<word ref='Leuven|0062-020|25|15' id='15' form='μηδὲ' lemma='μηδέ' postag='b--------' relation='COORD' head='10' sem=''/>
+<word ref='Leuven|0062-020|25|15' id='15' form='μηδὲ' lemma='μηδέ' postag='b--------' relation='COORD' head='9' sem=''/>
 <word ref='Leuven|0062-020|25|16' id='16' form='καθυφῇς' lemma='καθυφίημι' postag='v2sasa---' relation='PRED_CO' head='15' sem=''/>
 <word ref='Leuven|0062-020|25|17' id='17' form='τι' lemma='τις' postag='p-s---na-' relation='OBJ' head='16' sem=''/>
 <word ref='Leuven|0062-020|25|18' id='18' form='τῶν' lemma='ὁ' postag='l-p---ng-' relation='ATR' head='19' sem=''/>
@@ -471,7 +514,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|26|5' id='5' form='Ἥφαιστε' lemma='Ἥφαιστος' postag='n-s---mv-' relation='ExD' head='8' sem=''/>
 <word ref='Leuven|0062-020|26|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='5' sem=''/>
 <word ref='Leuven|0062-020|26|7' id='7' form='δικαστὴν' lemma='δικαστής' postag='n-s---ma-' relation='OCOMP' head='8' sem=''/>
-<word ref='Leuven|0062-020|26|8' id='8' form='ποιοῦμαι' lemma='ποιόω' postag='v1spie---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|0062-020|26|8' id='8' form='ποιοῦμαι' lemma='ποιέω' postag='v1spie---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|26|9' id='9' form='ἔγωγε' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='8' sem=''/>
 <word ref='Leuven|0062-020|26|10' id='10' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
@@ -495,7 +538,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|27|17' id='17' form='μοι' lemma='ἐγώ' postag='p1s---cd-' relation='ADV' head='20' sem=''/>
 <word ref='Leuven|0062-020|27|18' id='18' form='τὴν' lemma='ὁ' postag='l-s---fa-' relation='ATR' head='19' sem=''/>
 <word ref='Leuven|0062-020|27|19' id='19' form='κάμινον' lemma='κάμινος' postag='n-s---fa-' relation='OBJ' head='20' sem=''/>
-<word ref='Leuven|0062-020|27|20' id='20' form='ἀπολέλοιπας' lemma='ἀπολιμπάνω' postag='v2sria---' relation='ADV' head='8' sem=''/>
+<word ref='Leuven|0062-020|27|20' id='20' form='ἀπολέλοιπας' lemma='ἀπολείπω' postag='v2sria---' relation='ADV' head='8' sem=''/>
 <word ref='Leuven|0062-020|27|21' id='21' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='28' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
@@ -572,7 +615,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|32|7' id='7' form='τῶν' lemma='ὁ' postag='l-p---ng-' relation='ATR' head='8' sem=''/>
 <word ref='Leuven|0062-020|32|8' id='8' form='τοιούτων' lemma='τοιοῦτος' postag='p-p---ng-' relation='OBJ' head='11' sem=''/>
 <word ref='Leuven|0062-020|32|9' id='9' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='10' sem=''/>
-<word ref='Leuven|0062-020|32|10' id='10' form='παρέργως' lemma='παρέργως' postag='d--------' relation='ADV' head='11' sem=''/>
+<word ref='Leuven|0062-020|32|10' id='10' form='παρέργως' lemma='πάρεργος' postag='d--------' relation='ADV' head='11' sem=''/>
 <word ref='Leuven|0062-020|32|11' id='11' form='μεμέληκεν' lemma='μέλω' postag='v3sria---' relation='PRED_CO' head='6' sem=''/>
 <word ref='Leuven|0062-020|32|12' id='12' form='αὐτῷ' lemma='αὐτός' postag='p-s---md-' relation='OBJ' head='11' sem=''/>
 <word ref='Leuven|0062-020|32|13' id='13' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
@@ -640,7 +683,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|35|13' id='13' form='παρασκευῆς' lemma='παρασκευή' postag='n-s---fg-' relation='OBJ_CO' head='10' sem=''/>
 <word ref='Leuven|0062-020|35|14' id='14' form='ἐπὶ' lemma='ἐπί' postag='r--------' relation='AuxP' head='8' sem=''/>
 <word ref='Leuven|0062-020|35|15' id='15' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='ATR' head='17' sem=''/>
-<word ref='Leuven|0062-020|35|16' id='16' form='σοὶ' lemma='σύ' postag='p2s---cd-' relation='OBJ' head='17' sem=''/>
+<word ref='Leuven|0062-020|35|16' id='16' form='σοὶ' lemma='σύ' postag='p2s---cd-' relation='OBJ' head='17' sem='agent'/>
 <word ref='Leuven|0062-020|35|17' id='17' form='πεπραγμένα' lemma='πράσσω' postag='v-prpena-' relation='ADV' head='14' sem=''/>
 <word ref='Leuven|0062-020|35|18' id='18' form=',' lemma=',' postag='u--------' relation='AuxX' head='20' sem=''/>
 <word ref='Leuven|0062-020|35|19' id='19' form='οὐχὶ' lemma='οὐ' postag='d--------' relation='AuxZ' head='21' sem=''/>
@@ -665,7 +708,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|35|38' id='38' form='κάλλιστα' lemma='καλός' postag='a-p---nac' relation='OBJ' head='39' sem=''/>
 <word ref='Leuven|0062-020|35|39' id='39' form='ἐφύλαττες' lemma='φυλάσσω' postag='v2siia---' relation='ADV_CO' head='54' sem=''/>
 <word ref='Leuven|0062-020|35|40' id='40' form=',' lemma=',' postag='u--------' relation='AuxX' head='39' sem=''/>
-<word ref='Leuven|0062-020|35|41' id='41' form='ἐξηπάτας' lemma='ἐξαπατάω' postag='v2siia---' relation='PRED_CO' head='54' sem=''/>
+<word ref='Leuven|0062-020|35|41' id='41' form='ἐξηπάτας' lemma='ἐξαπατάω' postag='v2siia---' relation='ADV_CO' head='54' sem=''/>
 <word ref='Leuven|0062-020|35|42' id='42' form='δὲ' lemma='δέ' postag='b--------' relation='AuxY' head='54' sem=''/>
 <word ref='Leuven|0062-020|35|43' id='43' form='τὸν' lemma='ὁ' postag='l-s---ma-' relation='ATR' head='44' sem=''/>
 <word ref='Leuven|0062-020|35|44' id='44' form='βασιλέα' lemma='βασιλεύς' postag='n-s---ma-' relation='OBJ' head='41' sem=''/>
@@ -673,7 +716,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|35|46' id='46' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='54' sem=''/>
 <word ref='Leuven|0062-020|35|47' id='47' form='τοὺς' lemma='ὁ' postag='l-p---ma-' relation='ATR' head='48' sem=''/>
 <word ref='Leuven|0062-020|35|48' id='48' form='ἀνθρώπους' lemma='ἄνθρωπος' postag='n-p---ma-' relation='OBJ' head='49' sem=''/>
-<word ref='Leuven|0062-020|35|49' id='49' form='ἀνέπλασας' lemma='ἀναπλάσσω' postag='v2saia---' relation='PRED_CO' head='54' sem=''/>
+<word ref='Leuven|0062-020|35|49' id='49' form='ἀνέπλασας' lemma='ἀναπλάσσω' postag='v2saia---' relation='ADV_CO' head='54' sem=''/>
 <word ref='Leuven|0062-020|35|50' id='50' form=',' lemma=',' postag='u--------' relation='AuxX' head='52' sem=''/>
 <word ref='Leuven|0062-020|35|51' id='51' form='οὐδὲν' lemma='οὐδείς' postag='p-s---na-' relation='ADV' head='52' sem=''/>
 <word ref='Leuven|0062-020|35|52' id='52' form='δέον' lemma='δέω' postag='v-sppana-' relation='ADV' head='49' sem=''/>
@@ -684,7 +727,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|35|57' id='57' form='κλέψας' lemma='κλέπτω' postag='v-sapamn-' relation='ADV' head='60' sem=''/>
 <word ref='Leuven|0062-020|35|58' id='58' form='παρ’' lemma='παρά' postag='r--------' relation='AuxP' head='57' sem=''/>
 <word ref='Leuven|0062-020|35|59' id='59' form='ἡμῶν' lemma='ἐγώ' postag='p1p---cg-' relation='ADV' head='58' sem=''/>
-<word ref='Leuven|0062-020|35|60' id='60' form='ἐκόμισας' lemma='κομίζω' postag='v2saia---' relation='PRED_CO' head='54' sem=''/>
+<word ref='Leuven|0062-020|35|60' id='60' form='ἐκόμισας' lemma='κομίζω' postag='v2saia---' relation='ADV_CO' head='54' sem=''/>
 <word ref='Leuven|0062-020|35|61' id='61' form='ἐς' lemma='εἰς' postag='r--------' relation='AuxP' head='60' sem=''/>
 <word ref='Leuven|0062-020|35|62' id='62' form='αὐτούς' lemma='αὐτός' postag='p-p---ma-' relation='OBJ' head='61' sem=''/>
 <word ref='Leuven|0062-020|35|63' id='63' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
@@ -695,7 +738,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|36|3' id='3' form='δοκεῖς' lemma='δοκέω' postag='v2spia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|36|4' id='4' form=',' lemma=',' postag='u--------' relation='AuxX' head='6' sem=''/>
 <word ref='Leuven|0062-020|36|5' id='5' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='6' sem=''/>
-<word ref='Leuven|0062-020|36|6' id='6' form='βέλτιστε' lemma='καλός' postag='a-s---mvs' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|36|6' id='6' form='βέλτιστε' lemma='ἀγαθός' postag='a-s---mvs' relation='ExD' head='0' sem=''/>
 <word ref='Leuven|0062-020|36|7' id='7' form=',' lemma=',' postag='u--------' relation='AuxX' head='6' sem=''/>
 <word ref='Leuven|0062-020|36|8' id='8' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='9' sem=''/>
 <word ref='Leuven|0062-020|36|9' id='9' form='συνιέναι' lemma='συνίημι' postag='v--pna---' relation='OBJ' head='3' sem=''/>
@@ -771,7 +814,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|38|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='1' sem=''/>
 <word ref='Leuven|0062-020|38|3' id='3' form='ἄλλως' lemma='ἄλλος' postag='d--------' relation='ADV' head='1' sem=''/>
 <word ref='Leuven|0062-020|38|4' id='4' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='5' sem=''/>
-<word ref='Leuven|0062-020|38|5' id='5' form='τοιοῦτον' lemma='τοιοῦτος' postag='p-s---nn-' relation='SBJ' head='1' sem=''/>
+<word ref='Leuven|0062-020|38|5' id='5' form='τοιοῦτον' lemma='τοιοῦτος' postag='p-s---nn-' relation='!!!congruentiefout geslacht?!!!SBJ' head='1' sem=''/>
 <word ref='Leuven|0062-020|38|6' id='6' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='39' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
@@ -786,7 +829,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|39|9' id='9' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|39|10' id='10' form='εἰσόμεθα' lemma='οἶδα' postag='v1pfim---' relation='PRED_CO' head='14' sem=''/>
 <word ref='Leuven|0062-020|39|11' id='11' form='μικρὸν' lemma='μικρός' postag='a-s---na-' relation='ADV' head='12' sem=''/>
-<word ref='Leuven|0062-020|39|12' id='12' form='ὕστερον' lemma='ὕστερος' postag='d-------c' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|0062-020|39|12' id='12' form='ὕστερον' lemma='ὕστερον' postag='d-------c' relation='ADV' head='10' sem=''/>
 <word ref='Leuven|0062-020|39|13' id='13' form='ἐγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='23' sem=''/>
 <word ref='Leuven|0062-020|39|14' id='14' form='δέ' lemma='δέ' postag='b--------' relation='COORD' head='0' sem=''/>
 <word ref='Leuven|0062-020|39|15' id='15' form=',' lemma=',' postag='u--------' relation='AuxX' head='16' sem=''/>
@@ -801,7 +844,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|39|24' id='24' form='ὡς' lemma='ὡς' postag='c--------' relation='AuxC' head='23' sem=''/>
 <word ref='Leuven|0062-020|39|25' id='25' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='28' sem=''/>
 <word ref='Leuven|0062-020|39|26' id='26' form='οἷός' lemma='οἷος' postag='p-s---mn-' relation='PNOM' head='28' sem=''/>
-<word ref='Leuven|0062-020|39|27' id='27' form='τε' lemma='τε' postag='b--------' relation='AuxY' head='28' sem=''/>
+<word ref='Leuven|0062-020|39|27' id='27' form='τε' lemma='τε' postag='b--------' relation='!!!relation not recognized!!!MWE2' head='26' sem=''/>
 <word ref='Leuven|0062-020|39|28' id='28' form='ὦ' lemma='εἰμί' postag='v1spsa---' relation='ADV' head='24' sem=''/>
 <word ref='Leuven|0062-020|39|29' id='29' form='διαλύσασθαι' lemma='διαλύω' postag='v--anm---' relation='OBJ' head='23' sem=''/>
 <word ref='Leuven|0062-020|39|30' id='30' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='ATR' head='31' sem=''/>
@@ -824,10 +867,10 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|41|2' id='2' form=',' lemma=',' postag='u--------' relation='AuxX' head='3' sem=''/>
 <word ref='Leuven|0062-020|41|3' id='3' form='νὴ' lemma='νή' postag='r--------' relation='AuxP' head='5' sem=''/>
 <word ref='Leuven|0062-020|41|4' id='4' form='τὸν' lemma='ὁ' postag='l-s---ma-' relation='ATR' head='5' sem=''/>
-<word ref='Leuven|0062-020|41|5' id='5' form='οὐρανόν' lemma='οὐρανός' postag='n-s---ma-' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|41|5' id='5' form='οὐρανόν' lemma='οὐρανός' postag='n-s---ma-' relation='ExD' head='11' sem=''/>
 <word ref='Leuven|0062-020|41|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='3' sem=''/>
 <word ref='Leuven|0062-020|41|7' id='7' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='11' sem=''/>
-<word ref='Leuven|0062-020|41|8' id='8' form='νῦν' lemma='νῦν' postag='d--------' relation='AuxY' head='11' sem=''/>
+<word ref='Leuven|0062-020|41|8' id='8' form='νῦν' lemma='νῦν' postag='d--------' relation='ADV' head='11' sem=''/>
 <word ref='Leuven|0062-020|41|9' id='9' form='λέγων' lemma='λέγω' postag='v-sppamn-' relation='ADV' head='11' sem=''/>
 <word ref='Leuven|0062-020|41|10' id='10' form='αὐτὰ' lemma='αὐτός' postag='p-p---na-' relation='OBJ' head='9' sem=''/>
 <word ref='Leuven|0062-020|41|11' id='11' form='αἰσχύνομαι' lemma='αἰσχύνω' postag='v1spie---' relation='PRED' head='0' sem=''/>
@@ -864,8 +907,8 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|41|42' id='42' form='συμμαχίας' lemma='συμμαχία' postag='n-s---fg-' relation='OBJ' head='43' sem=''/>
 <word ref='Leuven|0062-020|41|43' id='43' form='μνημονεύσαντα' lemma='μνημονεύω' postag='v-sapama-' relation='ADV_CO' head='45' sem=''/>
 <word ref='Leuven|0062-020|41|44' id='44' form='μή' lemma='μή' postag='d--------' relation='AuxZ' head='53' sem=''/>
-<word ref='Leuven|0062-020|41|45' id='45' form='-τε' lemma='τε' postag='b--------' relation='AuxY' head='34' sem=''/>
-<word ref='Leuven|0062-020|41|46' id='46' form='αὖ' lemma='αὖ' postag='d--------' relation='AUX' head='52' sem=''/>
+<word ref='Leuven|0062-020|41|45' id='45' form='-τε' lemma='τε' postag='b--------' relation='COORD' head='34' sem=''/>
+<word ref='Leuven|0062-020|41|46' id='46' form='αὖ' lemma='αὖ' postag='d--------' relation='ADV' head='52' sem=''/>
 <word ref='Leuven|0062-020|41|47' id='47' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='50' sem=''/>
 <word ref='Leuven|0062-020|41|48' id='48' form='τῆς' lemma='ὁ' postag='l-s---fg-' relation='ATR' head='49' sem=''/>
 <word ref='Leuven|0062-020|41|49' id='49' form='ὀργῆς' lemma='ὀργή' postag='n-s---fg-' relation='ATR' head='50' sem=''/>
@@ -875,12 +918,12 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|41|53' id='53' form='ἐννοήσαντα' lemma='ἐννοέω' postag='v-sapama-' relation='ADV_CO' head='45' sem=''/>
 <word ref='Leuven|0062-020|41|54' id='54' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='52' sem=''/>
 <word ref='Leuven|0062-020|41|55' id='55' form='ὡς' lemma='ὡς' postag='d--------' relation='ADV' head='56' sem=''/>
-<word ref='Leuven|0062-020|41|56' id='56' form='μειρακίον' lemma='μειράκιον' postag='n-s---na-' relation='PNOM' head='52' sem=''/>
+<word ref='Leuven|0062-020|41|56' id='56' form='μειρακίου' lemma='μειράκιον' postag='n-s---na-' relation='PNOM' head='52' sem=''/>
 <word ref='Leuven|0062-020|41|57' id='57' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='58' sem=''/>
-<word ref='Leuven|0062-020|41|58' id='58' form='τοιοῦτον' lemma='τοιοῦτος' postag='p-s---nn-' relation='SBJ' head='56' sem=''/>
+<word ref='Leuven|0062-020|41|58' id='58' form='τοιοῦτον' lemma='τοιοῦτος' postag='p-s---nn-' relation='!!!congruentiefout NOM?!!!SBJ' head='56' sem=''/>
 <word ref='Leuven|0062-020|41|59' id='59' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|41|60' id='60' form='ὀργίζεσθαι' lemma='ὀργίζω' postag='v--pne---' relation='ATR_CO' head='61' sem=''/>
-<word ref='Leuven|0062-020|41|61' id='61' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='58' sem=''/>
+<word ref='Leuven|0062-020|41|61' id='61' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='58' sem=''/>
 <word ref='Leuven|0062-020|41|62' id='62' form='ἀγανακτεῖν' lemma='ἀγανακτέω' postag='v--pna---' relation='ATR' head='61' sem=''/>
 <word ref='Leuven|0062-020|41|63' id='63' form='εἰ' lemma='εἰ' postag='c--------' relation='AuxC' head='61' sem=''/>
 <word ref='Leuven|0062-020|41|64' id='64' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='68' sem=''/>
@@ -897,7 +940,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|42|4' id='4' form='ἀπάτας' lemma='ἀπάτη' postag='n-p---fa-' relation='OBJ' head='18' sem=''/>
 <word ref='Leuven|0062-020|42|5' id='5' form=',' lemma=',' postag='u--------' relation='AuxX' head='7' sem=''/>
 <word ref='Leuven|0062-020|42|6' id='6' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='7' sem=''/>
-<word ref='Leuven|0062-020|42|7' id='7' form='Ἑρμῆ' lemma='Ἑρμῆς' postag='n-s---mv-' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|42|7' id='7' form='Ἑρμῆ' lemma='Ἑρμῆς' postag='n-s---mv-' relation='ExD' head='81' sem=''/>
 <word ref='Leuven|0062-020|42|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='7' sem=''/>
 <word ref='Leuven|0062-020|42|9' id='9' form='τὰς' lemma='ὁ' postag='l-p---fa-' relation='ATR' head='4' sem=''/>
 <word ref='Leuven|0062-020|42|10' id='10' form='τοιαύτας' lemma='τοιοῦτος' postag='p-p---fa-' relation='ATR' head='4' sem=''/>
@@ -906,7 +949,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|42|13' id='13' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='18' sem=''/>
 <word ref='Leuven|0062-020|42|14' id='14' form='χρή' lemma='χρή' postag='v3spia---' relation='PRED_CO' head='81' sem=''/>
 <word ref='Leuven|0062-020|42|15' id='15' form=',' lemma=',' postag='u--------' relation='AuxX' head='16' sem=''/>
-<word ref='Leuven|0062-020|42|16' id='16' form='οἶμαι' lemma='οἴομαι' postag='v1spie---' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|42|16' id='16' form='οἶμαι' lemma='οἴομαι' postag='v1spie---' relation='ExD' head='81' sem=''/>
 <word ref='Leuven|0062-020|42|17' id='17' form=',' lemma=',' postag='u--------' relation='AuxX' head='16' sem=''/>
 <word ref='Leuven|0062-020|42|18' id='18' form='ἀπομνημονεύειν' lemma='ἀπομνημονεύω' postag='v--pna---' relation='OBJ_CO' head='20' sem=''/>
 <word ref='Leuven|0062-020|42|19' id='19' form=',' lemma=',' postag='u--------' relation='AuxX' head='20' sem=''/>
@@ -918,7 +961,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|42|25' id='25' form='μεταξὺ' lemma='μεταξύ' postag='r--------' relation='AuxP' head='24' sem=''/>
 <word ref='Leuven|0062-020|42|26' id='26' form='εὐωχουμένων' lemma='εὐωχέω' postag='v-pppefg-' relation='ADV' head='25' sem=''/>
 <word ref='Leuven|0062-020|42|27' id='27' form=',' lemma=',' postag='u--------' relation='AuxX' head='21' sem=''/>
-<word ref='Leuven|0062-020|42|28' id='28' form='παιδιὰν' lemma='παιδιή' postag='n-s---fa-' relation='OCOMP' head='29' sem=''/>
+<word ref='Leuven|0062-020|42|28' id='28' form='παιδιὰν' lemma='παιδιά' postag='n-s---fa-' relation='OCOMP' head='29' sem=''/>
 <word ref='Leuven|0062-020|42|29' id='29' form='ἡγεῖσθαι' lemma='ἡγέομαι' postag='v--pne---' relation='OBJ_CO' head='30' sem=''/>
 <word ref='Leuven|0062-020|42|30' id='30' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='20' sem=''/>
 <word ref='Leuven|0062-020|42|31' id='31' form='αὐτοῦ' lemma='αὐτός' postag='p-s---ng-' relation='ADV' head='35' sem=''/>
@@ -943,12 +986,12 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|42|50' id='50' form='μῆνιν' lemma='μῆνις' postag='n-s---fa-' relation='OBJ' head='51' sem=''/>
 <word ref='Leuven|0062-020|42|51' id='51' form='διαφυλάττειν' lemma='διαφυλάσσω' postag='v--pna---' relation='OBJ_CO' head='47' sem=''/>
 <word ref='Leuven|0062-020|42|52' id='52' form=',' lemma=',' postag='u--------' relation='AuxX' head='53' sem=''/>
-<word ref='Leuven|0062-020|42|53' id='53' form='ἄπαγε' lemma='ἀπάγω' postag='v2spma---' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|42|53' id='53' form='ἄπαγε' lemma='ἀπάγω' postag='v2spma---' relation='ExD' head='81' sem=''/>
 <word ref='Leuven|0062-020|42|54' id='54' form=',' lemma=',' postag='u--------' relation='AuxX' head='53' sem=''/>
 <word ref='Leuven|0062-020|42|55' id='55' form='οὔ' lemma='οὐ' postag='d--------' relation='AuxZ' head='60' sem=''/>
 <word ref='Leuven|0062-020|42|56' id='56' form='-τε' lemma='τε' postag='b--------' relation='AuxY' head='60' sem=''/>
 <word ref='Leuven|0062-020|42|57' id='57' form='θεοῖς' lemma='θεός' postag='n-p---md-' relation='OBJ_CO' head='60' sem=''/>
-<word ref='Leuven|0062-020|42|58' id='58' form='πρέπον' lemma='πρέπω' postag='v-sppana-' relation='ATR' head='37' sem=''/>
+<word ref='Leuven|0062-020|42|58' id='58' form='πρέπον' lemma='πρέπω' postag='v-sppana-' relation='!!!congruentiefout geslacht?!!!ATR' head='37' sem=''/>
 <word ref='Leuven|0062-020|42|59' id='59' form='οὔ' lemma='οὐ' postag='d--------' relation='AuxZ' head='60' sem=''/>
 <word ref='Leuven|0062-020|42|60' id='60' form='-τε' lemma='τε' postag='b--------' relation='COORD' head='58' sem=''/>
 <word ref='Leuven|0062-020|42|61' id='61' form='ἄλλως' lemma='ἄλλος' postag='d--------' relation='ADV' head='62' sem=''/>
@@ -963,17 +1006,17 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|42|70' id='70' form='κομψείας' lemma='κομψεία' postag='n-p---fa-' relation='OBJ' head='65' sem=''/>
 <word ref='Leuven|0062-020|42|71' id='71' form='ταύτας' lemma='οὗτος' postag='p-p---fa-' relation='ATR' head='70' sem=''/>
 <word ref='Leuven|0062-020|42|72' id='72' form=',' lemma=',' postag='u--------' relation='AuxX' head='70' sem=''/>
-<word ref='Leuven|0062-020|42|73' id='73' form='ἀπάτην' lemma='ἀπάτη' postag='n-s---fa-' relation='ATR_CO' head='79' sem=''/>
+<word ref='Leuven|0062-020|42|73' id='73' form='ἀπάτην' lemma='ἀπάτη' postag='n-s---fa-' relation='APOS_CO' head='79' sem=''/>
 <word ref='Leuven|0062-020|42|74' id='74' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='79' sem=''/>
-<word ref='Leuven|0062-020|42|75' id='75' form='σκώμματα' lemma='σκῶμμα' postag='n-p---na-' relation='ATR_CO' head='79' sem=''/>
+<word ref='Leuven|0062-020|42|75' id='75' form='σκώμματα' lemma='σκῶμμα' postag='n-p---na-' relation='APOS_CO' head='79' sem=''/>
 <word ref='Leuven|0062-020|42|76' id='76' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='79' sem=''/>
 <word ref='Leuven|0062-020|42|77' id='77' form='τὸ' lemma='ὁ' postag='l-s---na-' relation='ATR' head='78' sem=''/>
-<word ref='Leuven|0062-020|42|78' id='78' form='διασιλλαίνειν' lemma='διασιλλαίνω' postag='v--pna---' relation='ATR_CO' head='79' sem=''/>
+<word ref='Leuven|0062-020|42|78' id='78' form='διασιλλαίνειν' lemma='διασιλλαίνω' postag='v--pna---' relation='APOS_CO' head='79' sem=''/>
 <word ref='Leuven|0062-020|42|79' id='79' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='70' sem=''/>
-<word ref='Leuven|0062-020|42|80' id='80' form='ἐπιγελᾶν' lemma='ἐπιγελάω' postag='v-sppamv-' relation='ATR_CO' head='79' sem=''/>
+<word ref='Leuven|0062-020|42|80' id='80' form='ἐπιγελᾶν' lemma='ἐπιγελάω' postag='v-sppamv-' relation='APOS_CO' head='79' sem=''/>
 <word ref='Leuven|0062-020|42|81' id='81' form=',' lemma=',' postag='u--------' relation='COORD' head='0' sem=''/>
 <word ref='Leuven|0062-020|42|82' id='82' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='83' sem=''/>
-<word ref='Leuven|0062-020|42|83' id='83' form='καταλειπόμενόν' lemma='καταλείπω' postag='v-sppema-' relation='SBJ' head='84' sem=''/>
+<word ref='Leuven|0062-020|42|83' id='83' form='καταλειπόμενόν' lemma='καταλιμπάνω' postag='v-sppenn-' relation='SBJ' head='84' sem=''/>
 <word ref='Leuven|0062-020|42|84' id='84' form='ἐστι' lemma='εἰμί' postag='v3spia---' relation='PRED_CO' head='81' sem=''/>
 <word ref='Leuven|0062-020|42|85' id='85' form='μέθη' lemma='μέθη' postag='n-s---fn-' relation='PNOM_CO' head='88' sem=''/>
 <word ref='Leuven|0062-020|42|86' id='86' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='88' sem=''/>
@@ -984,11 +1027,11 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|42|91' id='91' form='σκυθρωπὰ' lemma='σκυθρωπός' postag='a-p---nn-' relation='ATR_CO' head='95' sem=''/>
 <word ref='Leuven|0062-020|42|92' id='92' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='95' sem=''/>
 <word ref='Leuven|0062-020|42|93' id='93' form='ἀτερπῆ' lemma='ἀτερπής' postag='a-p---nn-' relation='ATR_CO' head='95' sem=''/>
-<word ref='Leuven|0062-020|42|94' id='94' form='πράγματα' lemma='πρᾶγμα' postag='n-p---nn-' relation='ATR' head='98' sem=''/>
+<word ref='Leuven|0062-020|42|94' id='94' form='πράγματα' lemma='πρᾶγμα' postag='n-p---nn-' relation='APOS' head='88' sem=''/>
 <word ref='Leuven|0062-020|42|95' id='95' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='94' sem=''/>
-<word ref='Leuven|0062-020|42|96' id='96' form='ἥκιστα' lemma='ἥκιστος' postag='a-p---nas' relation='ATR_CO' head='95' sem=''/>
+<word ref='Leuven|0062-020|42|96' id='96' form='ἥκιστα' lemma='ἥκιστος' postag='a-p---nas' relation='ADV' head='98' sem=''/>
 <word ref='Leuven|0062-020|42|97' id='97' form='συμποσίῳ' lemma='συμπόσιον' postag='n-s---nd-' relation='OBJ' head='98' sem=''/>
-<word ref='Leuven|0062-020|42|98' id='98' form='πρέποντα' lemma='πρέπω' postag='v-pppann-' relation='ATR_CO' head='83' sem=''/>
+<word ref='Leuven|0062-020|42|98' id='98' form='πρέποντα' lemma='πρέπω' postag='v-pppann-' relation='ATR' head='95' sem=''/>
 <word ref='Leuven|0062-020|42|99' id='99' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='43' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
@@ -1021,14 +1064,14 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|43|27' id='27' form='διανέμων' lemma='διανέμω' postag='v-sppamn-' relation='ADV' head='28' sem=''/>
 <word ref='Leuven|0062-020|43|28' id='28' form='τις' lemma='τις' postag='p-s---cn-' relation='SBJ' head='32' sem=''/>
 <word ref='Leuven|0062-020|43|29' id='29' form='κρέα' lemma='κρέας' postag='n-p---na-' relation='OBJ' head='27' sem=''/>
-<word ref='Leuven|0062-020|43|30' id='30' form='παιδιάν' lemma='παιδιή' postag='n-s---fa-' relation='OBJ' head='32' sem=''/>
+<word ref='Leuven|0062-020|43|30' id='30' form='παιδιάν' lemma='παιδιά' postag='n-s---fa-' relation='OBJ' head='32' sem=''/>
 <word ref='Leuven|0062-020|43|31' id='31' form='τινα' lemma='τις' postag='p-s---ca-' relation='ATR' head='30' sem=''/>
 <word ref='Leuven|0062-020|43|32' id='32' form='ἔπαιζε' lemma='παίζω' postag='v3siia---' relation='ADV' head='26' sem=''/>
 <word ref='Leuven|0062-020|43|33' id='33' form='πειρώμενος' lemma='πειράω' postag='v-sppemn-' relation='ADV' head='32' sem=''/>
 <word ref='Leuven|0062-020|43|34' id='34' form='εἰ' lemma='εἰ' postag='c--------' relation='AuxC' head='33' sem=''/>
 <word ref='Leuven|0062-020|43|35' id='35' form='διαγνώσεται' lemma='διαγιγνώσκω' postag='v3sfim---' relation='OBJ' head='34' sem=''/>
 <word ref='Leuven|0062-020|43|36' id='36' form='τὸ' lemma='ὁ' postag='l-s---na-' relation='ATR' head='37' sem=''/>
-<word ref='Leuven|0062-020|43|37' id='37' form='βέλτιον' lemma='βελτίων' postag='a-s---nac' relation='OBJ' head='35' sem=''/>
+<word ref='Leuven|0062-020|43|37' id='37' form='βέλτιον' lemma='ἀγαθός' postag='a-s---nac' relation='OBJ' head='35' sem=''/>
 <word ref='Leuven|0062-020|43|38' id='38' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='39' sem=''/>
 <word ref='Leuven|0062-020|43|39' id='39' form='αἱρούμενος' lemma='αἱρέω' postag='v-sppemn-' relation='SBJ' head='35' sem=''/>
 <word ref='Leuven|0062-020|43|40' id='40' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
@@ -1076,7 +1119,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|46|10' id='10' form='γῇ' lemma='γῆ' postag='n-s---fd-' relation='OBJ' head='13' sem=''/>
 <word ref='Leuven|0062-020|46|11' id='11' form='τὸν' lemma='ὁ' postag='l-s---ma-' relation='ATR' head='12' sem=''/>
 <word ref='Leuven|0062-020|46|12' id='12' form='οὐρανὸν' lemma='οὐρανός' postag='n-s---ma-' relation='SBJ' head='13' sem=''/>
-<word ref='Leuven|0062-020|46|13' id='13' form='ἀναμεμῖχθαι' lemma='ἀναμίσγω' postag='v--rne---' relation='SBJ_CO' head='25' sem=''/>
+<word ref='Leuven|0062-020|46|13' id='13' form='ἀναμεμῖχθαι' lemma='ἀναμείγνυμι' postag='v--rne---' relation='SBJ_CO' head='25' sem=''/>
 <word ref='Leuven|0062-020|46|14' id='14' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='25' sem=''/>
 <word ref='Leuven|0062-020|46|15' id='15' form='δεσμὰ' lemma='δεσμός' postag='n-p---na-' relation='OBJ_CO' head='18' sem=''/>
 <word ref='Leuven|0062-020|46|16' id='16' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='18' sem=''/>
@@ -1124,7 +1167,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|48|5' id='5' form='ἐποίησεν' lemma='ποιέω' postag='v3saia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|48|6' id='6' form='οὗτος' lemma='οὗτος' postag='p-s---mn-' relation='SBJ' head='5' sem=''/>
 <word ref='Leuven|0062-020|48|7' id='7' form='ὅλον' lemma='ὅλος' postag='a-s---ma-' relation='ATR' head='8' sem=''/>
-<word ref='Leuven|0062-020|48|8' id='8' form='βοῦν' lemma='βοῦς' postag='n-s---ma-' relation='OBJ' head='9' sem=''/>
+<word ref='Leuven|0062-020|48|8' id='8' form='βοῦν' lemma='βοῦς' postag='n-s---ca-' relation='OBJ' head='9' sem=''/>
 <word ref='Leuven|0062-020|48|9' id='9' form='ἀπολέσας' lemma='ἀπόλλυμι' postag='v-sapamn-' relation='ADV' head='6' sem=''/>
 <word ref='Leuven|0062-020|48|10' id='10' form=',' lemma=',' postag='u--------' relation='AuxX' head='11' sem=''/>
 <word ref='Leuven|0062-020|48|11' id='11' form='εἰ' lemma='εἰ' postag='c--------' relation='AuxC' head='5' sem=''/>
@@ -1137,7 +1180,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 </sentence>
 <sentence id='49' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|49|1' id='1' form='καίτοι' lemma='καίτοι' postag='d--------' relation='AuxY' head='6' sem=''/>
-<word ref='Leuven|0062-020|49|2' id='2' form='πόσῳ' lemma='πόσος' postag='p-s---nd-' relation='ADV' head='5' sem=''/>
+<word ref='Leuven|0062-020|49|2' id='2' form='πόσῳ' lemma='πόσος' postag='p-s---nd-' relation='!!!congruentiefout DAT?!!!ADV' head='5' sem=''/>
 <word ref='Leuven|0062-020|49|3' id='3' form='οἱ' lemma='ὁ' postag='l-p---mn-' relation='ATR' head='4' sem=''/>
 <word ref='Leuven|0062-020|49|4' id='4' form='ἄνθρωποι' lemma='ἄνθρωπος' postag='n-p---mn-' relation='SBJ' head='6' sem=''/>
 <word ref='Leuven|0062-020|49|5' id='5' form='εὐγνωμονέστερον' lemma='εὐγνώμων' postag='a-s---nac' relation='ADV' head='6' sem=''/>
@@ -1147,7 +1190,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|49|9' id='9' form='τοιαῦτα' lemma='τοιοῦτος' postag='p-p---na-' relation='ADV' head='7' sem=''/>
 <word ref='Leuven|0062-020|49|10' id='10' form=',' lemma=',' postag='u--------' relation='AuxX' head='6' sem=''/>
 <word ref='Leuven|0062-020|49|11' id='11' form='οὓς' lemma='ὅς' postag='p-p---ma-' relation='SBJ' head='20' sem=''/>
-<word ref='Leuven|0062-020|49|12' id='12' form='εἰκὸς' lemma='εἰκός' postag='v-srpann-' relation='PNOM' head='13' sem=''/>
+<word ref='Leuven|0062-020|49|12' id='12' form='εἰκὸς' lemma='ἔοικα' postag='v-srpann-' relation='PNOM' head='13' sem=''/>
 <word ref='Leuven|0062-020|49|13' id='13' form='ἦν' lemma='εἰμί' postag='v3siia---' relation='ATR' head='4' sem=''/>
 <word ref='Leuven|0062-020|49|14' id='14' form='καὶ' lemma='καί' postag='d--------' relation='AuxZ' head='15' sem=''/>
 <word ref='Leuven|0062-020|49|15' id='15' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='ADV' head='20' sem=''/>
@@ -1192,7 +1235,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|50|29' id='29' form=',' lemma=',' postag='u--------' relation='AuxX' head='13' sem=''/>
 <word ref='Leuven|0062-020|50|30' id='30' form='ἀλλὰ' lemma='ἀλλά' postag='b--------' relation='COORD' head='0' sem=''/>
 <word ref='Leuven|0062-020|50|31' id='31' form='συγγνώμην' lemma='συγγνώμη' postag='n-s---fa-' relation='OBJ' head='32' sem=''/>
-<word ref='Leuven|0062-020|50|32' id='32' form='ἀπονέμουσιν' lemma='ἀπονέμω' postag='v-pppamd-' relation='PRED_CO' head='30' sem=''/>
+<word ref='Leuven|0062-020|50|32' id='32' form='ἀπονέμουσιν' lemma='ἀπονέμω' postag='v3ppia---' relation='PRED_CO' head='30' sem=''/>
 <word ref='Leuven|0062-020|50|33' id='33' form='αὐτοῖς' lemma='αὐτός' postag='p-p---nd-' relation='OBJ' head='32' sem=''/>
 <word ref='Leuven|0062-020|50|34' id='34' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
@@ -1220,6 +1263,27 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|51|21' id='21' form='τηλικούτων' lemma='τηλικοῦτος' postag='p-p---ng-' relation='ADV' head='22' sem=''/>
 <word ref='Leuven|0062-020|51|22' id='22' form='ἕνεκα' lemma='ἕνεκα' postag='r--------' relation='AuxP' head='15' sem=''/>
 <word ref='Leuven|0062-020|51|23' id='23' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='52' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|52|1' id='1' form='καὶ' lemma='καί' postag='d--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|0062-020|52|2' id='2' form='περὶ' lemma='περί' postag='r--------' relation='AuxP' head='0' sem=''/>
+<word ref='Leuven|0062-020|52|3' id='3' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|0062-020|52|4' id='4' form='τῶν' lemma='ὁ' postag='l-p---ng-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|0062-020|52|5' id='5' form='κρεῶν' lemma='κρέας' postag='n-p---ng-' relation='PNOM' head='2' sem=''/>
+<word ref='Leuven|0062-020|52|6' id='6' form='τοσαῦτα' lemma='τοσοῦτος' postag='p-p---nn-' relation='!!!congruentiefout NOM?!!!APOS' head='5' sem=''/>
+<word ref='Leuven|0062-020|52|7' id='7' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|52|8' id='8' form='αἰσχρὰ' lemma='αἰσχρός' postag='a-p---nn-' relation='ATR_CO' head='15' sem=''/>
+<word ref='Leuven|0062-020|52|9' id='9' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='15' sem=''/>
+<word ref='Leuven|0062-020|52|10' id='10' form='κ-' lemma='καί' postag='d--------' relation='AuxZ' head='11' sem=''/>
+<word ref='Leuven|0062-020|52|10b' id='11' form='ἐμοὶ' lemma='ἐγώ' postag='p1s---cd-' relation='ADV' head='8' sem=''/>
+<word ref='Leuven|0062-020|52|12' id='12' form='ἀπολογεῖσθαι' lemma='ἀπολογέομαι' postag='v--pne---' relation='ADV' head='8' sem=''/>
+<word ref='Leuven|0062-020|52|13' id='13' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|52|14' id='14' form='πολὺ' lemma='πολύς' postag='a-s---na-' relation='ADV' head='16' sem=''/>
+<word ref='Leuven|0062-020|52|15' id='15' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='6' sem=''/>
+<word ref='Leuven|0062-020|52|16' id='16' form='αἰσχίω' lemma='αἰσχρός' postag='a-p---nnc' relation='ATR_CO' head='15' sem=''/>
+<word ref='Leuven|0062-020|52|17' id='17' form='κατηγορεῖν' lemma='κατηγορέω' postag='v--pna---' relation='ADV' head='16' sem=''/>
+<word ref='Leuven|0062-020|52|18' id='18' form='ἐκείνῳ' lemma='ἐκεῖνος' postag='p-s---md-' relation='!!!congruentiefout geslacht?!!!ADV' head='16' sem=''/>
+<word ref='Leuven|0062-020|52|19' id='19' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='53' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|53|1' id='1' form='περὶ' lemma='περί' postag='r--------' relation='AuxP' head='5' sem=''/>
@@ -1277,17 +1341,17 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|54|37' id='37' form=',' lemma=',' postag='u--------' relation='AuxX' head='20' sem=''/>
 <word ref='Leuven|0062-020|54|38' id='38' form='ἢ' lemma='ἤ' postag='b--------' relation='AuxY' head='20' sem=''/>
 <word ref='Leuven|0062-020|54|39' id='39' form='ὡς' lemma='ὡς' postag='c--------' relation='AuxC' head='20' sem=''/>
-<word ref='Leuven|0062-020|54|40' id='40' form='πεπλάσθαι' lemma='πλάσσω' postag='v--rne---' relation='SBJ' head='42' sem=''/>
-<word ref='Leuven|0062-020|54|41' id='41' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='45' sem=''/>
-<word ref='Leuven|0062-020|54|42' id='42' form='ἐχρῆν' lemma='χρή' postag='v3siia---' relation='OBJ' head='45' sem=''/>
-<word ref='Leuven|0062-020|54|43' id='43' form=',' lemma=',' postag='u--------' relation='AuxX' head='45' sem=''/>
+<word ref='Leuven|0062-020|54|40' id='40' form='πεπλάσθαι' lemma='πλάσσω' postag='v--rne---' relation='SBJ_CO' head='45' sem=''/>
+<word ref='Leuven|0062-020|54|41' id='41' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='40' sem=''/>
+<word ref='Leuven|0062-020|54|42' id='42' form='ἐχρῆν' lemma='χρή' postag='v3siia---' relation='OBJ' head='39' sem=''/>
+<word ref='Leuven|0062-020|54|43' id='43' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|54|44' id='44' form='ἄλλον' lemma='ἄλλος' postag='p-s---ma-' relation='ATR' head='54' sem=''/>
-<word ref='Leuven|0062-020|54|45' id='45' form='δέ' lemma='δέ' postag='b--------' relation='AuxY' head='39' sem=''/>
+<word ref='Leuven|0062-020|54|45' id='45' form='δέ' lemma='δέ' postag='b--------' relation='COORD' head='42' sem=''/>
 <word ref='Leuven|0062-020|54|46' id='46' form='τινα' lemma='τις' postag='p-s---ca-' relation='ATR' head='54' sem=''/>
 <word ref='Leuven|0062-020|54|47' id='47' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='50' sem=''/>
 <word ref='Leuven|0062-020|54|48' id='48' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='52' sem=''/>
 <word ref='Leuven|0062-020|54|49' id='49' form='τοῦτον' lemma='οὗτος' postag='p-s---ma-' relation='ATR' head='52' sem=''/>
-<word ref='Leuven|0062-020|54|50' id='50' form='διεσχηματίσθαι' lemma='διασχηματίζω' postag='v--rne---' relation='SBJ' head='42' sem=''/>
+<word ref='Leuven|0062-020|54|50' id='50' form='διεσχηματίσθαι' lemma='διασχηματίζω' postag='v--rne---' relation='SBJ_CO' head='45' sem=''/>
 <word ref='Leuven|0062-020|54|51' id='51' form='τὸν' lemma='ὁ' postag='l-s---ma-' relation='ATR' head='52' sem=''/>
 <word ref='Leuven|0062-020|54|52' id='52' form='τρόπον' lemma='τρόπος' postag='n-s---ma-' relation='ADV_CO' head='47' sem=''/>
 <word ref='Leuven|0062-020|54|53' id='53' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
@@ -1330,7 +1394,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <sentence id='57' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|57|1' id='1' form='ἔπειτα' lemma='ἔπειτα' postag='d--------' relation='ADV' head='23' sem=''/>
 <word ref='Leuven|0062-020|57|2' id='2' form='δέ' lemma='δέ' postag='d--------' relation='AuxY' head='23' sem=''/>
-<word ref='Leuven|0062-020|57|3' id='3' form=',' lemma=',' postag='u--------' relation='OBJ_CO' head='0' sem=''/>
+<word ref='Leuven|0062-020|57|3' id='3' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|57|4' id='4' form='ὡς' lemma='ὡς' postag='c--------' relation='AuxC' head='23' sem=''/>
 <word ref='Leuven|0062-020|57|5' id='5' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='13' sem=''/>
 <word ref='Leuven|0062-020|57|6' id='6' form='συμφέροντα' lemma='συμφέρω' postag='v-pppana-' relation='OBJ_CO' head='13' sem=''/>
@@ -1351,6 +1415,71 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|57|21' id='21' form='μένειν' lemma='μένω' postag='v--pna---' relation='SBJ' head='18' sem=''/>
 <word ref='Leuven|0062-020|57|22' id='22' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 <word ref='Leuven|0062-020|57|23' id='23' form='ἐρῶ' lemma='' postag='---------' relation='PRED' head='0' sem='' artificial='elliptic' insertion_id='0003e'/>
+</sentence>
+<sentence id='58' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|58|1' id='1' form='ἦν' lemma='εἰμί' postag='v3siia---' relation='PRED_CO' head='52' sem=''/>
+<word ref='Leuven|0062-020|58|2' id='2' form='τοίνυν' lemma='τοίνυν' postag='d--------' relation='AuxY' head='1' sem=''/>
+<word ref='Leuven|0062-020|58|3' id='3' form='πάλαι' lemma='πάλαι' postag='d--------' relation='ADV' head='1' sem=''/>
+<word ref='Leuven|0062-020|58|4' id='4' form='—' lemma='—' postag='u--------' relation='AuxX' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|5' id='5' form='ῥᾷον' lemma='ῥᾴδιος' postag='a-s---nnc' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|6' id='6' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|7' id='7' form='οὕτω' lemma='οὕτως' postag='d--------' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|8' id='8' form='δῆλον' lemma='δῆλος' postag='a-s---nn-' relation='PNOM' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|9' id='9' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|10' id='10' form='γένοιτο' lemma='γίγνομαι' postag='v3saom---' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|58|11' id='11' form=',' lemma=',' postag='u--------' relation='AuxX' head='12' sem=''/>
+<word ref='Leuven|0062-020|58|12' id='12' form='εἴ' lemma='εἰ' postag='c--------' relation='AuxC' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|13' id='13' form='τι' lemma='τις' postag='p-s---na-' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|0062-020|58|14' id='14' form='ἠδίκηκα' lemma='ἀδικέω' postag='v1sria---' relation='ADV' head='12' sem=''/>
+<word ref='Leuven|0062-020|58|15' id='15' form='ἐγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='14' sem=''/>
+<word ref='Leuven|0062-020|58|16' id='16' form='μετακοσμήσας' lemma='μετακοσμέω' postag='v-sapamn-' relation='ADV_CO' head='17' sem=''/>
+<word ref='Leuven|0062-020|58|17' id='17' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='14' sem=''/>
+<word ref='Leuven|0062-020|58|18' id='18' form='νεωτερίσας' lemma='νεωτερίζω' postag='v-sapamn-' relation='ADV_CO' head='17' sem=''/>
+<word ref='Leuven|0062-020|58|19' id='19' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='OBJ' head='17' sem=''/>
+<word ref='Leuven|0062-020|58|20' id='20' form='περὶ' lemma='περί' postag='r--------' relation='AuxP' head='19' sem=''/>
+<word ref='Leuven|0062-020|58|21' id='21' form='τοὺς' lemma='ὁ' postag='l-p---ma-' relation='ATR' head='22' sem=''/>
+<word ref='Leuven|0062-020|58|22' id='22' form='ἀνθρώπους' lemma='ἄνθρωπος' postag='n-p---ma-' relation='ATR' head='20' sem=''/>
+<word ref='Leuven|0062-020|58|23' id='23' form='—' lemma='—' postag='u--------' relation='AuxX' head='10' sem=''/>
+<word ref='Leuven|0062-020|58|24' id='24' form='ἦν' lemma='εἰμί' postag='v3siia---' relation='PRED_CO' head='52' sem=''/>
+<word ref='Leuven|0062-020|58|25' id='25' form='οὖν' lemma='οὖν' postag='d--------' relation='AuxY' head='24' sem=''/>
+<word ref='Leuven|0062-020|58|26' id='26' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='27' sem=''/>
+<word ref='Leuven|0062-020|58|27' id='27' form='θεῖον' lemma='θεῖος' postag='a-s---nn-' relation='ATR_CO' head='29' sem=''/>
+<word ref='Leuven|0062-020|58|28' id='28' form='μόνον' lemma='μόνος' postag='a-s---nn-' relation='PNOM' head='24' sem=''/>
+<word ref='Leuven|0062-020|58|29' id='29' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='32' sem=''/>
+<word ref='Leuven|0062-020|58|30' id='30' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='31' sem=''/>
+<word ref='Leuven|0062-020|58|31' id='31' form='ἐπουράνιον' lemma='ἐπουράνιος' postag='a-s---nn-' relation='ATR_CO' head='29' sem=''/>
+<word ref='Leuven|0062-020|58|32' id='32' form='γένος' lemma='γένος' postag='n-s---nn-' relation='SBJ' head='24' sem=''/>
+<word ref='Leuven|0062-020|58|33' id='33' form=',' lemma=',' postag='u--------' relation='AuxX' head='52' sem=''/>
+<word ref='Leuven|0062-020|58|34' id='34' form='ἡ' lemma='ὁ' postag='l-s---fn-' relation='ATR' head='35' sem=''/>
+<word ref='Leuven|0062-020|58|35' id='35' form='γῆ' lemma='γῆ' postag='n-s---fn-' relation='SBJ' head='63' sem=''/>
+<word ref='Leuven|0062-020|58|36' id='36' form='δὲ' lemma='δέ' postag='b--------' relation='AuxY' head='52' sem=''/>
+<word ref='Leuven|0062-020|58|37' id='37' form='ἄγριόν' lemma='ἄγριος' postag='a-s---nn-' relation='ATR_CO' head='40' sem=''/>
+<word ref='Leuven|0062-020|58|38' id='38' form='τι' lemma='τις' postag='p-s---nn-' relation='ATR' head='39' sem=''/>
+<word ref='Leuven|0062-020|58|39' id='39' form='χρῆμα' lemma='χρῆμα' postag='n-s---nn-' relation='PNOM' head='63' sem=''/>
+<word ref='Leuven|0062-020|58|40' id='40' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='39' sem=''/>
+<word ref='Leuven|0062-020|58|41' id='41' form='ἄμορφον' lemma='ἄμορφος' postag='a-s---nn-' relation='ATR_CO' head='40' sem=''/>
+<word ref='Leuven|0062-020|58|42' id='42' form=',' lemma=',' postag='u--------' relation='AuxX' head='45' sem=''/>
+<word ref='Leuven|0062-020|58|43' id='43' form='ὕλαις' lemma='ὕλη' postag='n-p---fd-' relation='ADV' head='44' sem=''/>
+<word ref='Leuven|0062-020|58|44' id='44' form='ἅπασα' lemma='ἅπας' postag='a-s---fn-' relation='ATR_CO' head='45' sem=''/>
+<word ref='Leuven|0062-020|58|45' id='45' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='35' sem=''/>
+<word ref='Leuven|0062-020|58|46' id='46' form='ταύταις' lemma='οὗτος' postag='p-p---fd-' relation='ATR' head='47' sem=''/>
+<word ref='Leuven|0062-020|58|47' id='47' form='ἀνημέροις' lemma='ἀνήμερος' postag='a-p---fd-' relation='ADV' head='48' sem=''/>
+<word ref='Leuven|0062-020|58|48' id='48' form='λάσιος' lemma='λάσιος' postag='a-s---fn-' relation='ATR_CO' head='45' sem=''/>
+<word ref='Leuven|0062-020|58|49' id='49' form=',' lemma=',' postag='u--------' relation='AuxX' head='52' sem=''/>
+<word ref='Leuven|0062-020|58|50' id='50' form='οὔ' lemma='οὐ' postag='d--------' relation='AuxY' head='63' sem=''/>
+<word ref='Leuven|0062-020|58|51' id='51' form='-τε' lemma='τε' postag='b--------' relation='AuxY' head='52' sem=''/>
+<word ref='Leuven|0062-020|58|52' id='52' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='0' sem=''/>
+<word ref='Leuven|0062-020|58|53' id='53' form='βωμοὶ' lemma='βωμός' postag='n-p---mn-' relation='SBJ_CO' head='55' sem=''/>
+<word ref='Leuven|0062-020|58|54' id='54' form='θεῶν' lemma='θεός' postag='n-p---mg-' relation='ATR' head='55' sem=''/>
+<word ref='Leuven|0062-020|58|55' id='55' form='ἢ' lemma='ἤ' postag='b--------' relation='COORD' head='63' sem=''/>
+<word ref='Leuven|0062-020|58|56' id='56' form='νέως' lemma='νέως' postag='n-s---mn-' relation='SBJ_CO' head='55' sem=''/>
+<word ref='Leuven|0062-020|58|57' id='57' form=',' lemma=',' postag='u--------' relation='AuxX' head='59' sem=''/>
+<word ref='Leuven|0062-020|58|58' id='58' form='—' lemma='—' postag='u--------' relation='AuxX' head='59' sem=''/>
+<word ref='Leuven|0062-020|58|59' id='59' form='πόθεν' lemma='πόθεν' postag='d--------' relation='ExD' head='63' sem=''/>
+<word ref='Leuven|0062-020|58|60' id='60' form='γάρ' lemma='γάρ' postag='d--------' relation='AuxY' head='59' sem=''/>
+<word ref='Leuven|0062-020|58|62' id='61' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
+<word ref='Leuven|0062-020|58|63' id='62' form='[0]' lemma='_' postag='---------' relation='PRED_CO' head='52' sem='' artificial='elliptic' insertion_id='0001e'/>
+<word ref='Leuven|0062-020|58|64' id='63' form='[0]' lemma='_' postag='---------' relation='PRED_CO' head='52' sem='' artificial='elliptic' insertion_id='0001e'/>
 </sentence>
 <sentence id='60' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|60|1' id='1' form='ἐγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='31' sem=''/>
@@ -1375,8 +1504,8 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|60|20' id='20' form='ἐπιδώσει' lemma='ἐπιδίδωμι' postag='v3sfia---' relation='OBJ_CO' head='22' sem=''/>
 <word ref='Leuven|0062-020|60|21' id='21' form='δὲ' lemma='δέ' postag='b--------' relation='AuxY' head='20' sem=''/>
 <word ref='Leuven|0062-020|60|22' id='22' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='13' sem=''/>
-<word ref='Leuven|0062-020|60|23' id='23' form='τ-' lemma='τε' postag='b--------' relation='AuxY' head='20' sem=''/>
-<word ref='Leuven|0062-020|60|24' id='24' form='ἆλλα' lemma='ἄλλος' postag='p-p---nn-' relation='SBJ' head='20' sem=''/>
+<word ref='Leuven|0062-020|60|23' id='23' form='τ-' lemma='τε' postag='l-p---nn-' relation='!!!Relation: should be AuxY or COORD!!!ATR' head='24' sem=''/>
+<word ref='Leuven|0062-020|60|24' id='24' form='ἄλλα' lemma='ἄλλος' postag='p-p---nn-' relation='SBJ' head='20' sem=''/>
 <word ref='Leuven|0062-020|60|25' id='25' form='πάντα' lemma='πᾶς' postag='a-p---nn-' relation='ATR' head='24' sem=''/>
 <word ref='Leuven|0062-020|60|26' id='26' form='ἐς' lemma='εἰς' postag='r--------' relation='AuxP' head='20' sem=''/>
 <word ref='Leuven|0062-020|60|27' id='27' form='κόσμον' lemma='κόσμος' postag='n-s---ma-' relation='ADV_CO' head='28' sem=''/>
@@ -1428,7 +1557,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|61|20' id='20' form='γιγνομένη' lemma='γίγνομαι' postag='v-sppefn-' relation='ATR' head='19' sem=''/>
 <word ref='Leuven|0062-020|61|21' id='21' form='εὐδαιμονέστερον' lemma='εὐδαίμων' postag='a-s---nac' relation='OBJ' head='22' sem=''/>
 <word ref='Leuven|0062-020|61|22' id='22' form='ἀποφαίνειν' lemma='ἀποφαίνω' postag='v--pna---' relation='OBJ' head='17' sem=''/>
-<word ref='Leuven|0062-020|61|23' id='23' form='αὐτό' lemma='αὐτός' postag='p-s---na-' relation='SBJ' head='21' sem=''/>
+<word ref='Leuven|0062-020|61|23' id='23' form='αὐτό' lemma='αὐτός' postag='p-s---na-' relation='%%%SBJ' head='21' sem=''/>
 <word ref='Leuven|0062-020|61|24' id='24' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='62' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
@@ -1439,12 +1568,12 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|62|5' id='5' form=',' lemma=',' postag='u--------' relation='AuxX' head='7' sem=''/>
 <word ref='Leuven|0062-020|62|6' id='6' form='εὐμηχανώτατον' lemma='εὐμήχανος' postag='a-s---nas' relation='PNOM_CO' head='11' sem=''/>
 <word ref='Leuven|0062-020|62|7' id='7' form='δ’' lemma='δέ' postag='b--------' relation='COORD' head='3' sem=''/>
-<word ref='Leuven|0062-020|62|8' id='8' form='ἄλλως' lemma='ἄλλος' postag='d--------' relation='AuxZ' head='7' sem=''/>
+<word ref='Leuven|0062-020|62|8' id='8' form='ἄλλως' lemma='ἄλλος' postag='d--------' relation='ADV' head='7' sem=''/>
 <word ref='Leuven|0062-020|62|9' id='9' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='11' sem=''/>
 <word ref='Leuven|0062-020|62|10' id='10' form='συνετώτατον' lemma='συνετός' postag='a-s---nas' relation='PNOM_CO' head='11' sem=''/>
 <word ref='Leuven|0062-020|62|11' id='11' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='7' sem=''/>
 <word ref='Leuven|0062-020|62|12' id='12' form='τοῦ' lemma='ὁ' postag='l-s---ng-' relation='ATR' head='13' sem=''/>
-<word ref='Leuven|0062-020|62|13' id='13' form='βελτίονος' lemma='βελτίων' postag='a-s---ngc' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|0062-020|62|13' id='13' form='βελτίονος' lemma='ἀγαθός' postag='a-s---ngc' relation='OBJ' head='14' sem=''/>
 <word ref='Leuven|0062-020|62|14' id='14' form='αἰσθανόμενον' lemma='αἰσθάνομαι' postag='v-sppena-' relation='PNOM_CO' head='11' sem=''/>
 <word ref='Leuven|0062-020|62|15' id='15' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
@@ -1455,7 +1584,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|63|4' id='4' form='τὸν' lemma='ὁ' postag='l-s---ma-' relation='ATR' head='6' sem=''/>
 <word ref='Leuven|0062-020|63|5' id='5' form='ποιητικὸν' lemma='ποιητικός' postag='a-s---ma-' relation='ATR' head='6' sem=''/>
 <word ref='Leuven|0062-020|63|6' id='6' form='λόγον' lemma='λόγος' postag='n-s---ma-' relation='ADV' head='3' sem=''/>
-<word ref='Leuven|0062-020|63|7' id='7' form='γαῖαν' lemma='γαῖα' postag='n-s---fa-' relation='OBJ' head='10' sem=''/>
+<word ref='Leuven|0062-020|63|7' id='7' form='γαῖαν' lemma='γῆ' postag='n-s---fa-' relation='OBJ' head='10' sem=''/>
 <word ref='Leuven|0062-020|63|8' id='8' form='ὕδει' lemma='ὕδωρ' postag='n-s---nd-' relation='OBJ' head='10' sem=''/>
 <word ref='Leuven|0062-020|63|9' id='9' form='φύρας' lemma='φύρω' postag='v-sapamn-' relation='ADV_CO' head='10' sem=''/>
 <word ref='Leuven|0062-020|63|10' id='10' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='12' sem=''/>
@@ -1489,7 +1618,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <sentence id='65' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|65|1' id='1' form='καὶ' lemma='καί' postag='d--------' relation='AuxY' head='4' sem=''/>
 <word ref='Leuven|0062-020|65|2' id='2' form='τὸ' lemma='ὁ' postag='l-s---na-' relation='ATR' head='3' sem=''/>
-<word ref='Leuven|0062-020|65|3' id='3' form='ζημίωμα' lemma='ζημίωμα' postag='n-s---na-' relation='SBJ' head='5' sem=''/>
+<word ref='Leuven|0062-020|65|3' id='3' form='ζημίωμα' lemma='ζημίωμα' postag='n-s---na-' relation='%%%SBJ' head='5' sem=''/>
 <word ref='Leuven|0062-020|65|4' id='4' form='ὁρᾷς' lemma='ὁράω' postag='v2spia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|65|5' id='5' form='ἡλίκον' lemma='ἡλίκος' postag='a-s---na-' relation='OBJ' head='4' sem=''/>
 <word ref='Leuven|0062-020|65|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='7' sem=''/>
@@ -1516,7 +1645,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|66|6' id='6' form='τὸ' lemma='ὁ' postag='l-s---na-' relation='ADV' head='11' sem=''/>
 <word ref='Leuven|0062-020|66|7' id='7' form='ἀπ’' lemma='ἀπό' postag='r--------' relation='AuxP' head='6' sem=''/>
 <word ref='Leuven|0062-020|66|8' id='8' form='ἐκείνου' lemma='ἐκεῖνος' postag='p-s---ng-' relation='ATR' head='7' sem=''/>
-<word ref='Leuven|0062-020|66|9' id='9' form='ἧττον' lemma='ἥσσων' postag='a-s---nac' relation='ADV' head='10' sem=''/>
+<word ref='Leuven|0062-020|66|9' id='9' form='ἧττον' lemma='ἥσσων' postag='a-s---nac' relation='!!!congruentiefout geslacht?!!!ADV' head='10' sem=''/>
 <word ref='Leuven|0062-020|66|10' id='10' form='θεοὶ' lemma='θεός' postag='n-p---mn-' relation='PNOM' head='11' sem=''/>
 <word ref='Leuven|0062-020|66|11' id='11' form='εἰσιν' lemma='εἰμί' postag='v3ppia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|66|12' id='12' form='οἱ' lemma='ὁ' postag='l-p---mn-' relation='ATR' head='13' sem=''/>
@@ -1531,6 +1660,49 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|66|21' id='21' form='ζῷα' lemma='ζῷον' postag='n-p---nn-' relation='SBJ' head='22' sem=''/>
 <word ref='Leuven|0062-020|66|22' id='22' form='γεγένηται' lemma='γίγνομαι' postag='v3srie---' relation='ADV' head='15' sem=''/>
 <word ref='Leuven|0062-020|66|23' id='23' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='67' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|67|1' id='1' form='οὕτω' lemma='οὕτως' postag='d--------' relation='ADV' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|3' id='3' form='δὴ' lemma='δή' postag='d--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|4' id='4' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|5' id='5' form='ἀγανακτεῖ' lemma='ἀγανακτέω' postag='v3spia---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|0062-020|67|6' id='6' form='νῦν' lemma='νῦν' postag='d--------' relation='ADV' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|7' id='7' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='8' sem=''/>
+<word ref='Leuven|0062-020|67|8' id='8' form='Ζεὺς' lemma='Ζεύς' postag='n-s---mn-' relation='SBJ' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|9' id='9' form='ὥσπερ' lemma='ὥσπερ' postag='c--------' relation='AuxC' head='5' sem=''/>
+<word ref='Leuven|0062-020|67|10' id='10' form='ἐλαττουμένων' lemma='ἐλασσόω' postag='v-pppemg-' relation='ADV' head='9' sem=''/>
+<word ref='Leuven|0062-020|67|11' id='11' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='12' sem=''/>
+<word ref='Leuven|0062-020|67|12' id='12' form='θεῶν' lemma='θεός' postag='n-p---mg-' relation='SBJ' head='10' sem=''/>
+<word ref='Leuven|0062-020|67|13' id='13' form='ἐκ' lemma='ἐκ' postag='r--------' relation='AuxP' head='10' sem=''/>
+<word ref='Leuven|0062-020|67|14' id='14' form='τῆς' lemma='ὁ' postag='l-s---fg-' relation='ATR' head='17' sem=''/>
+<word ref='Leuven|0062-020|67|15' id='15' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='16' sem=''/>
+<word ref='Leuven|0062-020|67|16' id='16' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='ATR' head='17' sem=''/>
+<word ref='Leuven|0062-020|67|17' id='17' form='γενέσεως' lemma='γένεσις' postag='n-s---fg-' relation='ADV' head='13' sem=''/>
+<word ref='Leuven|0062-020|67|18' id='18' form=',' lemma=',' postag='u--------' relation='AuxX' head='19' sem=''/>
+<word ref='Leuven|0062-020|67|19' id='19' form='εἰ' lemma='εἰ' postag='c--------' relation='AuxC' head='10' sem=''/>
+<word ref='Leuven|0062-020|67|20' id='20' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='19' sem=''/>
+<word ref='Leuven|0062-020|67|21' id='21' form='ἄρα' lemma='ἄρα' postag='d--------' relation='AuxY' head='23' sem=''/>
+<word ref='Leuven|0062-020|67|22' id='22' form='τοῦτο' lemma='οὗτος' postag='p-s---na-' relation='OBJ' head='23' sem=''/>
+<word ref='Leuven|0062-020|67|23' id='23' form='δέδιε' lemma='δείδω' postag='v3sria---' relation='ADV' head='19' sem=''/>
+<word ref='Leuven|0062-020|67|24' id='24' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|67|25' id='25' form='μὴ' lemma='μή' postag='c--------' relation='AuxC' head='22' sem=''/>
+<word ref='Leuven|0062-020|67|26' id='26' form='καὶ' lemma='καί' postag='d--------' relation='AuxZ' head='27' sem=''/>
+<word ref='Leuven|0062-020|67|27' id='27' form='οὗτοι' lemma='οὗτος' postag='p-p---mn-' relation='SBJ' head='31' sem=''/>
+<word ref='Leuven|0062-020|67|28' id='28' form='ἐπανάστασιν' lemma='ἐπανάστασις' postag='n-s---fa-' relation='OBJ' head='31' sem=''/>
+<word ref='Leuven|0062-020|67|30' id='29' form='ἐπ’' lemma='ἐπί' postag='r--------' relation='AuxP' head='27' sem=''/>
+<word ref='Leuven|0062-020|67|31' id='30' form='αὐτὸν' lemma='αὐτός' postag='p-s---ma-' relation='ATR' head='29' sem=''/>
+<word ref='Leuven|0062-020|67|32' id='31' form='βουλεύσωσι' lemma='βουλεύω' postag='v3pasa---' relation='OBJ_CO' head='32' sem=''/>
+<word ref='Leuven|0062-020|67|33' id='32' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='25' sem=''/>
+<word ref='Leuven|0062-020|67|34' id='33' form='πόλεμον' lemma='πόλεμος' postag='n-s---ma-' relation='OBJ' head='34' sem=''/>
+<word ref='Leuven|0062-020|67|35' id='34' form='ἐξενέγκωσι' lemma='ἐκφέρω' postag='v3pasa---' relation='OBJ_CO' head='32' sem=''/>
+<word ref='Leuven|0062-020|67|36' id='35' form='πρὸς' lemma='πρός' postag='r--------' relation='AuxP' head='33' sem=''/>
+<word ref='Leuven|0062-020|67|37' id='36' form='τοὺς' lemma='ὁ' postag='l-p---ma-' relation='ATR' head='37' sem=''/>
+<word ref='Leuven|0062-020|67|38' id='37' form='θεοὺς' lemma='θεός' postag='n-p---ma-' relation='OBJ' head='35' sem=''/>
+<word ref='Leuven|0062-020|67|39' id='38' form='ὥσπερ' lemma='ὥσπερ' postag='c--------' relation='AuxC' head='34' sem=''/>
+<word ref='Leuven|0062-020|67|40' id='39' form='οἱ' lemma='ὁ' postag='l-p---mn-' relation='ATR' head='40' sem=''/>
+<word ref='Leuven|0062-020|67|41' id='40' form='Γίγαντες' lemma='Γίγας' postag='n-p---mn-' relation='SBJ' head='38' sem=''/>
+<word ref='Leuven|0062-020|67|42' id='41' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='68' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|68|1' id='1' form='ἀλλ’' lemma='ἀλλά' postag='d--------' relation='AuxY' head='19' sem=''/>
@@ -1562,7 +1734,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|68|27' id='27' form='μικρότατον' lemma='μικρός' postag='a-s---nas' relation='ATR' head='26' sem=''/>
 <word ref='Leuven|0062-020|68|28' id='28' form=',' lemma=',' postag='u--------' relation='AuxX' head='29' sem=''/>
 <word ref='Leuven|0062-020|68|29' id='29' form='κ-' lemma='καί' postag='b--------' relation='COORD' head='20' sem=''/>
-<word ref='Leuven|0062-020|68|30' id='30' form='ἀγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='31' sem=''/>
+<word ref='Leuven|0062-020|68|30' id='30' form='ἐγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='31' sem=''/>
 <word ref='Leuven|0062-020|68|31' id='31' form='σιωπήσομαι' lemma='σιωπάω' postag='v1sfim---' relation='PRED_CO' head='32' sem=''/>
 <word ref='Leuven|0062-020|68|32' id='32' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='29' sem=''/>
 <word ref='Leuven|0062-020|68|33' id='33' form='δίκαια' lemma='δίκαιος' postag='a-p---na-' relation='OBJ' head='35' sem=''/>
@@ -1580,7 +1752,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|69|5' id='5' form='ταῦτα' lemma='οὗτος' postag='p-p---nn-' relation='SBJ' head='6' sem=''/>
 <word ref='Leuven|0062-020|69|6' id='6' form='γεγένηται' lemma='γίγνομαι' postag='v3srie---' relation='OBJ' head='1' sem=''/>
 <word ref='Leuven|0062-020|69|7' id='7' form='τοῖς' lemma='ὁ' postag='l-p---md-' relation='ATR' head='8' sem=''/>
-<word ref='Leuven|0062-020|69|8' id='8' form='θεοῖς' lemma='θεός' postag='n-p---md-' relation='ADV' head='4' sem=''/>
+<word ref='Leuven|0062-020|69|8' id='8' form='θεοῖς' lemma='θεός' postag='n-p---md-' relation='!!!congruentiefout geslacht?!!!ADV' head='4' sem=''/>
 <word ref='Leuven|0062-020|69|9' id='9' form=',' lemma=',' postag='u--------' relation='AuxX' head='1' sem=''/>
 <word ref='Leuven|0062-020|69|10' id='10' form='οὕτως' lemma='οὕτως' postag='d--------' relation='ADV' head='12' sem=''/>
 <word ref='Leuven|0062-020|69|11' id='11' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='12' sem=''/>
@@ -1626,19 +1798,20 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|69|51' id='51' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='70' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
-<word ref='Leuven|0062-020|70|1' id='1' form='μεσταὶ' lemma='μεστός' postag='a-p---fn-' relation='PNOM_CO' head='9' sem=''/>
+<word ref='Leuven|0062-020|70|1' id='1' form='μεσταὶ' lemma='μεστός' postag='a-p---fn-' relation='PNOM' head='13' sem=''/>
 <word ref='Leuven|0062-020|70|2' id='2' form='δὲ' lemma='δέ' postag='d--------' relation='AuxY' head='9' sem=''/>
 <word ref='Leuven|0062-020|70|3' id='3' form='Διὸς' lemma='Ζεύς' postag='n-s---mg-' relation='OBJ' head='1' sem=''/>
 <word ref='Leuven|0062-020|70|4' id='4' form='πᾶσαι' lemma='πᾶς' postag='a-p---fn-' relation='ATR' head='6' sem=''/>
 <word ref='Leuven|0062-020|70|5' id='5' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='9' sem=''/>
-<word ref='Leuven|0062-020|70|6' id='6' form='ἀγυιαί' lemma='ἀγυιά' postag='n-p---fn-' relation='SBJ' head='1' sem=''/>
+<word ref='Leuven|0062-020|70|6' id='6' form='ἀγυιαί' lemma='ἀγυιά' postag='n-p---fn-' relation='SBJ' head='13' sem=''/>
 <word ref='Leuven|0062-020|70|7' id='7' form=',' lemma=',' postag='u--------' relation='AuxX' head='9' sem=''/>
 <word ref='Leuven|0062-020|70|8' id='8' form='πᾶσαι' lemma='πᾶς' postag='a-p---fn-' relation='ATR' head='11' sem=''/>
 <word ref='Leuven|0062-020|70|9' id='9' form='δ’' lemma='δέ' postag='b--------' relation='COORD' head='0' sem=''/>
-<word ref='Leuven|0062-020|70|10' id='10' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='OBJ' head='13' sem=''/>
-<word ref='Leuven|0062-020|70|11' id='11' form='ἀγοραί' lemma='ἀγορά' postag='n-p---fn-' relation='SBJ' head='13' sem=''/>
+<word ref='Leuven|0062-020|70|10' id='10' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|0062-020|70|11' id='11' form='ἀγοραί' lemma='ἀγορά' postag='n-p---fn-' relation='SBJ' head='14' sem=''/>
 <word ref='Leuven|0062-020|70|12' id='12' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-<word ref='Leuven|0062-020|70|13' id='13' form='μεσταὶ' lemma='' postag='---------' relation='PNOM_CO' head='9' sem='' artificial='elliptic' insertion_id='0011e'/>
+<word ref='Leuven|0062-020|70|13' id='13' form='[0]' lemma='' postag='---------' relation='PRED_CO' head='9' sem='' artificial='elliptic' insertion_id='0011e'/>
+<word ref='Leuven|0062-020|70|14' id='14' form='[1]' lemma='' postag='---------' relation='PRED_CO' head='9' sem='' artificial='elliptic' insertion_id='0001e'/>
 </sentence>
 <sentence id='71' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|71|1' id='1' form='καὶ' lemma='καί' postag='d--------' relation='AuxY' head='16' sem=''/>
@@ -1688,7 +1861,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|72|19' id='19' form='ἐστι' lemma='εἰμί' postag='v3spia---' relation='PRED_CO' head='22' sem=''/>
 <word ref='Leuven|0062-020|72|20' id='20' form=',' lemma=',' postag='u--------' relation='AuxX' head='22' sem=''/>
 <word ref='Leuven|0062-020|72|21' id='21' form='Προμηθέως' lemma='Προμηθεύς' postag='n-s---mg-' relation='ATR' head='25' sem=''/>
-<word ref='Leuven|0062-020|72|22' id='22' form='δὲ' lemma='δέ' postag='b--------' relation='AuxY' head='0' sem=''/>
+<word ref='Leuven|0062-020|72|22' id='22' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='0' sem=''/>
 <word ref='Leuven|0062-020|72|23' id='23' form='οὐδαμοῦ' lemma='οὐδαμοῦ' postag='d--------' relation='ADV' head='27' sem=''/>
 <word ref='Leuven|0062-020|72|24' id='24' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 <word ref='Leuven|0062-020|72|25' id='25' form='νεὼς' lemma='' postag='---------' relation='SBJ' head='26' sem='' artificial='elliptic' insertion_id='0020e'/>
@@ -1732,9 +1905,9 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|74|17' id='17' form='ἀμάρτυρον' lemma='ἀμάρτυρος' postag='a-s---nn-' relation='ATR' head='13' sem=''/>
 <word ref='Leuven|0062-020|74|18' id='18' form=',' lemma=',' postag='u--------' relation='AuxX' head='19' sem=''/>
 <word ref='Leuven|0062-020|74|19' id='19' form='οἷον' lemma='οἷον' postag='c--------' relation='AuxC' head='13' sem=''/>
-<word ref='Leuven|0062-020|74|20' id='20' form='κτῆμα' lemma='κτῆμα' postag='n-s---na-' relation='ATR_CO' head='21' sem=''/>
+<word ref='Leuven|0062-020|74|20' id='20' form='κτῆμα' lemma='κτῆμα' postag='n-s---na-' relation='APOS_CO' head='21' sem=''/>
 <word ref='Leuven|0062-020|74|21' id='21' form='ἢ' lemma='ἤ' postag='b--------' relation='COORD' head='19' sem=''/>
-<word ref='Leuven|0062-020|74|22' id='22' form='ποίημα' lemma='ποίημα' postag='n-s---na-' relation='ATR_CO' head='21' sem=''/>
+<word ref='Leuven|0062-020|74|22' id='22' form='ποίημα' lemma='ποίημα' postag='n-s---na-' relation='APOS_CO' head='21' sem=''/>
 <word ref='Leuven|0062-020|74|23' id='23' form='ὃ' lemma='ὅς' postag='p-s---na-' relation='OBJ' head='26' sem=''/>
 <word ref='Leuven|0062-020|74|24' id='24' form='μηδεὶς' lemma='μηδείς' postag='p-s---mn-' relation='SBJ' head='26' sem=''/>
 <word ref='Leuven|0062-020|74|25' id='25' form='ὄψεται' lemma='ὁράω' postag='v3sfim---' relation='ATR_CO' head='26' sem=''/>
@@ -1757,6 +1930,64 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|75|4' id='4' form='τοῦτ’' lemma='οὗτος' postag='p-s---na-' relation='OBJ' head='5' sem=''/>
 <word ref='Leuven|0062-020|75|5' id='5' form='ἔφην' lemma='φημί' postag='v1siia---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|75|6' id='6' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='76' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|76|1' id='1' form='ὅτι' lemma='ὅτι' postag='c--------' relation='AuxC' head='30' sem=''/>
+<word ref='Leuven|0062-020|76|2' id='2' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='3' sem=''/>
+<word ref='Leuven|0062-020|76|3' id='3' form='γενομένων' lemma='γίγνομαι' postag='v-papmmg-' relation='ADV' head='7' sem=''/>
+<word ref='Leuven|0062-020|76|4' id='4' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='5' sem=''/>
+<word ref='Leuven|0062-020|76|5' id='5' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='SBJ' head='3' sem=''/>
+<word ref='Leuven|0062-020|76|6' id='6' form='ἀμάρτυρον' lemma='ἀμάρτυρος' postag='a-s---nn-' relation='PNOM' head='10' sem=''/>
+<word ref='Leuven|0062-020|76|7' id='7' form='συνέβαινε' lemma='συμβαίνω' postag='v3siia---' relation='ADV_CO' head='14' sem=''/>
+<word ref='Leuven|0062-020|76|8' id='8' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='9' sem=''/>
+<word ref='Leuven|0062-020|76|9' id='9' form='κάλλος' lemma='κάλλος' postag='n-s---nn-' relation='SBJ' head='7' sem=''/>
+<word ref='Leuven|0062-020|76|10' id='10' form='εἶναι' lemma='εἰμί' postag='v--pna---' relation='SBJ' head='7' sem=''/>
+<word ref='Leuven|0062-020|76|11' id='11' form='τῶν' lemma='ὁ' postag='l-p---ng-' relation='ATR' head='12' sem=''/>
+<word ref='Leuven|0062-020|76|12' id='12' form='ὅλων' lemma='ὅλος' postag='a-p---ng-' relation='ATR' head='9' sem=''/>
+<word ref='Leuven|0062-020|76|13' id='13' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|76|14' id='14' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='1' sem=''/>
+<word ref='Leuven|0062-020|76|15' id='15' form='πλοῦτόν' lemma='πλοῦτος' postag='n-s---ma-' relation='OBJ' head='17' sem=''/>
+<word ref='Leuven|0062-020|76|16' id='16' form='τινα' lemma='τις' postag='p-s---ca-' relation='ATR' head='15' sem=''/>
+<word ref='Leuven|0062-020|76|17' id='17' form='πλουτήσειν' lemma='πλουτέω' postag='v--fna---' relation='OBJ' head='18' sem=''/>
+<word ref='Leuven|0062-020|76|18' id='18' form='ἐμέλλομεν' lemma='μέλλω' postag='v1piia---' relation='ADV_CO' head='14' sem=''/>
+<word ref='Leuven|0062-020|76|19' id='19' form='οὔ' lemma='οὐ' postag='d--------' relation='AuxZ' head='24' sem=''/>
+<word ref='Leuven|0062-020|76|20' id='20' form='-τε' lemma='τε' postag='b--------' relation='AuxY' head='24' sem=''/>
+<word ref='Leuven|0062-020|76|21' id='21' form='ὑπ’' lemma='ὑπό' postag='r--------' relation='AuxP' head='24' sem=''/>
+<word ref='Leuven|0062-020|76|22' id='22' form='ἄλλου' lemma='ἄλλος' postag='p-s---mg-' relation='ATR' head='23' sem=''/>
+<word ref='Leuven|0062-020|76|23' id='23' form='τινὸς' lemma='τις' postag='p-s---cg-' relation='OBJ' head='21' sem=''/>
+<word ref='Leuven|0062-020|76|24' id='24' form='θαυμασθησόμενον' lemma='θαυμάζω' postag='v-sfppma-' relation='ATR_CO' head='25' sem=''/>
+<word ref='Leuven|0062-020|76|25' id='25' form='οὔτε' lemma='οὔτε' postag='b--------' relation='COORD' head='15' sem=''/>
+<word ref='Leuven|0062-020|76|26' id='26' form='ἡμῖν' lemma='ἐγώ' postag='p1p---cd-' relation='!!!congruentiefout DAT?!!!ADV' head='29' sem=''/>
+<word ref='Leuven|0062-020|76|27' id='27' form='αὐτοῖς' lemma='αὐτός' postag='p-p---md-' relation='ATR' head='26' sem=''/>
+<word ref='Leuven|0062-020|76|28' id='28' form='ὁμοίως' lemma='ὅμοιος' postag='d--------' relation='ADV' head='29' sem=''/>
+<word ref='Leuven|0062-020|76|29' id='29' form='τίμιον' lemma='τίμιος' postag='a-s---ma-' relation='ATR_CO' head='25' sem=''/>
+<word ref='Leuven|0062-020|76|31' id='30' form='[0]' lemma='_' postag='_' relation='PRED' head='0' sem='' artificial='elliptic' insertion_id='0001e'/>
+</sentence>
+<sentence id='76,5' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
+<word ref='Leuven|0062-020|76,5|1' id='1' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='5' sem=''/>
+<word ref='Leuven|0062-020|76,5|2' id='2' form='-δὲ' lemma='δέ' postag='d--------' relation='AuxY' head='13' sem=''/>
+<word ref='Leuven|0062-020|76,5|3' id='3' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='13' sem=''/>
+<word ref='Leuven|0062-020|76,5|4' id='4' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='5' sem=''/>
+<word ref='Leuven|0062-020|76,5|5' id='5' form='εἴχομεν' lemma='ἔχω' postag='v1piia---' relation='PRED_CO' head='13' sem=''/>
+<word ref='Leuven|0062-020|76,5|6' id='6' form='πρὸς' lemma='πρός' postag='r--------' relation='AuxP' head='10' sem=''/>
+<word ref='Leuven|0062-020|76,5|7' id='7' form='ὅ' lemma='ὅς' postag='p-s---na-' relation='OBJ' head='6' sem=''/>
+<word ref='Leuven|0062-020|76,5|8' id='8' form='τι' lemma='τις' postag='p-s---na-' relation='ATR' head='7' sem=''/>
+<word ref='Leuven|0062-020|76,5|9' id='9' form='ἔλαττον' lemma='ἐλαχύς' postag='a-s---nac' relation='OCOMP' head='10' sem=''/>
+<word ref='Leuven|0062-020|76,5|10' id='10' form='παραθεωρῶμεν' lemma='παραθεωρέω' postag='v1ppsa---' relation='OBJ' head='5' sem=''/>
+<word ref='Leuven|0062-020|76,5|11' id='11' form='αὐτόν' lemma='αὐτός' postag='p-s---ma-' relation='OBJ' head='10' sem=''/>
+<word ref='Leuven|0062-020|76,5|12' id='12' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|76,5|13' id='13' form='οὐδ’' lemma='οὐδέ' postag='b--------' relation='COORD' head='0' sem=''/>
+<word ref='Leuven|0062-020|76,5|14' id='14' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='15' sem=''/>
+<word ref='Leuven|0062-020|76,5|15' id='15' form='συνίεμεν' lemma='συνίημι' postag='v1piia---' relation='PRED_CO' head='13' sem=''/>
+<word ref='Leuven|0062-020|76,5|16' id='16' form='ἡλίκα' lemma='ἡλίκος' postag='a-p---na-' relation='ADV' head='17' sem=''/>
+<word ref='Leuven|0062-020|76,5|17' id='17' form='εὐδαιμονοῦμεν' lemma='εὐδαιμονέω' postag='v1piia---' relation='OBJ' head='15' sem=''/>
+<word ref='Leuven|0062-020|76,5|18' id='18' form='οὐχ' lemma='οὐ' postag='d--------' relation='AuxZ' head='19' sem=''/>
+<word ref='Leuven|0062-020|76,5|19' id='19' form='ὁρῶντες' lemma='ὁράω' postag='v-pppamn-' relation='ADV' head='15' sem=''/>
+<word ref='Leuven|0062-020|76,5|20' id='20' form='ἀμοίρους' lemma='ἄμοιρος' postag='a-p---ma-' relation='OCOMP' head='19' sem=''/>
+<word ref='Leuven|0062-020|76,5|21' id='21' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='22' sem=''/>
+<word ref='Leuven|0062-020|76,5|22' id='22' form='ἡμετέρων' lemma='ἡμέτερος' postag='a-p---mg-' relation='ATR' head='23' sem=''/>
+<word ref='Leuven|0062-020|76,5|23' id='23' form='τινάς' lemma='τις' postag='p-p---ca-' relation='OBJ' head='19' sem=''/>
+<word ref='Leuven|0062-020|76,5|24' id='24' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='77' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|77|1' id='1' form='οὕτω' lemma='οὕτως' postag='d--------' relation='ADV' head='7' sem=''/>
@@ -1890,7 +2121,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|84|14' id='14' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
 <word ref='Leuven|0062-020|84|15' id='15' form='διότι' lemma='διότι' postag='c--------' relation='AuxC' head='8' sem=''/>
 <word ref='Leuven|0062-020|84|16' id='16' form='ἀναγκαῖον' lemma='ἀναγκαῖος' postag='a-s---nn-' relation='PNOM' head='21' sem=''/>
-<word ref='Leuven|0062-020|84|17' id='17' form='αὐτῷ' lemma='αὐτός' postag='p-s---md-' relation='ADV' head='16' sem=''/>
+<word ref='Leuven|0062-020|84|17' id='17' form='αὐτῷ' lemma='αὐτός' postag='p-s---md-' relation='!!!congruentiefout geslacht?!!!ADV' head='16' sem=''/>
 <word ref='Leuven|0062-020|84|18' id='18' form='ἐπιμελεῖσθαι' lemma='ἐπιμελέομαι' postag='v--pne---' relation='SBJ' head='16' sem=''/>
 <word ref='Leuven|0062-020|84|19' id='19' form='αὐτῆς' lemma='αὐτός' postag='p-s---fg-' relation='OBJ' head='18' sem=''/>
 <word ref='Leuven|0062-020|84|20' id='20' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
@@ -1967,12 +2198,12 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|89|16' id='16' form='τὰς' lemma='ὁ' postag='l-p---fa-' relation='ATR' head='17' sem=''/>
 <word ref='Leuven|0062-020|89|17' id='17' form='γυναῖκας' lemma='γυνή' postag='n-p---fa-' relation='OBJ_CO' head='13' sem=''/>
 <word ref='Leuven|0062-020|89|18' id='18' form='ὅμως' lemma='ὅμως' postag='d--------' relation='AuxY' head='19' sem=''/>
-<word ref='Leuven|0062-020|89|19' id='19' form='ἐρᾶτε' lemma='ἐράω' postag='v2ppia---' relation='SBJ_CO' head='37' sem=''/>
+<word ref='Leuven|0062-020|89|19' id='19' form='ἐρᾶτε' lemma='ἐράω' postag='v2ppia---' relation='APOS_CO' head='37' sem=''/>
 <word ref='Leuven|0062-020|89|20' id='20' form='αὐτῶν' lemma='αὐτός' postag='p-p---mg-' relation='OBJ' head='23' sem=''/>
 <word ref='Leuven|0062-020|89|21' id='21' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='37' sem=''/>
 <word ref='Leuven|0062-020|89|22' id='22' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='23' sem=''/>
-<word ref='Leuven|0062-020|89|23' id='23' form='διαλείπετε' lemma='διαλείπω' postag='v2ppia---' relation='SBJ_CO' head='37' sem=''/>
-<word ref='Leuven|0062-020|89|24' id='24' form='κατιόντες' lemma='κάτειμι' postag='v-pppamn-' relation='ADV_CO' head='25' sem=''/>
+<word ref='Leuven|0062-020|89|23' id='23' form='διαλείπετε' lemma='διαλείπω' postag='v2ppia---' relation='APOS_CO' head='37' sem=''/>
+<word ref='Leuven|0062-020|89|24' id='24' form='κατιόντες' lemma='κατέρχομαι' postag='v-pppamn-' relation='ADV_CO' head='25' sem=''/>
 <word ref='Leuven|0062-020|89|25' id='25' form=',' lemma=',' postag='u--------' relation='COORD' head='23' sem=''/>
 <word ref='Leuven|0062-020|89|26' id='26' form='ἄρτι' lemma='ἄρτι' postag='d--------' relation='ADV' head='33' sem=''/>
 <word ref='Leuven|0062-020|89|27' id='27' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='33' sem=''/>
@@ -1990,7 +2221,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|89|39' id='39' form='ἐξ' lemma='ἐκ' postag='r--------' relation='AuxP' head='41' sem=''/>
 <word ref='Leuven|0062-020|89|40' id='40' form='αὐτῶν' lemma='αὐτός' postag='p-p---mg-' relation='ADV' head='39' sem=''/>
 <word ref='Leuven|0062-020|89|41' id='41' form='ποιεῖσθαι' lemma='ποιέω' postag='v--pne---' relation='OBJ' head='42' sem=''/>
-<word ref='Leuven|0062-020|89|42' id='42' form='ἀξιοῦτε' lemma='ἀξιόω' postag='v2ppia---' relation='SBJ_CO' head='37' sem=''/>
+<word ref='Leuven|0062-020|89|42' id='42' form='ἀξιοῦτε' lemma='ἀξιόω' postag='v2ppia---' relation='APOS_CO' head='37' sem=''/>
 <word ref='Leuven|0062-020|89|43' id='43' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='90' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
@@ -2033,7 +2264,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|91|14' id='14' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='92' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
-<word ref='Leuven|0062-020|92|1' id='1' form='ἢ' lemma='ἤ' postag='d--------' relation='AuxY' head='0' sem=''/>
+<word ref='Leuven|0062-020|92|1' id='1' form='ἢ' lemma='ἤ' postag='d--------' relation='AuxY' head='5' sem=''/>
 <word ref='Leuven|0062-020|92|2' id='2' form='ἀσύνετον' lemma='ἀσύνετος' postag='a-s---na-' relation='OCOMP_CO' head='6' sem=''/>
 <word ref='Leuven|0062-020|92|3' id='3' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='6' sem=''/>
 <word ref='Leuven|0062-020|92|4' id='4' form='θηριῶδες' lemma='θηριώδης' postag='a-s---na-' relation='OCOMP_CO' head='6' sem=''/>
@@ -2092,7 +2323,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <sentence id='96' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|96|1' id='1' form='ἢ' lemma='ἤ' postag='i--------' relation='AuxY' head='4' sem=''/>
 <word ref='Leuven|0062-020|96|2' id='2' form='κ-' lemma='καί' postag='d--------' relation='AuxZ' head='4' sem=''/>
-<word ref='Leuven|0062-020|96|3' id='3' form='ἀκεῖνον' lemma='ἐκεῖνος' postag='p-s---ma-' relation='OBJ' head='4' sem=''/>
+<word ref='Leuven|0062-020|96|3' id='3' form='ἐκεῖνον' lemma='ἐκεῖνος' postag='p-s---ma-' relation='OBJ' head='4' sem=''/>
 <word ref='Leuven|0062-020|96|4' id='4' form='αἰτιᾶσθε' lemma='αἰτιάομαι' postag='v2ppie---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|96|5' id='5' form='ὡς' lemma='ὡς' postag='c--------' relation='AuxC' head='4' sem=''/>
 <word ref='Leuven|0062-020|96|6' id='6' form='σπαθῶντα' lemma='σπαθάω' postag='v-sppama-' relation='OBJ' head='5' sem=''/>
@@ -2104,6 +2335,32 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <sentence id='97' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|97|1' id='1' form='εἴρηκα' lemma='λέγω' postag='v1sria---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0062-020|97|2' id='2' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='98' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|98|1' id='1' form='σφὼ' lemma='σφεῖς' postag='p3d---cv-' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|98|2' id='2' form='δέ' lemma='δέ' postag='d--------' relation='AuxY' head='17' sem=''/>
+<word ref='Leuven|0062-020|98|3' id='3' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|98|4' id='4' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='6' sem=''/>
+<word ref='Leuven|0062-020|98|5' id='5' form='Ἑρμῆ' lemma='Ἑρμῆς' postag='n-s---mv-' relation='ExD_CO' head='6' sem=''/>
+<word ref='Leuven|0062-020|98|6' id='6' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='1' sem=''/>
+<word ref='Leuven|0062-020|98|7' id='7' form='Ἥφαιστε' lemma='Ἥφαιστος' postag='n-s---mv-' relation='ExD_CO' head='6' sem=''/>
+<word ref='Leuven|0062-020|98|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='6' sem=''/>
+<word ref='Leuven|0062-020|98|9' id='9' form='εἴ' lemma='εἰ' postag='c--------' relation='AuxC' head='17' sem=''/>
+<word ref='Leuven|0062-020|98|10' id='10' form='τι' lemma='τις' postag='p-s---na-' relation='SBJ' head='13' sem=''/>
+<word ref='Leuven|0062-020|98|11' id='11' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='13' sem=''/>
+<word ref='Leuven|0062-020|98|12' id='12' form='καλῶς' lemma='καλός' postag='d--------' relation='ADV' head='13' sem=''/>
+<word ref='Leuven|0062-020|98|13' id='13' form='εἰρῆσθαι' lemma='λέγω' postag='v--rne---' relation='OBJ' head='14' sem=''/>
+<word ref='Leuven|0062-020|98|14' id='14' form='δοκεῖ' lemma='δοκέω' postag='v3spia---' relation='ADV' head='9' sem=''/>
+<word ref='Leuven|0062-020|98|15' id='15' form=',' lemma=',' postag='u--------' relation='AuxX' head='9' sem=''/>
+<word ref='Leuven|0062-020|98|16' id='16' form='διευθύνετε' lemma='διευθύνω' postag='v2ppma---' relation='PRED_CO' head='17' sem=''/>
+<word ref='Leuven|0062-020|98|17' id='17' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='20' sem=''/>
+<word ref='Leuven|0062-020|98|18' id='18' form='ἐξελέγχετε' lemma='ἐξελέγχω' postag='v2ppma---' relation='PRED_CO' head='17' sem=''/>
+<word ref='Leuven|0062-020|98|19' id='19' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
+<word ref='Leuven|0062-020|98|21' id='20' form='κ-' lemma='καί' postag='b--------' relation='COORD' head='0' sem=''/>
+<word ref='Leuven|0062-020|98|22' id='21' form='ἐγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='23' sem=''/>
+<word ref='Leuven|0062-020|98|23' id='22' form='αὖθις' lemma='αὖθις' postag='d--------' relation='ADV' head='23' sem=''/>
+<word ref='Leuven|0062-020|98|24' id='23' form='ἀπολογήσομαι' lemma='ἀπολογέομαι' postag='v1sfim---' relation='PRED_CO' head='20' sem=''/>
+<word ref='Leuven|0062-020|98|25' id='24' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='99' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|99|1' id='1' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='13' sem=''/>
@@ -2134,6 +2391,21 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|100|11' id='11' form='ἐπήκουσέ' lemma='ἐπακούω' postag='v3saia---' relation='ADV' head='5' sem=''/>
 <word ref='Leuven|0062-020|100|12' id='12' form='σου' lemma='σύ' postag='p2s---cg-' relation='OBJ' head='11' sem=''/>
 <word ref='Leuven|0062-020|100|13' id='13' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
+</sentence>
+<sentence id='101' document_id='0062-020' Author='Lucianus' subdoc='' corrupt=''>
+<word ref='Leuven|0062-020|101|1' id='1' form='εὖ' lemma='εὖ' postag='d--------' relation='ADV' head='3' sem=''/>
+<word ref='Leuven|0062-020|101|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='3' sem=''/>
+<word ref='Leuven|0062-020|101|3' id='3' form='οἶδα' lemma='οἶδα' postag='v1sria---' relation='PRED' head='0' sem=''/>
+<word ref='Leuven|0062-020|101|4' id='4' form=',' lemma=',' postag='u--------' relation='AuxX' head='10' sem=''/>
+<word ref='Leuven|0062-020|101|5' id='5' form='ἑκκαίδεκα' lemma='ἑκκαίδεκα' postag='m--------' relation='ATR' head='6' sem=''/>
+<word ref='Leuven|0062-020|101|7' id='6' form='γῦπας' lemma='γύψ' postag='n-p---ma-' relation='OBJ' head='8' sem=''/>
+<word ref='Leuven|0062-020|101|8' id='7' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='8' sem=''/>
+<word ref='Leuven|0062-020|101|9' id='8' form='ἐπέστησέ' lemma='ἐφίστημι' postag='v3saia---' relation='OBJ' head='3' sem=''/>
+<word ref='Leuven|0062-020|101|10' id='9' form='σοι' lemma='σύ' postag='p2s---cd-' relation='OBJ' head='8' sem=''/>
+<word ref='Leuven|0062-020|101|11' id='10' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='ATR' head='11' sem=''/>
+<word ref='Leuven|0062-020|101|12' id='11' form='ἔγκατα' lemma='ἔγκατα' postag='n-p---na-' relation='OBJ' head='12' sem=''/>
+<word ref='Leuven|0062-020|101|13' id='12' form='ἐξαιρήσοντας' lemma='ἐξαιρέω' postag='v-pfpama-' relation='ATR' head='6' sem=''/>
+<word ref='Leuven|0062-020|101|14' id='13' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='102' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|102|1' id='1' form='οὕτω' lemma='οὕτως' postag='d--------' relation='ADV' head='2' sem=''/>
@@ -2190,7 +2462,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|104|27' id='27' form='κατατοξεύσων' lemma='κατατοξεύω' postag='v-sfpamn-' relation='ADV' head='21' sem=''/>
 <word ref='Leuven|0062-020|104|28' id='28' form='ὃν' lemma='ὅς' postag='p-s---ma-' relation='SBJ' head='30' sem=''/>
 <word ref='Leuven|0062-020|104|29' id='29' form='φὴς' lemma='φημί' postag='v2spia---' relation='ATR' head='33' sem=''/>
-<word ref='Leuven|0062-020|104|30' id='30' form='ἐπιπτήσεσθαί' lemma='ἐφίπταμαι' postag='v--fnm---' relation='OBJ' head='29' sem=''/>
+<word ref='Leuven|0062-020|104|30' id='30' form='ἐπιπτήσεσθαί' lemma='ἐπιπέτομαι' postag='v--fnm---' relation='OBJ' head='29' sem=''/>
 <word ref='Leuven|0062-020|104|31' id='31' form='μοι' lemma='ἐγώ' postag='p1s---cd-' relation='OBJ' head='30' sem=''/>
 <word ref='Leuven|0062-020|104|32' id='32' form='τὸν' lemma='ὁ' postag='l-s---ma-' relation='ATR' head='33' sem=''/>
 <word ref='Leuven|0062-020|104|33' id='33' form='ἀετόν' lemma='ἀετός' postag='n-s---ma-' relation='OBJ' head='27' sem=''/>
@@ -2242,7 +2514,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|107|13' id='13' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='108' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
-<word ref='Leuven|0062-020|108|1' id='1' form='τίνος' lemma='τίς' postag='p-s---cg-' relation='ExD' head='0' sem=''/>
+<word ref='Leuven|0062-020|108|1' id='1' form='τίνος' lemma='τίς' postag='p-s---cg-' relation='ADV' head='0' sem=''/>
 <word ref='Leuven|0062-020|108|2' id='2' form='ταύτης' lemma='οὗτος' postag='p-s---fg-' relation='ATR' head='1' sem=''/>
 <word ref='Leuven|0062-020|108|3' id='3' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
@@ -2284,7 +2556,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|111|18' id='18' form='τῆς' lemma='ὁ' postag='l-s---fg-' relation='ATR' head='19' sem=''/>
 <word ref='Leuven|0062-020|111|19' id='19' form='καταδίκης' lemma='καταδίκη' postag='n-s---fg-' relation='ADV' head='17' sem=''/>
 <word ref='Leuven|0062-020|111|20' id='20' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-<word ref='Leuven|0062-020|111|21' id='21' form='ἐστι' lemma='εἰμί' postag='v3spia---' relation='PRED' head='0' sem='' artificial='elliptic' insertion_id='0007e'/>
+<word ref='Leuven|0062-020|111|21' id='21' form='ἐστι' lemma='εἰμί' postag='v3spia---' relation='ExD' head='3' sem='' artificial='elliptic' insertion_id='0007e'/>
 </sentence>
 <sentence id='112' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
 <word ref='Leuven|0062-020|112|1' id='1' form='ἀλλὰ' lemma='ἀλλά' postag='d--------' relation='AuxY' head='2' sem=''/>
@@ -2312,7 +2584,7 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|114|1' id='1' form='καὶ' lemma='καί' postag='d--------' relation='AuxY' head='9' sem=''/>
 <word ref='Leuven|0062-020|114|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='9' sem=''/>
 <word ref='Leuven|0062-020|114|3' id='3' form='ἤδη' lemma='ἤδη' postag='d--------' relation='ADV' head='9' sem=''/>
-<word ref='Leuven|0062-020|114|4' id='4' form='πλησίον' lemma='πλησίος' postag='d--------' relation='ADV' head='9' sem=''/>
+<word ref='Leuven|0062-020|114|4' id='4' form='πλησίον' lemma='πλησίον' postag='d--------' relation='PNOM' head='9' sem=''/>
 <word ref='Leuven|0062-020|114|5' id='5' form='οὑτοσὶ' lemma='οὗτος' postag='p-s---mn-' relation='ATR' head='7' sem=''/>
 <word ref='Leuven|0062-020|114|6' id='6' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='7' sem=''/>
 <word ref='Leuven|0062-020|114|7' id='7' form='ἀετός' lemma='ἀετός' postag='n-s---mn-' relation='SBJ' head='9' sem=''/>
@@ -2346,275 +2618,5 @@ Updates? Updated file in April 2019, with corrections by Toon Van Hal and Alek K
 <word ref='Leuven|0062-020|116|18' id='18' form='τοῦ' lemma='ὁ' postag='l-s---ng-' relation='ATR' head='19' sem=''/>
 <word ref='Leuven|0062-020|116|19' id='19' form='ὀρνέου' lemma='ὄρνεον' postag='n-s---ng-' relation='OBJ' head='17' sem=''/>
 <word ref='Leuven|0062-020|116|20' id='20' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='76,5' document_id='0062-020' Author='Lucianus' subdoc='1-21' corrupt=''>
-<word ref='Leuven|0062-020|76,5|1' id='1' form='οὐ' lemma='οὐ' postag='d--------' relation='AuxZ' head='5' sem=''/>
-<word ref='Leuven|0062-020|76,5|2' id='2' form='-δὲ' lemma='δέ' postag='d--------' relation='AuxY' head='13' sem=''/>
-<word ref='Leuven|0062-020|76,5|3' id='3' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='13' sem=''/>
-<word ref='Leuven|0062-020|76,5|4' id='4' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|76,5|5' id='5' form='εἴχομεν' lemma='ἔχω' postag='v1piia---' relation='PRED_CO' head='13' sem=''/>
-<word ref='Leuven|0062-020|76,5|6' id='6' form='πρὸς' lemma='πρός' postag='r--------' relation='AuxP' head='10' sem=''/>
-<word ref='Leuven|0062-020|76,5|7' id='7' form='ὅ' lemma='ὅς' postag='p-s---na-' relation='OBJ' head='6' sem=''/>
-<word ref='Leuven|0062-020|76,5|8' id='8' form='τι' lemma='τις' postag='p-s---na-' relation='ATR' head='7' sem=''/>
-<word ref='Leuven|0062-020|76,5|9' id='9' form='ἔλαττον' lemma='ἐλαχύς' postag='a-s---nac' relation='OCOMP' head='10' sem=''/>
-<word ref='Leuven|0062-020|76,5|10' id='10' form='παραθεωρῶμεν' lemma='παραθεωρέω' postag='v1ppsa---' relation='OBJ' head='5' sem=''/>
-<word ref='Leuven|0062-020|76,5|11' id='11' form='αὐτόν' lemma='αὐτός' postag='p-s---ma-' relation='OBJ' head='10' sem=''/>
-<word ref='Leuven|0062-020|76,5|12' id='12' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|76,5|13' id='13' form='οὐδ’' lemma='οὐδέ' postag='b--------' relation='COORD' head='0' sem=''/>
-<word ref='Leuven|0062-020|76,5|14' id='14' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='15' sem=''/>
-<word ref='Leuven|0062-020|76,5|15' id='15' form='συνίεμεν' lemma='συνίημι' postag='v1piia---' relation='PRED_CO' head='13' sem=''/>
-<word ref='Leuven|0062-020|76,5|16' id='16' form='ἡλίκα' lemma='ἡλίκος' postag='a-p---na-' relation='ADV' head='17' sem=''/>
-<word ref='Leuven|0062-020|76,5|17' id='17' form='εὐδαιμονοῦμεν' lemma='εὐδαιμονέω' postag='v1piia---' relation='OBJ' head='15' sem=''/>
-<word ref='Leuven|0062-020|76,5|18' id='18' form='οὐχ' lemma='οὐ' postag='d--------' relation='AuxZ' head='19' sem=''/>
-<word ref='Leuven|0062-020|76,5|19' id='19' form='ὁρῶντες' lemma='ὁράω' postag='v-pppamn-' relation='ADV' head='15' sem=''/>
-<word ref='Leuven|0062-020|76,5|20' id='20' form='ἀμοίρους' lemma='ἄμοιρος' postag='a-p---ma-' relation='OCOMP' head='19' sem=''/>
-<word ref='Leuven|0062-020|76,5|21' id='21' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='22' sem=''/>
-<word ref='Leuven|0062-020|76,5|22' id='22' form='ἡμετέρων' lemma='ἡμέτερος' postag='a-p---mg-' relation='ATR' head='23' sem=''/>
-<word ref='Leuven|0062-020|76,5|23' id='23' form='τινάς' lemma='τις' postag='p-p---ca-' relation='OBJ' head='19' sem=''/>
-<word ref='Leuven|0062-020|76,5|24' id='24' form='·' lemma='punc1' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='7' document_id='0062-020'>
-<word ref='Leuven|0062-020|7|1' id='1' form='τοῦτο' lemma='οὗτος' postag='p-s---na-' relation='OBJ' head='2' sem=''/>
-<word ref='Leuven|0062-020|7|2' id='2' form='φής' lemma='φημί' postag='v2spia---' relation='PRED' head='0' sem=''/>
-<word ref='Leuven|0062-020|7|3' id='3' form=',' lemma=',' postag='u--------' relation='AuxX' head='5' sem=''/>
-<word ref='Leuven|0062-020|7|4' id='4' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='5' sem=''/>
-<word ref='Leuven|0062-020|7|5' id='5' form='Προμηθεῦ' lemma='Προμηθεύς' postag='n-s---mv-' relation='ExD' head='0' sem=''/>
-<word ref='Leuven|0062-020|7|6' id='6' form=',' lemma=',' postag='u--------' relation='AuxX' head='5' sem=''/>
-<word ref='Leuven|0062-020|7|7' id='7' form='ἀντὶ' lemma='ἀντί' postag='r--------' relation='AuxP' head='9' sem=''/>
-<word ref='Leuven|0062-020|7|8' id='8' form='σοῦ' lemma='σύ' postag='p2s---cg-' relation='ADV' head='7' sem=''/>
-<word ref='Leuven|0062-020|7|9' id='9' form='ἀνασκολοπισθῆναι' lemma='ἀνασκολοπίζω' postag='v--anp---' relation='ATR' head='1' sem=''/>
-<word ref='Leuven|0062-020|7|11' id='10' form='αὐτίκα' lemma='αὐτίκα' postag='d--------' relation='ADV' head='12' sem=''/>
-<word ref='Leuven|0062-020|7|12' id='11' form='μάλα' lemma='μάλα' postag='d--------' relation='ADV' head='10' sem=''/>
-<word ref='Leuven|0062-020|7|13' id='12' form='παρακούσαντας' lemma='παρακούω' postag='v-papama-' relation='ADV' head='9' sem=''/>
-<word ref='Leuven|0062-020|7|14' id='13' form='τοῦ' lemma='ὁ' postag='l-s---ng-' relation='ATR' head='14' sem=''/>
-<word ref='Leuven|0062-020|7|15' id='14' form='ἐπιτάγματος' lemma='ἐπίταγμα' postag='n-s---ng-' relation='OBJ' head='12' sem=''/>
-<word ref='Leuven|0062-020|7|16' id='15' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='101' document_id='0062-020'>
-<word ref='Leuven|0062-020|101|1' id='1' form='εὖ' lemma='εὖ' postag='d--------' relation='ADV' head='3' sem=''/>
-<word ref='Leuven|0062-020|101|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='3' sem=''/>
-<word ref='Leuven|0062-020|101|3' id='3' form='οἶδα' lemma='οἶδα' postag='v1sria---' relation='PRED' head='0' sem=''/>
-<word ref='Leuven|0062-020|101|4' id='4' form=',' lemma=',' postag='u--------' relation='AuxX' head='10' sem=''/>
-<word ref='Leuven|0062-020|101|5' id='5' form='ἑκκαίδεκα' lemma='ἑκκαίδεκα' postag='m--------' relation='ATR' head='6' sem=''/>
-<word ref='Leuven|0062-020|101|7' id='6' form='γῦπας' lemma='γύψ' postag='n-p---ma-' relation='OBJ' head='8' sem=''/>
-<word ref='Leuven|0062-020|101|8' id='7' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='8' sem=''/>
-<word ref='Leuven|0062-020|101|9' id='8' form='ἐπέστησέ' lemma='ἐφίστημι' postag='v3saia---' relation='OBJ' head='3' sem=''/>
-<word ref='Leuven|0062-020|101|10' id='9' form='σοι' lemma='σύ' postag='p2s---cd-' relation='OBJ' head='8' sem=''/>
-<word ref='Leuven|0062-020|101|11' id='10' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='ATR' head='11' sem=''/>
-<word ref='Leuven|0062-020|101|12' id='11' form='ἔγκατα' lemma='ἔγκατα' postag='n-p---na-' relation='OBJ' head='12' sem=''/>
-<word ref='Leuven|0062-020|101|13' id='12' form='ἐξαιρήσοντας' lemma='ἐξαιρέω' postag='v-pfpama-' relation='ATR' head='6' sem=''/>
-<word ref='Leuven|0062-020|101|14' id='13' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='52' document_id='0062-020'>
-<word ref='Leuven|0062-020|52|1' id='1' form='καὶ' lemma='καί' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|52|2' id='2' form='περὶ' lemma='περί' postag='r--------' relation='AuxP' head='0' sem=''/>
-<word ref='Leuven|0062-020|52|3' id='3' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|52|4' id='4' form='τῶν' lemma='ὁ' postag='l-p---ng-' relation='ATR' head='5' sem=''/>
-<word ref='Leuven|0062-020|52|5' id='5' form='κρεῶν' lemma='κρέας' postag='n-p---ng-' relation='PNOM' head='2' sem=''/>
-<word ref='Leuven|0062-020|52|6' id='6' form='τοσαῦτα' lemma='τοσοῦτος' postag='p-p---nn-' relation='APOS' head='5' sem=''/>
-<word ref='Leuven|0062-020|52|7' id='7' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|52|8' id='8' form='αἰσχρὰ' lemma='αἰσχρός' postag='a-p---nn-' relation='ATR_CO' head='15' sem=''/>
-<word ref='Leuven|0062-020|52|9' id='9' form='μὲν' lemma='μέν' postag='d--------' relation='AuxY' head='15' sem=''/>
-<word ref='Leuven|0062-020|52|10' id='10' form='κ-' lemma='AuxZ' postag='d--------' relation='ADV' head='0' sem=''/>
-<word ref='Leuven|0062-020|52|10b' id='11' form='ἐμοὶ' lemma='ἐγώ' postag='p1s---cd-' relation='ADV' head='8' sem=''/>
-<word ref='Leuven|0062-020|52|12' id='12' form='ἀπολογεῖσθαι' lemma='ἀπολογέομαι' postag='v--pne---' relation='ADV' head='8' sem=''/>
-<word ref='Leuven|0062-020|52|13' id='13' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|52|14' id='14' form='πολὺ' lemma='πολύς' postag='a-s---na-' relation='ADV' head='16' sem=''/>
-<word ref='Leuven|0062-020|52|15' id='15' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='6' sem=''/>
-<word ref='Leuven|0062-020|52|16' id='16' form='αἰσχίω' lemma='αἰσχρός' postag='a-p---nnc' relation='ATR_CO' head='15' sem=''/>
-<word ref='Leuven|0062-020|52|17' id='17' form='κατηγορεῖν' lemma='κατηγορέω' postag='v--pna---' relation='ADV' head='16' sem=''/>
-<word ref='Leuven|0062-020|52|18' id='18' form='ἐκείνῳ' lemma='ἐκεῖνος' postag='p-s---md-' relation='ADV' head='16' sem=''/>
-<word ref='Leuven|0062-020|52|19' id='19' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='98' document_id='0062-020'>
-<word ref='Leuven|0062-020|98|1' id='1' form='σφὼ' lemma='σφεῖς' postag='p3d---cv-' relation='ExD' head='0' sem=''/>
-<word ref='Leuven|0062-020|98|2' id='2' form='δέ' lemma='δέ' postag='d--------' relation='AuxY' head='17' sem=''/>
-<word ref='Leuven|0062-020|98|3' id='3' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|98|4' id='4' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='6' sem=''/>
-<word ref='Leuven|0062-020|98|5' id='5' form='Ἑρμῆ' lemma='Ἑρμῆς' postag='n-s---mv-' relation='ExD_CO' head='6' sem=''/>
-<word ref='Leuven|0062-020|98|6' id='6' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='1' sem=''/>
-<word ref='Leuven|0062-020|98|7' id='7' form='Ἥφαιστε' lemma='Ἥφαιστος' postag='n-s---mv-' relation='ExD_CO' head='6' sem=''/>
-<word ref='Leuven|0062-020|98|8' id='8' form=',' lemma=',' postag='u--------' relation='AuxX' head='6' sem=''/>
-<word ref='Leuven|0062-020|98|9' id='9' form='εἴ' lemma='εἰ' postag='c--------' relation='AuxC' head='17' sem=''/>
-<word ref='Leuven|0062-020|98|10' id='10' form='τι' lemma='τις' postag='p-s---na-' relation='SBJ' head='13' sem=''/>
-<word ref='Leuven|0062-020|98|11' id='11' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='13' sem=''/>
-<word ref='Leuven|0062-020|98|12' id='12' form='καλῶς' lemma='καλός' postag='d--------' relation='ADV' head='13' sem=''/>
-<word ref='Leuven|0062-020|98|13' id='13' form='εἰρῆσθαι' lemma='λέγω' postag='v--rne---' relation='OBJ' head='14' sem=''/>
-<word ref='Leuven|0062-020|98|14' id='14' form='δοκεῖ' lemma='δοκέω' postag='v3spia---' relation='ADV' head='9' sem=''/>
-<word ref='Leuven|0062-020|98|15' id='15' form=',' lemma=',' postag='u--------' relation='AuxX' head='9' sem=''/>
-<word ref='Leuven|0062-020|98|16' id='16' form='διευθύνετε' lemma='διευθύνω' postag='v2ppma---' relation='PRED_CO' head='17' sem=''/>
-<word ref='Leuven|0062-020|98|17' id='17' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='20' sem=''/>
-<word ref='Leuven|0062-020|98|18' id='18' form='ἐξελέγχετε' lemma='ἐξελέγχω' postag='v2ppma---' relation='PRED_CO' head='17' sem=''/>
-<word ref='Leuven|0062-020|98|19' id='19' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|98|21' id='20' form='κ-' lemma='καί' postag='b--------' relation='COORD' head='0' sem=''/>
-<word ref='Leuven|0062-020|98|22' id='21' form='ἀγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='23' sem=''/>
-<word ref='Leuven|0062-020|98|23' id='22' form='αὖθις' lemma='αὖθις' postag='d--------' relation='ADV' head='23' sem=''/>
-<word ref='Leuven|0062-020|98|24' id='23' form='ἀπολογήσομαι' lemma='ἀπολογέομαι' postag='v1sfim---' relation='PRED_CO' head='20' sem=''/>
-<word ref='Leuven|0062-020|98|25' id='24' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='67' document_id='0062-020'>
-<word ref='Leuven|0062-020|67|1' id='1' form='οὕτω' lemma='οὕτως' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|3' id='3' form='δὴ' lemma='δή' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|4' id='4' form='καὶ' lemma='καί' postag='b--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|5' id='5' form='ἀγανακτεῖ' lemma='ἀγανακτέω' postag='v3spia---' relation='PRED' head='0' sem=''/>
-<word ref='Leuven|0062-020|67|6' id='6' form='νῦν' lemma='νῦν' postag='d--------' relation='AuxY' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|7' id='7' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='8' sem=''/>
-<word ref='Leuven|0062-020|67|8' id='8' form='Ζεὺς' lemma='Ζεύς' postag='n-s---mn-' relation='SBJ' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|9' id='9' form='ὥσπερ' lemma='ὥσπερ' postag='c--------' relation='AuxC' head='5' sem=''/>
-<word ref='Leuven|0062-020|67|10' id='10' form='ἐλαττουμένων' lemma='ἐλασσόω' postag='v-pppemg-' relation='ADV' head='9' sem=''/>
-<word ref='Leuven|0062-020|67|11' id='11' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='12' sem=''/>
-<word ref='Leuven|0062-020|67|12' id='12' form='θεῶν' lemma='θεός' postag='n-p---mg-' relation='SBJ' head='10' sem=''/>
-<word ref='Leuven|0062-020|67|13' id='13' form='ἐκ' lemma='ἐκ' postag='r--------' relation='AuxP' head='10' sem=''/>
-<word ref='Leuven|0062-020|67|14' id='14' form='τῆς' lemma='ὁ' postag='l-s---fg-' relation='ATR' head='17' sem=''/>
-<word ref='Leuven|0062-020|67|15' id='15' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='16' sem=''/>
-<word ref='Leuven|0062-020|67|16' id='16' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='ATR' head='17' sem=''/>
-<word ref='Leuven|0062-020|67|17' id='17' form='γενέσεως' lemma='γένεσις' postag='n-s---fg-' relation='ADV' head='13' sem=''/>
-<word ref='Leuven|0062-020|67|18' id='18' form=',' lemma=',' postag='u--------' relation='AuxX' head='19' sem=''/>
-<word ref='Leuven|0062-020|67|19' id='19' form='εἰ' lemma='εἰ' postag='c--------' relation='AuxC' head='10' sem=''/>
-<word ref='Leuven|0062-020|67|20' id='20' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='19' sem=''/>
-<word ref='Leuven|0062-020|67|21' id='21' form='ἄρα' lemma='ἄρα' postag='d--------' relation='AuxY' head='23' sem=''/>
-<word ref='Leuven|0062-020|67|22' id='22' form='τοῦτο' lemma='οὗτος' postag='p-s---na-' relation='OBJ' head='23' sem=''/>
-<word ref='Leuven|0062-020|67|23' id='23' form='δέδιε' lemma='δείδω' postag='v3sria---' relation='ADV' head='19' sem=''/>
-<word ref='Leuven|0062-020|67|24' id='24' form=',' lemma=',' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|67|25' id='25' form='μὴ' lemma='μή' postag='c--------' relation='AuxC' head='22' sem=''/>
-<word ref='Leuven|0062-020|67|26' id='26' form='καὶ' lemma='καί' postag='d--------' relation='AuxZ' head='27' sem=''/>
-<word ref='Leuven|0062-020|67|27' id='27' form='οὗτοι' lemma='οὗτος' postag='p-p---mn-' relation='SBJ' head='31' sem=''/>
-<word ref='Leuven|0062-020|67|28' id='28' form='ἐπανάστασιν' lemma='ἐπανάστασις' postag='n-s---fa-' relation='OBJ' head='31' sem=''/>
-<word ref='Leuven|0062-020|67|30' id='29' form='ἐπ’' lemma='ἐπί' postag='r--------' relation='AuxP' head='27' sem=''/>
-<word ref='Leuven|0062-020|67|31' id='30' form='αὐτὸν' lemma='αὐτός' postag='p-s---ma-' relation='ATR' head='29' sem=''/>
-<word ref='Leuven|0062-020|67|32' id='31' form='βουλεύσωσι' lemma='βουλεύω' postag='v3pasa---' relation='OBJ_CO' head='32' sem=''/>
-<word ref='Leuven|0062-020|67|33' id='32' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='25' sem=''/>
-<word ref='Leuven|0062-020|67|34' id='33' form='πόλεμον' lemma='πόλεμος' postag='n-s---ma-' relation='OBJ' head='34' sem=''/>
-<word ref='Leuven|0062-020|67|35' id='34' form='ἐξενέγκωσι' lemma='ἐκφέρω' postag='v3pasa---' relation='OBJ_CO' head='32' sem=''/>
-<word ref='Leuven|0062-020|67|36' id='35' form='πρὸς' lemma='πρός' postag='r--------' relation='AuxP' head='33' sem=''/>
-<word ref='Leuven|0062-020|67|37' id='36' form='τοὺς' lemma='ὁ' postag='l-p---ma-' relation='ATR' head='37' sem=''/>
-<word ref='Leuven|0062-020|67|38' id='37' form='θεοὺς' lemma='θεός' postag='n-p---ma-' relation='OBJ' head='35' sem=''/>
-<word ref='Leuven|0062-020|67|39' id='38' form='ὥσπερ' lemma='ὥσπερ' postag='c--------' relation='AuxC' head='34' sem=''/>
-<word ref='Leuven|0062-020|67|40' id='39' form='οἱ' lemma='ὁ' postag='l-p---mn-' relation='ATR' head='40' sem=''/>
-<word ref='Leuven|0062-020|67|41' id='40' form='Γίγαντες' lemma='Γίγας' postag='n-p---mn-' relation='SBJ' head='38' sem=''/>
-<word ref='Leuven|0062-020|67|42' id='41' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='24' document_id='0062-020'>
-<word ref='Leuven|0062-020|24|1' id='1' form='τὴν' lemma='ὁ' postag='l-s---fa-' relation='ATR' head='7' sem=''/>
-<word ref='Leuven|0062-020|24|2' id='2' form='ἐν' lemma='ἐν' postag='r--------' relation='AuxP' head='7' sem=''/>
-<word ref='Leuven|0062-020|24|3' id='3' form='τῷ' lemma='ὁ' postag='l-s---nd-' relation='ATR' head='4' sem=''/>
-<word ref='Leuven|0062-020|24|4' id='4' form='μέσῳ' lemma='μέσος' postag='a-s---nd-' relation='ADV' head='2' sem=''/>
-<word ref='Leuven|0062-020|24|5' id='5' form='δὴ' lemma='δή' postag='d--------' relation='AuxY' head='4' sem=''/>
-<word ref='Leuven|0062-020|24|6' id='6' form='ταύτην' lemma='οὗτος' postag='p-s---fa-' relation='ATR' head='7' sem=''/>
-<word ref='Leuven|0062-020|24|7' id='7' form='σχολὴν' lemma='σχολή' postag='n-s---fa-' relation='OBJ' head='14' sem=''/>
-<word ref='Leuven|0062-020|24|8' id='8' form='καλῶς' lemma='καλός' postag='d--------' relation='ADV' head='10' sem=''/>
-<word ref='Leuven|0062-020|24|9' id='9' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='11' sem=''/>
-<word ref='Leuven|0062-020|24|10' id='10' form='ἔχον' lemma='ἔχω' postag='v-sppana-' relation='PNOM' head='11' sem=''/>
-<word ref='Leuven|0062-020|24|11' id='11' form='εἴη' lemma='εἰμί' postag='v3spoa---' relation='PRED' head='0' sem=''/>
-<word ref='Leuven|0062-020|24|13' id='12' form='εἰς' lemma='εἰς' postag='r--------' relation='AuxP' head='14' sem=''/>
-<word ref='Leuven|0062-020|24|14' id='13' form='ἀκρόασιν' lemma='ἀκρόασις' postag='n-s---fa-' relation='ADV' head='12' sem=''/>
-<word ref='Leuven|0062-020|24|15' id='14' form='καταχρήσασθαι' lemma='καταχράω' postag='v--anm---' relation='SBJ' head='11' sem=''/>
-<word ref='Leuven|0062-020|24|16' id='15' form='σοφιστικήν' lemma='σοφιστικός' postag='a-s---fa-' relation='ATR' head='13' sem=''/>
-<word ref='Leuven|0062-020|24|17' id='16' form=',' lemma=',' postag='u--------' relation='AuxX' head='18' sem=''/>
-<word ref='Leuven|0062-020|24|18' id='17' form='οἷος' lemma='οἷος' postag='p-s---mn-' relation='SBJ' head='18' sem=''/>
-<word ref='Leuven|0062-020|24|19' id='18' form='εἶ' lemma='εἰμί' postag='v2spia---' relation='ATR' head='15' sem=''/>
-<word ref='Leuven|0062-020|24|20' id='19' form='σὺ' lemma='σύ' postag='p2s---cn-' relation='ATR' head='17' sem=''/>
-<word ref='Leuven|0062-020|24|21' id='20' form='πανουργότατος' lemma='πανουργότατος' postag='a-s---mns' relation='PNOM' head='18' sem=''/>
-<word ref='Leuven|0062-020|24|22' id='21' form='ἐν' lemma='ἐν' postag='r--------' relation='AuxP' head='20' sem=''/>
-<word ref='Leuven|0062-020|24|23' id='22' form='τοῖς' lemma='ὁ' postag='l-p---md-' relation='ATR' head='23' sem=''/>
-<word ref='Leuven|0062-020|24|24' id='23' form='λόγοις' lemma='λόγος' postag='n-p---md-' relation='ADV' head='21' sem=''/>
-<word ref='Leuven|0062-020|24|25' id='24' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
-</sentence>
-<sentence id='58' document_id='0062-020'>
-<word ref='Leuven|0062-020|58|1' id='1' form='ἦν' lemma='εἰμί' postag='v3siia---' relation='PRED' head='0' sem=''/>
-<word ref='Leuven|0062-020|58|2' id='2' form='τοίνυν' lemma='τοίνυν' postag='d--------' relation='AuxY' head='1' sem=''/>
-<word ref='Leuven|0062-020|58|3' id='3' form='πάλαι' lemma='πάλαι' postag='d--------' relation='ADV' head='1' sem=''/>
-<word ref='Leuven|0062-020|58|4' id='4' form='—' lemma='—' postag='u--------' relation='AuxX' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|5' id='5' form='ῥᾷον' lemma='ῥᾴδιος' postag='a-s---nnc' relation='ADV' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|6' id='6' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|7' id='7' form='οὕτω' lemma='οὕτως' postag='d--------' relation='ADV' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|8' id='8' form='δῆλον' lemma='δῆλος' postag='a-s---nn-' relation='PNOM' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|9' id='9' form='ἂν' lemma='ἄν' postag='d--------' relation='AuxY' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|10' id='10' form='γένοιτο' lemma='γίγνομαι' postag='v3saom---' relation='ExD' head='0' sem=''/>
-<word ref='Leuven|0062-020|58|11' id='11' form=',' lemma=',' postag='u--------' relation='AuxX' head='12' sem=''/>
-<word ref='Leuven|0062-020|58|12' id='12' form='εἴ' lemma='εἰ' postag='c--------' relation='AuxC' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|13' id='13' form='τι' lemma='τις' postag='p-s---na-' relation='OBJ' head='14' sem=''/>
-<word ref='Leuven|0062-020|58|14' id='14' form='ἠδίκηκα' lemma='ἀδικέω' postag='v1sria---' relation='ADV' head='12' sem=''/>
-<word ref='Leuven|0062-020|58|15' id='15' form='ἐγὼ' lemma='ἐγώ' postag='p1s---cn-' relation='SBJ' head='14' sem=''/>
-<word ref='Leuven|0062-020|58|16' id='16' form='μετακοσμήσας' lemma='μετακοσμέω' postag='v-sapamn-' relation='ADV_CO' head='17' sem=''/>
-<word ref='Leuven|0062-020|58|17' id='17' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='14' sem=''/>
-<word ref='Leuven|0062-020|58|18' id='18' form='νεωτερίσας' lemma='νεωτερίζω' postag='v-sapamn-' relation='ADV_CO' head='17' sem=''/>
-<word ref='Leuven|0062-020|58|19' id='19' form='τὰ' lemma='ὁ' postag='l-p---na-' relation='OBJ' head='17' sem=''/>
-<word ref='Leuven|0062-020|58|20' id='20' form='περὶ' lemma='περί' postag='r--------' relation='AuxP' head='19' sem=''/>
-<word ref='Leuven|0062-020|58|21' id='21' form='τοὺς' lemma='ὁ' postag='l-p---ma-' relation='ATR' head='22' sem=''/>
-<word ref='Leuven|0062-020|58|22' id='22' form='ἀνθρώπους' lemma='ἄνθρωπος' postag='n-p---ma-' relation='ATR' head='20' sem=''/>
-<word ref='Leuven|0062-020|58|23' id='23' form='—' lemma='—' postag='u--------' relation='AuxX' head='10' sem=''/>
-<word ref='Leuven|0062-020|58|24' id='24' form='ἦν' lemma='εἰμί' postag='v3siia---' relation='PRED_CO' head='52' sem=''/>
-<word ref='Leuven|0062-020|58|25' id='25' form='οὖν' lemma='οὖν' postag='d--------' relation='AuxY' head='24' sem=''/>
-<word ref='Leuven|0062-020|58|26' id='26' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='27' sem=''/>
-<word ref='Leuven|0062-020|58|27' id='27' form='θεῖον' lemma='θεῖος' postag='a-s---nn-' relation='ATR_CO' head='29' sem=''/>
-<word ref='Leuven|0062-020|58|28' id='28' form='μόνον' lemma='μόνος' postag='a-s---nn-' relation='PNOM' head='24' sem=''/>
-<word ref='Leuven|0062-020|58|29' id='29' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='32' sem=''/>
-<word ref='Leuven|0062-020|58|30' id='30' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='31' sem=''/>
-<word ref='Leuven|0062-020|58|31' id='31' form='ἐπουράνιον' lemma='ἐπουράνιος' postag='a-s---nn-' relation='ATR_CO' head='29' sem=''/>
-<word ref='Leuven|0062-020|58|32' id='32' form='γένος' lemma='γένος' postag='n-s---nn-' relation='SBJ' head='24' sem=''/>
-<word ref='Leuven|0062-020|58|33' id='33' form=',' lemma=',' postag='u--------' relation='AuxX' head='52' sem=''/>
-<word ref='Leuven|0062-020|58|34' id='34' form='ἡ' lemma='ὁ' postag='l-s---fn-' relation='ATR' head='35' sem=''/>
-<word ref='Leuven|0062-020|58|35' id='35' form='γῆ' lemma='γῆ' postag='n-s---fn-' relation='SBJ' head='0' sem=''/>
-<word ref='Leuven|0062-020|58|36' id='36' form='δὲ' lemma='δέ' postag='b--------' relation='AuxY' head='52' sem=''/>
-<word ref='Leuven|0062-020|58|37' id='37' form='ἄγριόν' lemma='ἄγριος' postag='a-s---nn-' relation='ATR_CO' head='40' sem=''/>
-<word ref='Leuven|0062-020|58|38' id='38' form='τι' lemma='τις' postag='p-s---nn-' relation='ATR' head='39' sem=''/>
-<word ref='Leuven|0062-020|58|39' id='39' form='χρῆμα' lemma='χρῆμα' postag='n-s---nn-' relation='PNOM' head='0' sem=''/>
-<word ref='Leuven|0062-020|58|40' id='40' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='39' sem=''/>
-<word ref='Leuven|0062-020|58|41' id='41' form='ἄμορφον' lemma='ἄμορφος' postag='a-s---nn-' relation='ATR_CO' head='40' sem=''/>
-<word ref='Leuven|0062-020|58|42' id='42' form=',' lemma=',' postag='u--------' relation='AuxX' head='45' sem=''/>
-<word ref='Leuven|0062-020|58|43' id='43' form='ὕλαις' lemma='ὕλη' postag='n-p---fd-' relation='ADV' head='44' sem=''/>
-<word ref='Leuven|0062-020|58|44' id='44' form='ἅπασα' lemma='ἅπας' postag='a-s---fn-' relation='ATR_CO' head='45' sem=''/>
-<word ref='Leuven|0062-020|58|45' id='45' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='35' sem=''/>
-<word ref='Leuven|0062-020|58|46' id='46' form='ταύταις' lemma='οὗτος' postag='p-p---fd-' relation='ATR' head='47' sem=''/>
-<word ref='Leuven|0062-020|58|47' id='47' form='ἀνημέροις' lemma='ἀνήμερος' postag='a-p---fd-' relation='ADV' head='48' sem=''/>
-<word ref='Leuven|0062-020|58|48' id='48' form='λάσιος' lemma='λάσιος' postag='a-s---fn-' relation='ATR_CO' head='45' sem=''/>
-<word ref='Leuven|0062-020|58|49' id='49' form=',' lemma=',' postag='u--------' relation='AuxX' head='52' sem=''/>
-<word ref='Leuven|0062-020|58|50' id='50' form='οὔ' lemma='οὐ' postag='d--------' relation='AuxY' head='62' sem=''/>
-<word ref='Leuven|0062-020|58|51' id='51' form='-τε' lemma='τε' postag='b--------' relation='AuxY' head='52' sem=''/>
-<word ref='Leuven|0062-020|58|52' id='52' form='δὲ' lemma='δέ' postag='b--------' relation='COORD' head='0' sem=''/>
-<word ref='Leuven|0062-020|58|53' id='53' form='βωμοὶ' lemma='βωμός' postag='n-p---mn-' relation='SBJ_CO' head='55' sem=''/>
-<word ref='Leuven|0062-020|58|54' id='54' form='θεῶν' lemma='θεός' postag='n-p---mg-' relation='ATR' head='55' sem=''/>
-<word ref='Leuven|0062-020|58|55' id='55' form='ἢ' lemma='ἤ' postag='b--------' relation='COORD' head='62' sem=''/>
-<word ref='Leuven|0062-020|58|56' id='56' form='νέως' lemma='νέως' postag='n-s---mn-' relation='SBJ_CO' head='55' sem=''/>
-<word ref='Leuven|0062-020|58|57' id='57' form=',' lemma=',' postag='u--------' relation='AuxX' head='59' sem=''/>
-<word ref='Leuven|0062-020|58|58' id='58' form='—' lemma='—' postag='u--------' relation='AuxX' head='59' sem=''/>
-<word ref='Leuven|0062-020|58|59' id='59' form='πόθεν' lemma='πόθεν' postag='d--------' relation='ExD' head='62' sem=''/>
-<word ref='Leuven|0062-020|58|60' id='60' form='γάρ' lemma='γάρ' postag='d--------' relation='AuxY' head='59' sem=''/>
-<word ref='Leuven|0062-020|58|62' id='61' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' sem=''/>
-<word ref='Leuven|0062-020|58|64' id='62' form='[0]' lemma='_' postag='---------' relation='PRED_CO' head='52' sem=''/>
-</sentence>
-<sentence id='76' document_id='0062-020'>
-<word ref='Leuven|0062-020|76|1' id='1' form='ὅτι' lemma='ὅτι' postag='c--------' relation='AuxC' head='30' sem=''/>
-<word ref='Leuven|0062-020|76|2' id='2' form='μὴ' lemma='μή' postag='d--------' relation='AuxZ' head='3' sem=''/>
-<word ref='Leuven|0062-020|76|3' id='3' form='γενομένων' lemma='γίγνομαι' postag='v-papmmg-' relation='ADV' head='7' sem=''/>
-<word ref='Leuven|0062-020|76|4' id='4' form='τῶν' lemma='ὁ' postag='l-p---mg-' relation='ATR' head='5' sem=''/>
-<word ref='Leuven|0062-020|76|5' id='5' form='ἀνθρώπων' lemma='ἄνθρωπος' postag='n-p---mg-' relation='SBJ' head='3' sem=''/>
-<word ref='Leuven|0062-020|76|6' id='6' form='ἀμάρτυρον' lemma='ἀμάρτυρος' postag='a-s---nn-' relation='PNOM' head='10' sem=''/>
-<word ref='Leuven|0062-020|76|7' id='7' form='συνέβαινε' lemma='συμβαίνω' postag='v3siia---' relation='ADV_CO' head='14' sem=''/>
-<word ref='Leuven|0062-020|76|8' id='8' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='9' sem=''/>
-<word ref='Leuven|0062-020|76|9' id='9' form='κάλλος' lemma='κάλλος' postag='n-s---nn-' relation='SBJ' head='7' sem=''/>
-<word ref='Leuven|0062-020|76|10' id='10' form='εἶναι' lemma='εἰμί' postag='v--pna---' relation='SBJ' head='7' sem=''/>
-<word ref='Leuven|0062-020|76|11' id='11' form='τῶν' lemma='ὁ' postag='l-p---ng-' relation='ATR' head='12' sem=''/>
-<word ref='Leuven|0062-020|76|12' id='12' form='ὅλων' lemma='ὅλος' postag='a-p---ng-' relation='ATR' head='9' sem=''/>
-<word ref='Leuven|0062-020|76|13' id='13' form=',' lemma='punc1' postag='u--------' relation='AuxX' head='0' sem=''/>
-<word ref='Leuven|0062-020|76|14' id='14' form='καὶ' lemma='καί' postag='b--------' relation='COORD' head='1' sem=''/>
-<word ref='Leuven|0062-020|76|15' id='15' form='πλοῦτόν' lemma='πλοῦτος1' postag='n-s---ma-' relation='OBJ' head='17' sem=''/>
-<word ref='Leuven|0062-020|76|16' id='16' form='τινα' lemma='τις' postag='p-s---ca-' relation='ATR' head='15' sem=''/>
-<word ref='Leuven|0062-020|76|17' id='17' form='πλουτήσειν' lemma='πλουτέω' postag='v--fna---' relation='OBJ' head='18' sem=''/>
-<word ref='Leuven|0062-020|76|18' id='18' form='ἐμέλλομεν' lemma='μέλλω' postag='v1piia---' relation='ADV_CO' head='14' sem=''/>
-<word ref='Leuven|0062-020|76|19' id='19' form='οὔ' lemma='οὐ' postag='d--------' relation='AuxZ' head='24' sem=''/>
-<word ref='Leuven|0062-020|76|20' id='20' form='-τε' lemma='τε' postag='b--------' relation='AuxY' head='24' sem=''/>
-<word ref='Leuven|0062-020|76|21' id='21' form='ὑπ’' lemma='ὑπό' postag='r--------' relation='AuxP' head='24' sem=''/>
-<word ref='Leuven|0062-020|76|22' id='22' form='ἄλλου' lemma='ἄλλος' postag='p-s---mg-' relation='ATR' head='23' sem=''/>
-<word ref='Leuven|0062-020|76|23' id='23' form='τινὸς' lemma='τις' postag='p-s---cg-' relation='OBJ' head='21' sem=''/>
-<word ref='Leuven|0062-020|76|24' id='24' form='θαυμασθησόμενον' lemma='θαυμάζω' postag='v-sfppma-' relation='ATR_CO' head='25' sem=''/>
-<word ref='Leuven|0062-020|76|25' id='25' form='οὔτε' lemma='οὔτε' postag='b--------' relation='COORD' head='15' sem=''/>
-<word ref='Leuven|0062-020|76|26' id='26' form='ἡμῖν' lemma='ἐγώ' postag='p1p---cd-' relation='ADV' head='29' sem=''/>
-<word ref='Leuven|0062-020|76|27' id='27' form='αὐτοῖς' lemma='αὐτός' postag='p-p---md-' relation='ATR' head='26' sem=''/>
-<word ref='Leuven|0062-020|76|28' id='28' form='ὁμοίως' lemma='ὁμοίως' postag='d--------' relation='ADV' head='29' sem=''/>
-<word ref='Leuven|0062-020|76|29' id='29' form='τίμιον' lemma='τίμιος' postag='a-s---ma-' relation='ATR_CO' head='25' sem=''/>
-<word ref='Leuven|0062-020|76|31' id='30' form='[0]' lemma='_' postag='_' relation='PRED' head='0' sem=''/>
 </sentence>
 </treebank>
