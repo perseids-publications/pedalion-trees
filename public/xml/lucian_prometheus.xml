@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <treebank xml:lang="grc" xmlns:saxon="http://saxon.sf.net/" format="aldt" version="1.5">
-<--!
+<!--
 Who? Supervised by Toon Van Hal, with student contributions by De Schutter, A.; Knapen, C.; Weets, C.; Van Nunen, E.; De Smet, Isabeau; Van Bever, L.; Valadou, M.; De Backer, Olympe; Keupers, S.; Vangenechten, Thomas; Valgaeren, Thomas; Nelis, Tilke.
 How much? ca. 2,5K tokens.
 First release? 2018
