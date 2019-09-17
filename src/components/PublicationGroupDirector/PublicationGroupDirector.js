@@ -12,7 +12,14 @@ class PublicationGroupDirector extends Component {
     const { config } = props;
     const argsLookup = {};
     const {
-      logo, title, subtitle, report, github, twitter, collections,
+      logo,
+      link,
+      title,
+      subtitle,
+      report,
+      github,
+      twitter,
+      collections,
     } = config;
 
     collections.forEach((collection) => {
@@ -21,6 +28,7 @@ class PublicationGroupDirector extends Component {
 
         argsLookup[path] = {
           logo,
+          link,
           title,
           subtitle,
           report,

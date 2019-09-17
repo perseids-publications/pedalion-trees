@@ -96,3 +96,18 @@ it('renders no logo when logo set to ""', () => {
 
   delete config.logo;
 });
+
+it('renders a custom link', () => {
+  config.link = 'https://www.google.com';
+
+  const component = (
+    <MemoryRouter initialEntries={['/unknown/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  delete config.link;
+});

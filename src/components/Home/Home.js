@@ -1,8 +1,8 @@
 import React from 'react';
-import { PerseidsHeader } from 'perseids-react-components';
 
 import { configType } from '../../lib/types';
 
+import Header from '../Header';
 import Hero from '../Hero';
 import Collection from '../Collection';
 
@@ -21,14 +21,18 @@ const renderCollection = (collection) => {
 
 const Home = ({ config }) => {
   const {
-    logo, title, subtitle, collections,
+    logo,
+    link,
+    title,
+    subtitle,
+    collections,
   } = config;
 
   return (
     <>
-      <PerseidsHeader logo={logo}>
+      <Header logo={logo} link={link}>
         {title}
-      </PerseidsHeader>
+      </Header>
       <Hero title={title} subtitle={subtitle} />
       {collections.map((c) => renderCollection(c))}
     </>

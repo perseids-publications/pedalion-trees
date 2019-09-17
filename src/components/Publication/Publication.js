@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { PerseidsHeader } from 'perseids-react-components';
 
 import { chunksType, publicationMatchType } from '../../lib/types';
 
 import styles from './Publication.module.css';
 
+import Header from '../Header';
 import ArethusaWrapper from '../ArethusaWrapper';
 import Treebank from '../Treebank';
 import Markdown from '../Markdown';
@@ -77,12 +77,13 @@ class Publication extends Component {
   render() {
     const {
       logo,
+      link,
       publicationPath,
       author,
       work,
       editors,
       locus,
-      link,
+      publicationLink,
       notes,
       xml,
       chunks,
@@ -91,7 +92,7 @@ class Publication extends Component {
 
     return (
       <>
-        <PerseidsHeader logo={logo}>
+        <Header logo={logo} link={link}>
           <span>
             <i>{work}</i>
           </span>
@@ -102,7 +103,7 @@ class Publication extends Component {
               </a>
             </li>
           </ul>
-        </PerseidsHeader>
+        </Header>
         <div className="container pt-3">
           <h2>
             <span>
@@ -122,7 +123,7 @@ class Publication extends Component {
               {work && renderRow('Work', work)}
               {locus && renderLocusRow('Locus', locus, publicationPath)}
               {editors && renderRow('Editors', editors)}
-              {link && renderLinkRow('Link', link)}
+              {publicationLink && renderLinkRow('Link', publicationLink)}
               {notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
@@ -142,6 +143,7 @@ class Publication extends Component {
 
 Publication.propTypes = {
   logo: PropTypes.string,
+  link: PropTypes.string,
   publicationPath: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   work: PropTypes.string.isRequired,
@@ -150,7 +152,7 @@ Publication.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
   locus: PropTypes.string.isRequired,
-  link: PropTypes.string,
+  publicationLink: PropTypes.string,
   notes: PropTypes.string,
   xml: PropTypes.string.isRequired,
   chunks: chunksType.isRequired,
@@ -160,6 +162,7 @@ Publication.propTypes = {
 Publication.defaultProps = {
   logo: undefined,
   link: undefined,
+  publicationLink: undefined,
   notes: undefined,
 };
 
