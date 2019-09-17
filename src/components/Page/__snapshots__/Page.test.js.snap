@@ -4573,6 +4573,147 @@ Array [
 ]
 `;
 
+exports[`renders no logo when logo set to "" 1`] = `
+Array [
+  <header
+    className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
+  >
+    <a
+      className="navbar-brand perseids-react-components--navbar-brand"
+      href="https://www.perseids.org"
+    >
+      
+    </a>
+    <span>
+      Not Found
+    </span>
+    <ul
+      className="navbar-nav ml-auto"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+    </ul>
+  </header>,
+  <div
+    className="container pt-5"
+  >
+    <div
+      className="row col-12 pt-5 pb-3"
+    >
+      <div
+        className="col-12 text-center"
+      >
+        <h1>
+          Error 404
+        </h1>
+      </div>
+    </div>
+    <div
+      className="row col-12 pb-3"
+    >
+      <div
+        className="col-12 text-center"
+      >
+        <h2>
+          Publication not found
+        </h2>
+      </div>
+    </div>
+    <div
+      className="row col-12 pb-3"
+    >
+      <div
+        className="col-12 text-center"
+      >
+        <h2>
+          <a
+            href="/"
+          >
+            Return to homepage
+          </a>
+        </h2>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="footer perseids-react-components--footer"
+  >
+    <nav
+      className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+    >
+      <span
+        className="navbar-text"
+      >
+        © The Perseids Project 2019
+      </span>
+      <ul
+        className="navbar-nav my-2 my-lg-02 flex-row"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link p-2"
+            href="https://github.com/perseids-publications/treebank-template/issues"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Report Icon"
+              className="perseids-react-components--octicon"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDJhMSAxIDAgMCAxIDEtMWgxNGExIDEgMCAwIDEgMSAxdjlhMSAxIDAgMCAxLTEgMUg3bC00IDR2LTRIMWExIDEgMCAwIDEtMS0xVjJ6bTEgMGgxNHY5SDYuNUw0IDEzLjVWMTFIMVYyem02IDZoMnYySDdWOHptMC01aDJ2NEg3VjN6Ii8+PC9zdmc+"
+              title="Report Issue"
+            />
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link p-2"
+            href="https://github.com/perseids-publications/treebank-template/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="GitHub Icon"
+              className="perseids-react-components--octicon"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDMy41OCAwIDAgMy41OCAwIDhjMCAzLjU0IDIuMjkgNi41MyA1LjQ3IDcuNTkuNC4wNy41NS0uMTcuNTUtLjM4IDAtLjE5LS4wMS0uODItLjAxLTEuNDktMi4wMS4zNy0yLjUzLS40OS0yLjY5LS45NC0uMDktLjIzLS40OC0uOTQtLjgyLTEuMTMtLjI4LS4xNS0uNjgtLjUyLS4wMS0uNTMuNjMtLjAxIDEuMDguNTggMS4yMy44Mi43MiAxLjIxIDEuODcuODcgMi4zMy42Ni4wNy0uNTIuMjgtLjg3LjUxLTEuMDctMS43OC0uMi0zLjY0LS44OS0zLjY0LTMuOTUgMC0uODcuMzEtMS41OS44Mi0yLjE1LS4wOC0uMi0uMzYtMS4wMi4wOC0yLjEyIDAgMCAuNjctLjIxIDIuMi44Mi42NC0uMTggMS4zMi0uMjcgMi0uMjcuNjggMCAxLjM2LjA5IDIgLjI3IDEuNTMtMS4wNCAyLjItLjgyIDIuMi0uODIuNDQgMS4xLjE2IDEuOTIuMDggMi4xMi41MS41Ni44MiAxLjI3LjgyIDIuMTUgMCAzLjA3LTEuODcgMy43NS0zLjY1IDMuOTUuMjkuMjUuNTQuNzMuNTQgMS40OCAwIDEuMDctLjAxIDEuOTMtLjAxIDIuMiAwIC4yMS4xNS40Ni41NS4zOEE4LjAxMyA4LjAxMyAwIDAgMCAxNiA4YzAtNC40Mi0zLjU4LTgtOC04eiIvPjwvc3ZnPg=="
+              title="View Source on Github"
+            />
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link p-2"
+            href="https://twitter.com/PerseidsProject"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Twitter Icon"
+              className="perseids-react-components--twitter"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMCIgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+PGc+PHBhdGggZD0iTTIyLjIzIDUuOTI0Yy0uNzM2LjMyNi0xLjUyNy41NDctMi4zNTcuNjQ2Ljg0Ny0uNTA4IDEuNDk4LTEuMzEyIDEuODA0LTIuMjctLjc5My40Ny0xLjY3LjgxMi0yLjYwNi45OTZDMTguMzI1IDQuNDk4IDE3LjI1OCA0IDE2LjA3OCA0Yy0yLjI2NiAwLTQuMTAzIDEuODM3LTQuMTAzIDQuMTAzIDAgLjMyMi4wMzYuNjM1LjEwNi45MzUtMy40MS0uMTctNi40MzMtMS44MDQtOC40NTctNC4yODctLjM1My42MDctLjU1NiAxLjMxMi0uNTU2IDIuMDY0IDAgMS40MjQuNzI0IDIuNjggMS44MjUgMy40MTUtLjY3My0uMDIyLTEuMzA1LS4yMDctMS44Ni0uNTE0di4wNTJjMCAxLjk4OCAxLjQxNSAzLjY0NyAzLjI5MyA0LjAyMy0uMzQ0LjA5NS0uNzA3LjE0NS0xLjA4LjE0NS0uMjY1IDAtLjUyMi0uMDI2LS43NzMtLjA3NC41MjIgMS42MyAyLjAzOCAyLjgxNyAzLjgzMyAyLjg1LTEuNDA0IDEuMS0zLjE3NCAxLjc1Ny01LjA5NiAxLjc1Ny0uMzMyIDAtLjY2LS4wMi0uOTgtLjA1NyAxLjgxNiAxLjE2NCAzLjk3MyAxLjg0MyA2LjI5IDEuODQzIDcuNTQ3IDAgMTEuNjc1LTYuMjUyIDExLjY3NS0xMS42NzUgMC0uMTc4LS4wMDQtLjM1NS0uMDEyLS41My44MDItLjU3OCAxLjQ5Ny0xLjMgMi4wNDctMi4xMjR6Ii8+PC9nPjwvc3ZnPg=="
+              title="Twitter"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>,
+]
+`;
+
 exports[`renders the main page 1`] = `
 Array [
   <header

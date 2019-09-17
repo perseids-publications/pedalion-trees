@@ -81,3 +81,18 @@ it('renders 404 when publication and chunk not found', () => {
 
   expect(tree).toMatchSnapshot();
 });
+
+it('renders no logo when logo set to ""', () => {
+  config.logo = '';
+
+  const component = (
+    <MemoryRouter initialEntries={['/unknown/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  delete config.logo;
+});

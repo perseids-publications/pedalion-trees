@@ -1,9 +1,11 @@
 import React from 'react';
 import { PerseidsHeader } from 'perseids-react-components';
 
-const NotFound = () => (
+import { configType } from '../../lib/types';
+
+const NotFound = ({ config: { logo } }) => (
   <>
-    <PerseidsHeader>
+    <PerseidsHeader logo={logo}>
       <span>
         Not Found
       </span>
@@ -38,5 +40,9 @@ const NotFound = () => (
     </div>
   </>
 );
+
+NotFound.propTypes = {
+  config: configType.isRequired,
+};
 
 export default NotFound;

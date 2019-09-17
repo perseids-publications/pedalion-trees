@@ -20,11 +20,13 @@ const renderCollection = (collection) => {
 };
 
 const Home = ({ config }) => {
-  const { title, subtitle, collections } = config;
+  const {
+    logo, title, subtitle, collections,
+  } = config;
 
   return (
     <>
-      <PerseidsHeader>
+      <PerseidsHeader logo={logo}>
         {title}
       </PerseidsHeader>
       <Hero title={title} subtitle={subtitle} />

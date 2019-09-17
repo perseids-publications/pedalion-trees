@@ -10,6 +10,7 @@ class PublicationDirector extends Component {
 
     const { config } = props;
     const argsLookup = {};
+    const { logo } = config;
 
     config.collections.forEach((collection) => {
       (collection.publications || []).forEach((publication) => {
@@ -23,6 +24,7 @@ class PublicationDirector extends Component {
           } = section;
 
           argsLookup[path] = {
+            logo,
             publicationPath,
             author,
             work,
@@ -41,12 +43,12 @@ class PublicationDirector extends Component {
   }
 
   render() {
-    const { match } = this.props;
+    const { config, match } = this.props;
     const { publication } = match.params;
     const args = this.argsLookup[publication];
 
     if (args === undefined) {
-      return <NotFound />;
+      return <NotFound config={config} />;
     }
 
     return <Publication {...args} match={match} />;

@@ -76,6 +76,7 @@ class Publication extends Component {
 
   render() {
     const {
+      logo,
       publicationPath,
       author,
       work,
@@ -90,7 +91,7 @@ class Publication extends Component {
 
     return (
       <>
-        <PerseidsHeader>
+        <PerseidsHeader logo={logo}>
           <span>
             <i>{work}</i>
           </span>
@@ -140,6 +141,7 @@ class Publication extends Component {
 }
 
 Publication.propTypes = {
+  logo: PropTypes.string,
   publicationPath: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   work: PropTypes.string.isRequired,
@@ -156,6 +158,7 @@ Publication.propTypes = {
 };
 
 Publication.defaultProps = {
+  logo: undefined,
   link: undefined,
   notes: undefined,
 };

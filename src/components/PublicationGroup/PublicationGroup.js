@@ -18,9 +18,13 @@ const renderCollection = (collection) => {
   );
 };
 
-const PublicationGroup = ({ config: { title, subtitle, collections } }) => (
+const PublicationGroup = ({
+  config: {
+    logo, title, subtitle, collections,
+  },
+}) => (
   <>
-    <PerseidsHeader>
+    <PerseidsHeader logo={logo}>
       {title}
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">

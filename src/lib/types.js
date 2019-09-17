@@ -32,6 +32,7 @@ export const collectionType = shape({
 });
 
 export const configType = shape({
+  logo: string,
   title: oneOfType([string, element]).isRequired,
   subtitle: string.isRequired,
   copyright: string,
