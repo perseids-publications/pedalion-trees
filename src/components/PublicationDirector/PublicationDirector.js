@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { configType, publicationMatchType } from '../../lib/types';
+import { configType, publicationMatchType, locationType } from '../../lib/types';
 
 import Publication from '../Publication';
 import NotFound from '../NotFound';
@@ -49,7 +49,7 @@ class PublicationDirector extends Component {
   }
 
   render() {
-    const { config, match } = this.props;
+    const { config, match, location } = this.props;
     const { publication } = match.params;
     const args = this.argsLookup[publication];
 
@@ -57,13 +57,14 @@ class PublicationDirector extends Component {
       return <NotFound config={config} />;
     }
 
-    return <Publication {...args} match={match} />;
+    return <Publication {...args} match={match} location={location} />;
   }
 }
 
 PublicationDirector.propTypes = {
   config: configType.isRequired,
   match: publicationMatchType.isRequired,
+  location: locationType.isRequired,
 };
 
 export default PublicationDirector;

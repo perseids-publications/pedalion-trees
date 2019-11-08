@@ -17,7 +17,7 @@ class ArethusaWrapper {
     this.render = this.render.bind(this);
   }
 
-  render(doc, chunk) {
+  render(doc, chunk, values) {
     // eslint-disable-next-line no-undef
     const { arethusaGoto, Arethusa, $ } = window;
 
@@ -33,7 +33,7 @@ class ArethusaWrapper {
         .on(this.elementId)
         .from(this.remoteUrl)
         .with(this.appConf)
-        .start({ doc, chunk });
+        .start({ doc, chunk, ...values });
     }
 
     this.doc = doc;

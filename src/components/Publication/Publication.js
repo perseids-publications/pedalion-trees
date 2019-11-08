@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { chunksType, publicationMatchType } from '../../lib/types';
+import { chunksType, publicationMatchType, locationType } from '../../lib/types';
 
 import styles from './Publication.module.css';
 
@@ -88,6 +88,7 @@ class Publication extends Component {
       xml,
       chunks,
       match,
+      location,
     } = this.props;
 
     return (
@@ -128,7 +129,13 @@ class Publication extends Component {
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>
-            <Treebank xml={xml} chunks={chunks} match={match} arethusa={this.arethusa} />
+            <Treebank
+              xml={xml}
+              chunks={chunks}
+              location={location}
+              match={match}
+              arethusa={this.arethusa}
+            />
           </div>
           <div className="pt-1 pb-4 text-right">
             <a href={`${process.env.PUBLIC_URL}/xml/${xml}`} target="_blank" rel="noopener noreferrer">
@@ -157,6 +164,7 @@ Publication.propTypes = {
   xml: PropTypes.string.isRequired,
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
+  location: locationType.isRequired,
 };
 
 Publication.defaultProps = {
