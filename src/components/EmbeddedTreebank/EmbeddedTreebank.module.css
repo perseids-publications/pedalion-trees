@@ -1,0 +1,12 @@
+.treebankContainer {
+  margin-top: 15px !important;
+  margin-bottom: -100px !important;
+  height: calc(100vh - 62px - 5px);
+}
+
+.links {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+}
