@@ -43,6 +43,10 @@ export const configType = shape({
   collections: arrayOf(collectionType).isRequired,
 });
 
+export const locationType = shape({
+  search: string.isRequired,
+});
+
 export const publicationMatchType = shape({
   params: shape({
     chunk: string.isRequired,

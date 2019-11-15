@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { string, node, bool } from 'prop-types';
 
 import { chunksType, publicationMatchType } from '../../lib/types';
 
@@ -18,6 +19,15 @@ const getFbcnlFromNumbers = (chunk, numbers) => {
     numbers[min(numbers.length - 1, index + 1)],
     numbers[numbers.length - 1],
   ];
+};
+
+const HtmlLink = ({ to, children, ...props }) => (
+  <a href={to} {...props}>{children}</a>
+);
+
+HtmlLink.propTypes = {
+  to: string.isRequired,
+  children: node.isRequired,
 };
 
 class ControlPanel extends Component {
@@ -69,23 +79,25 @@ class ControlPanel extends Component {
   }
 
   render() {
+    const { refresh } = this.props;
     const { isOpen } = this.state;
     const [first, back, current, next, last] = this.getFbcnl();
     const lines = this.getLines();
+    const LinkComponent = refresh ? HtmlLink : Link;
 
     return (
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="collapse navbar-collapse justify-content-center" id="navbarsExample10">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className={`nav-link text-light ${styles.link}`} to={`./${first}`}>
+              <LinkComponent className={`nav-link text-light ${styles.link}`} to={`./${first}`}>
                 &laquo; First
-              </Link>
+              </LinkComponent>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-light ${styles.link}`} to={`./${back}`}>
+              <LinkComponent className={`nav-link text-light ${styles.link}`} to={`./${back}`}>
                 &#8249; Back
-              </Link>
+              </LinkComponent>
             </li>
             <li className="nav-item dropdown">
               <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={isOpen} onClick={this.toggleOpen}>
@@ -94,22 +106,22 @@ class ControlPanel extends Component {
               <div className={`dropdown-menu ${styles.dropdownScroll} ${isOpen ? 'show' : ''}`}>
                 {
                   lines.map((n) => (
-                    <Link className="dropdown-item" key={n} to={`./${n}`} onClick={this.toggleOpen}>
+                    <LinkComponent className="dropdown-item" key={n} to={`./${n}`} onClick={this.toggleOpen}>
                       {n}
-                    </Link>
+                    </LinkComponent>
                   ))
                 }
               </div>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-light ${styles.link}`} to={`./${next}`}>
+              <LinkComponent className={`nav-link text-light ${styles.link}`} to={`./${next}`}>
                 Next &#8250;
-              </Link>
+              </LinkComponent>
             </li>
             <li>
-              <Link className={`nav-link text-light ${styles.link}`} to={`./${last}`}>
+              <LinkComponent className={`nav-link text-light ${styles.link}`} to={`./${last}`}>
                 Last &raquo;
-              </Link>
+              </LinkComponent>
             </li>
           </ul>
         </div>
@@ -121,6 +133,7 @@ class ControlPanel extends Component {
 ControlPanel.propTypes = {
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
+  refresh: bool.isRequired,
 };
 
 export default ControlPanel;
