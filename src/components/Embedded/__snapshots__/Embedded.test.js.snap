@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 404 when publication not found 1`] = `
+<div
+  className="container pt-5"
+>
+  <div
+    className="row col-12 pt-5 pb-3"
+  >
+    <div
+      className="col-12 text-center"
+    >
+      <h1>
+        Error 404
+      </h1>
+    </div>
+  </div>
+  <div
+    className="row col-12 pb-3"
+  >
+    <div
+      className="col-12 text-center"
+    >
+      <h2>
+        Publication not found
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders an embedded publication 1`] = `
+<div>
+  <div
+    className="__artsa"
+  >
+    <div
+      className="treebankContainer"
+      id="treebank_container"
+    />
+  </div>
+  <div
+    className="links"
+  >
+    <a
+      href="/on-the-murder-of-eratosthenes-1-50/1"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Credits and more information
+    </a>
+  </div>
+</div>
+`;
