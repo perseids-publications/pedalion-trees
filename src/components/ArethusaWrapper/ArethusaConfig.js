@@ -3,7 +3,7 @@ const ArethusaConfig = {
     debug: false,
     showKeys: false,
     chunkParam: 'chunk',
-    auxConfPath: 'https://services.perseids.org/arethusa-configs',
+    auxConfPath: '/arethusa/configs',
     retrievers: {
       TreebankRetriever: {
         resource: 'Gardener',
