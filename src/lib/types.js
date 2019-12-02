@@ -58,3 +58,8 @@ export const publicationGroupMatchType = shape({
     publication: string.isRequired,
   }).isRequired,
 });
+
+export const queryType = shape({
+  w: string,
+  config: string,
+});

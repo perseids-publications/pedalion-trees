@@ -1,5 +1,9 @@
-#main-body {
+.__artsa #main-body.widget {
   width: 100% !important;
+}
+
+.__artsa #sidepanel {
+  width: 35% !important;
 }
 
 .canvas-border {

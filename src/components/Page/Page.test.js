@@ -38,6 +38,17 @@ it('renders a publication with additional arguments to Arethusa', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders a publication with a template that shows the morphology', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1?config=sidepanel']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders a publication with markdown', () => {
   const component = (
     <MemoryRouter initialEntries={['/on-the-crown-1-50/1']}>
