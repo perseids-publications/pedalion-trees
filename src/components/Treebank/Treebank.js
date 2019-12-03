@@ -15,6 +15,7 @@ class Treebank extends Component {
 
     this.additionalArgs = this.additionalArgs.bind(this);
     this.refreshControlPanel = this.refreshControlPanel.bind(this);
+    this.linkQuery = this.linkQuery.bind(this);
     this.renderArethusa = this.renderArethusa.bind(this);
   }
 
@@ -31,7 +32,7 @@ class Treebank extends Component {
     const parsed = queryString.parse(search);
     const result = {};
 
-    ['w'].forEach((n) => {
+    ['w', 'config'].forEach((n) => {
       if (Object.prototype.hasOwnProperty.call(parsed, n)) {
         result[n] = parsed[n];
       }
@@ -41,7 +42,29 @@ class Treebank extends Component {
   }
 
   refreshControlPanel() {
-    return Object.keys(this.additionalArgs()).length !== 0;
+    const additionalArgs = this.additionalArgs();
+    let returnVal = false;
+
+    ['w'].forEach((n) => {
+      if (Object.prototype.hasOwnProperty.call(additionalArgs, n)) {
+        returnVal = true;
+      }
+    });
+
+    return returnVal;
+  }
+
+  linkQuery() {
+    const additionalArgs = this.additionalArgs();
+    const linkQuery = {};
+
+    ['config'].forEach((n) => {
+      if (Object.prototype.hasOwnProperty.call(additionalArgs, n)) {
+        linkQuery[n] = additionalArgs[n];
+      }
+    });
+
+    return linkQuery;
   }
 
   renderArethusa() {
@@ -58,10 +81,16 @@ class Treebank extends Component {
   render() {
     const { chunks, match } = this.props;
     const refreshControlPanel = this.refreshControlPanel();
+    const linkQuery = this.linkQuery();
 
     return (
       <>
-        <ControlPanel match={match} chunks={chunks} refresh={refreshControlPanel} />
+        <ControlPanel
+          match={match}
+          chunks={chunks}
+          refresh={refreshControlPanel}
+          linkQuery={linkQuery}
+        />
         <div className="__artsa">
           <div id="treebank_container" className={styles.treebankContainer} />
         </div>
