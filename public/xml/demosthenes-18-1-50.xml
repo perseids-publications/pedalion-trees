@@ -37,7 +37,7 @@
   </annotator>
    <sentence id="1"
              document_id="urn:cts:greekLit:tlg0014.tlg018.perseus-grc1"
-             subdoc="1"
+             subdoc=""
              span="">
       <word id="1" form="πρῶτον" lemma="πρῶτος" postag="a-s---na-" relation="AuxZ" head="28"/>
       <word id="2" form="μέν" lemma="μέν" postag="d--------" relation="AuxY" head="10"/>
@@ -142,7 +142,7 @@
    </sentence>
    <sentence id="2"
              document_id="urn:cts:greekLit:tlg0014.tlg018.perseus-grc1"
-             subdoc="2"
+             subdoc=""
              span="">
       <word id="1" form="τοῦτο" lemma="οὗτος" postag="p-s---nn-" relation="SBJ" head="3"/>
       <word id="2" form="δ᾽" lemma="δέ" postag="d--------" relation="AuxY" head="3"/>

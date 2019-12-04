@@ -71,7 +71,26 @@ class Publication extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      subDoc: '',
+    };
+
     this.arethusa = new ArethusaWrapper();
+    this.arethusaSubDocFun = this.arethusaSubDocFun.bind(this);
+  }
+
+  componentDidMount() {
+    // eslint-disable-next-line no-undef
+    window.arethusaSubDocFun = this.arethusaSubDocFun;
+  }
+
+  componentWillUnmount() {
+    // eslint-disable-next-line no-undef
+    window.arethusaSubDocFun = undefined;
+  }
+
+  arethusaSubDocFun(subDoc) {
+    this.setState({ subDoc });
   }
 
   render() {
@@ -90,6 +109,8 @@ class Publication extends Component {
       match,
       location,
     } = this.props;
+
+    const { subDoc } = this.state;
 
     return (
       <>
@@ -123,6 +144,7 @@ class Publication extends Component {
               {author && renderRow('Author', author)}
               {work && renderRow('Work', work)}
               {locus && renderLocusRow('Locus', locus, publicationPath)}
+              {subDoc && renderRow('Reference', subDoc)}
               {editors && renderRow('Editors', editors)}
               {publicationLink && renderLinkRow('Link', publicationLink)}
               {notes && renderMarkdownRow('Notes', notes)}

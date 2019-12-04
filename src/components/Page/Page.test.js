@@ -60,6 +60,21 @@ it('renders a publication with markdown', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders a publication with a subdoc', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-crown-1-50/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const renderedComponent = renderer.create(component);
+
+  window.arethusaSubDocFun('1.1');
+
+  const tree = renderedComponent.toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders a publication with a numbers array', () => {
   const component = (
     <MemoryRouter initialEntries={['/philippic-1-51/1']}>
