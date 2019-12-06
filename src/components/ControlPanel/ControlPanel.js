@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Octicon, { Settings } from '@primer/octicons-react';
 import queryString from 'query-string';
+
 import { string, node, bool } from 'prop-types';
 
 import { chunksType, publicationMatchType, queryType } from '../../lib/types';
@@ -36,13 +38,16 @@ class ControlPanel extends Component {
     super(props);
 
     this.state = {
-      isOpen: false,
+      refIsOpen: false,
+      settingsIsOpen: false,
     };
 
     this.getLines = this.getLines.bind(this);
     this.getFbcnl = this.getFbcnl.bind(this);
     this.createLink = this.createLink.bind(this);
-    this.toggleOpen = this.toggleOpen.bind(this);
+    this.toggleRefOpen = this.toggleRefOpen.bind(this);
+    this.toggleSettingsOpen = this.toggleSettingsOpen.bind(this);
+    this.renderSettingsLinks = this.renderSettingsLinks.bind(this);
   }
 
   getLines() {
@@ -91,21 +96,42 @@ class ControlPanel extends Component {
     return link;
   }
 
-  toggleOpen() {
-    this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
+  toggleRefOpen() {
+    this.setState(({ refIsOpen }) => ({ refIsOpen: !refIsOpen }));
+  }
+
+  toggleSettingsOpen() {
+    this.setState(({ settingsIsOpen }) => ({ settingsIsOpen: !settingsIsOpen }));
+  }
+
+  renderSettingsLinks() {
+    const { fullQuery } = this.props;
+    const { config } = fullQuery;
+    const newConfig = config === 'sidepanel' ? 'default' : 'sidepanel';
+    const text = config === 'sidepanel' ? 'Hide morphology' : 'Show morphology';
+
+    return (
+      <a
+        href={`?${queryString.stringify({ ...fullQuery, config: newConfig })}`}
+        className="dropdown-item"
+      >
+        {text}
+      </a>
+    );
   }
 
   render() {
     const { refresh } = this.props;
-    const { isOpen } = this.state;
+    const { refIsOpen, settingsIsOpen } = this.state;
     const [first, back, current, next, last] = this.getFbcnl();
     const lines = this.getLines();
     const LinkComponent = refresh ? HtmlLink : Link;
 
     return (
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="collapse navbar-collapse justify-content-center" id="navbarsExample10">
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse" id="controlPanel">
+          <ul className={`navbar-nav mr-auto ${styles.dummyIcon}`} />
+          <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
                 &laquo; First
@@ -117,13 +143,13 @@ class ControlPanel extends Component {
               </LinkComponent>
             </li>
             <li className="nav-item dropdown">
-              <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={isOpen} onClick={this.toggleOpen}>
+              <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={refIsOpen} onClick={this.toggleRefOpen}>
                 {current}
               </button>
-              <div className={`dropdown-menu ${styles.dropdownScroll} ${isOpen ? 'show' : ''}`}>
+              <div className={`dropdown-menu ${styles.dropdownScroll} ${refIsOpen ? 'show' : ''}`}>
                 {
                   lines.map((n) => (
-                    <LinkComponent className="dropdown-item" key={n} to={this.createLink(n)} onClick={this.toggleOpen}>
+                    <LinkComponent className="dropdown-item" key={n} to={this.createLink(n)} onClick={this.toggleRefOpen}>
                       {n}
                     </LinkComponent>
                   ))
@@ -141,6 +167,16 @@ class ControlPanel extends Component {
               </LinkComponent>
             </li>
           </ul>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item dropdown dropleft">
+              <button className="btn btn-link nav-link text-light" type="button" aria-haspopup="true" aria-expanded={settingsIsOpen} onClick={this.toggleSettingsOpen}>
+                <Octicon icon={Settings} />
+              </button>
+              <div className={`dropdown-menu ${styles.dropdownScroll} ${settingsIsOpen ? 'show' : ''}`}>
+                {this.renderSettingsLinks()}
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
     );
@@ -151,6 +187,7 @@ ControlPanel.propTypes = {
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
   refresh: bool.isRequired,
+  fullQuery: queryType.isRequired,
   linkQuery: queryType.isRequired,
 };
 
