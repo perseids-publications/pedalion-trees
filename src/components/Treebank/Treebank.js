@@ -82,6 +82,7 @@ class Treebank extends Component {
     const { chunks, match } = this.props;
     const refreshControlPanel = this.refreshControlPanel();
     const linkQuery = this.linkQuery();
+    const fullQuery = this.additionalArgs();
 
     return (
       <>
@@ -89,6 +90,7 @@ class Treebank extends Component {
           match={match}
           chunks={chunks}
           refresh={refreshControlPanel}
+          fullQuery={fullQuery}
           linkQuery={linkQuery}
         />
         <div className="__artsa">
