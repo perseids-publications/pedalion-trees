@@ -3,7 +3,7 @@ const defaultConfig = {
     debug: false,
     showKeys: false,
     chunkParam: 'chunk',
-    auxConfPath: '/arethusa/configs',
+    auxConfPath: `${process.env.PUBLIC_URL}/arethusa/configs`,
     retrievers: {
       TreebankRetriever: {
         resource: 'Gardener',
@@ -39,28 +39,28 @@ const defaultConfig = {
       ],
     },
     lexInvFusekiEndpoint: {
-      route: 'http://fuseki.perseids.org/fuseki/ds/query?format=json',
+      route: 'https://fuseki.perseids.org/fuseki/ds/query?format=json',
     },
     morphologyServiceLat: {
-      route: 'http://services.perseids.org/bsp/morphologyservice/analysis/word?lang=lat&engine=morpheuslat',
+      route: 'https://services.perseids.org/bsp/morphologyservice/analysis/word?lang=lat&engine=morpheuslat',
     },
     newMorphologyServiceLat: {
-      route: 'http://morph.perseids.org/analysis/word?lang=lat&engine=morpheuslat',
+      route: 'https://morph.perseids.org/analysis/word?lang=lat&engine=morpheuslat',
     },
     morphologyServiceGrc: {
-      route: 'http://services.perseids.org/bsp/morphologyservice/analysis/word?lang=grc&engine=morpheusgrc',
+      route: 'https://services.perseids.org/bsp/morphologyservice/analysis/word?lang=grc&engine=morpheusgrc',
     },
     newMorphologyServiceGrc: {
-      route: 'http://morph.perseids.org/analysis/word?lang=grc&engine=morpheusgrc',
+      route: 'https://morph.perseids.org/analysis/word?lang=grc&engine=morpheusgrc',
     },
     morphologyServicePer: {
-      route: 'http://localhost/extapi/morphologyservice/analysis/word?lang=per&engine=hazm',
+      route: 'https://localhost/extapi/morphologyservice/analysis/word?lang=per&engine=hazm',
     },
     citeMapper: {
-      route: 'http://services.perseids.org/cite_mapper/find_cite',
+      route: 'https://services.perseids.org/cite_mapper/find_cite',
     },
     sgGrammar: {
-      route: 'http://services.perseids.org/sg/:doc.html',
+      route: 'https://services.perseids.org/sg/:doc.html',
     },
   },
   plugins: {
