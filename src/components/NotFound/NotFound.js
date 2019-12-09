@@ -1,9 +1,12 @@
 import React from 'react';
-import { PerseidsHeader } from 'perseids-react-components';
 
-const NotFound = () => (
+import { configType } from '../../lib/types';
+
+import Header from '../Header';
+
+const NotFound = ({ config: { logo, link } }) => (
   <>
-    <PerseidsHeader>
+    <Header logo={logo} link={link}>
       <span>
         Not Found
       </span>
@@ -14,7 +17,7 @@ const NotFound = () => (
           </a>
         </li>
       </ul>
-    </PerseidsHeader>
+    </Header>
     <div className="container pt-5">
       <div className="row col-12 pt-5 pb-3">
         <div className="col-12 text-center">
@@ -38,5 +41,9 @@ const NotFound = () => (
     </div>
   </>
 );
+
+NotFound.propTypes = {
+  config: configType.isRequired,
+};
 
 export default NotFound;

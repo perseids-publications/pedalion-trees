@@ -15,6 +15,10 @@
   overflow: scroll;
 }
 
+.dummyIcon {
+  width: 34px;
+}
+
 a.link:focus {
   color: #f8f9fa!important;
 }

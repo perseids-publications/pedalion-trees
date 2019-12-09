@@ -12,7 +12,14 @@ class PublicationGroupDirector extends Component {
     const { config } = props;
     const argsLookup = {};
     const {
-      title, subtitle, report, github, twitter, collections,
+      logo,
+      link,
+      title,
+      subtitle,
+      report,
+      github,
+      twitter,
+      collections,
     } = config;
 
     collections.forEach((collection) => {
@@ -20,6 +27,8 @@ class PublicationGroupDirector extends Component {
         const { path, author, work } = publication;
 
         argsLookup[path] = {
+          logo,
+          link,
           title,
           subtitle,
           report,
@@ -46,12 +55,12 @@ class PublicationGroupDirector extends Component {
   }
 
   render() {
-    const { match } = this.props;
+    const { config, match } = this.props;
     const { publication } = match.params;
     const newConfig = this.argsLookup[publication];
 
     if (newConfig === undefined) {
-      return <NotFound />;
+      return <NotFound config={config} />;
     }
 
     return <PublicationGroup config={newConfig} />;

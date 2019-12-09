@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import { publicationType } from '../../lib/types';
@@ -20,12 +20,12 @@ const renderSection = (section) => {
   const start = getStart(chunks);
 
   return (
-    <React.Fragment key={path}>
+    <Fragment key={path}>
       <a href={`${path}/${start}`}>
         {locus}
       </a>
       <br />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

@@ -32,6 +32,8 @@ export const collectionType = shape({
 });
 
 export const configType = shape({
+  logo: string,
+  link: string,
   title: oneOfType([string, element]).isRequired,
   subtitle: string.isRequired,
   copyright: string,
@@ -39,6 +41,10 @@ export const configType = shape({
   github: string,
   twitter: string,
   collections: arrayOf(collectionType).isRequired,
+});
+
+export const locationType = shape({
+  search: string.isRequired,
 });
 
 export const publicationMatchType = shape({
@@ -51,4 +57,9 @@ export const publicationGroupMatchType = shape({
   params: shape({
     publication: string.isRequired,
   }).isRequired,
+});
+
+export const queryType = shape({
+  w: string,
+  config: string,
 });

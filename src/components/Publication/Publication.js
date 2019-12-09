@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { PerseidsHeader } from 'perseids-react-components';
 
-import { chunksType, publicationMatchType } from '../../lib/types';
+import { chunksType, publicationMatchType, locationType } from '../../lib/types';
 
 import styles from './Publication.module.css';
 
+import Header from '../Header';
 import ArethusaWrapper from '../ArethusaWrapper';
 import Treebank from '../Treebank';
 import Markdown from '../Markdown';
@@ -71,26 +71,50 @@ class Publication extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      subDoc: '',
+    };
+
     this.arethusa = new ArethusaWrapper();
+    this.arethusaSubDocFun = this.arethusaSubDocFun.bind(this);
+  }
+
+  componentDidMount() {
+    // eslint-disable-next-line no-undef
+    window.arethusaSubDocFun = this.arethusaSubDocFun;
+  }
+
+  componentWillUnmount() {
+    // eslint-disable-next-line no-undef
+    window.arethusaSubDocFun = undefined;
+  }
+
+  arethusaSubDocFun(subDoc) {
+    this.setState({ subDoc });
   }
 
   render() {
     const {
+      logo,
+      link,
       publicationPath,
       author,
       work,
       editors,
       locus,
-      link,
+      publicationLink,
       notes,
       xml,
       chunks,
       match,
+      location,
     } = this.props;
+
+    const { subDoc } = this.state;
 
     return (
       <>
-        <PerseidsHeader>
+        <Header logo={logo} link={link}>
           <span>
             <i>{work}</i>
           </span>
@@ -101,7 +125,7 @@ class Publication extends Component {
               </a>
             </li>
           </ul>
-        </PerseidsHeader>
+        </Header>
         <div className="container pt-3">
           <h2>
             <span>
@@ -120,13 +144,20 @@ class Publication extends Component {
               {author && renderRow('Author', author)}
               {work && renderRow('Work', work)}
               {locus && renderLocusRow('Locus', locus, publicationPath)}
+              {subDoc && renderRow('Reference', subDoc)}
               {editors && renderRow('Editors', editors)}
-              {link && renderLinkRow('Link', link)}
+              {publicationLink && renderLinkRow('Link', publicationLink)}
               {notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>
-            <Treebank xml={xml} chunks={chunks} match={match} arethusa={this.arethusa} />
+            <Treebank
+              xml={xml}
+              chunks={chunks}
+              location={location}
+              match={match}
+              arethusa={this.arethusa}
+            />
           </div>
           <div className="pt-1 pb-4 text-right">
             <a href={`${process.env.PUBLIC_URL}/xml/${xml}`} target="_blank" rel="noopener noreferrer">
@@ -140,6 +171,8 @@ class Publication extends Component {
 }
 
 Publication.propTypes = {
+  logo: PropTypes.string,
+  link: PropTypes.string,
   publicationPath: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   work: PropTypes.string.isRequired,
@@ -148,15 +181,18 @@ Publication.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
   locus: PropTypes.string.isRequired,
-  link: PropTypes.string,
+  publicationLink: PropTypes.string,
   notes: PropTypes.string,
   xml: PropTypes.string.isRequired,
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
+  location: locationType.isRequired,
 };
 
 Publication.defaultProps = {
+  logo: undefined,
   link: undefined,
+  publicationLink: undefined,
   notes: undefined,
 };
 

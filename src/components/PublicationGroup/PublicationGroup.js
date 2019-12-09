@@ -1,8 +1,8 @@
 import React from 'react';
-import { PerseidsHeader } from 'perseids-react-components';
 
 import { configType } from '../../lib/types';
 
+import Header from '../Header';
 import Hero from '../Hero';
 import Collection from '../Collection';
 
@@ -18,9 +18,17 @@ const renderCollection = (collection) => {
   );
 };
 
-const PublicationGroup = ({ config: { title, subtitle, collections } }) => (
+const PublicationGroup = ({
+  config: {
+    logo,
+    link,
+    title,
+    subtitle,
+    collections,
+  },
+}) => (
   <>
-    <PerseidsHeader>
+    <Header logo={logo} link={link}>
       {title}
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
@@ -29,7 +37,7 @@ const PublicationGroup = ({ config: { title, subtitle, collections } }) => (
           </a>
         </li>
       </ul>
-    </PerseidsHeader>
+    </Header>
     <Hero title={title} subtitle={subtitle} />
     {collections.map((c) => renderCollection(c))}
   </>

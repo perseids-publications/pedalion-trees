@@ -1,23 +1,28 @@
-import ArethusaConfig from './ArethusaConfig';
+import { defaultConfig, sidepanelConfig } from './ArethusaConfig';
 
 import './custom.css';
+
+const elementId = 'treebank_container';
+const remoteUrl = `${process.env.PUBLIC_URL}/arethusa/`;
 
 const removeToastContainer = ($) => {
   $('#toast-container').remove();
 };
 
+const getConfig = (config) => {
+  if (config === 'sidepanel') {
+    return sidepanelConfig;
+  }
+
+  return defaultConfig;
+};
+
 class ArethusaWrapper {
-  elementId = 'treebank_container';
-
-  remoteUrl = `${process.env.PUBLIC_URL}/arethusa/`;
-
-  appConf = ArethusaConfig;
-
   constructor() {
     this.render = this.render.bind(this);
   }
 
-  render(doc, chunk) {
+  render(doc, chunk, { config, w }) {
     // eslint-disable-next-line no-undef
     const { arethusaGoto, Arethusa, $ } = window;
 
@@ -30,10 +35,10 @@ class ArethusaWrapper {
       this.widget = new Arethusa();
 
       this.widget
-        .on(this.elementId)
-        .from(this.remoteUrl)
-        .with(this.appConf)
-        .start({ doc, chunk });
+        .on(elementId)
+        .from(remoteUrl)
+        .with(getConfig(config))
+        .start({ doc, chunk, w });
     }
 
     this.doc = doc;
