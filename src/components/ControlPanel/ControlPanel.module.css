@@ -16,6 +16,10 @@
 }
 
 .dummyIcon {
+  width: 0;
+}
+
+@media (min-width: 576px) {
   width: 34px;
 }
 
