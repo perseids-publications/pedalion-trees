@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a30fe93a7bbb5f40db95980bfbe68849",
+    "revision": "745ed6c4638c0af8fd4f7b94185d4d3f",
     "url": "/pedalion-trees/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pedalion-trees/static/css/2.5c60d895.chunk.css"
   },
   {
-    "revision": "fd1590e83c5a97598b9d",
-    "url": "/pedalion-trees/static/css/main.bc01066e.chunk.css"
+    "revision": "9747c1b71c5506181aa4",
+    "url": "/pedalion-trees/static/css/main.c6a36044.chunk.css"
   },
   {
     "revision": "c2394056165190071cd1",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pedalion-trees/static/js/2.e06955c2.chunk.js.LICENSE"
   },
   {
-    "revision": "fd1590e83c5a97598b9d",
+    "revision": "9747c1b71c5506181aa4",
     "url": "/pedalion-trees/static/js/main.d7fcfcaa.chunk.js"
   },
   {
