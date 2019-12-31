@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - v12.9.1
 before_install:
+  - openssl aes-256-cbc -K $encrypted_6e5e35a70d3f_key -iv $encrypted_6e5e35a70d3f_iv
+    -in .travis-deploy-key.enc -out .travis-deploy-key -d
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
 cache:
@@ -9,6 +11,13 @@ cache:
   - node_modules
 script:
   - yarn install
-  - yarn audit
   - yarn lint
   - yarn test --coverage
+  - yarn build
+deploy:
+  provider: pages:git
+  deploy_key: .travis-deploy-key
+  local_dir: build
+  edge: true
+  on:
+    branch: master
