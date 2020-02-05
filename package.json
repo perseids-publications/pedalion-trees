@@ -1,6 +1,6 @@
 {
   "name": "treebank-template",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "homepage": "https://perseids-publications.github.io/treebank-template/",
   "dependencies": {
