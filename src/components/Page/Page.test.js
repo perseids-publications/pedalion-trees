@@ -16,6 +16,22 @@ it('renders the main page', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders the main page with markdown in the subtitle', () => {
+  const { subtitle } = config;
+  config.subtitle = 'Lorem ipsum [dolor sit amet](https://www.perseids.org), consectetur adipiscing elit';
+
+  const component = (
+    <MemoryRouter initialEntries={['/']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  config.subtitle = subtitle;
+});
+
 it('renders a publication', () => {
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
