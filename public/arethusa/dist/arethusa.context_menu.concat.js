@@ -65,9 +65,7 @@ angular.module('arethusa.contextMenu').factory('menuElement', function () {
 
         function repositionContextMenu(menu, parent) {
           // reposition the context menu relative to the parent element
-          console.log(parent);
           var parPos = parent.offset();
-          console.log(parPos);
           var left;
           var top;
           if (scope.menuPosition === 'bottom') {
@@ -81,6 +79,8 @@ angular.module('arethusa.contextMenu').factory('menuElement', function () {
           }
           //menu.css('left', left);
           //menu.css('top', top);
+          // widget offsets are being calculated incorrectly
+          // fix the size for now
           menu.css('right', '40px')
           menu.css('top', '150px')
         }
