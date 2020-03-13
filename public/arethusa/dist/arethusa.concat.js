@@ -417,11 +417,12 @@ angular.module('arethusa.util').service('commons', [
     this.doc = function(x, j, c) { return new Doc(x, j, c); };
 
     // Used by retrievers to define sentences
-    function Sentence(tokens, cite) {
+    function Sentence(tokens, cite, subdoc) {
       var self = this;
 
       this.tokens = tokens;
       this.cite = cite || '';
+      this.subdoc = subdoc || '';
 
       this.toString = function() {
         return arethusaUtil.inject([], self.tokens, function(memo, id, token) {
@@ -439,7 +440,7 @@ angular.module('arethusa.util').service('commons', [
      * TODO
      *
      */
-    this.sentence = function(t, cite) { return new Sentence(t, cite); };
+    this.sentence = function(t, cite, subdoc) { return new Sentence(t, cite, subdoc); };
 
     // Used by retrievers to define constituents
     function Constituent(cl, role, id, sentenceId, parentId) { // might want to add more here
@@ -958,6 +959,7 @@ angular.module('arethusa.core').directive('arethusaGrid', [
       restrict: 'A',
       scope: true, // inherit from ArethusaCtrl's scope
       link: function(scope, element, attrs) {
+        angular.element(document.body).css('overflow', 'auto');
 
         scope.grid = arethusaGrid;
 
@@ -1090,6 +1092,7 @@ angular.module('arethusa.core').directive('arethusaNavbar', [
         scope.showNavigation = function () {
           return conf.navigation;
         };
+
       },
       template: '<div ng-if="!disable" ng-include="template"></div>'
     };
@@ -1850,15 +1853,13 @@ angular.module('arethusa.core').directive('fullHeight', [
         var body = angular.element(document.body);
         var border = angular.element(document.getElementById('canvas-border')).height();
         var margin = element.css("margin-bottom").replace('px', '');
+        var padding = element.css("padding-bottom").replace('px', '');
         var additionalBorder = attrs.fullHeight || 0;
 
         function resize(args) {
           var fullHeight = body.height();
-          element.height(fullHeight - margin - additionalBorder);
+          element.height(fullHeight - margin - padding - additionalBorder);
         }
-        win.bind('resize', function() {
-          resize();
-        });
 
         resize();
       }
@@ -2032,7 +2033,7 @@ angular.module('arethusa.core').directive('helpPanel', [
           });
         });
       },
-      templateUrl: 'js/arethusa.core/templates/help_panel.html'
+      templateUrl: 'js/arethusa.core/templates/help_panel_widget.html'
     };
   }
 ]);
@@ -2092,13 +2093,8 @@ angular.module('arethusa.core').directive('helpTrigger', [
     return generator.panelTrigger({
       service: help,
       trsl: translator,
-      trslKey: 'help',
-      template: '<i class="fa fa-question"/>',
-      kC: keyCapture,
-      mapping: {
-        name: 'help',
-        key: 'H'
-      }
+      trslKey: 'credits',
+      template: '<i class="fa" translate="credits"></i>'
     });
   }
 ]);
@@ -3653,6 +3649,119 @@ angular.module('arethusa.core').directive('valueWatch', function () {
   };
 });
 
+"use strict";
+
+angular.module('arethusa.core').factory('apiOutputter', [
+  function (uuid2) {
+    return function (uuid2) {
+      var self = this;
+
+      // this is essentially just the reverse of the mapping
+      // that can be found in the various morph attributes
+      // config files. Ideally we would delegate back to a 
+      // config file which defines Arethusa internal to 
+      // Alpheios external lexicon format but for now 
+      // since we currently only support one api output format we can 
+      // just hard code it
+      this._attributesToAlpheios = function(attributes,morph) {
+        var infl = {}
+        angular.forEach(attributes, function (value, key) {
+          value = morph.longAttributeValue(key,value)
+          if (key === 'pos') {
+            key = 'pofs'
+            if (value === 'verb' && attributes.mood === 'participle') {
+              value = 'verb participle'
+            } else if (value === 'adposition') {
+              value = 'preposition'
+            }
+          } 
+          if (key === 'degree') {
+            key = 'comp'
+          } 
+          if (key === 'tense' && value ==='plusquamperfect') {
+              value = 'pluperfect'
+          }
+          if (key === 'voice'  && value ==='medio-passive') {
+            value = 'mediopassive'
+          }
+          infl[key] = { $ : value }
+        });
+        return infl
+      }
+
+      this.outputMorph = function (token,lang,morph) {
+        // if we were to follow the Arethusa design more 
+        // closely, this would be handled via a BSPMorphPersister
+        // but it's easier to just do it here for now
+        var resp = { 
+          RDF: { 
+            Annotation: { 
+              about: "urn:uuid:" + uuid2.newuuid(),
+              // TODO we should fill in the creator, created, rights and target info
+              creator: {
+                Agent: { 
+                  about: ""
+                }
+              },
+              created: { 
+                $: ""
+              },
+              rights: {
+                $: ""
+              },
+              hasTarget: {
+                Description: {
+                  about: ""
+                }
+              }
+            } 
+          } 
+        }
+        var infl = token.morphology
+        if (infl) {
+          var entry = {}
+          var uuid = "urn:uuid:" + uuid2.newuuid()
+          if (angular.isDefined(infl.lemma)) { 
+            entry.dict = { hdwd: { lang: lang, $: infl.lemma } }
+          }
+          if (angular.isDefined(infl.postag)) {
+            entry.infl = this._attributesToAlpheios(infl.attributes,morph);
+            entry.infl.term = { form: { $: token.string } };
+          }
+          var glosses = []
+          if (angular.isDefined(infl.gloss)) {
+            glosses.push({ $: infl.gloss})
+          }
+          if (angular.isDefined(infl.alternateGloss)) { 
+            glosses.push({ $: infl.alternateGloss})
+          }
+          if (glosses.length > 1) {
+            entry.mean = glosses
+          } else if (glosses.length == 1) {
+            entry.mean = glosses[0]
+          }
+          if (angular.isDefined(infl.notes)) { 
+            entry.note = { $: infl.notes }
+          }
+          resp.RDF.Annotation.hasBody = {
+            resource: uuid,
+          }
+          resp.RDF.Annotation.Body = { 
+            about: uuid,
+            type: { 
+              resource: "cnt:ContentAsXML" // this is not technically correct but this is legacy code
+            },
+            rest: { entry: entry } 
+          }
+        }
+        return resp
+      };
+    };
+  }
+]);
+
+
+
 'use strict';
 angular.module('arethusa.core').factory('Auth', [
   '$resource',
@@ -5148,6 +5257,14 @@ angular.module('arethusa.core').factory('Tree', [
         applyViewMode();
       });
 
+     
+      // if a tree was rendered before it is visible
+      // refreshing will rerender it and fix display bugs
+      navigator.onRefresh(function() {
+        render();
+        $timeout(applyViewMode, transitionDuration);
+      });
+
 
       // Keybindings for this directive
       function keyBindings(kC) {
@@ -5430,6 +5547,98 @@ angular.module('arethusa.core').constant('MORPH_TOOLS', {
     ]
   }
 });
+
+"use strict";
+
+angular.module('arethusa.core').service('api', [
+  'state',
+  'idHandler',
+  'apiOutputter',
+  'documentStore',
+  'navigator',
+  'plugins',
+  'uuid2',
+  function(state,idHandler,apiOutputter,documentStore,navigator,plugins,uuid2) {
+    var self = this;
+    this.outputter = new apiOutputter(uuid2);
+
+
+    var lazyMorph;
+    function morph() {
+      if (!lazyMorph) lazyMorph = plugins.get('morph');
+      return lazyMorph;
+    }
+
+    var lazyLang;
+    function lang() {
+      if (!lazyLang) {
+        var document = documentStore.store['treebank'];
+        if ( document !== undefined ) {
+          var doc = document.json.treebank || document.json.book;
+          if (doc) {
+            lazyLang = doc["_xml:lang"];
+          }
+        }
+      }
+      return lazyLang;
+    }
+
+    /**
+     * get the morphology and gloss for a specific word
+     * @param {String} sentenceId sentence (chunk) identifier
+     * @param {String} wordId word (token) identifier
+     * @return {Object} an object adhering to a JSON representation of Alpheios Lexicon Schema wrapped in 
+     *                  the BSP Morphology Service RDF Annotation Wrapper 
+     *                  (i.e. the same format as parsed by the BSPMorphRetriever)
+     */
+    this.getMorph = function(sentenceId,wordId) {
+      /** TODO figure out how to be sure the api service is only instantiated after Arethusa is loaded **/
+      if (!state.arethusaLoaded) {
+        console.error("Api called before Arethusa was loaded")
+      }
+      return this.outputter.outputMorph(state.getToken(idHandler.getId(wordId,sentenceId)),lang(),morph());
+    };
+
+    /**
+     * returns subdoc of the current sentence
+     * @return {String} the subdoc of the current sentence (may also be undefined or '')
+     */
+    this.getSubdoc = function() {
+      return navigator.currentSubdocs()[0];
+    };
+
+    /** 
+     * rerenders the tree
+     * can be useful to call the tree is first loaded in a iframe that isn't visible
+     */
+    this.refreshView = function() {
+      navigator.triggerRefreshEvent();
+    }
+
+    /** 
+     * navigates application state to the next sentence
+     */
+    this.nextSentence = function() {
+      navigator.nextChunk();
+    };
+
+    /**  
+     * navigates application state to the previous sentence
+     */
+    this.prevSentence = function() {
+      navigator.prevChunk();
+    };
+
+    /**  
+     * navigates application state to supplied sentenceId
+     * @param {String} sentenceId 
+     */
+    this.gotoSentence = function(sentenceId) {
+      navigator.goTo(sentenceId);
+    };
+
+  }
+]);
 
 "use strict";
 
@@ -6185,7 +6394,7 @@ angular.module('arethusa.core').service('configurator', [
     };
 
     function getGlobalDefaults() {
-      var globalDefaults = { 'mode' : 'editor' };
+      var globalDefaults = { 'mode' : 'viewer' };
       var customDefaults = getGlobalCustomDefaults();
       var routeDefaults  = getGlobalDefaultsFromRoute();
       return angular.extend({}, globalDefaults, customDefaults, routeDefaults);
@@ -7833,6 +8042,7 @@ angular.module('arethusa.core').service('navigator', [
             keyCapture, $rootScope, globalSettings) {
 
     var MOVE_EVENT = 'navigator:move';
+    var REFRESH_EVENT = 'navigator:refresh';
     var self = this;
     var citeMapper;
     var context = {};
@@ -7854,10 +8064,12 @@ angular.module('arethusa.core').service('navigator', [
       var sec = citeSplit[1];
       citation = citationCache.get(doc);
       if (! citation) {
-        citeMapper.get({ cite: doc}).then(function(res) {
+        citeMapper.get({ cite: doc }).then(function(res) {
           citation = res.data;
           citationCache.put(doc, citation);
           callback(citationToString(citation, sec));
+        }).catch(function() {
+          callback(cite);
         });
       } else {
         callback(citationToString(citation, sec));
@@ -7914,6 +8126,9 @@ angular.module('arethusa.core').service('navigator', [
     }
     function currentIds () {
       return arethusaUtil.map(currentSentenceObjs(), 'id');
+    }
+    this.currentSubdocs = function() {
+      return arethusaUtil.map(currentSentenceObjs(), 'subdoc');
     }
     this.sentenceToString = function(sentence) {
       return arethusaUtil.inject([], sentence.tokens, function(memo, id, token) {
@@ -8147,6 +8362,17 @@ angular.module('arethusa.core').service('navigator', [
     }
     function triggerMoveEvent() {
       $rootScope.$broadcast(MOVE_EVENT);
+    }
+
+    this.onRefresh = onRefresh;
+
+    function onRefresh(cb) {
+      return $rootScope.$on(REFRESH_EVENT, cb);
+    }
+
+    this.triggerRefreshEvent = triggerRefreshEvent;
+    function triggerRefreshEvent() {
+      $rootScope.$broadcast(REFRESH_EVENT);
     }
 
     // Probably could deregister/reregister that watch, but it doesn't hurt...
@@ -10554,6 +10780,77 @@ angular.module('arethusa.core').run(['$templateCache', function($templateCache) 
   );
 
 
+  $templateCache.put('js/arethusa.core/templates/help_panel_widget.html',
+    "<div ng-if=\"active\" class=\"fade small-12-columns\">\n" +
+    "  <div class=\"small-12 large-12 columns\">\n" +
+    "    <div help-panel-item toggler=\"editors\" heading=\"editors.title\" height=\"200px\">\n" +
+    "      <div editors/>\n" +
+    "    </div>\n" +
+    "    <div help-panel-item toggler=\"colors\" heading=\"helpPanel.colorLegends\" height=\"400px\">\n" +
+    "      <ul class=\"no-list\" ng-repeat=\"(name, values) in gS.colorMaps()\">\n" +
+    "        <li\n" +
+    "          ng-class=\"{ 'active-colorizer': name === gS.colorizer }\">\n" +
+    "          {{ name }}\n" +
+    "        </li>\n" +
+    "        <ul class=\"no-list\" ng-repeat=\"map in values.maps\">\n" +
+    "          <li>\n" +
+    "            {{ map.label }}\n" +
+    "            <table class=\"small\">\n" +
+    "              <tr>\n" +
+    "                <th ng-repeat=\"header in values.header\">\n" +
+    "                  <strong>{{ header }}</strong>\n" +
+    "                </th>\n" +
+    "              </tr>\n" +
+    "              <tr ng-repeat=\"(k, col) in map.colors\">\n" +
+    "                <td\n" +
+    "                  ng-style=\"col\"\n" +
+    "                  ng-repeat=\"val in k.split(' || ') track by $index\">\n" +
+    "                  {{ val }}\n" +
+    "                </td>\n" +
+    "              </tr>\n" +
+    "            </table>\n" +
+    "          </li>\n" +
+    "        </ul>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "    <div help-panel-item toggler=\"about\" heading=\"helpPanel.about\" height=\"160px\">\n" +
+    "      <ul class=\"no-list\">\n" +
+    "        <li>\n" +
+    "          <table class=\"small\">\n" +
+    "            <tr>\n" +
+    "              <td translate=\"helpPanel.revision\"/>\n" +
+    "              <td>\n" +
+    "                <a ng-href=\"{{ vers.commitUrl }}\" target=\"_blank\">\n" +
+    "                  {{ vers.revision }}\n" +
+    "                </a>\n" +
+    "              </td>\n" +
+    "            <tr>\n" +
+    "            <tr>\n" +
+    "              <!--This is untranslated on purpose!-->\n" +
+    "              <td>Branch</td>\n" +
+    "              <td>\n" +
+    "                <a ng-href=\"{{ vers.branchUrl }}\" target=\"_blank\">\n" +
+    "                  {{ vers.branch }}\n" +
+    "                </a>\n" +
+    "              </td>\n" +
+    "            <tr>\n" +
+    "            <tr>\n" +
+    "              <td translate=\"date\"/>\n" +
+    "              <td>{{ vers.date | date: 'medium' }}</td>\n" +
+    "            </tr>\n" +
+    "            <tr>\n" +
+    "              <td translate=\"relocateHandler.title\"/>\n" +
+    "              <td relocate/>\n" +
+    "            </tr>\n" +
+    "          </table>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n"
+  );
+
+
   $templateCache.put('js/arethusa.core/templates/keys_to_screen.html',
     "<div id=\"keys-to-screen\">\n" +
     "  <span\n" +
@@ -10583,49 +10880,18 @@ angular.module('arethusa.core').run(['$templateCache', function($templateCache) 
 
 
   $templateCache.put('js/arethusa.core/templates/navbar_buttons.html',
-    "<li><a class=\"button\" saver/></li>\n" +
-    "<li><a class=\"button\" outputter/></li>\n" +
-    "<li><a class=\"button\" hist-undo/></li>\n" +
-    "<li><a class=\"button\" hist-redo/></li>\n" +
-    "<li><a class=\"button\" sidepanel-folder/></li>\n" +
-    "<li><a class=\"button\" uservoice-trigger/></li>\n" +
-    "<li><a class=\"button\" global-settings-trigger/></li>\n" +
     "<li><a class=\"button\" help-trigger/></li>\n" +
-    "<li><a class=\"button\" translate-language/></li>\n" +
-    "<li><a class=\"button\" exit/></li>\n" +
     "\n"
   );
 
 
   $templateCache.put('js/arethusa.core/templates/navbar_buttons_collapsed.html',
-    "<li><a class=\"button\" saver/></li>\n" +
-    "<li><a class=\"button\" hist-undo/></li>\n" +
-    "<li><a class=\"button\" hist-redo/></li>\n" +
-    "<li>\n" +
-    "  <a\n" +
-    "    class=\"button\"\n" +
-    "    title=\"{{ menuTitle }}\"\n" +
-    "    dropdown-toggle=\"#navbar_collapsed_buttons_menu\">\n" +
-    "    <i class=\"fi-align-justify\"></i>\n" +
-    "  </a>\n" +
-    "  <ul id=\"navbar_collapsed_buttons_menu\" class=\"navbar-dropdown\">\n" +
-    "    <li><a outputter/></li>\n" +
-    "    <li><a sidepanel-folder/></li>\n" +
-    "    <li><a uservoice-trigger/></li>\n" +
-    "    <li><a help-trigger/></li>\n" +
-    "    <li><a global-settings-trigger/></li>\n" +
-    "    <li><a translate-language/></li>\n" +
-    "    <li><a exit/></li>\n" +
-    "  </ul>\n" +
-    "</li>\n"
+    "<li><a help-trigger/></li>\n"
   );
 
 
   $templateCache.put('js/arethusa.core/templates/navbar_navigation.html',
     "<ul ng-show=\"showNavigation()\" class=\"navbar-navigation\">\n" +
-    "  <li>\n" +
-    "    <a>{{ navStat.citation }}</a>\n" +
-    "  </li>\n" +
     "  <!--The wrapping divs around the a elements are only there for styling - the-->\n" +
     "  <!--foundation topbar gives them a differnet look and feel when they are wrapped.-->\n" +
     "  <li>\n" +
@@ -11247,9 +11513,7 @@ angular.module('arethusa.contextMenu').factory('menuElement', function () {
 
         function repositionContextMenu(menu, parent) {
           // reposition the context menu relative to the parent element
-          console.log(parent);
           var parPos = parent.offset();
-          console.log(parPos);
           var left;
           var top;
           if (scope.menuPosition === 'bottom') {
@@ -11263,6 +11527,8 @@ angular.module('arethusa.contextMenu').factory('menuElement', function () {
           }
           //menu.css('left', left);
           //menu.css('top', top);
+          // widget offsets are being calculated incorrectly
+          // fix the size for now
           menu.css('right', '40px')
           menu.css('top', '150px')
         }
@@ -11908,7 +12174,7 @@ angular.module('arethusa', [
   'arethusa.core',
   'arethusa.contextMenu',
   'arethusa.history',
-  'arethusa.tools',
+  'arethusa.tools'
 ]);
 
 angular.module('arethusa').constant('_', window._);
@@ -11928,7 +12194,7 @@ angular.module('arethusa').config([
 
     $translateProvider
       .useStaticFilesLoader({
-        prefix: window.i18npath, 
+        prefix: window.i18npath,
         suffix: '.json'
       })
 
@@ -11977,6 +12243,7 @@ function Arethusa() {
     self.conf.then(function(conf) {
       var injector = angular.bootstrap(self.id,['arethusa']);
       var configurator = injector.get('configurator');
+      self._api = injector.get('api')
 
       for (var k in resourceConf) {
         var locator = injector.get('locator');
@@ -11987,7 +12254,10 @@ function Arethusa() {
     });
   };
 
-}
+  this.api = function() {
+    return this._api
+  };
+};
 
 "use strict";
 
@@ -12452,6 +12722,11 @@ angular.module('arethusa').factory('TreebankPersister', [
           if (angular.isDefined(morph.lemma))  word._lemma = morph.lemma;
           if (angular.isDefined(morph.postag)) word._postag= morph.postag;
           if (angular.isDefined(morph.gloss))  word._gloss = morph.gloss;
+          if (angular.isDefined(morph.alternateGloss))  word._alternateGloss = morph.alternateGloss;
+          if (angular.isDefined(morph.semanticRole))  word._semanticRole = morph.semanticRole;
+          if (angular.isDefined(morph.include))  word._include = morph.include;
+          if (angular.isDefined(morph.multiword))  word._multiword = morph.multiword;
+          if (angular.isDefined(morph.notes))  word._notes = morph.notes;
         } else {
           if (word._lemma || word._postag) {
             word._lemma = word._postag = '';
@@ -12617,12 +12892,13 @@ angular.module('arethusa').factory('TreebankRetriever', [
     function parseSentences(sentences, docId) {
       return sentences.map(function(sentence) {
         var cite = extractCiteInfo(sentence);
+        var subdoc = sentence._subdoc || '';
         var words = arethusaUtil.toAry(sentence.word);
-        return parseSentence(sentence, sentence._id, docId, cite);
+        return parseSentence(sentence, sentence._id, docId, cite, subdoc);
       });
     }
 
-    function parseSentence(sentence, id, docId, cite) {
+    function parseSentence(sentence, id, docId, cite, subdoc) {
       var words = aU.toAry(sentence.word);
       var tokens = {};
 
@@ -12635,7 +12911,7 @@ angular.module('arethusa').factory('TreebankRetriever', [
         tokens[token.id] = token;
       });
 
-      var sentenceObj = commons.sentence(tokens, cite);
+      var sentenceObj = commons.sentence(tokens, cite, subdoc);
       retrieverHelper.generateId(sentenceObj, id, id, docId);
 
       return sentenceObj;
@@ -12684,10 +12960,15 @@ angular.module('arethusa').factory('TreebankRetriever', [
       // mark the origin as such
       token.morphology.origin = 'document';
 
-      var gloss = word._gloss;
-      if (gloss) {
-        token.morphology.gloss = gloss;
-      }
+      var fields = ['gloss', 'alternateGloss', 'semanticRole', 'include', 'multiword', 'notes'];
+
+      angular.forEach(fields, function (field) {
+        var value = word['_' + field];
+
+        if (value) {
+          token.morphology[field] = value;
+        }
+      });
     }
 
     function parseRelation(token, word) {
@@ -12868,10 +13149,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '449ee3e5eb26fba7ede57b24be71aac565de0667',
-  branch: 'master',
+  revision: '6e816c7cdf1e70df605ff74394a5b1833a61aa40',
+  branch: 'widget-api',
   version: '0.2.5',
-  date: '2017-06-07T14:58:53.301Z',
+  date: '2020-03-11T17:00:57.844Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
@@ -13052,10 +13333,23 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
   );
 
 
+  $templateCache.put('js/templates/dep_tree_widget.html',
+    "<div class=\"tree-canvas\">\n" +
+    "  <div\n" +
+    "    lang-specific\n" +
+    "    dependency-tree\n" +
+    "    tokens=\"state.tokens\"\n" +
+    "    styles=\"plugin.diffStyles()\"\n" +
+    "    to-bottom>\n" +
+    "  </div>\n" +
+    "</div>\n"
+  );
+
+
   $templateCache.put('js/templates/exercise_demo.html',
     "<arethusa-navbar></arethusa-navbar>\n" +
     "<p/>\n" +
-    "<div id=\"canvas\" class=\"row panel full-height\" full-height>\n" +
+    "<div id=\"canvas\" class=\"row panel full-height not-scrollable\" full-height>\n" +
     "  <div id=\"main-body\" class=\"columns small-7\">\n" +
     "    <div ng-repeat=\"pl in mainPlugins\">\n" +
     "      <plugin name=\"pl\"/>\n" +
@@ -13363,7 +13657,7 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "  <div id=\"arethusa-editor\">\n" +
     "    <div class=\"canvas-border\"/>\n" +
     "\n" +
-    "    <div id=\"canvas\" class=\"row panel full-height\" full-height>\n" +
+    "    <div id=\"canvas\" class=\"row panel full-height not-scrollable\" full-height>\n" +
     "      <div id=\"main-body\" to-bottom>\n" +
     "        <div ng-repeat=\"pl in plugins.main\" plugin name=\"{{ pl.name }}\"/>\n" +
     "        <div keys-to-screen/>\n" +
@@ -13454,6 +13748,48 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "        </input>\n" +
     "      </label>\n" +
     "    </p>\n" +
+    "    <p ng-if=\"plugin.additionalFields\">\n" +
+    "      <label>\n" +
+    "        <span translate=\"morph.alternateGloss\"/>\n" +
+    "        <input class=\"compact\"\n" +
+    "          type=\"text\"\n" +
+    "          ng-change=\"plugin.updateAlternateGloss(id)\"\n" +
+    "          ng-model=\"analysis.alternateGloss\">\n" +
+    "        </input>\n" +
+    "      </label>\n" +
+    "      <label>\n" +
+    "        <span translate=\"morph.semanticRole\"/>\n" +
+    "        <input class=\"compact\"\n" +
+    "          type=\"text\"\n" +
+    "          ng-change=\"plugin.updateSemanticRole(id)\"\n" +
+    "          ng-model=\"analysis.semanticRole\">\n" +
+    "        </input>\n" +
+    "      </label>\n" +
+    "      <label>\n" +
+    "        <span translate=\"morph.include\"/>\n" +
+    "        <input class=\"compact\"\n" +
+    "          type=\"text\"\n" +
+    "          ng-change=\"plugin.updateInclude(id)\"\n" +
+    "          ng-model=\"analysis.include\">\n" +
+    "        </input>\n" +
+    "      </label>\n" +
+    "      <label>\n" +
+    "        <span translate=\"morph.multiword\"/>\n" +
+    "        <input class=\"compact\"\n" +
+    "          type=\"text\"\n" +
+    "          ng-change=\"plugin.updateMultiword(id)\"\n" +
+    "          ng-model=\"analysis.multiword\">\n" +
+    "        </input>\n" +
+    "      </label>\n" +
+    "      <label>\n" +
+    "        <span translate=\"morph.notes\"/>\n" +
+    "        <input class=\"compact\"\n" +
+    "          type=\"text\"\n" +
+    "          ng-change=\"plugin.updateNotes(id)\"\n" +
+    "          ng-model=\"analysis.notes\">\n" +
+    "        </input>\n" +
+    "      </label>\n" +
+    "    </p>\n" +
     "    <accordion close-others=\"oneAtATime\">\n" +
     "      <accordion-group\n" +
     "        ng-repeat=\"form in analysis.forms\"\n" +
@@ -13496,38 +13832,6 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "    </morph-form-create>\n" +
     "  </div>\n" +
     "  <div delimiter/>\n" +
-    "</div>\n"
-  );
-
-
-  $templateCache.put('js/templates/morph3.widget.html',
-    "<div ng-repeat=\"(id, analysis) in plugin.currentAnalyses()\">\n" +
-    "  <div class=\"small-12 columns\" lang-specific>\n" +
-    "    <accordion close-others=\"oneAtATime\">\n" +
-    "      <accordion-group\n" +
-    "        ng-repeat=\"form in analysis.forms\"\n" +
-    "        is-open=\"plugin.expandSelection && form.selected\">\n" +
-    "        <accordion-heading>\n" +
-    "          <div class=\"row\" accordion-highlighter>\n" +
-    "            <div class=\"columns large-3 small-5 text\">\n" +
-    "              <span ng-style=\"plugin.styleOf(form)\" lang-specific>{{ form.lemma }}\n" +
-    "              <br>\n" +
-    "              </span> {{ plugin.concatenatedAttributes(form) }}\n" +
-    "            </div>\n" +
-    "            <div\n" +
-    "              class=\"columns large-4 small-5 postag\">\n" +
-    "              {{ form.postag }}\n" +
-    "            </div>\n" +
-    "            <div class=\"columns large-1 hide-for-small hide-for-medium note end\">{{ form.origin }}</div>\n" +
-    "          </div>\n" +
-    "          <hr class=\"small\">\n" +
-    "        </accordion-heading>\n" +
-    "        <div class=\"small-12 columns\" morph-form-attributes=\"form\" token-id=\"id\"></div>\n" +
-    "        <p class=\"small-12 columns\"/>\n" +
-    "        <hr>\n" +
-    "      </accordion-group>\n" +
-    "    </accordion>\n" +
-    "  </div>\n" +
     "</div>\n"
   );
 
@@ -13647,10 +13951,11 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "    </ul>\n" +
     "    <section class=\"top-bar-section\">\n" +
     "      <ul navbar-navigation/>\n" +
+    "      <ul navbar-buttons class=\"right\"/>\n" +
     "    </section>\n" +
     "  </nav>\n" +
+    "  <div help-panel class=\"hide row panel\"/>\n" +
     "</div>\n" +
-    "<div help-panel class=\"hide row panel\"/>\n" +
     "<div global-settings-panel class=\"hide row panel\"/>\n"
   );
 
@@ -13900,8 +14205,8 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  <div notifications/>\n" +
     "  <arethusa-navbar/>\n" +
+    "  <div notifications/>\n" +
     "  <div id=\"arethusa-sentence-list\" class=\"hide\"/>\n" +
     "</div>\n"
   );
