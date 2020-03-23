@@ -151,13 +151,13 @@ class Publication extends Component {
           </h2>
           <table className="table">
             <tbody>
-              {author && renderRow('Author', author)}
-              {work && renderRow('Work', work)}
-              {locus && renderLocusRow('Locus', locus, publicationPath)}
-              {subDoc && renderRow('Reference', subDoc)}
-              {editors && renderRow('Editors', editors)}
-              {publicationLink && renderLinkRow('Link', publicationLink)}
-              {notes && renderMarkdownRow('Notes', notes)}
+              {!!author && renderRow('Author', author)}
+              {!!work && renderRow('Work', work)}
+              {!!locus && renderLocusRow('Locus', locus, publicationPath)}
+              {!!subDoc && renderRow('Reference', subDoc)}
+              {!!editors && renderRow('Editors', editors)}
+              {!!publicationLink && renderLinkRow('Link', publicationLink)}
+              {!!notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>
