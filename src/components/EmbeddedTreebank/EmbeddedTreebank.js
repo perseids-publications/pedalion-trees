@@ -50,7 +50,7 @@ class EmbeddedTreebank extends Component {
   }
 
   render() {
-    const { match } = this.props;
+    const { match, arethusa } = this.props;
     const { params: { publication, chunk } } = match;
 
     return (
@@ -63,7 +63,7 @@ class EmbeddedTreebank extends Component {
             Credits and more information
           </a>
         </div>
-        <TreebankService />
+        <TreebankService arethusa={arethusa} />
       </>
     );
   }

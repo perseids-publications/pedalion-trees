@@ -52,6 +52,14 @@ class ArethusaWrapper {
   getSubdoc() {
     return this.widget.api().getSubdoc();
   }
+
+  getMorph(sentenceId, wordId) {
+    return this.widget.api().getMorph(sentenceId, wordId);
+  }
+
+  refreshView() {
+    return this.widget.api().refreshView();
+  }
 }
 
 export default ArethusaWrapper;
