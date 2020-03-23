@@ -24,11 +24,11 @@ class ArethusaWrapper {
 
   render(doc, chunk, { config, w }) {
     // eslint-disable-next-line no-undef
-    const { arethusaGoto, Arethusa, $ } = window;
+    const { Arethusa, $ } = window;
 
     if (this.widget) {
       if (this.doc === doc && this.chunk !== chunk) {
-        arethusaGoto(chunk);
+        this.gotoSentence(chunk);
         removeToastContainer($);
       }
     } else {
@@ -43,6 +43,22 @@ class ArethusaWrapper {
 
     this.doc = doc;
     this.chunk = chunk;
+  }
+
+  gotoSentence(chunk) {
+    return this.widget.api().gotoSentence(chunk);
+  }
+
+  getSubdoc() {
+    return this.widget.api().getSubdoc();
+  }
+
+  getMorph(sentenceId, wordId) {
+    return this.widget.api().getMorph(sentenceId, wordId);
+  }
+
+  refreshView() {
+    return this.widget.api().refreshView();
   }
 }
 

@@ -9,6 +9,5 @@ cache:
   - node_modules
 script:
   - yarn install
-  - yarn audit
   - yarn lint
   - yarn test --coverage

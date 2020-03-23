@@ -75,22 +75,32 @@ class Publication extends Component {
       subDoc: '',
     };
 
+    this.setSubdoc = this.setSubdoc.bind(this);
+
     this.arethusa = new ArethusaWrapper();
-    this.arethusaSubDocFun = this.arethusaSubDocFun.bind(this);
   }
 
   componentDidMount() {
     // eslint-disable-next-line no-undef
-    window.arethusaSubDocFun = this.arethusaSubDocFun;
+    this.interval = window.setInterval(this.setSubdoc, 100);
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    window.arethusaSubDocFun = undefined;
+    window.clearInterval(this.interval);
   }
 
-  arethusaSubDocFun(subDoc) {
-    this.setState({ subDoc });
+  setSubdoc() {
+    try {
+      const subDoc = this.arethusa.getSubdoc();
+
+      this.setState({ subDoc });
+    } catch {
+      // When this `catch` block executes it means that Arethusa has not fully loaded.
+      // So we allow the timer to execute again.
+      // We don't unset the timer in the `try` block because sometimes Arethusa is partially
+      // loaded and returns `undefined`.
+    }
   }
 
   render() {
@@ -141,13 +151,13 @@ class Publication extends Component {
           </h2>
           <table className="table">
             <tbody>
-              {author && renderRow('Author', author)}
-              {work && renderRow('Work', work)}
-              {locus && renderLocusRow('Locus', locus, publicationPath)}
-              {subDoc && renderRow('Reference', subDoc)}
-              {editors && renderRow('Editors', editors)}
-              {publicationLink && renderLinkRow('Link', publicationLink)}
-              {notes && renderMarkdownRow('Notes', notes)}
+              {!!author && renderRow('Author', author)}
+              {!!work && renderRow('Work', work)}
+              {!!locus && renderLocusRow('Locus', locus, publicationPath)}
+              {!!subDoc && renderRow('Reference', subDoc)}
+              {!!editors && renderRow('Editors', editors)}
+              {!!publicationLink && renderLinkRow('Link', publicationLink)}
+              {!!notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>

@@ -16,6 +16,22 @@ it('renders the main page', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders the main page with markdown in the subtitle', () => {
+  const { subtitle } = config;
+  config.subtitle = 'Lorem ipsum [dolor sit amet](https://www.perseids.org), consectetur adipiscing elit';
+
+  const component = (
+    <MemoryRouter initialEntries={['/']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  config.subtitle = subtitle;
+});
+
 it('renders a publication', () => {
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
@@ -67,12 +83,38 @@ it('renders a publication with a subdoc', () => {
     </MemoryRouter>
   );
   const renderedComponent = renderer.create(component);
+  const originalArethusaApiGetSubdocFun = window.arethusaApiGetSubdocFun;
 
-  window.arethusaSubDocFun('1.1');
+  window.arethusaApiGetSubdocFun = () => '1.1';
+  window.intervalCallback();
 
   const tree = renderedComponent.toJSON();
 
   expect(tree).toMatchSnapshot();
+
+  window.arethusaApiGetSubdocFun = originalArethusaApiGetSubdocFun;
+});
+
+it('renders a publication with a subdoc even if it returns undefined', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-crown-1-50/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const renderedComponent = renderer.create(component);
+  const originalArethusaApiGetSubdocFun = window.arethusaApiGetSubdocFun;
+
+  window.arethusaApiGetSubdocFun = () => undefined;
+  window.intervalCallback();
+
+  window.arethusaApiGetSubdocFun = () => '1.1';
+  window.intervalCallback();
+
+  const tree = renderedComponent.toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  window.arethusaApiGetSubdocFun = originalArethusaApiGetSubdocFun;
 });
 
 it('renders a publication with a numbers array', () => {

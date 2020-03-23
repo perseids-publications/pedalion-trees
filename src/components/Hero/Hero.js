@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 
 import styles from './Hero.module.css';
 
+import Markdown from '../Markdown';
+
 const renderSubtitle = (subtitle) => (
-  <p>
-    <span>
-      {subtitle}
-    </span>
-  </p>
+  <Markdown source={subtitle} />
 );
 
 const Hero = ({ title, subtitle }) => (

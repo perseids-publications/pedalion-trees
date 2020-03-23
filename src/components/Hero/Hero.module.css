@@ -1,3 +1,7 @@
 .jumbotronSmall {
   padding: 2rem 1rem !important;
 }
+
+.jumbotronSmall :global .text-light a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}

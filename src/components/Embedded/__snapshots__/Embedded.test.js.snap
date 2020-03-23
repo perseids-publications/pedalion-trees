@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`provides an API to communicate with an embedded publication 1`] = `
+<div>
+  <div
+    className="__artsa"
+  >
+    <div
+      className="treebankContainer"
+      id="treebank_container"
+    />
+  </div>
+  <div
+    className="links"
+  >
+    <a
+      href="/on-the-murder-of-eratosthenes-1-50/5"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Credits and more information
+    </a>
+  </div>
+</div>
+`;
+
 exports[`renders 404 when publication not found 1`] = `
 <div
   className="container pt-5"
