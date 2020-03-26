@@ -72,6 +72,7 @@ class Publication extends Component {
     super(props);
 
     this.state = {
+      arethusaLoaded: false,
       subDoc: '',
     };
 
@@ -82,25 +83,27 @@ class Publication extends Component {
 
   componentDidMount() {
     // eslint-disable-next-line no-undef
-    this.interval = window.setInterval(this.setSubdoc, 100);
+    window.document.body.addEventListener('ArethusaLoaded', this.setSubdoc);
+  }
+
+  componentDidUpdate(prevProps) {
+    const { arethusaLoaded } = this.state;
+    const { location } = this.props;
+    const { location: prevLocation } = prevProps;
+
+    if (arethusaLoaded && location !== prevLocation) {
+      this.setSubdoc();
+    }
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    window.clearInterval(this.interval);
+    window.document.body.removeEventListener('ArethusaLoaded', this.setSubdoc);
   }
 
   setSubdoc() {
-    try {
-      const subDoc = this.arethusa.getSubdoc();
-
-      this.setState({ subDoc });
-    } catch {
-      // When this `catch` block executes it means that Arethusa has not fully loaded.
-      // So we allow the timer to execute again.
-      // We don't unset the timer in the `try` block because sometimes Arethusa is partially
-      // loaded and returns `undefined`.
-    }
+    const subDoc = this.arethusa.getSubdoc();
+    this.setState({ subDoc, arethusaLoaded: true });
   }
 
   render() {

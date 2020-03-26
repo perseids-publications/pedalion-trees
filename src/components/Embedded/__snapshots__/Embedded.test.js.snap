@@ -76,3 +76,27 @@ exports[`renders an embedded publication 1`] = `
   </div>
 </div>
 `;
+
+exports[`the API can be used to select words 1`] = `
+<div>
+  <div
+    className="__artsa"
+  >
+    <div
+      className="treebankContainer"
+      id="treebank_container"
+    />
+  </div>
+  <div
+    className="links"
+  >
+    <a
+      href="/on-the-murder-of-eratosthenes-1-50/5"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Credits and more information
+    </a>
+  </div>
+</div>
+`;
