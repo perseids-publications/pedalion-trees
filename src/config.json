@@ -403,6 +403,23 @@
             }
           ]
         },
+		{
+          "path": "procopius-de-bellis",
+          "author": "Procopius",
+          "work": "De bellis",
+          "editors": "Yordi Lenaerts, Yoran Joosten (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "Book 1",
+              "path": "procopius-de-bellis",
+              "xml": "procopius_de_bellis.xml",
+              "chunks": {
+                "start": 1,
+                "end": 2000
+              }
+            }
+          ]
+        },
                 {
           "path": "example-sentences",
           "author": "Various",
