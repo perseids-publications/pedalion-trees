@@ -8,7 +8,26 @@
     {
       "title": "*Welcome*",
       "publications": [
-						{
+					{
+          "path": "aeneas",
+          "author": "Aeneas Tacticus",
+          "work": "Poliorcetica",
+          "editors": "Jordi Lenaerts (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "Part 1",
+              "path": "aeneas",
+              "xml": "aeneas.xml",
+              "chunks": {
+                "start": 1,
+                "end": 1400
+              }
+			}
+					
+          ]
+        },			
+
+			{
           "path": "aesop",
           "author": "Aesopus",
           "work": "Fables",
@@ -65,7 +84,7 @@
 		{
           "path": "thesmo",
           "author": "Aristophanes",
-          "work": "Thesmopheriazusae",
+          "work": "Thesmophoriazusae",
           "editors": "Sanderijn Gijbels (& Alek Keersmaekers)",
           "sections": [
             {
@@ -96,6 +115,24 @@
             }
           ]
         },
+{
+          "path": "epictetus",
+          "author": "Epictetus",
+          "work": "Dissertationes ab Arriano digestae",
+          "editors": "Jonas Roose (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "epictetus",
+              "xml": "epictetus.xml",
+              "chunks": {
+                "start": 1,
+                "end": 250
+              }
+            }
+          ]
+        },
+
 		{
           "path": "epicurus1",
           "author": "Epicurus",
@@ -302,6 +339,23 @@
           ]
         },
 		{
+          "path": "phlegon",
+          "author": "Phlegon",
+          "work": "De mirabilibus",
+          "editors": "Yoran Joosten (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "Entire work",
+              "path": "pseudoplato_cleitophon",
+              "xml": "pseudoplato_cleitophon.xml",
+              "chunks": {
+                "start": 1,
+                "end": 75
+              }
+            }
+          ]
+        },
+		{
           "path": "plato-cleitophon",
           "author": "Plato",
           "work": "Cleitophon",
@@ -446,7 +500,7 @@
           "editors": "Alek Keersmaekers & Sanderijn Gijbels (& Louis Verreth, students 2018-2019)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "[Please download the xml]",
               "path": "papyri",
               "xml": "papyri.xml",
               "chunks": {
