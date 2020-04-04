@@ -346,11 +346,11 @@
           "sections": [
             {
               "locus": "Entire work",
-              "path": "pseudoplato_cleitophon",
-              "xml": "pseudoplato_cleitophon.xml",
+              "path": "phlegon",
+              "xml": "phlegon.xml",
               "chunks": {
                 "start": 1,
-                "end": 75
+                "end": 280
               }
             }
           ]
@@ -390,15 +390,15 @@
           ]
         },
 		{
-          "path": "procopius-de-bellis",
+          "path": "procopius",
           "author": "Procopius",
           "work": "De bellis",
           "editors": "Yordi Lenaerts, Yoran Joosten (& Alek Keersmaekers)",
           "sections": [
             {
               "locus": "Book 1",
-              "path": "procopius-de-bellis",
-              "xml": "procopius_de_bellis.xml",
+              "path": "procopius",
+              "xml": "procopius.xml",
               "chunks": {
                 "start": 1,
                 "end": 2000
