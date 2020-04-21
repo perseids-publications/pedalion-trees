@@ -21,13 +21,3 @@ global.Arethusa = ArethusaMock;
 // Setting it allows a test to test what happens when the Arethusa instance API
 // returns different results for `getSubdoc`.
 global.arethusaApiGetSubdocFun = () => { throw 'Error' };
-
-const setIntervalMock = (callback, _time) => {
-  global.intervalCallback = () => callback();
-}
-global.setInterval = setIntervalMock;
-
-const clearIntervalMock = (_interval) => {
-  global.intervalCallback = undefined;
-};
-global.clearInterval = clearIntervalMock;

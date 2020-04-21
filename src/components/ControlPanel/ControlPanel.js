@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Octicon, { Settings } from '@primer/octicons-react';
 import queryString from 'query-string';
 
-import { string, node, bool } from 'prop-types';
-
 import { chunksType, publicationMatchType, queryType } from '../../lib/types';
 
 import styles from './ControlPanel.module.css';
@@ -22,15 +20,6 @@ const getFbcnlFromNumbers = (chunk, numbers) => {
     numbers[min(numbers.length - 1, index + 1)],
     numbers[numbers.length - 1],
   ];
-};
-
-const HtmlLink = ({ to, children, ...props }) => (
-  <a href={to} {...props}>{children}</a>
-);
-
-HtmlLink.propTypes = {
-  to: string.isRequired,
-  children: node.isRequired,
 };
 
 class ControlPanel extends Component {
@@ -121,11 +110,9 @@ class ControlPanel extends Component {
   }
 
   render() {
-    const { refresh } = this.props;
     const { refIsOpen, settingsIsOpen } = this.state;
     const [first, back, current, next, last] = this.getFbcnl();
     const lines = this.getLines();
-    const LinkComponent = refresh ? HtmlLink : Link;
 
     return (
       <nav className="navbar navbar-expand navbar-dark bg-dark">
@@ -133,14 +120,14 @@ class ControlPanel extends Component {
           <ul className={`navbar-nav mr-auto ${styles.dummyIcon}`} />
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
+              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
                 &laquo; First
-              </LinkComponent>
+              </Link>
             </li>
             <li className="nav-item">
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(back)}>
+              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(back)}>
                 &#8249; Back
-              </LinkComponent>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={refIsOpen} onClick={this.toggleRefOpen}>
@@ -149,22 +136,22 @@ class ControlPanel extends Component {
               <div className={`dropdown-menu ${styles.dropdownScroll} ${refIsOpen ? 'show' : ''}`}>
                 {
                   lines.map((n) => (
-                    <LinkComponent className="dropdown-item" key={n} to={this.createLink(n)} onClick={this.toggleRefOpen}>
+                    <Link className="dropdown-item" key={n} to={this.createLink(n)} onClick={this.toggleRefOpen}>
                       {n}
-                    </LinkComponent>
+                    </Link>
                   ))
                 }
               </div>
             </li>
             <li className="nav-item">
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(next)}>
+              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(next)}>
                 Next &#8250;
-              </LinkComponent>
+              </Link>
             </li>
             <li>
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(last)}>
+              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(last)}>
                 Last &raquo;
-              </LinkComponent>
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">
@@ -186,7 +173,6 @@ class ControlPanel extends Component {
 ControlPanel.propTypes = {
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
-  refresh: bool.isRequired,
   fullQuery: queryType.isRequired,
   linkQuery: queryType.isRequired,
 };

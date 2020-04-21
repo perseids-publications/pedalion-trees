@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import queryString from 'query-string';
 
 import { chunksType, publicationMatchType, locationType } from '../../lib/types';
 
@@ -9,12 +8,13 @@ import styles from './Treebank.module.css';
 import ArethusaWrapper from '../ArethusaWrapper';
 import ControlPanel from '../ControlPanel';
 
+import { parse, linkParams } from '../../lib/params';
+
 class Treebank extends Component {
   constructor(props) {
     super(props);
 
     this.additionalArgs = this.additionalArgs.bind(this);
-    this.refreshControlPanel = this.refreshControlPanel.bind(this);
     this.linkQuery = this.linkQuery.bind(this);
     this.renderArethusa = this.renderArethusa.bind(this);
   }
@@ -29,42 +29,14 @@ class Treebank extends Component {
 
   additionalArgs() {
     const { location: { search } } = this.props;
-    const parsed = queryString.parse(search);
-    const result = {};
 
-    ['w', 'config'].forEach((n) => {
-      if (Object.prototype.hasOwnProperty.call(parsed, n)) {
-        result[n] = parsed[n];
-      }
-    });
-
-    return result;
-  }
-
-  refreshControlPanel() {
-    const additionalArgs = this.additionalArgs();
-    let returnVal = false;
-
-    ['w'].forEach((n) => {
-      if (Object.prototype.hasOwnProperty.call(additionalArgs, n)) {
-        returnVal = true;
-      }
-    });
-
-    return returnVal;
+    return parse(search);
   }
 
   linkQuery() {
-    const additionalArgs = this.additionalArgs();
-    const linkQuery = {};
+    const { location: { search } } = this.props;
 
-    ['config'].forEach((n) => {
-      if (Object.prototype.hasOwnProperty.call(additionalArgs, n)) {
-        linkQuery[n] = additionalArgs[n];
-      }
-    });
-
-    return linkQuery;
+    return linkParams(search);
   }
 
   renderArethusa() {
@@ -80,7 +52,6 @@ class Treebank extends Component {
 
   render() {
     const { chunks, match } = this.props;
-    const refreshControlPanel = this.refreshControlPanel();
     const linkQuery = this.linkQuery();
     const fullQuery = this.additionalArgs();
 
@@ -89,7 +60,6 @@ class Treebank extends Component {
         <ControlPanel
           match={match}
           chunks={chunks}
-          refresh={refreshControlPanel}
           fullQuery={fullQuery}
           linkQuery={linkQuery}
         />

@@ -27,8 +27,29 @@ it('provides an API to communicate with an embedded publication', () => {
   const tree = renderer.create(component);
   const { instance: { messageHandler } } = tree.root.findByType(TreebankService);
 
+  window.document.body.dispatchEvent(new window.Event('ArethusaLoaded'));
+
   messageHandler(
     { ID: 'test', body: { gotoSentence: { sentenceId: '5' } } },
+    () => {},
+  );
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('the API can be used to select words', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Embedded config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component);
+  const { instance: { messageHandler } } = tree.root.findByType(TreebankService);
+
+  window.document.body.dispatchEvent(new window.Event('ArethusaLoaded'));
+
+  messageHandler(
+    { ID: 'test', body: { gotoSentence: { sentenceId: '5', wordIds: ['12'] } } },
     () => {},
   );
 

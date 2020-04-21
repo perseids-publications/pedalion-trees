@@ -60,6 +60,6 @@ export const publicationGroupMatchType = shape({
 });
 
 export const queryType = shape({
-  w: string,
+  w: arrayOf(string),
   config: string,
 });
