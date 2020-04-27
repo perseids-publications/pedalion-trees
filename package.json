@@ -10,14 +10,14 @@
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-jest": "^23.8.2",
     "gh-pages": "^2.2.0",
-    "perseids-react-components": "^0.2.1",
+    "perseids-react-components": "^0.3.0",
     "prop-types": "^15.6.2",
-    "query-string": "^6.11.1",
+    "query-string": "^6.12.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
+    "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1"
   },
   "scripts": {

@@ -21,3 +21,10 @@ global.Arethusa = ArethusaMock;
 // Setting it allows a test to test what happens when the Arethusa instance API
 // returns different results for `getSubdoc`.
 global.arethusaApiGetSubdocFun = () => { throw 'Error' };
+
+// This function is required by Alpheios messaging
+// which uses the https://github.com/uuidjs/uuid package
+// that relies on `window.crypto.getRandomValues`
+global.crypto = {
+  getRandomValues: array => array.map(() => Math.random()),
+};
