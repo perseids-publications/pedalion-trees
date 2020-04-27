@@ -781,9 +781,6 @@ angular.module('arethusa.core').controller('ArethusaCtrl', [
           state.arethusaLoaded = true;
           notifier.success(translations.loadComplete());
           angular.element(document.body)[0].dispatchEvent(new CustomEvent("ArethusaLoaded",{detail: { currentTokenCount: state.totalTokens } }));
-          if (aU.isArethusaMainApplication()) {
-            UserVoice.push(['addTrigger', '#uservoicebutton', { mode: 'contact' }]);
-          }
 
           // start listening for events
           state.silent = false;
@@ -3568,67 +3565,6 @@ angular.module('arethusa.core').directive('unusedTokenHighlighter', [
   }
 ]);
 
-"use strict";
-
-angular.module('arethusa.core').directive('uservoiceEmbed', [
-  'translator',
-  'uuid2',
-  function(translator,uuid2) {
-    return {
-      restrict: 'A',
-      scope: {
-        target: "@"
-      },
-      link: function(scope, element, attrs) {
-          // this is a little convoluted but we could have multiple
-          // embedded uservoice elements so we need to be sure each
-          // has a unique id
-          var embedded_elem_id = "data-uv-embed-" + uuid2.newuuid();
-          angular.forEach(element.children(), function(elem,i) {
-            if (angular.element(elem).hasClass(scope.target)) {
-              angular.element(elem).attr('id',embedded_elem_id);
-            }
-          });
-          translator('errorDialog.sendMessage', function(translation) {
-            scope.hint = translation();
-            // it would be nice to do this as a result of the confirm modal action
-            // but it's more work to include a screenshot of the error in that case
-            // we could do this as custom key/value pair but we are only allowed one
-            // and might hit field length limitations.
-            UserVoice.push(['embed', '#'+embedded_elem_id, {
-              mode: 'contact',
-              contact_title: '',
-              strings: { contact_message_placeholder: scope.hint }
-            }]);
-        });
-      }
-    };
-  }
-]);
-
-"use strict";
-
-angular.module('arethusa.core').directive('uservoiceTrigger', [
-  'translator',
-  function(translator) {
-    return {
-      restrict: 'A',
-      compile: function(element, attributes) {
-        element.attr('id', 'uservoicebutton');
-        element.attr('data-uv-trigger', 'contact');
-
-        return function link(scope, element) {
-          var parent = element.parent();
-          translator('contactUs', function(translation) {
-            parent.attr('title', translation);
-          });
-        };
-      },
-      template: '<i class="fi-comment"/>'
-    };
-  }
-]);
-
 'use strict';
 
 angular.module('arethusa.core').directive('valueWatch', function () {
@@ -5267,6 +5203,7 @@ angular.module('arethusa.core').factory('Tree', [
       // refreshing will rerender it and fix display bugs
       navigator.onRefresh(function() {
         render();
+        scope.perfectWidth();
         $timeout(applyViewMode, transitionDuration);
       });
 
@@ -6673,10 +6610,7 @@ angular.module('arethusa.core').service('errorDialog', [
     this.sendError = function(message, exception) {
       // this comes from the stacktrace-js library
       var trace = exception ? printStackTrace({e: exception}) : printStackTrace();
-      // it's a little pointless to do this as a modal dialog really
-      // the idea was to send the stack trace on accept but it is a pain
-      // to get the coordination of the modal dialog with the uservoice widget right
-      // so the errordialog has the user voice widget embedded in it for now
+
       ask(message,trace).then((function(){ }));
     };
   }
@@ -10635,9 +10569,6 @@ angular.module('arethusa.core').run(['$templateCache', function($templateCache) 
     "  <pre class=\"overflow-wrap-word\">\n" +
     "    {{ trace }}\n" +
     "  </pre>\n" +
-    "  <div uservoice-embed target=\"error-uv-embedded\" class=\"error-modal\">\n" +
-    "    <div class=\"error-uv-embedded\"></div>\n" +
-    "  </div>\n" +
     "  <div class=\"center\">\n" +
     "    <span\n" +
     "      ng-click=\"$dismiss()\"\n" +
@@ -12311,6 +12242,19 @@ angular.module('arethusa').config([
 
     localStorageServiceProvider.setPrefix('arethusa');
   },
+]).config([
+  // This config prevents URL changes done using the browser's History API
+  // from causing Angular to enter an infinite loop.
+  // See https://stackoverflow.com/questions/18611214/turn-off-url-manipulation-in-angularjs
+  '$provide',
+  function ($provide) {
+    $provide.decorator('$browser', ['$delegate', function ($delegate) {
+      $delegate.onUrlChange = function () {};
+      $delegate.url = function () { return '' };
+
+      return $delegate;
+    }]);
+  }
 ]);
 
 angular.module('arethusa').value('CONF_PATH', '/configs');
@@ -13255,10 +13199,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '97c2531e63e0da7bfdf7e0e6a99ce7f99a4525a3',
+  revision: 'b1ea495d3eddee718bc2729b69fe2fc1202d7775',
   branch: 'gardener_widget',
   version: '0.2.5',
-  date: '2020-03-30T18:03:20.458Z',
+  date: '2020-04-27T14:42:52.306Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
