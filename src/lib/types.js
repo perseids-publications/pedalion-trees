@@ -37,6 +37,7 @@ export const configType = shape({
   title: oneOfType([string, element]).isRequired,
   subtitle: string.isRequired,
   copyright: string,
+  doi: string,
   report: string,
   github: string,
   twitter: string,
