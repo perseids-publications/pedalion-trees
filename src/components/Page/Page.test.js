@@ -32,6 +32,21 @@ it('renders the main page with markdown in the subtitle', () => {
   config.subtitle = subtitle;
 });
 
+it('renders the footer with a doi', () => {
+  config.doi = 'https://www.example.com/doi';
+
+  const component = (
+    <MemoryRouter initialEntries={['/']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  delete config.doi;
+});
+
 it('renders a publication', () => {
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
