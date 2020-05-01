@@ -93,6 +93,7 @@ const defaultConfig = {
       },
       matchAll: true,
       '@include': 'js/arethusa.morph/configs/morph/lat_attributes.json',
+      noRetrieval: 'online',
     },
     search: {
       template: 'js/templates/search.html',
