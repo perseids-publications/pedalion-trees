@@ -9,6 +9,7 @@
   "dependencies": {
     "@primer/octicons-react": "^9.6.0",
     "alpheios-messaging": "https://github.com/alpheios-project/alpheios-messaging",
+    "arethusa-widget": "^1.0.0",
     "bootstrap": "^4.4.1",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-jest": "^23.8.2",
