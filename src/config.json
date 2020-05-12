@@ -526,6 +526,23 @@
             }
           ]
         },
+		{
+          "path": "Chilia",
+          "author": "Various",
+          "work": "Various",
+          "editors": "External sentences",
+          "sections": [
+            {
+              "locus": "Various sentences [see en.pedalion.org]",
+              "path": "chilia-sentences",
+              "xml": "chilia-sentences.xml",
+              "chunks":   {
+                "start": 1,
+                "end": 1000
+              } 
+				}
+          ]
+        },
 		      {
           "path": "external-example-sentences",
           "author": "Various",
