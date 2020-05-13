@@ -1834,10 +1834,10 @@ aproba@^1.1.1:
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
 
-arethusa-widget@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/arethusa-widget/-/arethusa-widget-1.0.0.tgz#6bae418d471bede95c64576fb0454a228a874fb8"
-  integrity sha512-8hNjoOHD3XTfOSg9Fl+tqUSrH+lldPXWqv7SAkLDjFAn8DOqg+uI3BtQYb7VeX7txM4u/UD6/VdiUoK94q5wbQ==
+arethusa-widget@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/arethusa-widget/-/arethusa-widget-2.0.0.tgz#90efd084f294ede38674b0d82c4545e2b7fd8f05"
+  integrity sha512-1FxymcdCuacJn3XAZ+SVeLxM4AwVD4BQQlZGTz55s5fYv1HcJqaBJavfUV/q1qWT7qM1qiilgwCvxN2JN5ZlZg==
 
 argparse@^1.0.7:
   version "1.0.10"
