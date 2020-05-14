@@ -1,6 +1,7 @@
 {
   "title": "Treebank Publication Template",
   "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "doi": "https://dx.doi.org/10.5281/zenodo.3827931",
   "copyright": "© The Perseids Project 2019",
   "report": "https://github.com/perseids-publications/treebank-template/issues",
   "github": "https://github.com/perseids-publications/treebank-template/",

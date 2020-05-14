@@ -85,7 +85,7 @@ The Treebank Template repository itself is uploaded to Zenodo but the steps are 
 
 ### GitHub
 
-* In `src/config.json`, add or update the `doi` field to the DOI generated in the above step
+* In `src/config.json`, add or update the `doi` field to the DOI generated in the above step (preceded by `https://dx.doi.org/`)
 * Update the version in `package.json` (try to use [SemVer](https://semver.org/))
 * Push the code
 * Make a new release titled "Release vA.B.C" where "A.b.C" is the version in `package.json` and use the same string ("vA.B.C") in the "Tag Version" field
