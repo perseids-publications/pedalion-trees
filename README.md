@@ -71,6 +71,45 @@ If you want to deploy it at `www.example.com/lexica/lsj` then run
 
 `yarn deploy`
 
+## Zenodo DOI
+
+The instructions below are for uploading a collection of treebanks to Zenodo.
+The Treebank Template repository itself is uploaded to Zenodo but the steps are slightly different
+(the version of the Treebank Template application is used for the version, the upload type is software, the contributors are different, and the license is MIT instead of CC BY-SA)
+
+### Zenodo
+
+* Visit [Zenodo](https://zenodo.org/deposit/new), log in, and create a new upload
+* Click the "Reserve DOI" button in the "Basic information" section
+* Keep the window open and in another tab or window open the GitHub repository you want to archive
+
+### GitHub
+
+* In `src/config.json`, add or update the `doi` field to the DOI generated in the above step
+* Update the version in `package.json` (try to use [SemVer](https://semver.org/))
+* Push the code
+* Make a new release titled "Release vA.B.C" where "A.b.C" is the version in `package.json` and use the same string ("vA.B.C") in the "Tag Version" field
+* Enter a description then click "Publish release"
+* Download the release as a `tar.gz` file
+* Go back to the Zenodo window or tab
+
+### Zenodo
+
+* Add the `tar.gz` file to the upload
+* Fill in the following fields:
+  * Communities: add the `perseids-project` community and any others that may be relevant
+  * Upload type: Dataset
+  * Basic information:
+    * Title: the title of the treebank collection
+    * Authors: the author(s) who contributed to the treebanks
+    * Description: a description of the dataset
+    * Version: the version in `package.json`
+  * License:
+    * Access right: Open Access
+    * License: Creative Commons Attribution 4.0 International
+  * Fill in any other fields that are relevant
+* Click "Publish"
+
 ## Licenses
 
 The code is licensed under the MIT license (see `LICENSE` file).
