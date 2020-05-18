@@ -7614,10 +7614,10 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-perseids-react-components@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/perseids-react-components/-/perseids-react-components-0.3.0.tgz#a49bc956f68d06d0b3361794ff6ccae0e41d5604"
-  integrity sha512-CJF87zdzkVnP1a48zSiDMBXFUYqxddr9dAZAknH1YuS4Ebofsl0ofpXmpwzenvivUT+MpOw/wjbl98CBOfgULA==
+perseids-react-components@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/perseids-react-components/-/perseids-react-components-1.0.0.tgz#88756507e831e407d2e1473f95e76a80a6bbae53"
+  integrity sha512-pRDExUxgS1OwwBnr0/dQ0CdKt5hJquIzj5AofdUW5BJxtXS0l+xjU+No4iBfThwcNnnC+8cNaeu4e+AWP2lzrw==
   dependencies:
     "@primer/octicons" "^9.6.0"
     prop-types "^15.6.2"

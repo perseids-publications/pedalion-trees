@@ -14,7 +14,7 @@
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-jest": "^23.8.2",
     "gh-pages": "^2.2.0",
-    "perseids-react-components": "^0.3.0",
+    "perseids-react-components": "^1.0.0",
     "prop-types": "^15.6.2",
     "query-string": "^6.12.1",
     "react": "^16.13.1",

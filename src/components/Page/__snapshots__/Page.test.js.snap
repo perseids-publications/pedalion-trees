@@ -93,7 +93,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -110,7 +110,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -127,7 +127,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -239,7 +239,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -256,7 +256,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -273,7 +273,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -385,7 +385,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -402,7 +402,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -419,7 +419,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -531,7 +531,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -548,7 +548,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -565,7 +565,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -1825,7 +1825,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -1842,7 +1842,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1859,7 +1859,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -2044,7 +2044,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -2061,7 +2061,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -2078,7 +2078,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -3494,7 +3494,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -3511,7 +3511,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -3528,7 +3528,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -4972,7 +4972,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -4989,7 +4989,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -5006,7 +5006,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -6266,7 +6266,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -6283,7 +6283,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -6300,7 +6300,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -7560,7 +7560,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -7577,7 +7577,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -7594,7 +7594,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -9026,7 +9026,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -9043,7 +9043,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -9060,7 +9060,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -9167,7 +9167,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -9184,7 +9184,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -9201,7 +9201,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -9606,7 +9606,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://www.example.com/doi"
             rel="noopener noreferrer"
             target="_blank"
@@ -9623,7 +9623,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -9640,7 +9640,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -9657,7 +9657,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -10062,7 +10062,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -10079,7 +10079,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -10096,7 +10096,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
@@ -10507,7 +10507,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/issues"
             rel="noopener noreferrer"
             target="_blank"
@@ -10524,7 +10524,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
             href="https://github.com/perseids-publications/treebank-template/"
             rel="noopener noreferrer"
             target="_blank"
@@ -10541,7 +10541,7 @@ Array [
           className="nav-item"
         >
           <a
-            className="nav-link p-2"
+            className="nav-link py-2 pl-1 pl-sm-2 pr-0"
             href="https://twitter.com/PerseidsProject"
             rel="noopener noreferrer"
             target="_blank"
