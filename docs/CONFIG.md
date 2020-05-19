@@ -1,31 +1,83 @@
+# Configuration
+
+Most configuration is done through the `./src/config.json` file.
+This file contains an annotated version of the sample `config.json` in the Treebank Template repository.
+
+## JSON
+
+```javascript
 {
+  // Title of the collection: displayed on the homepage and in the header
   "title": "Treebank Publication Template",
+
+  // Subtitle (optional): shown below the title on the homepage; accepts Markdown 
   "subtitle": "Template for publishing collections of treebanks. See the [repository](https://github.com/perseids-publications/treebank-template/) for more information and documentation. If you would like to create a template with your own treebanks, send us a [message](https://docs.google.com/forms/d/e/1FAIpQLSf8yf6B3xlV31x0JKquRuIdXd6LVuX0V7I7id7ZLXbMwDo-UA/viewform).",
+
+  // Digital Object Identifier (optional): a DOI link; displayed in footer
   "doi": "https://dx.doi.org/10.5281/zenodo.3827931",
+
+  // Copyright or ownership notice (optional): displayed in the footer; if not supplied, defaults to "The Perseids Project"
   "copyright": "The Perseids Project",
+
+  // Report link (optional): link to where users report issues; usually the GitHub issues page
   "report": "https://github.com/perseids-publications/treebank-template/issues",
+
+  // GitHub link (optional): link to the GitHub repository; if not supplied, defaults to "https://github.com/perseids-project"; to remove the icon set it to ""
   "github": "https://github.com/perseids-publications/treebank-template/",
+
+  // Twitter link (optional): link to a Twitter account; if not supplied, defaults to "https://twitter.com/PerseidsProject"; to remove the icon set it to ""
   "twitter": "https://twitter.com/PerseidsProject",
+
+  // Collections: the array of collections must have one or more members
+  // Each collection must have a title as well as text or an array of publications (or both)
   "collections": [
     {
+      // Title: displayed above the collection content
       "title": "Information",
+
+      // Text: text describing the collection; accepts Markdown
       "text": "The Treebank Template is maintained by the Perseids Project. Visit [our homepage](https://www.perseids.org) to learn more."
     },
     {
+      // Title: displayed above the collection content
       "title": "Collection 1", 
+
+      // Publications: the array of publications
+      // Each publication represents one work (e.g. Lysias' On the Murder of Eratosthenes) and can contain multiple treebanks
       "publications": [
         {
+          // Path: the URL path used for the publication (must be unique)
           "path": "on-the-murder-of-eratosthenes",
+
+          // Author: author of the publication
           "author": "Lysias",
+
+          // Work: name of the work
           "work": "On the Murder of Eratosthenes",
+
+          // Editors: editor(s) for the treebank; can be either a string or an array (see Philippic 1 below for an example of an array)
           "editors": "Vanessa Gorman",
+
+          // Sections: array of treebanks
           "sections": [
             {
+              // Locus: loci covered by this particular treebank
               "locus": "1-50",
+
+              // Path: URL path used for this treebank (must be unique)
               "path": "on-the-murder-of-eratosthenes-1-50",
+
+              // XML: the path to the XML file in the "public/xml" directory
               "xml": "lysias-1-1-50.xml",
+
+              // Link (optional): a link to more information about the treebank
               "link": "https://www.example.com",
+
+              // Notes (optional): notes about the treebank; accepts Markdown
               "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+              // Chunks: the "id" attributes of the "<sentence>" elements in the XML
+              // It can either contain a "start" and "end" if the "id"s are a sequence of integers or it can be an array (see Philippic 1 below for an example of an array)
               "chunks": { "start": 1, "end": 134 }
             }
           ]
@@ -104,3 +156,4 @@
     }
   ]
 }
+```

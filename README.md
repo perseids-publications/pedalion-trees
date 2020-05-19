@@ -25,6 +25,10 @@ git push -u origin master
 * Set the version in `package.json` to `1.0.0`
 * Update the information in `.env`
 
+### Configuration
+
+See [docs/CONFIG.md](docs/CONFIG.md) for more information about the format of `src/config.json`.
+
 ### Updating
 
 * `git pull source master`
