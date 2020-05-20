@@ -114,6 +114,11 @@ The Treebank Template repository itself is uploaded to Zenodo but the steps are 
   * Fill in any other fields that are relevant
 * Click "Publish"
 
+
+## Alpheios Integration
+
+For instructions on how to make your trees available in the [Alpheios Reading Tools](https://alpheios.net) visit [https://perseids-publications.github.io/treebank-template/examples/alpheios-integration](https://perseids-publications.github.io/treebank-template/examples/alpheios-integration).
+
 ## Licenses
 
 The code is licensed under the MIT license (see `LICENSE` file).
