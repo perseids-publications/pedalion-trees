@@ -85,13 +85,17 @@ The Treebank Template repository itself is uploaded to Zenodo but the steps are 
 
 * Visit [Zenodo](https://zenodo.org/deposit/new), log in, and create a new upload
 * Click the "Reserve DOI" button in the "Basic information" section
-* Keep the window open and in another tab or window open the GitHub repository you want to archive
+* Keeping the window open, open your command line/console and navigate to the repository
 
-### GitHub
+### Git
 
 * In `src/config.json`, add or update the `doi` field to the DOI generated in the above step (preceded by `https://dx.doi.org/`)
 * Update the version in `package.json` (try to use [SemVer](https://semver.org/))
-* Push the code
+* Push the code to `master`
+* Keeping the Zenodo window open, in another tab or window open the repository on GitHub
+
+### GitHub
+
 * Make a new release titled "Release vA.B.C" where "A.b.C" is the version in `package.json` and use the same string ("vA.B.C") in the "Tag Version" field
 * Enter a description then click "Publish release"
 * Download the release as a `tar.gz` file
@@ -113,7 +117,6 @@ The Treebank Template repository itself is uploaded to Zenodo but the steps are 
     * License: Creative Commons Attribution 4.0 International
   * Fill in any other fields that are relevant
 * Click "Publish"
-
 
 ## Alpheios Integration
 
