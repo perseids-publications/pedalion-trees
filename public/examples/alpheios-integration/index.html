@@ -1,0 +1,222 @@
+<!-- This demo shows how to add treebank data to a page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alpheios Text/Treebank Alignment Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/style/style-components.css"/>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        margin: 1em;
+      }
+      img {
+        margin: 1em;
+      }
+      code {
+        font-weight: bold;
+      }
+      summary {
+        font-weight: bold;
+        font-style: italic;
+        color: blue;
+      }
+
+      .demo {
+        border: 1px solid black;
+        margin: 3em;
+        padding: 1em;
+      }
+    </style>
+</head>
+
+<body
+    data-alpheios_tb_app="perseids-treebank-template"
+    data-alpheios_tb_app_version="2.2.0" data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+          import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@beta/dist/alpheios-embedded.js').then(embedLib => {
+            window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
+              components: 'https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/alpheios-components.js' }}).then(Embedded => {
+              new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
+            }).catch(e => {
+              console.error(`Import of an embedded library dependencies failed: ${e}`)
+            })
+          }).catch(e => {
+            console.error(`Import of an embedded library failed: ${e}`)
+          })
+        });
+
+    </script>
+    <h1>Alpheios and Treebank Publications</h1>
+
+    <p>The Alpheios Reading Tools and Perseids Treebank Template can be used together
+      to augment the features provided by the Alpheios Reading tools for treed texts.</p>
+    <p>Trees published via the Treebank Template can be used by Alpheios to:
+       <ol>
+         <li>Disambiguate the morphological data shown to a user for a word.
+           <div><a href="disambiguate.png" target="_blank"><img src="disambiguate.png" height="300px"></a></div>
+         </li>
+         <li>Show the visual representation of the dependency tree.
+           <div><a href="tree.png" target="_blank"><img src="tree.png" height="300px"></a></div>
+         </li>
+       </ol>
+     </p>
+
+    <h2>Instructions</h2>
+    <h3>1. Decide how Alpheios will be enabled for the page.</h3>
+
+    <p>The treebank functionality will work with Alpheios version
+      3.3.x, whether it is accessed through Browser Extensions or
+      the Embedded library.  If you are publishing your own page anyway, however,
+      we recommend using the Embedded library as it provides greater flexibility
+      as well as support for mobile devices.  See the
+      <a href="https://www.youtube.com/watch?v=vDnDM3dg8ts" target="_blank">
+        Alpheios Embedded Library Tutorial</a> for detailed instructions. </p>
+
+    <p>To test the Treebank Template integration prior to publication of the
+      Alpheios 3.3.x release, you use the <code>alpheios-components@beta</code>
+        and <code>alpheios-embedded@beta</code> pre-release versions of the
+      Alpheios Libraries as shown in the following example.</p>
+    <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="15">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/style/style-components.css"/>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@beta/dist/alpheios-embedded.js').then(embedLib => {
+      window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
+        components: 'https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/alpheios-components.js' }}).then(Embedded => {
+          new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
+      }).catch(e => {
+        console.error(`Import of an embedded library dependencies failed: ${e}`)
+      })
+    }).catch(e => {
+      console.error(`Import of an embedded library failed: ${e}`)
+    })
+  });
+</script>
+
+
+
+    <h3>2. Instruct Alpheios to use treebank data for a chunk of text.</h3>
+
+    <p>To signal to Alpheios that a tree is available for a chunk of text on the page,
+    you need to add some attributes to the top level parent element for the text.
+    This can be any element that encompasses all of the text which is treed, but
+    it's simplest to use the <code>&lt;body&gt;</code> tag. The attributes you need to add are:</p>
+    <blockquote>
+      <ul>
+        <li><code>data-alpheios_tb_app="perseids-treebank-template"</code></li>
+        <li><code>data-alpheios_tb_app_version="2.2.0"</code> (specify whichever version of the template you are using)</li>
+        <li><code>data-alpheios_tb_url=https://your.github.io/repo-name/embed/DOC/SENTENCE</code> (use the appopriate values for your repository)
+      </ul>
+    </blockquote>
+    <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="5">
+        <body
+          data-alpheios_tb_app="perseids-treebank-template"
+          data-alpheios_tb_app_version="2.2.0"
+          data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
+        </textarea>
+      </details>
+
+    <h3>3. Identify the treebank document for a chunk of text.</h3>
+
+    <p>Next, you need to tell Alpheios what treebank document corresponds to the text. This is done by adding the
+      <code>data-alpheios_tb_doc</code> attribute to the parent element of the chunk of text. Note that it is
+      possible to align text chunks from different documents on the same page.</p>
+    <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="1">
+        <div lang="lat" class="alpheios-enabled" data-alpheios_tb_doc="on-the-murder-of-eratosthenes-1-50/">
+      </textarea>
+    </details>
+
+    <h3>4. Align the sentences to the treebank document.</h3>
+    <p>Finally, you need to tell Alpheios which sentence of a treebank document corresponds to the text on the page.
+      This is done by adding the <code>data-alpheios_tb_sent</code> attribute added to the parent element of the chunk of text
+      that contains the sentence.</p>
+    <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="2">
+        <p data-alpheios_tb_sent="1">περὶ πολλοῦ ἂν ποιησαίμην, ὦ ἄνδρες, τὸ τοιούτους ὑμᾶς ἐμοὶ δικαστὰς περὶ τούτου τοῦ πράγματος γενέσθαι,
+          οἷοίπερ ἂν ὑμῖν αὐτοῖς εἴητε τοιαῦτα πεπονθότες·</p>
+      </textarea>
+    </details>
+
+    <h3>5. Refine word alignment.</h3>
+    <p>Alpheios and Arethusa will use the context to try to find the word within the treebank data for a sentence that corresponds
+      to the word in the text on the page. In most cases this will work well, but in certain circumstances, you may need to
+      override the default behavior and specify which tokens in the treebank data correspond to the word on the page.
+      The <code>data-alpheios_tb_word</code> attribute can be used to do this.
+    <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="2">
+        <p data-alpheios_tb_sent="1">περὶ πολλοῦ ἂν ποιησαίμην, ὦ <span data-alpheios_tb_word="7">ἄνδρες</span>, τὸ τοιούτους ὑμᾶς ἐμοὶ δικαστὰς περὶ τούτου τοῦ πράγματος γενέσθαι,
+          οἷοίπερ ἂν ὑμῖν αὐτοῖς εἴητε τοιαῦτα πεπονθότες·</p>
+      </textarea>
+    </details>
+
+
+    <h2>Demo Scenarios</h2>
+
+    <p>The following are active demonstrations of the Alpheios/Treebank Template integration. Double-clicking the Latin or
+    Greek text will show disambiguated morphology and linked tree displays.</p>
+
+    <h3>Text and treebank aligned by sentence.</h3>
+    <div class="demo">
+      <p>This sentence has the following characteristics:
+        <ul>
+          <li>The word, οὐδὲ, is an enclytic that Arethusa automatically correctly maps to multiple treebank tokens.</li>
+          <li>The word, καὶ, is repeated three times and Arethusa disambiugates by context.</li>
+        </ul>
+      </p>
+      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+        <p data-alpheios_tb_sent="2">τοῦτο δ᾽ ἐστὶν οὐ μόνον τὸ μὴ προκατεγνωκέναι μηδέν, οὐδὲ τὸ τὴν εὔνοιαν ἴσην ἀποδοῦναι,
+          ἀλλὰ τὸ καὶ τῇ τάξει καὶ τῇ ἀπολογίᾳ, ὡς βεβούληται καὶ προῄρηται τῶν ἀγωνιζομένων ἕκαστος, οὕτως ἐᾶσαι χρήσασθαι.
+        </p>
+      </div>
+      <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="7">
+<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+  <p data-alpheios_tb_sent="2">τοῦτο δ᾽ ἐστὶν οὐ μόνον τὸ μὴ προκατεγνωκέναι μηδέν, οὐδὲ τὸ τὴν εὔνοιαν ἴσην ἀποδοῦναι,
+    ἀλλὰ τὸ καὶ τῇ τάξει καὶ τῇ ἀπολογίᾳ, ὡς βεβούληται καὶ προῄρηται τῶν ἀγωνιζομένων ἕκαστος, οὕτως ἐᾶσαι χρήσασθαι.
+  </p>
+</div>
+        </textarea>
+      </details>
+    </div>
+
+    <h3>Text and treebank aligned by sentence, with additional select word-level specificity.</h3>
+    <div class="demo">
+      <p>This text has the following characteristics:
+        <ul>
+          <li>The phrase μὲν—οὐ is mapped to three tokens in the treebank with the <code>data-alpheios_tb_word</code>
+            attribute. Additionally, default Alpheios selection behavior which normally splits on punctuation has
+            been overridden with the <code>data-alpheios-word-node</code> attribute.
+          </li>
+        </ul>
+      </p>
+      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+        <p data-alpheios_tb_sent="4"> οὐ γάρ ἐστιν ἴσον νῦν ἐμοὶ τῆς παρ᾽ ὑμῶν εὐνοίας διαμαρτεῖν
+            καὶ τούτῳ μὴ ἑλεῖν τὴν γραφήν, ἀλλ᾽ ἐμοὶ <span data-alpheios-word-node="exact" data-alpheios_tb_word="21 22 23">μὲν—οὐ</span> βούλομαι δυσχερὲς
+            εἰπεῖν οὐδὲν ἀρχόμενος τοῦ λόγου, οὗτος δ᾽ ἐκ περιουσίας μου κατηγορεῖ.
+        </p>
+      </div>
+      <details>
+        <summary>Example HTML</summary>
+        <textarea cols="200" rows="7">
+<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+  <p data-alpheios_tb_sent="4"> οὐ γάρ ἐστιν ἴσον νῦν ἐμοὶ τῆς παρ᾽ ὑμῶν εὐνοίας διαμαρτεῖν
+      καὶ τούτῳ μὴ ἑλεῖν τὴν γραφήν, ἀλλ᾽ ἐμοὶ <span data-alpheios-word-node="exact" data-alpheios_tb_word="21 22 23">μὲν—οὐ</span> βούλομαι δυσχερὲς
+      εἰπεῖν οὐδὲν ἀρχόμενος τοῦ λόγου, οὗτος δ᾽ ἐκ περιουσίας μου κατηγορεῖ.
+  </p>
+</div>
+        </textarea>
+      </details>
+    </div>
+</body>
+</html>

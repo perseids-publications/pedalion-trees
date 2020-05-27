@@ -22,12 +22,9 @@ global.Arethusa = ArethusaMock;
 // returns different results for `getSubdoc`.
 global.arethusaApiGetSubdocFun = () => { throw 'Error' };
 
-const setIntervalMock = (callback, _time) => {
-  global.intervalCallback = () => callback();
-}
-global.setInterval = setIntervalMock;
-
-const clearIntervalMock = (_interval) => {
-  global.intervalCallback = undefined;
+// This function is required by Alpheios messaging
+// which uses the https://github.com/uuidjs/uuid package
+// that relies on `window.crypto.getRandomValues`
+global.crypto = {
+  getRandomValues: array => array.map(() => Math.random()),
 };
-global.clearInterval = clearIntervalMock;

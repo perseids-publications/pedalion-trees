@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import queryString from 'query-string';
 
 import { publicationMatchType, locationType } from '../../lib/types';
 
@@ -9,13 +8,9 @@ import styles from './EmbeddedTreebank.module.css';
 import ArethusaWrapper from '../ArethusaWrapper';
 import TreebankService from '../TreebankService';
 
+import { parse } from '../../lib/params';
+
 class EmbeddedTreebank extends Component {
-  constructor(props) {
-    super(props);
-
-    this.additionalArgs = this.additionalArgs.bind(this);
-  }
-
   componentDidMount() {
     this.renderArethusa();
   }
@@ -24,27 +19,14 @@ class EmbeddedTreebank extends Component {
     this.renderArethusa();
   }
 
-  additionalArgs() {
-    const { location: { search } } = this.props;
-    const parsed = queryString.parse(search);
-    const result = {};
-
-    ['w'].forEach((n) => {
-      if (Object.prototype.hasOwnProperty.call(parsed, n)) {
-        result[n] = parsed[n];
-      }
-    });
-
-    return result;
-  }
-
   renderArethusa() {
     const {
       xml,
       match: { params: { chunk } },
       arethusa: { render },
+      location: { search },
     } = this.props;
-    const additionalArgs = this.additionalArgs();
+    const additionalArgs = parse(search);
 
     render(xml, chunk, additionalArgs);
   }

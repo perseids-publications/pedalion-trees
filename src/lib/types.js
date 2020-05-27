@@ -37,6 +37,7 @@ export const configType = shape({
   title: oneOfType([string, element]).isRequired,
   subtitle: string.isRequired,
   copyright: string,
+  doi: string,
   report: string,
   github: string,
   twitter: string,
@@ -60,6 +61,6 @@ export const publicationGroupMatchType = shape({
 });
 
 export const queryType = shape({
-  w: string,
+  w: arrayOf(string),
   config: string,
 });

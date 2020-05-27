@@ -13,6 +13,7 @@ const Page = ({
   config,
   config: {
     copyright,
+    doi,
     report,
     github,
     twitter,
@@ -27,6 +28,7 @@ const Page = ({
     </Switch>
     <PerseidsFooter
       copyright={copyright}
+      doi={doi}
       report={report}
       github={github}
       twitter={twitter}

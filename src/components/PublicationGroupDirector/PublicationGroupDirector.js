@@ -16,9 +16,6 @@ class PublicationGroupDirector extends Component {
       link,
       title,
       subtitle,
-      report,
-      github,
-      twitter,
       collections,
     } = config;
 
@@ -31,9 +28,6 @@ class PublicationGroupDirector extends Component {
           link,
           title,
           subtitle,
-          report,
-          github,
-          twitter,
           collections: [
             {
               title: (
