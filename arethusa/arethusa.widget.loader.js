@@ -1,6 +1,3 @@
-
-
-
 (function($) {
     $.getStylesheet = function (href) {
         var $d = $.Deferred();
@@ -14,19 +11,17 @@
     };
 })(jQuery);
 
-function loadArethusaWidget (elementId,remoteUrl,appConf,resourceConf,deps,callback) {
+function loadArethusaWidget (elementId,remoteUrl,appConf,resourceConf,deps) {
     $.when(
         $.getStylesheet(deps.css.arethusa), //arethusa.min.css
         $.getStylesheet(deps.css.foundation), //vendor/foundation-icons/foundation-icons.css
         $.getStylesheet(deps.css.font_awesome), //vendor/font-awesome-4.1.0/css/font-awesome.min.css
-        $.getStylesheet(deps.css.colorpicker) //vendor/angular-foundation-colorpicker/css/colorpicker.css
-//        $.getScript(deps.js.packages, function(){$.when( //arethusa_packages.min.js
-//            $.getScript(deps.js.arethusa) //arethusa.min.js
+        $.getStylesheet(deps.css.colorpicker), //vendor/angular-foundation-colorpicker/css/colorpicker.css
+        $.getScript(deps.js.packages, function(){$.when( //arethusa_packages.min.js
+            $.getScript(deps.js.arethusa) //arethusa.min.js
         ).then(function () {
             var widget = new Arethusa();
-            window.widget = widget;
             widget.on(elementId).from(remoteUrl).with(appConf).start(resourceConf);
-        })
-//    )
+        })})
+    )
 }
-

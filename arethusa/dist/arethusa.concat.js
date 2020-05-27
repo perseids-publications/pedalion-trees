@@ -780,10 +780,7 @@ angular.module('arethusa.core').controller('ArethusaCtrl', [
         plugins.start(conf.plugins).then(function() {
           state.arethusaLoaded = true;
           notifier.success(translations.loadComplete());
-
-          if (aU.isArethusaMainApplication()) {
-            UserVoice.push(['addTrigger', '#uservoicebutton', { mode: 'contact' }]);
-          }
+          angular.element(document.body)[0].dispatchEvent(new CustomEvent("ArethusaLoaded",{detail: { currentTokenCount: state.totalTokens } }));
 
           // start listening for events
           state.silent = false;
@@ -1858,7 +1855,12 @@ angular.module('arethusa.core').directive('fullHeight', [
 
         function resize(args) {
           var fullHeight = body.height();
-          element.height(fullHeight - margin - padding - additionalBorder);
+          // if the body height comes up as 0 then we should just skip the resizing
+          // because this is probably an error and the display will end up getting truncated
+          // see issue #796
+          if (fullHeight > 0) {
+            element.height(fullHeight - margin - padding - additionalBorder);
+          }
         }
 
         resize();
@@ -3563,67 +3565,6 @@ angular.module('arethusa.core').directive('unusedTokenHighlighter', [
   }
 ]);
 
-"use strict";
-
-angular.module('arethusa.core').directive('uservoiceEmbed', [
-  'translator',
-  'uuid2',
-  function(translator,uuid2) {
-    return {
-      restrict: 'A',
-      scope: {
-        target: "@"
-      },
-      link: function(scope, element, attrs) {
-          // this is a little convoluted but we could have multiple
-          // embedded uservoice elements so we need to be sure each
-          // has a unique id
-          var embedded_elem_id = "data-uv-embed-" + uuid2.newuuid();
-          angular.forEach(element.children(), function(elem,i) {
-            if (angular.element(elem).hasClass(scope.target)) {
-              angular.element(elem).attr('id',embedded_elem_id);
-            }
-          });
-          translator('errorDialog.sendMessage', function(translation) {
-            scope.hint = translation();
-            // it would be nice to do this as a result of the confirm modal action
-            // but it's more work to include a screenshot of the error in that case
-            // we could do this as custom key/value pair but we are only allowed one
-            // and might hit field length limitations.
-            UserVoice.push(['embed', '#'+embedded_elem_id, {
-              mode: 'contact',
-              contact_title: '',
-              strings: { contact_message_placeholder: scope.hint }
-            }]);
-        });
-      }
-    };
-  }
-]);
-
-"use strict";
-
-angular.module('arethusa.core').directive('uservoiceTrigger', [
-  'translator',
-  function(translator) {
-    return {
-      restrict: 'A',
-      compile: function(element, attributes) {
-        element.attr('id', 'uservoicebutton');
-        element.attr('data-uv-trigger', 'contact');
-
-        return function link(scope, element) {
-          var parent = element.parent();
-          translator('contactUs', function(translation) {
-            parent.attr('title', translation);
-          });
-        };
-      },
-      template: '<i class="fi-comment"/>'
-    };
-  }
-]);
-
 'use strict';
 
 angular.module('arethusa.core').directive('valueWatch', function () {
@@ -5034,11 +4975,13 @@ angular.module('arethusa.core').factory('Tree', [
       };
 
       scope.perfectWidth = function() {
-        setViewModeFn(scope.perfectWidth);
         var gWidth  = graphSize().width;
         var targetW = width - treeMargin * 2;
-        var scale = targetW / gWidth;
-        moveGraph(treeMargin, treeMargin, scale);
+        if (targetW !== 0 && gWidth !== 0) {
+          setViewModeFn(scope.perfectWidth);
+          var scale = targetW / gWidth;
+          moveGraph(treeMargin, treeMargin, scale);
+        }
       };
 
       scope.focusRoot = function() {
@@ -5262,6 +5205,7 @@ angular.module('arethusa.core').factory('Tree', [
       // refreshing will rerender it and fix display bugs
       navigator.onRefresh(function() {
         render();
+        scope.perfectWidth();
         $timeout(applyViewMode, transitionDuration);
       });
 
@@ -5583,19 +5527,30 @@ angular.module('arethusa.core').service('api', [
       return lazyLang;
     }
 
+    var lazySearch;
+    function search() {
+      if (!lazySearch) lazySearch = plugins.get('search');
+      return lazySearch;
+    }
+
+
+    /**
+     * check ready state
+     * @return {Boolean} true if arethusa is loaded and ready otherwise false
+     */
+    this.isReady = function () {
+      return state.arethusaLoaded
+    };
+
     /**
      * get the morphology and gloss for a specific word
      * @param {String} sentenceId sentence (chunk) identifier
      * @param {String} wordId word (token) identifier
-     * @return {Object} an object adhering to a JSON representation of Alpheios Lexicon Schema wrapped in 
-     *                  the BSP Morphology Service RDF Annotation Wrapper 
+     * @return {Object} an object adhering to a JSON representation of Alpheios Lexicon Schema wrapped in
+     *                  the BSP Morphology Service RDF Annotation Wrapper
      *                  (i.e. the same format as parsed by the BSPMorphRetriever)
      */
     this.getMorph = function(sentenceId,wordId) {
-      /** TODO figure out how to be sure the api service is only instantiated after Arethusa is loaded **/
-      if (!state.arethusaLoaded) {
-        console.error("Api called before Arethusa was loaded")
-      }
       return this.outputter.outputMorph(state.getToken(idHandler.getId(wordId,sentenceId)),lang(),morph());
     };
 
@@ -5607,7 +5562,7 @@ angular.module('arethusa.core').service('api', [
       return navigator.currentSubdocs()[0];
     };
 
-    /** 
+    /**
      * rerenders the tree
      * can be useful to call the tree is first loaded in a iframe that isn't visible
      */
@@ -5615,27 +5570,63 @@ angular.module('arethusa.core').service('api', [
       navigator.triggerRefreshEvent();
     }
 
-    /** 
+    /**
      * navigates application state to the next sentence
      */
     this.nextSentence = function() {
       navigator.nextChunk();
     };
 
-    /**  
+    /**
      * navigates application state to the previous sentence
      */
     this.prevSentence = function() {
       navigator.prevChunk();
     };
 
-    /**  
+    /**
      * navigates application state to supplied sentenceId
-     * @param {String} sentenceId 
+     * making the optional word id(s) selected
+     * @param {String} sentenceId
+     * @param {String[]} wordIds (optional)
      */
-    this.gotoSentence = function(sentenceId) {
+    this.gotoSentence = function(sentenceId, wordIds) {
       navigator.goTo(sentenceId);
+      var tokenIds = [];
+      if (wordIds && wordIds.length > 0) {
+        arethusaUtil.inject(tokenIds, wordIds, function (memo, wordId) {
+         var id = idHandler.getId(wordId,sentenceId);
+         arethusaUtil.pushAll(memo, [id]);
+        });
+        state.multiSelect(tokenIds)
+      }
     };
+
+    /**
+     * navigates the application to the supplied sentenceId
+     * and finds a word given a specific context.
+     * Found words are NOT preselected.
+     * @param {String} sentenceId
+     * @param {String} word the word to find
+     * @param {String} prefix the preceding word or words (optional)
+     * @param {String} suffix the following word or words (optional)
+     * @return {String[]} a list of the matching wordids
+     */
+    this.findWord = function(sentenceId, word, prefix, suffix) {
+      navigator.goTo(sentenceId);
+      if (prefix == null) {
+        prefix = '';
+      }
+      if (suffix == null) {
+        suffix = '';
+      }
+      var ids = search().queryWordInContext(word,prefix,suffix);
+      var sourceIds = [];
+      angular.forEach(ids, function (id) {
+        sourceIds.push(state.getToken(id).idMap.mappings.treebank.sourceId);
+      });
+      return sourceIds;
+    }
 
   }
 ]);
@@ -5873,14 +5864,15 @@ angular.module('arethusa.core').service('configurator', [
   '$timeout',
   '$location',
   '$q',
+  'BASE_PATH',
   function ($injector, $http, $rootScope, Resource, Auth,
-            $timeout, $location, $q) {
+            $timeout, $location, $q, BASE_PATH) {
     var self = this;
     var includeParam = 'fileUrl';
     var uPCached;
     var mainSections = ['main', 'navbar', 'notifier'];
     var subSections = ['plugins'];
-    
+
     // CONF UTILITY FUNCTIONS
     // ----------------------
 
@@ -6113,7 +6105,7 @@ angular.module('arethusa.core').service('configurator', [
 
     // SET AND RETRIEVE CONFIGURATIONS
     // -------------------------------
-    
+
     /**
      * @ngdoc property
      * @name configuration
@@ -6164,7 +6156,7 @@ angular.module('arethusa.core').service('configurator', [
         $rootScope.$broadcast('confLoaded');
       });
     };
-    
+
     /**
      * @ngdoc function
      * @name arethusa.core.configurator#loadAdditionalConf
@@ -6201,13 +6193,23 @@ angular.module('arethusa.core').service('configurator', [
         if (url.match('^http:\/\/')) {
           return url;
         } else {
-          return auxConfPath() + '/' + url + '.json';
+          var basePath = auxConfPath();
+          var confPath = '/' + url + '.json';
+          var fullPath;
+          if (basePath.match('^\.\/')) {
+            // it's a relative path prefix with the BASE_PATH
+            fullPath = BASE_PATH + basePath.substr(1) + confPath;
+          } else {
+            fullPath = basePath + confPath;
+          }
+          return fullPath;
         }
 
         function auxConfPath() {
           return self.configuration.main.auxConfPath;
         }
       }
+
       function notifier() {
         return $injector.get('notifier');
       }
@@ -6621,10 +6623,7 @@ angular.module('arethusa.core').service('errorDialog', [
     this.sendError = function(message, exception) {
       // this comes from the stacktrace-js library
       var trace = exception ? printStackTrace({e: exception}) : printStackTrace();
-      // it's a little pointless to do this as a modal dialog really
-      // the idea was to send the stack trace on accept but it is a pain
-      // to get the coordination of the modal dialog with the uservoice widget right
-      // so the errordialog has the user voice widget embedded in it for now
+
       ask(message,trace).then((function(){ }));
     };
   }
@@ -9707,6 +9706,60 @@ angular.module('arethusa.core').service('state', [
       selectSurroundingToken('prev');
     };
 
+    /*
+     * Gets a list of the tokens which precede the supplied tokens
+     * in the current chunk.
+     * @param {String} id the supplied token
+     * @param {int} numTokens {optional} number of preceding tokens
+     *                        to retrieve. If not supplied, it will
+     *                        retrieve all preceding tokens in the chunk.
+     * @return {Object[]} list of preceding token objects
+     */
+    this.getPreviousTokens = function(id,numTokens) {
+      var tokens = [];
+      var allIds = Object.keys(self.tokens);
+      var endIndex = allIds.indexOf(id) - 1;
+      if (endIndex >= 0) {
+        // if the end index is not already the first token
+        // and numTokens is supplied, the start index should be
+        // endIndex - numTokens, with a floor of 0
+        var startIndex = 0;
+        if (numTokens) {
+          startIndex = endIndex - numTokens + 1;
+        }
+        if (startIndex < 0) {
+           startIndex = 0;
+        }
+        for (var i=startIndex; i<= endIndex; i++) {
+          tokens.push(self.getToken(allIds[i]));
+        }
+      }
+      return tokens;
+    };
+
+    /*
+     * Gets a list of the tokens which follow the supplied tokens
+     * in the current chunk.
+     * @param {String} id the supplied token
+     * @param {int} numTokens {optional} number of following tokens
+     *                        to retrieve. If not supplied, it will
+     *                        retrieve all following tokens in the chunk.
+     * @return {Object[]} list of following token objects
+     */
+    this.getNextTokens = function(id,numTokens) {
+      var tokens = [];
+      var allIds = Object.keys(self.tokens);
+      var startIndex = allIds.indexOf(id) + 1;
+      var endIndex = allIds.length - 1;
+      if (numTokens && (startIndex + numTokens -1 < endIndex) ) {
+        endIndex = startIndex + numTokens - 1;
+      }
+      for (var i=startIndex; i<= endIndex; i++) {
+        tokens.push(self.getToken(allIds[i]));
+      }
+      return tokens;
+    };
+
 // tokens stuff
     this.toTokenStrings = function(ids) {
       var nonSequentials = idHandler.nonSequentialIds(ids);
@@ -10076,7 +10129,7 @@ angular.module('arethusa.core').service('state', [
      * @param {*} [arg] Optional argument transmitted alongside the event
      */
     this.broadcast = function(event, arg) {
-       // broadcast here iterates through all 
+       // broadcast here iterates through all
        // handlers which have registered a listener
        // on the broadcasted event and executes them
        // before returning
@@ -10529,9 +10582,6 @@ angular.module('arethusa.core').run(['$templateCache', function($templateCache) 
     "  <pre class=\"overflow-wrap-word\">\n" +
     "    {{ trace }}\n" +
     "  </pre>\n" +
-    "  <div uservoice-embed target=\"error-uv-embedded\" class=\"error-modal\">\n" +
-    "    <div class=\"error-uv-embedded\"></div>\n" +
-    "  </div>\n" +
     "  <div class=\"center\">\n" +
     "    <span\n" +
     "      ng-click=\"$dismiss()\"\n" +
@@ -12205,6 +12255,19 @@ angular.module('arethusa').config([
 
     localStorageServiceProvider.setPrefix('arethusa');
   },
+]).config([
+  // This config prevents URL changes done using the browser's History API
+  // from causing Angular to enter an infinite loop.
+  // See https://stackoverflow.com/questions/18611214/turn-off-url-manipulation-in-angularjs
+  '$provide',
+  function ($provide) {
+    $provide.decorator('$browser', ['$delegate', function ($delegate) {
+      $delegate.onUrlChange = function () {};
+      $delegate.url = function () { return '' };
+
+      return $delegate;
+    }]);
+  }
 ]);
 
 angular.module('arethusa').value('CONF_PATH', '/configs');
@@ -13149,10 +13212,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '6e816c7cdf1e70df605ff74394a5b1833a61aa40',
-  branch: 'widget-api',
+  revision: '952ce617456676bbbac7a486b01b148463e8d959',
+  branch: 'HEAD',
   version: '0.2.5',
-  date: '2020-03-11T17:00:57.844Z',
+  date: '2020-05-13T12:28:02.105Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
