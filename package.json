@@ -11,6 +11,7 @@
     "alpheios-messaging": "https://github.com/alpheios-project/alpheios-messaging",
     "arethusa-widget": "^2.0.0",
     "bootstrap": "^4.4.1",
+    "cp-cli":"^2.0.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-jest": "^23.8.2",
     "gh-pages": "^2.2.0",
@@ -28,7 +29,7 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build && cp-cli build/index.html build/404.html",
     "test": "react-scripts test",
     "lint": "eslint --ext=js --ext=jsx .",
     "eject": "react-scripts eject"
