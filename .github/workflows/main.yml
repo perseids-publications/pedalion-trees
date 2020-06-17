@@ -30,7 +30,6 @@ jobs:
     - name: Install and Build
       run: |
         yarn install
-        yarn test
         yarn build
 
     # Runs a set of commands using the runners shell

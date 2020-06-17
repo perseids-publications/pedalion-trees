@@ -9,7 +9,7 @@
   "collections": [
     {
       "title": "Information",
-      "text": "The Treebank Template is maintained by the Perseids Project. See the [getting started instructions](treebank-template/getting-started/index.html). Or visit [our homepage](https://www.perseids.org) to learn more."
+      "text": "The Treebank Template is maintained by the Perseids Project. See the [getting started instructions](/getting-started/). Or visit [our homepage](https://www.perseids.org) to learn more."
     },
     {
       "title": "Collection 1",
