@@ -35,24 +35,6 @@ See [docs/CONFIG.md](docs/CONFIG.md) for more information about the format of `s
 * Fix merge conflicts
 * `git push origin master`
 
-### Setting up automatic deployment with Travis
-
-* `gem install travis`
-* `ssh-keygen -t rsa -b 4096 -f .travis-deploy-key -N ''`
-* Copy `.travis-deploy-key.pub` to clipboard
-* Visit `github.com/<user>/<repository>/settings/keys`
-* Click `Add deploy key`
-* Title the key `Travis deploy key`, paste the contents of `.travis-deploy-key.pub`, check `Allow write access`, and click `Add key`
-* `rm .travis-deploy-key.pub`
-* `travis login --com`
-* Open `.travis.yml` and remove the line starting with `openssl ...` in the `before_install` section
-* `travis encrypt-file .travis-deploy-key --pro --add`
-* Update the formatting in `.travis.yml`
-* `rm .travis-deploy-key`
-* `git add .travis-deploy-key.enc`
-* `git commit`
-* `git push`
-
 ## Installation
 
 `yarn install`
