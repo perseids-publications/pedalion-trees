@@ -1,8 +1,8 @@
 {
   "name": "treebank-template",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "treebank-template": {
-    "version": "3.0.3"
+    "version": "3.1.0"
   },
   "private": true,
   "homepage": "https://perseids-publications.github.io/treebank-template/",
