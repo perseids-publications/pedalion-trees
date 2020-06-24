@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Alpheios Text/Treebank Alignment Demo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/style/style-components.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.css"/>
     <style type="text/css">
       body {
         font-family: Arial, sans-serif;
@@ -32,12 +32,11 @@
 
 <body
     data-alpheios_tb_app="perseids-treebank-template"
-    data-alpheios_tb_app_version="2.2.0" data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
+    data-alpheios_tb_app_version="3.1.0" data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function(event) {
-          import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@beta/dist/alpheios-embedded.js').then(embedLib => {
-            window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
-              components: 'https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/alpheios-components.js' }}).then(Embedded => {
+          import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@latest/dist/alpheios-embedded.js').then(embedLib => {
+            window.AlpheiosEmbed.importDependencies({ mode: 'cdn' }).then(Embedded => {
               new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
             }).catch(e => {
               console.error(`Import of an embedded library dependencies failed: ${e}`)
@@ -110,7 +109,7 @@
     <blockquote>
       <ul>
         <li><code>data-alpheios_tb_app="perseids-treebank-template"</code></li>
-        <li><code>data-alpheios_tb_app_version="2.2.0"</code> (specify whichever version of the template you are using)</li>
+        <li><code>data-alpheios_tb_app_version="3.1.0"</code> (specify whichever version of the template you are using)</li>
         <li><code>data-alpheios_tb_url=https://your.github.io/repo-name/embed/DOC/SENTENCE</code> (use the appopriate values for your repository)
       </ul>
     </blockquote>
@@ -119,7 +118,7 @@
       <textarea cols="200" rows="5">
         <body
           data-alpheios_tb_app="perseids-treebank-template"
-          data-alpheios_tb_app_version="2.2.0"
+          data-alpheios_tb_app_version="3.1.0"
           data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
         </textarea>
       </details>
@@ -160,6 +159,15 @@
           οἷοίπερ ἂν ὑμῖν αὐτοῖς εἴητε τοιαῦτα πεπονθότες·</p>
       </textarea>
     </details>
+
+    <h3>6. Test</h3>
+    <p>Make your HTML file available under a web server (e.g. such as GitHub Pages) and load it in your browser.
+      Double-click on the words to confirm that they are linked to the treebank correctly.
+    </p>
+    <p>
+      <b>NOTE: the Alpheios treebank functionality will not work on a file loaded from the filesystem. It must be served
+        by a web server.</b>
+    </p>
 
 
     <h2>Demo Scenarios</h2>
