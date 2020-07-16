@@ -152,7 +152,8 @@
               <li><code>subtitle</code>: set this to a subtitle you want to show for
                 your site. It can be the empty string ("").</li>
               <li><code>doi</code>: set this to the empty string for now (""). (More
-                information on adding a DOI  is provided in the repository README.md file.)</li>
+                information on adding a DOI is provided in the
+                <a href="../doi">DOI instructions</a>.)</li>
               <li><code>copyright</code>: set this to whatever copyright statement
                   you want for your data files. We recommend using a
                   <a href="https://creativecommons.org" target="_blank">Creative
@@ -177,84 +178,93 @@
             branch</code> is selected
             <div><a href="commit.png" target="_blank"><img src="commit.png" width="800px"></a></div>
           </li>
-        </ol>
-      </li>
-      <li>Go back to the <code>Actions</code> tab.</li>
-      <li>You should see that your build workflow is in progress.
-           <div><a href="progress.png" target="_blank"><img src="progress.png" width="800px"></a></div>
-      </li>
-      <li>And finally that it succeeds.</li>
+          <li>Go back to the <code>Actions</code> tab.</li>
+          <li>You should see that your build workflow is in progress.
+             <div><a href="progress.png" target="_blank"><img src="progress.png" width="800px"></a></div>
+          </li>
+          <li>And finally that it succeeds.</li>
            <div><a href="success.png" target="_blank"><img src="success.png" width="800px"></a></div>
-      </li>
-      <li>At this point, your GitHub web page should be published and updated at https://(youraccountname).github.io
+          </li>
+          <li>At this point, your GitHub web page should be published and updated at https://(youraccountname).github.io
            <div><a href="site.png" target="_blank"><img src="site.png" width="800px"></a></div>
           So far it is published only with the default treebank files that come with the template. The next steps
           show you had to add a new file.
+          </li>
+        </ol>
       </li>
-      <li>Return to the <code>Code</code> tab of the repository in GitHub and navigate to the <code>public/xml</code>
-        directory.
-      </li>
-      <li>Click the <code>Upload</code> button.
+      <li><b>Add a new file to your repository.</b>
+        <ol>
+          <li>Return to the <code>Code</code> tab of the repository in GitHub and navigate to the <code>public/xml</code>
+            directory.
+          </li>
+          <li>Click the <code>Upload</code> button.
            <div><a href="upload.png" target="_blank"><img src="upload.png" width="800px"></a></div>
-      </li>
-      <li>Upload your file.</li>
-      <li>Navigate to the <code>src</code> directory of your repository.</li>
-      <li>Edit the <code>config.json</code> file again.</li>
-      <li>You need to add a new entry for the file you just added to the the
-        <code>publications</code> section of the file. For each file added you need to define
-        the following fields:
-        <ul>
-          <li><code>path</code>: the virtual path for the files associated with
-            the treebank publication - this can be anything
-            you want, but avoid spaces and special characters.</li>
-          <li><code>author</code>: this should be set to be the author of the
-            text that is the subject of the treebank publication.</li>
-          <li><code>work</code>: this should identify the text that is the subject
-            of the treebank publication.</li>
-          <li><code>editors</code>: here you can list anybody who contributed to
-            the treebank publication.</li>
-          <li><code>sections</code>: each treebank publication can be composed of
-            one or more files (e.g. a very large text might be broken into
-            chapters). In our example so far, we just have a publication
-            made up of a single file. For each file added to the parent
-            publication, we need a separate entry made up of the following fields:
+          </li>
+          <li>Upload your file.</li>
+          <li>Navigate to the <code>src</code> directory of your repository.</li>
+          <li>Edit the <code>config.json</code> file again.</li>
+          <li>You need to add a new entry for the file you just added to the the
+            <code>publications</code> section of the file. For each file added you need to define
+            the following fields:
             <ul>
-              <li><code>locus</code>: this is the text that will be shown as the link to the file
-                on the site. Normally this is set to the range of sentences in the tree but it
-                can be any text that makes sense for your data.
-              </li>
-              <li><code>path</code>: the virtual path for the file. It can be anything you
-                choose. A normal practice is to use the filename without the .xml extension.
-                Avoid spaces and special characters.
-              </li>
-              <li><code>xml</code>: this is the actual path to the file under the
-                <code>public/xml</code> directory (excluding the
-                <code>public/xml/</code> part of the path).
-              </li>
-              <li><code>chunks</code>: this contains two sub fields
-                <ul><li><code>start</code>: the starting sentence number in your file</code></li>
-                  <li><code>end</code>: the ending sentence number in your file</code></li>
+              <li><code>path</code>: the virtual path for the files associated with
+                the treebank publication - this can be anything
+                you want, but avoid spaces and special characters.</li>
+              <li><code>author</code>: this should be set to be the author of the
+                text that is the subject of the treebank publication.</li>
+              <li><code>work</code>: this should identify the text that is the subject
+                of the treebank publication.</li>
+              <li><code>editors</code>: here you can list anybody who contributed to
+                the treebank publication.</li>
+              <li><code>sections</code>: each treebank publication can be composed of
+                one or more files (e.g. a very large text might be broken into
+                chapters). In our example so far, we just have a publication
+                made up of a single file. For each file added to the parent
+                publication, we need a separate entry made up of the following fields:
+                <ul>
+                  <li><code>locus</code>: this is the text that will be shown as the link to the file
+                    on the site. Normally this is set to the range of sentences in the tree but it
+                    can be any text that makes sense for your data.
+                  </li>
+                  <li><code>path</code>: the virtual path for the file. It can be anything you
+                    choose. A normal practice is to use the filename without the .xml extension.
+                    Avoid spaces and special characters.
+                  </li>
+                  <li><code>xml</code>: this is the actual path to the file under the
+                    <code>public/xml</code> directory (excluding the
+                    <code>public/xml/</code> part of the path).
+                  </li>
+                  <li><code>chunks</code>: this contains two sub fields
+                    <ul><li><code>start</code>: the starting sentence number in your file</code></li>
+                      <li><code>end</code>: the ending sentence number in your file</code></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
+           <div><a href="mytrees-config.png" target="_blank"><img src="mytrees-config.png" width="800px"></a></div>
           </li>
-        </ul>
-       <div><a href="mytrees-config.png" target="_blank"><img src="mytrees-config.png" width="800px"></a></div>
+          <li>It's a good idea to make sure the file parses as valid JSON prior to saving it. The JSON validator
+            at <a href="https://jsonlint.com/" target="_blank">https://jsonlint.com</a> is a good resource to use for that.
+          </li>
+          <li>Save and commit your changes to the master branch.</li>
+          <li>After the build succeeds, you should now see your new tree publication added to the site.
+             <div><a href="mytrees-site.png" target="_blank"><img src="mytrees-site.png" width="800px"></a></div>
+           </li>
+         <li>Once you have added your own data files to the repository, you may wish to
+           register a <a href="https://doi.org" target="_blank">DOI</a> as a
+           a persistent identifier for your data so that it can be easily
+           cited. This DOI can then be listed on the home page of the repository.
+           See the <a href="../doi">DOI</a> instructions for details.</li>
+        </ol>
       </li>
-      <li>It's a good idea to make sure the file parses as valid JSON prior to saving it. The JSON validator
-        at <a href="https://jsonlint.com/" target="_blank">https://jsonlint.com</a> is a good resource to use for that.
-      </li>
-      <li>Save and commit your changes to the master branch.</li>
-      <li>After the build succeeds, you should now see your new tree publication added to the site.
-         <div><a href="mytrees-site.png" target="_blank"><img src="mytrees-site.png" width="800px"></a></div>
-       </li>
     </ol>
     <p>You now have the basics of how to get started with creating a GitHub based publication
       of your treebank data using the Perseids Publications treebank template. From here you can proceed to remove
       the sample data from the publication by removing the files from the <code>public/xml</code> directory and removing the
       corresponding entries in the <code>src/config.json</code> file (doing so requires a local clone of your
       GitHub respository). You can also add additional files and publications,
-      create a DOI for your data and <a href="../examples/alpheios-integration/index.html">integrate it with Alpheios</a>.
+      and <a href="../examples/alpheios-integration/index.html">integrate it with Alpheios</a>.</p>
       For additional information see also the repository's README.md file and the docs/Config.md file.
   </body>
 </html>
