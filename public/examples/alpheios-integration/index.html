@@ -104,8 +104,12 @@
     <blockquote>
       <ul>
         <li><code>data-alpheios_tb_app="perseids-treebank-template"</code></li>
-        <li><code>data-alpheios_tb_app_version="3.1.0"</code> (specify whichever version of the template you are using)</li>
-        <li><code>data-alpheios_tb_url=https://your.github.io/repo-name/embed/DOC/SENTENCE</code> (use the appopriate values for your repository)
+        <li><code>data-alpheios_tb_app_version="3.1.0"</code>(You can find the
+          version in the <code>package.json</code> of your treebank-template
+          repository.  Although this is currently used for documentation purposes
+          only, we require it in case in the future we need to adjust the Alpheios
+          features available based upon the version of the template application used.)</li>
+        <li><code>data-alpheios_tb_url=https://your.github.io/repo-name/embed/DOC/SENTENCE</code> (use the appropriate values for your repository)
       </ul>
     </blockquote>
     <details>
@@ -126,7 +130,7 @@
     <details>
       <summary>Example HTML</summary>
       <textarea cols="200" rows="1">
-        <div lang="lat" class="alpheios-enabled" data-alpheios_tb_doc="on-the-murder-of-eratosthenes-1-50/">
+        <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
       </textarea>
     </details>
 
@@ -178,7 +182,7 @@
           <li>The word, καὶ, is repeated three times and Arethusa disambiugates by context.</li>
         </ul>
       </p>
-      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
         <p data-alpheios_tb_sent="2">τοῦτο δ᾽ ἐστὶν οὐ μόνον τὸ μὴ προκατεγνωκέναι μηδέν, οὐδὲ τὸ τὴν εὔνοιαν ἴσην ἀποδοῦναι,
           ἀλλὰ τὸ καὶ τῇ τάξει καὶ τῇ ἀπολογίᾳ, ὡς βεβούληται καὶ προῄρηται τῶν ἀγωνιζομένων ἕκαστος, οὕτως ἐᾶσαι χρήσασθαι.
         </p>
@@ -186,7 +190,7 @@
       <details>
       <summary>Example HTML</summary>
       <textarea cols="200" rows="7">
-<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
   <p data-alpheios_tb_sent="2">τοῦτο δ᾽ ἐστὶν οὐ μόνον τὸ μὴ προκατεγνωκέναι μηδέν, οὐδὲ τὸ τὴν εὔνοιαν ἴσην ἀποδοῦναι,
     ἀλλὰ τὸ καὶ τῇ τάξει καὶ τῇ ἀπολογίᾳ, ὡς βεβούληται καὶ προῄρηται τῶν ἀγωνιζομένων ἕκαστος, οὕτως ἐᾶσαι χρήσασθαι.
   </p>
@@ -205,7 +209,7 @@
           </li>
         </ul>
       </p>
-      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
         <p data-alpheios_tb_sent="4"> οὐ γάρ ἐστιν ἴσον νῦν ἐμοὶ τῆς παρ᾽ ὑμῶν εὐνοίας διαμαρτεῖν
             καὶ τούτῳ μὴ ἑλεῖν τὴν γραφήν, ἀλλ᾽ ἐμοὶ <span data-alpheios-word-node="exact" data-alpheios_tb_word="21 22 23">μὲν—οὐ</span> βούλομαι δυσχερὲς
             εἰπεῖν οὐδὲν ἀρχόμενος τοῦ λόγου, οὗτος δ᾽ ἐκ περιουσίας μου κατηγορεῖ.
@@ -214,7 +218,7 @@
       <details>
         <summary>Example HTML</summary>
         <textarea cols="200" rows="7">
-<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
   <p data-alpheios_tb_sent="4"> οὐ γάρ ἐστιν ἴσον νῦν ἐμοὶ τῆς παρ᾽ ὑμῶν εὐνοίας διαμαρτεῖν
       καὶ τούτῳ μὴ ἑλεῖν τὴν γραφήν, ἀλλ᾽ ἐμοὶ <span data-alpheios-word-node="exact" data-alpheios_tb_word="21 22 23">μὲν—οὐ</span> βούλομαι δυσχερὲς
       εἰπεῖν οὐδὲν ἀρχόμενος τοῦ λόγου, οὗτος δ᾽ ἐκ περιουσίας μου κατηγορεῖ.
