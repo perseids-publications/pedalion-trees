@@ -31,8 +31,23 @@ See [docs/CONFIG.md](docs/CONFIG.md) for more information about the format of `s
 
 ### Updating
 
-* `git pull source master`
-* Fix merge conflicts
+* `git pull source master --no-commit` (if there is no `source` repository, then run
+  `git remote add source https://github.com/perseids-publications/treebank-template.git`
+  then `git pull source master --no-commit`)
+* Fix merge conflicts:
+```bash
+git checkout --theirs .
+git checkout --ours public/xml
+git checkout --ours .env
+git checkout --ours README.md
+git checkout --ours src/config.json
+```
+* Run `git status`. In some cases there may be files that are marked as `deleted by them`.
+  For each of these, do `git rm <path-to-file>`
+* The `package.json` needs to be edited manually. The `name`, `version,` and `homepage` fields should reflect
+  `origin`, while all other values should reflect `source`
+* `git add .`
+* `git commit`
 * `git push origin master`
 
 ## Installation
