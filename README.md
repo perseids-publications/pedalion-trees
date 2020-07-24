@@ -31,6 +31,11 @@ See [docs/CONFIG.md](docs/CONFIG.md) for more information about the format of `s
 
 ### Updating
 
+#### Manually
+
+The best way to update the code is to use git's built in merging functionality.
+A typical update may involve the following steps:
+
 * `git pull source master --no-commit` (if there is no `source` repository, then run
   `git remote add source https://github.com/perseids-publications/treebank-template.git`
   then `git pull source master --no-commit`)
@@ -49,6 +54,21 @@ git checkout --ours src/config.json
 * `git add .`
 * `git commit`
 * `git push origin master`
+
+#### GitHub Actions
+
+There is an experimental workflow that updates the code automatically.
+Instead of `git merge`, it uses `git restore --source`. For more information
+about the technical aspects, see
+[.github/workflows/update.yml](.github/workflows/update.yml) and the files in
+[scripts/](scripts/).
+
+To use this workflow:
+
+1. Click the "Actions" on the top of the repository on GitHub
+2. Click "update" under the list of workfows
+3. Click "Run workflow" and then either click the green "Run workflow" button
+   or enter the tag you'd like to use (e.g. `3.2.0`) then click the button.
 
 ## Installation
 
