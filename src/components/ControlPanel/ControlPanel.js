@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Octicon, { Settings } from '@primer/octicons-react';
+import { SettingsIcon } from '@primer/octicons-react';
 import queryString from 'query-string';
 
 import { chunksType, publicationMatchType, queryType } from '../../lib/types';
@@ -157,7 +157,7 @@ class ControlPanel extends Component {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown dropleft">
               <button className="btn btn-link nav-link text-light" type="button" aria-haspopup="true" aria-expanded={settingsIsOpen} onClick={this.toggleSettingsOpen}>
-                <Octicon icon={Settings} />
+                <SettingsIcon />
               </button>
               <div className={`dropdown-menu ${styles.dropdownScroll} ${settingsIsOpen ? 'show' : ''}`}>
                 {this.renderSettingsLinks()}
