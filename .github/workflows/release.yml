@@ -1,0 +1,42 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version (e.g. v1.0.0)'
+        required: true
+      description:
+        description: 'Description of version'
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Validate version string
+        run: node scripts/verify-semver.js ${{ github.event.inputs.version }}
+
+      - name: Update package.json
+        run: node scripts/package-json-update-version.js ${{ github.event.inputs.version }}
+
+      - name: Configure git
+        run: bash scripts/configure-git-for-actions.sh
+
+      - name: Create commit
+        run: bash scripts/commit-version-change.sh
+
+      - name: Push changes
+        run: bash scripts/push-to-master.sh
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag_name: ${{ github.event.inputs.version }}
+          commitish: master
+          release_name: Release ${{ github.event.inputs.version }}
+          body: ${{ github.event.inputs.description }}
