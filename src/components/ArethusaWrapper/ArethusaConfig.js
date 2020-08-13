@@ -73,7 +73,7 @@ const defaultConfig = {
       main: true,
       contextMenu: false,
       contextMenuTemplate: 'js/arethusa.dep_tree/templates/context_menu.html',
-      template: 'js/templates/dep_tree.html',
+      template: 'js/templates/dep_tree_no_selector.html',
     },
     morph: {
       retrievers: {

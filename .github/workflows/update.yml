@@ -1,0 +1,50 @@
+name: update
+
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'Release (defaults to latest)'
+        required: true
+        default: 'source/master'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up update
+        run: bash scripts/setup-update.sh ${{ github.event.inputs.release }}
+
+      - name: Merge package.json
+        run: node scripts/package-json-merge.js
+
+      - name: Configure git
+        run: bash scripts/configure-git-for-actions.sh
+
+      - name: Create commit
+        run: bash scripts/commit-update.sh ${{ github.event.inputs.release }}
+
+      - name: Push changes
+        run: bash scripts/push-to-master.sh
+
+      # Actions that push to GitHub don't currently trigger other actions:
+      # https://github.community/t/triggering-a-new-workflow-from-another-workflow/16250
+      # For now, manually deploy
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
+          BRANCH: gh-pages
+          FOLDER: build

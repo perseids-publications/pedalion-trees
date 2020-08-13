@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Alpheios Text/Treebank Alignment Demo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/style/style-components.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.css"/>
     <style type="text/css">
       body {
         font-family: Arial, sans-serif;
@@ -32,12 +32,11 @@
 
 <body
     data-alpheios_tb_app="perseids-treebank-template"
-    data-alpheios_tb_app_version="2.2.0" data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
+    data-alpheios_tb_app_version="3.1.0" data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function(event) {
-          import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@beta/dist/alpheios-embedded.js').then(embedLib => {
-            window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
-              components: 'https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/alpheios-components.js' }}).then(Embedded => {
+          import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@latest/dist/alpheios-embedded.js').then(embedLib => {
+            window.AlpheiosEmbed.importDependencies({ mode: 'cdn' }).then(Embedded => {
               new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
             }).catch(e => {
               console.error(`Import of an embedded library dependencies failed: ${e}`)
@@ -67,26 +66,21 @@
     <h3>1. Decide how Alpheios will be enabled for the page.</h3>
 
     <p>The treebank functionality will work with Alpheios version
-      3.3.x, whether it is accessed through Browser Extensions or
+      3.3.x and later, whether it is accessed through Browser Extensions or
       the Embedded library.  If you are publishing your own page anyway, however,
       we recommend using the Embedded library as it provides greater flexibility
       as well as support for mobile devices.  See the
       <a href="https://www.youtube.com/watch?v=vDnDM3dg8ts" target="_blank">
         Alpheios Embedded Library Tutorial</a> for detailed instructions. </p>
-
-    <p>To test the Treebank Template integration prior to publication of the
-      Alpheios 3.3.x release, you use the <code>alpheios-components@beta</code>
-        and <code>alpheios-embedded@beta</code> pre-release versions of the
-      Alpheios Libraries as shown in the following example.</p>
     <details>
       <summary>Example HTML</summary>
       <textarea cols="200" rows="15">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/style/style-components.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.css"/>
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function(event) {
-    import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@beta/dist/alpheios-embedded.js').then(embedLib => {
+    import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@latest/dist/alpheios-embedded.js').then(embedLib => {
       window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
-        components: 'https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/alpheios-components.js' }}).then(Embedded => {
+        components: 'https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/alpheios-components.js' }}).then(Embedded => {
           new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
       }).catch(e => {
         console.error(`Import of an embedded library dependencies failed: ${e}`)
@@ -96,6 +90,43 @@
     })
   });
 </script>
+      </textarea>
+    </details>
+
+    <p><b>NOTE:</b> In the above example we specify to use whatever is the <em>
+      latest available</em> version of the Alpheios code by referencing the
+      <code>@latest</code> tag in the URLs. This ensures that your
+      page automatically gets updated with new versions of Alpheios as they
+      are released. While Alpheios releases are normally backwards-compatible and
+      this should not create any problems for your page, if you want to have tighter
+      control over when your site gets Alpheios code updates, you can specify the exact
+      version of the Alpheios code to use, rather than using the <code>@latest</code>
+      tag. You can find a full list of available versions at the NPM
+      package pages for the <a href="https://npmjs.com/package/alpheios-embedded"
+      target="_blank">Alpheios Embedded Library</a> and its companion package
+      <a href="https://npmjs.com/package/alpheios-components" target="_blank">Alpheios Components</a>
+      (clicking on the <code>Versions</code> tab). See the following example:</p>
+    <details>
+      <summary>Example HTML</summary>
+      <textarea cols="200" rows="15">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@3.3.0-20200618494/dist/style/style-components.css"/>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@3.3.0-20200618500/dist/alpheios-embedded.js').then(embedLib => {
+      window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
+        components: 'https://cdn.jsdelivr.net/npm/alpheios-components@3.3.0-20200618494/dist/alpheios-components.js' }}).then(Embedded => {
+          new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
+      }).catch(e => {
+        console.error(`Import of an embedded library dependencies failed: ${e}`)
+      })
+    }).catch(e => {
+      console.error(`Import of an embedded library failed: ${e}`)
+    })
+  });
+</script>
+      </textarea>
+    </details>
+
 
 
 
@@ -108,8 +139,12 @@
     <blockquote>
       <ul>
         <li><code>data-alpheios_tb_app="perseids-treebank-template"</code></li>
-        <li><code>data-alpheios_tb_app_version="2.2.0"</code> (specify whichever version of the template you are using)</li>
-        <li><code>data-alpheios_tb_url=https://your.github.io/repo-name/embed/DOC/SENTENCE</code> (use the appopriate values for your repository)
+        <li><code>data-alpheios_tb_app_version="3.1.0"</code>(You can find the
+          version in the <code>package.json</code> of your treebank-template
+          repository.  Although this is currently used for documentation purposes
+          only, we require it in case in the future we need to adjust the Alpheios
+          features available based upon the version of the template application used.)</li>
+        <li><code>data-alpheios_tb_url=https://your.github.io/repo-name/embed/DOC/SENTENCE</code> (use the appropriate values for your repository)
       </ul>
     </blockquote>
     <details>
@@ -117,7 +152,7 @@
       <textarea cols="200" rows="5">
         <body
           data-alpheios_tb_app="perseids-treebank-template"
-          data-alpheios_tb_app_version="2.2.0"
+          data-alpheios_tb_app_version="3.1.0"
           data-alpheios_tb_app_url="https://perseids-publications.github.io/treebank-template/embed/DOC/SENTENCE">
         </textarea>
       </details>
@@ -130,7 +165,7 @@
     <details>
       <summary>Example HTML</summary>
       <textarea cols="200" rows="1">
-        <div lang="lat" class="alpheios-enabled" data-alpheios_tb_doc="on-the-murder-of-eratosthenes-1-50/">
+        <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
       </textarea>
     </details>
 
@@ -159,6 +194,15 @@
       </textarea>
     </details>
 
+    <h3>6. Test</h3>
+    <p>Make your HTML file available under a web server (e.g. such as GitHub Pages) and load it in your browser.
+      Double-click on the words to confirm that they are linked to the treebank correctly.
+    </p>
+    <p>
+      <b>NOTE: the Alpheios treebank functionality will not work on a file loaded from the filesystem. It must be served
+        by a web server.</b>
+    </p>
+
 
     <h2>Demo Scenarios</h2>
 
@@ -173,7 +217,7 @@
           <li>The word, καὶ, is repeated three times and Arethusa disambiugates by context.</li>
         </ul>
       </p>
-      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
         <p data-alpheios_tb_sent="2">τοῦτο δ᾽ ἐστὶν οὐ μόνον τὸ μὴ προκατεγνωκέναι μηδέν, οὐδὲ τὸ τὴν εὔνοιαν ἴσην ἀποδοῦναι,
           ἀλλὰ τὸ καὶ τῇ τάξει καὶ τῇ ἀπολογίᾳ, ὡς βεβούληται καὶ προῄρηται τῶν ἀγωνιζομένων ἕκαστος, οὕτως ἐᾶσαι χρήσασθαι.
         </p>
@@ -181,7 +225,7 @@
       <details>
       <summary>Example HTML</summary>
       <textarea cols="200" rows="7">
-<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
   <p data-alpheios_tb_sent="2">τοῦτο δ᾽ ἐστὶν οὐ μόνον τὸ μὴ προκατεγνωκέναι μηδέν, οὐδὲ τὸ τὴν εὔνοιαν ἴσην ἀποδοῦναι,
     ἀλλὰ τὸ καὶ τῇ τάξει καὶ τῇ ἀπολογίᾳ, ὡς βεβούληται καὶ προῄρηται τῶν ἀγωνιζομένων ἕκαστος, οὕτως ἐᾶσαι χρήσασθαι.
   </p>
@@ -200,7 +244,7 @@
           </li>
         </ul>
       </p>
-      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+      <div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
         <p data-alpheios_tb_sent="4"> οὐ γάρ ἐστιν ἴσον νῦν ἐμοὶ τῆς παρ᾽ ὑμῶν εὐνοίας διαμαρτεῖν
             καὶ τούτῳ μὴ ἑλεῖν τὴν γραφήν, ἀλλ᾽ ἐμοὶ <span data-alpheios-word-node="exact" data-alpheios_tb_word="21 22 23">μὲν—οὐ</span> βούλομαι δυσχερὲς
             εἰπεῖν οὐδὲν ἀρχόμενος τοῦ λόγου, οὗτος δ᾽ ἐκ περιουσίας μου κατηγορεῖ.
@@ -209,7 +253,7 @@
       <details>
         <summary>Example HTML</summary>
         <textarea cols="200" rows="7">
-<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50" data-alpheios_tb_sent="1">
+<div lang="grc" class="alpheios-enabled" data-alpheios_tb_doc="on-the-crown-1-50">
   <p data-alpheios_tb_sent="4"> οὐ γάρ ἐστιν ἴσον νῦν ἐμοὶ τῆς παρ᾽ ὑμῶν εὐνοίας διαμαρτεῖν
       καὶ τούτῳ μὴ ἑλεῖν τὴν γραφήν, ἀλλ᾽ ἐμοὶ <span data-alpheios-word-node="exact" data-alpheios_tb_word="21 22 23">μὲν—οὐ</span> βούλομαι δυσχερὲς
       εἰπεῖν οὐδὲν ἀρχόμενος τοῦ λόγου, οὗτος δ᾽ ἐκ περιουσίας μου κατηγορεῖ.
