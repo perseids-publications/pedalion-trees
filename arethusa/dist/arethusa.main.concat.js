@@ -1003,10 +1003,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '952ce617456676bbbac7a486b01b148463e8d959',
-  branch: 'HEAD',
+  revision: '30ce95e400c3e8339345f9a2ac0d44195a33cabc',
+  branch: 'widget',
   version: '0.2.5',
-  date: '2020-05-13T12:28:02.105Z',
+  date: '2020-08-12T17:14:40.487Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
@@ -1173,6 +1173,28 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "      style=\"margin-left: 10px\"\n" +
     "      unused-token-highlighter\n" +
     "      uth-check-property=\"head.id\">\n" +
+    "    </span>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div\n" +
+    "    lang-specific\n" +
+    "    dependency-tree\n" +
+    "    tokens=\"state.tokens\"\n" +
+    "    styles=\"plugin.diffStyles()\"\n" +
+    "    to-bottom>\n" +
+    "  </div>\n" +
+    "</div>\n"
+  );
+
+
+  $templateCache.put('js/templates/dep_tree_no_selector.html',
+    "<div class=\"tree-canvas\">\n" +
+    "  <div class=\"tree-settings\">\n" +
+    "    <span\n" +
+    "      class=\"note right settings-span-button\"\n" +
+    "      ng-show=\"plugin.diffPresent\"\n" +
+    "      ng-click=\"plugin.toggleDiff()\">\n" +
+    "      Toggle Diff\n" +
     "    </span>\n" +
     "  </div>\n" +
     "\n" +

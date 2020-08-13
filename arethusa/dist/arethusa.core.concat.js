@@ -4346,6 +4346,21 @@ angular.module('arethusa.core').factory('Tree', [
         moveGraph(xPos, treeMargin);
       };
 
+      scope.refreshWidth = function() {
+        setViewModeFn(scope.refreshWidth);
+        var gWidth  = graphSize().width;
+        var targetW = width - treeMargin * 2
+        // if the graph is bigger than the window, scale it down so it fits
+        if (gWidth > targetW) {
+          var scale = targetW / gWidth;
+          moveGraph(treeMargin, treeMargin, scale);
+        // otherwise just center it
+        } else {
+          var xPos = (width - gWidth) / 2;
+          moveGraph(xPos, treeMargin);
+        }
+      }
+
       scope.perfectWidth = function() {
         var gWidth  = graphSize().width;
         var targetW = width - treeMargin * 2;
@@ -4572,12 +4587,12 @@ angular.module('arethusa.core').factory('Tree', [
         applyViewMode();
       });
 
-     
+
       // if a tree was rendered before it is visible
       // refreshing will rerender it and fix display bugs
       navigator.onRefresh(function() {
         render();
-        scope.perfectWidth();
+        scope.refreshWidth();
         $timeout(applyViewMode, transitionDuration);
       });
 
@@ -7316,6 +7331,11 @@ angular.module('arethusa.core').service('languageSettings', [
         name: 'Hebrew',
         lang: 'he',
         leftToRight: false
+      },
+      'lat': {
+        name: 'Latin',
+        lang: 'la',
+        leftToRight: true
       }
     };
 
