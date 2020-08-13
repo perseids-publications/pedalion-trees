@@ -33,5 +33,5 @@ git checkout origin/master .github/funding.yml
 # https://github.community/t/github-linting-remote-rejected/121365
 git checkout origin/master .github/workflows
 
-# Remove extra files that Vere removed in source
+# Remove extra files that were removed in source
 git clean -f public/xml
