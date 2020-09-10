@@ -27,3 +27,4 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           BRANCH: gh-pages
           FOLDER: build
+          CLEAN: true
