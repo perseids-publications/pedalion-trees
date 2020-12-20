@@ -13232,10 +13232,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '30ce95e400c3e8339345f9a2ac0d44195a33cabc',
+  revision: '0a82a2ad9cc7468ea781bfa023a1dddbd77130c6',
   branch: 'widget',
   version: '0.2.5',
-  date: '2020-08-12T17:14:40.487Z',
+  date: '2020-12-07T15:20:56.224Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
