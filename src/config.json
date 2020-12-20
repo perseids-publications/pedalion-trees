@@ -105,7 +105,7 @@
           "editors": "Sanderijn Gijbels (& Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "1",
               "path": "thesmo",
               "xml": "thesmo.xml",
               "chunks": {
