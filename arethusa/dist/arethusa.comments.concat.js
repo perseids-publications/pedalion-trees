@@ -1653,16 +1653,11 @@ angular.module('arethusa.comments').service('comments', [
     function retrieveComments() {
       self.comments = [];
       self.docLevelComments = [];
-
-      // In some cases the retriever is not configured but we still want to
-      // be able to display the tree without crashing.
-      if (retriever) {
-        retriever.getData(navigator.status.currentIds[0], function(comments) {
-          self.comments = comments;
-          self.docLevelComments = retriever.docLevelComments();
-          createIndices();
-        });
-      }
+      retriever.getData(navigator.status.currentIds[0], function(comments) {
+        self.comments = comments;
+        self.docLevelComments = retriever.docLevelComments();
+        createIndices();
+      });
     }
 
     function createIndices() {

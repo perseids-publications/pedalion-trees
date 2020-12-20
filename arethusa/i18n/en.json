@@ -8,7 +8,6 @@
   "loadComplete": "Load complete!",
   "language": "English",
   "help": "Help",
-  "credits": "Credits",
   "contactUs": "Contact us",
   "messages": "Messages",
   "menu": "Menu",
@@ -193,12 +192,7 @@
     "createError": "Cannot save an incomplete form",
     "createNewForm": "Create new form",
     "searchByForm": "by form",
-    "matchAll": "all",
-    "alternateGloss": "Alternate gloss",
-    "semanticRole": "Semantic role",
-    "include": "Include",
-    "multiword": "Multiword",
-    "notes": "Notes"
+    "matchAll": "all"
   },
   "exitHandler": {
     "exitTo": "Exit to {{ title }}"

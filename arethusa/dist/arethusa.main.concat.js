@@ -46,19 +46,6 @@ angular.module('arethusa').config([
 
     localStorageServiceProvider.setPrefix('arethusa');
   },
-]).config([
-  // This config prevents URL changes done using the browser's History API
-  // from causing Angular to enter an infinite loop.
-  // See https://stackoverflow.com/questions/18611214/turn-off-url-manipulation-in-angularjs
-  '$provide',
-  function ($provide) {
-    $provide.decorator('$browser', ['$delegate', function ($delegate) {
-      $delegate.onUrlChange = function () {};
-      $delegate.url = function () { return '' };
-
-      return $delegate;
-    }]);
-  }
 ]);
 
 angular.module('arethusa').value('CONF_PATH', '/configs');
@@ -1003,10 +990,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '0a82a2ad9cc7468ea781bfa023a1dddbd77130c6',
-  branch: 'widget',
+  revision: '6e816c7cdf1e70df605ff74394a5b1833a61aa40',
+  branch: 'widget-api',
   version: '0.2.5',
-  date: '2020-12-07T15:20:56.224Z',
+  date: '2020-03-11T17:00:57.844Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
@@ -1173,28 +1160,6 @@ angular.module('arethusa').run(['$templateCache', function($templateCache) {
     "      style=\"margin-left: 10px\"\n" +
     "      unused-token-highlighter\n" +
     "      uth-check-property=\"head.id\">\n" +
-    "    </span>\n" +
-    "  </div>\n" +
-    "\n" +
-    "  <div\n" +
-    "    lang-specific\n" +
-    "    dependency-tree\n" +
-    "    tokens=\"state.tokens\"\n" +
-    "    styles=\"plugin.diffStyles()\"\n" +
-    "    to-bottom>\n" +
-    "  </div>\n" +
-    "</div>\n"
-  );
-
-
-  $templateCache.put('js/templates/dep_tree_no_selector.html',
-    "<div class=\"tree-canvas\">\n" +
-    "  <div class=\"tree-settings\">\n" +
-    "    <span\n" +
-    "      class=\"note right settings-span-button\"\n" +
-    "      ng-show=\"plugin.diffPresent\"\n" +
-    "      ng-click=\"plugin.toggleDiff()\">\n" +
-    "      Toggle Diff\n" +
     "    </span>\n" +
     "  </div>\n" +
     "\n" +
