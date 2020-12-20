@@ -21,6 +21,31 @@ exports[`provides an API to communicate with an embedded publication 1`] = `
       Credits and more information
     </a>
   </div>
+  <link
+    href="/arethusa/css/arethusa.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/colorpicker.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/font-awesome.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/foundation-icons.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/widget.css"
+    rel="stylesheet"
+    type="text/css"
+  />
 </div>
 `;
 
@@ -74,6 +99,31 @@ exports[`renders an embedded publication 1`] = `
       Credits and more information
     </a>
   </div>
+  <link
+    href="/arethusa/css/arethusa.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/colorpicker.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/font-awesome.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/foundation-icons.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/widget.css"
+    rel="stylesheet"
+    type="text/css"
+  />
 </div>
 `;
 
@@ -98,5 +148,30 @@ exports[`the API can be used to select words 1`] = `
       Credits and more information
     </a>
   </div>
+  <link
+    href="/arethusa/css/arethusa.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/colorpicker.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/font-awesome.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/foundation-icons.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="/arethusa/css/widget.css"
+    rel="stylesheet"
+    type="text/css"
+  />
 </div>
 `;

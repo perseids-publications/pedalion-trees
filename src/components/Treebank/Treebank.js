@@ -7,6 +7,7 @@ import styles from './Treebank.module.css';
 
 import ArethusaWrapper from '../ArethusaWrapper';
 import ControlPanel from '../ControlPanel';
+import TreebankStyles from '../TreebankStyles';
 
 import { parse, linkParams } from '../../lib/params';
 
@@ -66,6 +67,7 @@ class Treebank extends Component {
         <div className="__artsa">
           <div id="treebank_container" className={styles.treebankContainer} />
         </div>
+        <TreebankStyles />
       </>
     );
   }

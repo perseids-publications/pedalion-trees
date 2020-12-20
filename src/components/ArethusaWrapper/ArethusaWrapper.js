@@ -1,7 +1,5 @@
 import { defaultConfig, sidepanelConfig } from './ArethusaConfig';
 
-import './custom.css';
-
 const elementId = 'treebank_container';
 const remoteUrl = `${process.env.PUBLIC_URL}/arethusa`;
 

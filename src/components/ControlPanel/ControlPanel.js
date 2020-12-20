@@ -37,6 +37,8 @@ class ControlPanel extends Component {
     this.toggleRefOpen = this.toggleRefOpen.bind(this);
     this.toggleSettingsOpen = this.toggleSettingsOpen.bind(this);
     this.renderSettingsLinks = this.renderSettingsLinks.bind(this);
+    this.renderBack = this.renderBack.bind(this);
+    this.renderNext = this.renderNext.bind(this);
   }
 
   getLines() {
@@ -109,6 +111,44 @@ class ControlPanel extends Component {
     );
   }
 
+  renderBack(first, back, current) {
+    const visibility = current === String(first) ? ' invisible' : '';
+
+    return (
+      <>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
+            &laquo; First
+          </Link>
+        </li>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(back)}>
+            &#8249; Back
+          </Link>
+        </li>
+      </>
+    );
+  }
+
+  renderNext(current, next, last) {
+    const visibility = current === String(last) ? ' invisible' : '';
+
+    return (
+      <>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(next)}>
+            Next &#8250;
+          </Link>
+        </li>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(last)}>
+            Last &raquo;
+          </Link>
+        </li>
+      </>
+    );
+  }
+
   render() {
     const { refIsOpen, settingsIsOpen } = this.state;
     const [first, back, current, next, last] = this.getFbcnl();
@@ -119,16 +159,7 @@ class ControlPanel extends Component {
         <div className="collapse navbar-collapse" id="controlPanel">
           <ul className={`navbar-nav mr-auto ${styles.dummyIcon}`} />
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
-                &laquo; First
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(back)}>
-                &#8249; Back
-              </Link>
-            </li>
+            {this.renderBack(first, back, current)}
             <li className="nav-item dropdown">
               <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={refIsOpen} onClick={this.toggleRefOpen}>
                 {current}
@@ -143,16 +174,7 @@ class ControlPanel extends Component {
                 }
               </div>
             </li>
-            <li className="nav-item">
-              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(next)}>
-                Next &#8250;
-              </Link>
-            </li>
-            <li>
-              <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(last)}>
-                Last &raquo;
-              </Link>
-            </li>
+            {this.renderNext(current, next, last)}
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown dropleft">

@@ -1,0 +1,24 @@
+.collection a {
+  color: #0069D9;
+}
+
+.locus {
+  font-size: 18px;
+  line-height: 2.1;
+}
+.locus a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .locus {
+    font-size: inherit;
+  }
+  .locus a {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    padding-left: inherit;
+  }
+}

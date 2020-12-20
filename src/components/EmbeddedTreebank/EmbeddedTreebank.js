@@ -6,6 +6,7 @@ import { publicationMatchType, locationType } from '../../lib/types';
 import styles from './EmbeddedTreebank.module.css';
 
 import ArethusaWrapper from '../ArethusaWrapper';
+import TreebankStyles from '../TreebankStyles';
 import TreebankService from '../TreebankService';
 
 import { parse } from '../../lib/params';
@@ -45,6 +46,7 @@ class EmbeddedTreebank extends Component {
             Credits and more information
           </a>
         </div>
+        <TreebankStyles />
         <TreebankService arethusa={arethusa} />
       </>
     );

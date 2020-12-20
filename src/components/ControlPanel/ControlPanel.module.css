@@ -20,7 +20,9 @@
 }
 
 @media (min-width: 576px) {
-  width: 34px;
+  .dummyIcon {
+    width: 34px;
+  }
 }
 
 a.link:focus {

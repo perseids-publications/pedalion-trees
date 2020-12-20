@@ -1,0 +1,10 @@
+.instructions ol,
+.instructions ul,
+.instructions img {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.instructions li {
+  margin-bottom: 1rem;
+}

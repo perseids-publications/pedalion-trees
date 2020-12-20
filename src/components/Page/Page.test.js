@@ -194,3 +194,47 @@ it('renders a custom link', () => {
 
   delete config.link;
 });
+
+it('renders the getting started page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/getting-started']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders the doi page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/doi']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders the update page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/updating']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders 404 when no instruction route matches', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/a/b/c']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
