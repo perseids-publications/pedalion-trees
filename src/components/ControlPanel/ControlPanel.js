@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Octicon, { Settings } from '@primer/octicons-react';
+import { SettingsIcon } from '@primer/octicons-react';
 import queryString from 'query-string';
-
-import { string, node, bool } from 'prop-types';
 
 import { chunksType, publicationMatchType, queryType } from '../../lib/types';
 
@@ -24,15 +22,6 @@ const getFbcnlFromNumbers = (chunk, numbers) => {
   ];
 };
 
-const HtmlLink = ({ to, children, ...props }) => (
-  <a href={to} {...props}>{children}</a>
-);
-
-HtmlLink.propTypes = {
-  to: string.isRequired,
-  children: node.isRequired,
-};
-
 class ControlPanel extends Component {
   constructor(props) {
     super(props);
@@ -48,6 +37,8 @@ class ControlPanel extends Component {
     this.toggleRefOpen = this.toggleRefOpen.bind(this);
     this.toggleSettingsOpen = this.toggleSettingsOpen.bind(this);
     this.renderSettingsLinks = this.renderSettingsLinks.bind(this);
+    this.renderBack = this.renderBack.bind(this);
+    this.renderNext = this.renderNext.bind(this);
   }
 
   getLines() {
@@ -120,28 +111,55 @@ class ControlPanel extends Component {
     );
   }
 
+  renderBack(first, back, current) {
+    const visibility = current === String(first) ? ' invisible' : '';
+
+    return (
+      <>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
+            &laquo; First
+          </Link>
+        </li>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(back)}>
+            &#8249; Back
+          </Link>
+        </li>
+      </>
+    );
+  }
+
+  renderNext(current, next, last) {
+    const visibility = current === String(last) ? ' invisible' : '';
+
+    return (
+      <>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(next)}>
+            Next &#8250;
+          </Link>
+        </li>
+        <li className={`nav-item${visibility}`}>
+          <Link className={`nav-link text-light ${styles.link}`} to={this.createLink(last)}>
+            Last &raquo;
+          </Link>
+        </li>
+      </>
+    );
+  }
+
   render() {
-    const { refresh } = this.props;
     const { refIsOpen, settingsIsOpen } = this.state;
     const [first, back, current, next, last] = this.getFbcnl();
     const lines = this.getLines();
-    const LinkComponent = refresh ? HtmlLink : Link;
 
     return (
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="collapse navbar-collapse" id="controlPanel">
           <ul className={`navbar-nav mr-auto ${styles.dummyIcon}`} />
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(first)}>
-                &laquo; First
-              </LinkComponent>
-            </li>
-            <li className="nav-item">
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(back)}>
-                &#8249; Back
-              </LinkComponent>
-            </li>
+            {this.renderBack(first, back, current)}
             <li className="nav-item dropdown">
               <button className={`btn btn-link nav-link text-light dropdown-toggle ${styles.dropdownButton}`} type="button" aria-haspopup="true" aria-expanded={refIsOpen} onClick={this.toggleRefOpen}>
                 {current}
@@ -149,28 +167,19 @@ class ControlPanel extends Component {
               <div className={`dropdown-menu ${styles.dropdownScroll} ${refIsOpen ? 'show' : ''}`}>
                 {
                   lines.map((n) => (
-                    <LinkComponent className="dropdown-item" key={n} to={this.createLink(n)} onClick={this.toggleRefOpen}>
+                    <Link className="dropdown-item" key={n} to={this.createLink(n)} onClick={this.toggleRefOpen}>
                       {n}
-                    </LinkComponent>
+                    </Link>
                   ))
                 }
               </div>
             </li>
-            <li className="nav-item">
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(next)}>
-                Next &#8250;
-              </LinkComponent>
-            </li>
-            <li>
-              <LinkComponent className={`nav-link text-light ${styles.link}`} to={this.createLink(last)}>
-                Last &raquo;
-              </LinkComponent>
-            </li>
+            {this.renderNext(current, next, last)}
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown dropleft">
               <button className="btn btn-link nav-link text-light" type="button" aria-haspopup="true" aria-expanded={settingsIsOpen} onClick={this.toggleSettingsOpen}>
-                <Octicon icon={Settings} />
+                <SettingsIcon />
               </button>
               <div className={`dropdown-menu ${styles.dropdownScroll} ${settingsIsOpen ? 'show' : ''}`}>
                 {this.renderSettingsLinks()}
@@ -186,7 +195,6 @@ class ControlPanel extends Component {
 ControlPanel.propTypes = {
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
-  refresh: bool.isRequired,
   fullQuery: queryType.isRequired,
   linkQuery: queryType.isRequired,
 };

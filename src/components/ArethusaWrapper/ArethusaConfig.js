@@ -16,6 +16,7 @@ const defaultConfig = {
       'morph',
       'relation',
       'depTree',
+      'search',
     ],
     layouts: [
       {
@@ -72,7 +73,7 @@ const defaultConfig = {
       main: true,
       contextMenu: false,
       contextMenuTemplate: 'js/arethusa.dep_tree/templates/context_menu.html',
-      template: 'js/templates/dep_tree.html',
+      template: 'js/templates/dep_tree_no_selector.html',
     },
     morph: {
       retrievers: {
@@ -92,8 +93,12 @@ const defaultConfig = {
       },
       matchAll: true,
       '@include': 'js/arethusa.morph/configs/morph/lat_attributes.json',
+      noRetrieval: 'online',
     },
-
+    search: {
+      template: 'js/templates/search.html',
+      regex: true,
+    },
     relation: {
       advancedMode: true,
       relations: {},

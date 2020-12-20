@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import { publicationType } from '../../lib/types';
 
+import styles from './Collection.module.css';
+
 import Markdown from '../Markdown';
 
 const getStart = (chunks) => {
@@ -63,7 +65,7 @@ const renderRow = (publication) => {
       <td className="col-md-3 col-lg-3 d-none d-md-block">
         {renderEditors(editors)}
       </td>
-      <td className="col-4 col-sm-5 col-md-2 col-lg-2 text-right">
+      <td className={`col-4 col-sm-5 col-md-2 col-lg-2 text-right ${styles.locus}`}>
         {sections.map((s) => renderSection(s))}
       </td>
     </tr>
@@ -71,7 +73,7 @@ const renderRow = (publication) => {
 };
 
 const Collection = ({ title, publications, text }) => (
-  <div className="container">
+  <div className={`container ${styles.collection}`}>
     <div className="row pb-3">
       <div className="col-12">
         {title && <h2>{title}</h2>}

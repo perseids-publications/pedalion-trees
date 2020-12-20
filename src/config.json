@@ -85,10 +85,10 @@
           "path": "achar",
           "author": "Aristophanes",
           "work": "Acharnians",
-          "editors": "Toon Van Hal & students 2018-2019: Zoë De Bal, Stijn Houthoofd, Merel op 't Roodt, Manou Vermeire en Martijn Windelinckx, based on a preparsed version by Alek Keersmaekers",
+          "editors": "Toon Van Hal & students 2019-2020: Zoë De Bal, Stijn Houthoofd, Merel op 't Roodt, Manou Vermeire en Martijn Windelinckx, based on a preparsed version by Alek Keersmaekers",
           "sections": [
             {
-              "locus": "1",
+              "locus": "entire work",
               "path": "achar",
               "xml": "achar.xml",
               "chunks": {
@@ -105,7 +105,7 @@
           "editors": "Sanderijn Gijbels (& Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "1",
+              "locus": "entire work",
               "path": "thesmo",
               "xml": "thesmo.xml",
               "chunks": {
@@ -385,6 +385,23 @@
               "chunks": {
                 "start": 1,
                 "end": 75
+              }
+            }
+          ]
+        },
+			{
+          "path": "crito",
+          "author": "Plato",
+          "work": "Crito",
+          "editors": "Wouter Mercelis (& Toon Van Hal, Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "Entire work",
+              "path": "crito",
+              "xml": "crito.xml",
+              "chunks": {
+                "start": 1,
+                "end": 267
               }
             }
           ]
