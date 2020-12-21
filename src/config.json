@@ -82,13 +82,30 @@
           ]
         },        
 		{
+          "path": "achar",
+          "author": "Aristophanes",
+          "work": "Acharnians",
+          "editors": "Toon Van Hal & students 2019-2020: Zoë De Bal, Stijn Houthoofd, Merel op 't Roodt, Manou Vermeire en Martijn Windelinckx, based on a preparsed version by Alek Keersmaekers",
+          "sections": [
+            {
+              "locus": "entire work",
+              "path": "achar",
+              "xml": "achar.xml",
+              "chunks": {
+                "start": 1,
+                "end": 941
+              }
+            }
+          ]
+        },
+		{
           "path": "thesmo",
           "author": "Aristophanes",
           "work": "Thesmophoriazusae",
           "editors": "Sanderijn Gijbels (& Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "entire work",
               "path": "thesmo",
               "xml": "thesmo.xml",
               "chunks": {
@@ -328,7 +345,7 @@
           "editors": "Yoran Joosten (& Alek Keersmaekers)",
           "sections": [
             {
-              "locus": "test",
+              "locus": "start",
               "path": "paean",
               "xml": "paean.xml",
               "chunks": {
@@ -368,6 +385,23 @@
               "chunks": {
                 "start": 1,
                 "end": 75
+              }
+            }
+          ]
+        },
+			{
+          "path": "crito",
+          "author": "Plato",
+          "work": "Crito",
+          "editors": "Wouter Mercelis (& Toon Van Hal, Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "Entire work",
+              "path": "crito",
+              "xml": "crito.xml",
+              "chunks": {
+                "start": 1,
+                "end": 267
               }
             }
           ]
