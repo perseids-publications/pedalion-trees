@@ -390,15 +390,15 @@
           ]
         },
 			{
-          "path": "crito",
+          "path": "crit",
           "author": "Plato",
           "work": "Crito",
           "editors": "Wouter Mercelis (& Toon Van Hal, Alek Keersmaekers)",
           "sections": [
             {
               "locus": "Entire work",
-              "path": "crito",
-              "xml": "crito.xml",
+              "path": "crit",
+              "xml": "crit.xml",
               "chunks": {
                 "start": 1,
                 "end": 267
