@@ -1,12 +1,12 @@
 {
   "title": "Pedalion Trees",
-  "subtitle": "Pedalion",
+  "subtitle": "General editors: Toon Van Hal & Alek Keersmaekers",
   "report": "https://github.com/perseids-publications/pedalion-trees/issues",
   "github": "https://github.com/perseids-publications/pedalion-trees",
   "twitter": "",
   "collections": [
     {
-      "title": "*Welcome*",
+      "title": "Welcome! For more information, see pedalion.be/glaux",
       "publications": [
 					{
           "path": "aeneas",
@@ -115,6 +115,23 @@
             }
           ]
         },
+		{
+          "path": "charb1",
+          "author": "Chariton",
+          "work": "Callirhoe, book 1",
+          "editors": "Toon Van Hal & Students 2020-2021: Josefien Branson, Eline Brink, Eline De Vocht, Ruul Hellemans, Hegeleen Kissel, Hélène Trap, Courtney Van de Mosselaer, Anneleen Vanden Broecke, Birthe Verscuren, Ann-Sophie Vrielynck (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "entire work",
+              "path": "char1",
+              "xml": "charb1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 408
+              }
+            }
+          ]
+        },	
 				{
           "path": "chion",
           "author": "Chion",
@@ -188,7 +205,7 @@
           "path": "ez",
           "author": "Ezechiël",
           "work": "Exagogè",
-          "editors": "Martijn Windelinckx",
+          "editors": "Martijn Windelinckx (& Alek Keersmaekers)",
           "sections": [
             {
               "locus": "1",
@@ -205,7 +222,7 @@
           "path": "heron",
           "author": "Heron",
           "work": "De automatis",
-          "editors": "Martijn Windelinckx",
+          "editors": "Martijn Windelinckx (& Alek Keersmaekers)",
           "sections": [
             {
               "locus": "1",
