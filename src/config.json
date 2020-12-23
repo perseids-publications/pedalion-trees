@@ -184,6 +184,40 @@
             }
           ]
         },	
+		{
+          "path": "ez",
+          "author": "Ezechiël",
+          "work": "Exagogè",
+          "editors": "Martijn Windelinckx",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "ez",
+              "xml": "ez.xml",
+              "chunks": {
+                "start": 1,
+                "end": 148
+              }
+            }
+          ]
+        },
+		{
+          "path": "heron",
+          "author": "Heron",
+          "work": "De automatis",
+          "editors": "Martijn Windelinckx",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "heron",
+              "xml": "heron.xml",
+              "chunks": {
+                "start": 1,
+                "end": 487
+              }
+            }
+          ]
+        },
 	{
           "path": "julian",
           "author": "Julian",
@@ -338,6 +372,23 @@
             }
           ]
         },
+		        {
+          "path": "pseudo-menander-dyskolos",
+          "author": "Menander",
+          "work": "Dyskolos",
+          "editors": "Yoran Joosten (& Alek Keersmaekers)",
+          "sections": [
+            {
+              "locus": "-968",
+              "path": "menander_dyskolos",
+              "xml": "menander_dyskolos.xml",
+              "chunks": {
+                "start": 1,
+                "end": 959
+              }
+            }
+          ]
+        },
         {
           "path": "paean",
           "author": "Paeanius",
@@ -393,7 +444,7 @@
           "path": "crit",
           "author": "Plato",
           "work": "Crito",
-          "editors": "Wouter Mercelis (& Toon Van Hal, Alek Keersmaekers)",
+          "editors": "Yoran Joosten (& Toon Van Hal, Alek Keersmaekers)",
           "sections": [
             {
               "locus": "Entire work",
@@ -406,23 +457,7 @@
             }
           ]
         },
-        {
-          "path": "pseudo-menander-dyskolos",
-          "author": "Pseudo-Menander",
-          "work": "Dyskolos",
-          "editors": "Yoran Joosten (& Alek Keersmaekers)",
-          "sections": [
-            {
-              "locus": "-968",
-              "path": "menander_dyskolos",
-              "xml": "menander_dyskolos.xml",
-              "chunks": {
-                "start": 1,
-                "end": 959
-              }
-            }
-          ]
-        },
+
 		{
           "path": "procopius",
           "author": "Procopius",
@@ -436,6 +471,23 @@
               "chunks": {
                 "start": 1,
                 "end": 2000
+              }
+            }
+          ]
+        },
+		{
+          "path": "sappho",
+          "author": "Sappho",
+          "work": "Fragmenta",
+          "editors": "Yoran Joosten",
+          "sections": [
+            {
+              "locus": "1",
+              "path": "sappho",
+              "xml": "sappho.xml",
+              "chunks": {
+                "start": 1,
+                "end": 413
               }
             }
           ]
