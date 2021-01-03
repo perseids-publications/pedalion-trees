@@ -554,7 +554,7 @@
 <word ref='Leuven|0537-012|29|7' id='7' form='ζῆν' lemma='ζάω' postag='v--pna---' relation='OBJ' head='5' sem=''/>
 <word ref='Leuven|0537-012|29|8' id='8' form='οὔτε' lemma='οὔτε' postag='c--------' relation='COORD' head='0' sem=''/>
 <word ref='Leuven|0537-012|29|9' id='9' form='φοβεῖται' lemma='φοβεῖτημι' postag='v3saom---' relation='PRED_CO' head='8' sem=''/>
-<word ref='Leuven|0537-012|29|10' id='10' form='τὸ' lemma='ὁ' postag='---------' relation='ATR' head='12' sem=''/>
+<word ref='Leuven|0537-012|29|10' id='10' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='12' sem=''/>
 <word ref='Leuven|0537-012|29|11' id='11' form='μή' lemma='μή' postag='d--------' relation='AuxZ' head='12' sem=''/>
 <word ref='Leuven|0537-012|29|12' id='12' form='ζῆν' lemma='ζάω' postag='v--pna---' relation='OBJ' head='9' sem=''/>
 <word ref='Leuven|0537-012|29|13' id='13' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' sem=''/>

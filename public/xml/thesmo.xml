@@ -10849,7 +10849,7 @@
 <sentence id='976' document_id='0019-008' Author='Aristophanes' subdoc='1210' corrupt=''>
 <word ref='Leuven|0019-008|976|1' id='1' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='2' sem=''/>
 <word ref='Leuven|0019-008|976|2' id='2' form='γρᾴδι’' lemma='γρᾴδιον' postag='n-s---nv-' relation='ExD' head='15' sem=''/>
-<word ref='Leuven|0019-008|976|3' id='3' form='ὠς' lemma='ὁ' postag='v-papamn-' relation='ADV' head='4' sem=''/>
+<word ref='Leuven|0019-008|976|3' id='3' form='ὠς' lemma='ὠς' postag='d--------' relation='ADV' head='4' sem=''/>
 <word ref='Leuven|0019-008|976|4' id='4' form='καρίεντό' lemma='χαρίεις' postag='a-s---fn_' relation='PNOM_CO' head='9' sem=''/>
 <word ref='Leuven|0019-008|976|5' id='5' form='σοι' lemma='σύ' postag='p2s---cd-' relation='ADV' head='15' sem=''/>
 <word ref='Leuven|0019-008|976|6' id='6' form='τὸ' lemma='ὁ' postag='l-s---nn-' relation='ATR' head='7' sem=''/>
