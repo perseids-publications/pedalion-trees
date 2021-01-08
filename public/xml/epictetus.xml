@@ -4136,7 +4136,7 @@
 <word ref='Leuven|0557-001|276|23' id='23' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' gloss='' sem=''/>
 <word ref='Leuven|0557-001|276|24' id='24' form='[0]' lemma='' postag='' relation='ADV' head='1' gloss='' sem='' artificial='elliptic' insertion_id='0023e'/>
 </sentence>
-<sentence id='11901' document_id='0557-001' Author='Epictetus' subdoc='' corrupt=''>
+<sentence id='277' document_id='0557-001' Author='Epictetus' subdoc='' corrupt=''>
 <word ref='Leuven|0557-001|277|1' id='1' form='χρώματα' lemma='χρῶμα' postag='n-p---na-' relation='OBJ' head='5' gloss=' () |  (skin)' sem=''/>
 <word ref='Leuven|0557-001|277|2' id='2' form='ὁ' lemma='ὁ' postag='l-s---mn-' relation='ATR' head='3' gloss='' sem=''/>
 <word ref='Leuven|0557-001|277|3' id='3' form='θεός' lemma='θεός' postag='n-s---mn-' relation='SBJ' head='8' gloss='' sem=''/>
