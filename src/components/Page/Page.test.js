@@ -238,3 +238,18 @@ it('renders 404 when no instruction route matches', () => {
 
   expect(tree).toMatchSnapshot();
 });
+
+it('renders differently when treebankReact is set', () => {
+  config.treebankReact = true;
+
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  delete config.treebankReact;
+});

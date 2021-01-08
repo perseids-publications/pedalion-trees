@@ -1,5 +1,11 @@
 import {
-  arrayOf, number, shape, string, oneOfType, element,
+  arrayOf,
+  bool,
+  element,
+  number,
+  oneOfType,
+  shape,
+  string,
 } from 'prop-types';
 
 export const chunksType = shape({
@@ -42,6 +48,7 @@ export const configType = shape({
   github: string,
   twitter: string,
   collections: arrayOf(collectionType).isRequired,
+  treebankReact: bool,
 });
 
 export const locationType = shape({

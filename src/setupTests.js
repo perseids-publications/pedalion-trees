@@ -28,3 +28,5 @@ global.arethusaApiGetSubdocFun = () => { throw 'Error' };
 global.crypto = {
   getRandomValues: array => array.map(() => Math.random()),
 };
+
+process.env.PUBLIC_URL = 'https://www.example.com';

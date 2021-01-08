@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'perseids-react-components/build/css/index.css';
+import 'treebank-react/build/index.css';
 
 import './index.css';
 import App from './components/App';

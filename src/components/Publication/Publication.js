@@ -110,6 +110,7 @@ class Publication extends Component {
     const {
       logo,
       link,
+      treebankReact,
       publicationPath,
       author,
       work,
@@ -170,11 +171,13 @@ class Publication extends Component {
               location={location}
               match={match}
               arethusa={this.arethusa}
+              treebankReact={treebankReact}
+              setSubdoc={(s) => this.setState({ subDoc: s })}
             />
           </div>
           <div className="pt-1 pb-4 text-right">
             <a href={`${process.env.PUBLIC_URL}/xml/${xml}`} target="_blank" rel="noopener noreferrer">
-              View XML
+              View full XML
             </a>
           </div>
         </div>
@@ -186,6 +189,7 @@ class Publication extends Component {
 Publication.propTypes = {
   logo: PropTypes.string,
   link: PropTypes.string,
+  treebankReact: PropTypes.bool,
   publicationPath: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   work: PropTypes.string.isRequired,
@@ -205,6 +209,7 @@ Publication.propTypes = {
 Publication.defaultProps = {
   logo: undefined,
   link: undefined,
+  treebankReact: false,
   publicationLink: undefined,
   notes: undefined,
 };
