@@ -235,7 +235,7 @@
 <word ref='Leuven|0019-001|13|7' id='7' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' gloss='1: ' sem=''/>
 <word ref='Leuven|0019-001|13|8' id='8' form='[0]' lemma='' postag='' relation='PRED' head='0' gloss='' sem='' artificial='elliptic' insertion_id='0007e'/>
 </sentence>
-<sentence id='12198' document_id='0019-001' Author='Aristophanes' subdoc='22' corrupt=''>
+<sentence id='14' document_id='0019-001' Author='Aristophanes' subdoc='22' corrupt=''>
 <word ref='Leuven|0019-001|14|1' id='1' form='ὦ' lemma='ὦ' postag='i--------' relation='AuxZ' head='2' gloss='1: (blijft onvertaald)' sem=''/>
 <word ref='Leuven|0019-001|14|2' id='2' form='πόλις' lemma='πόλις' postag='n-s---fv-' relation='ExD' head='0' gloss='1: stad, staat' sem=''/>
 <word ref='Leuven|0019-001|14|3' id='3' form='πόλις' lemma='πόλις' postag='n-s---fv-' relation='MWE' head='2' gloss='1: stad, staat' sem=''/>
@@ -477,7 +477,7 @@
 <word ref='Leuven|0019-001|34|10' id='10' form='μόνῳ' lemma='μόνος' postag='a-s---md-' relation='APOS' head='1' gloss='1: alleen' sem=''/>
 <word ref='Leuven|0019-001|34|11' id='11' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' gloss='1: ' sem=''/>
 </sentence>
-<sentence id='11357' document_id='0019-001' Author='Aristophanes' subdoc='48' corrupt=''>
+<sentence id='35' document_id='0019-001' Author='Aristophanes' subdoc='48' corrupt=''>
 <word ref='Leuven|0019-001|35|1' id='1' form='ἀλλ’' lemma='ἀλλά' postag='b--------' relation='AuxY' head='7' gloss='1: maar' sem=''/>
 <word ref='Leuven|0019-001|35|2' id='2' form='ἀθάνατος' lemma='ἀθάνατος' postag='a-s---mn-' relation='PNOM' head='3' gloss='1: onsterfelijk' sem=''/>
 <word ref='Leuven|0019-001|35|3' id='3' form='ὢν' lemma='εἰμί' postag='v-sppamn-' relation='ADV' head='7' gloss='1: gaan' sem='concession'/>
@@ -2422,7 +2422,7 @@
 <word ref='Leuven|0019-001|206|5' id='5' form='οὗτος' lemma='οὗτος' postag='p-s---mn-' relation='MWE' head='1' gloss='1: die (daar)' sem=''/>
 <word ref='Leuven|0019-001|206|6' id='6' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' gloss='1: ' sem=''/>
 </sentence>
-<sentence id='8678' document_id='0019-001' Author='Aristophanes' subdoc='241' corrupt=''>
+<sentence id='207' document_id='0019-001' Author='Aristophanes' subdoc='241' corrupt=''>
 <word ref='Leuven|0019-001|207|1' id='1' form='βάλλε' lemma='βάλλω' postag='v2spma---' relation='PRED_CO' head='5' gloss='1: werpen, gooien' sem=''/>
 <word ref='Leuven|0019-001|207|2' id='2' form='βάλλε' lemma='βάλλω' postag='v2spma---' relation='MWE' head='1' gloss='1: werpen, gooien' sem=''/>
 <word ref='Leuven|0019-001|207|3' id='3' form='βάλλε' lemma='βάλλω' postag='v2spma---' relation='MWE' head='1' gloss='1: werpen, gooien' sem=''/>
@@ -4069,7 +4069,7 @@
 <word ref='Leuven|0019-001|357|3' id='3' form='τόδ’' lemma='ὅδε' postag='p-s---na-' relation='OBJ' head='2' gloss='1: deze hier' sem=''/>
 <word ref='Leuven|0019-001|357|4' id='4' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' gloss='1: ' sem=''/>
 </sentence>
-<sentence id='12381' document_id='0019-001' Author='Aristophanes' subdoc='460' corrupt=''>
+<sentence id='358' document_id='0019-001' Author='Aristophanes' subdoc='460' corrupt=''>
 <word ref='Leuven|0019-001|358|1' id='1' form='ἴσθ’' lemma='οἶδα' postag='v2srma---' relation='PRED' head='0' gloss='1: weten, kennen' sem=''/>
 <word ref='Leuven|0019-001|358|2' id='2' form='ὀχληρὸς' lemma='ὀχληρός' postag='a-s---mn-' relation='PNOM' head='3' gloss='troublesome, irksome, importunate' sem=''/>
 <word ref='Leuven|0019-001|358|3' id='3' form='ὢν' lemma='εἰμί' postag='v-sppamn-' relation='ADV' head='1' gloss='1: gaan' sem=''/>
@@ -4128,7 +4128,7 @@
 <word ref='Leuven|0019-001|365|3' id='3' form='δράσω' lemma='δράω' postag='v1sasa---' relation='PRED' head='0' gloss='do, accomplish' sem='deliberative question'/>
 <word ref='Leuven|0019-001|365|4' id='4' form=';' lemma=';' postag='u--------' relation='AuxK' head='0' gloss='1: ' sem=''/>
 </sentence>
-<sentence id='12382' document_id='0019-001' Author='Aristophanes' subdoc='395' corrupt=''>
+<sentence id='366' document_id='0019-001' Author='Aristophanes' subdoc='395' corrupt=''>
 <word ref='Leuven|0019-001|366|1' id='1' form='δεῖ' lemma='δέω' postag='v3spia---' relation='PRED' head='0' gloss='1: ' sem=''/>
 <word ref='Leuven|0019-001|366|2' id='2' form='γὰρ' lemma='γάρ' postag='d--------' relation='AuxY' head='1' gloss='1: want, immers, namelijk | (in levendige vragen) toch, dan?' sem=''/>
 <word ref='Leuven|0019-001|366|3' id='3' form='ἑνὸς' lemma='εἷς' postag='m-s---ng-' relation='OBJ' head='1' gloss='1: naar binnen | in | tot aan; tegen' sem=''/>
@@ -4656,7 +4656,7 @@
 <word ref='Leuven|0019-001|408|10' id='10' form='δύο' lemma='δύο' postag='m-d---fa-' relation='ATR' head='9' gloss='1: twee' sem=''/>
 <word ref='Leuven|0019-001|408|11' id='11' form='·' lemma='·' postag='u--------' relation='AuxK' head='0' gloss='1: ' sem=''/>
 </sentence>
-<sentence id='12383' document_id='0019-001' Author='Aristophanes' subdoc='443' corrupt=''>
+<sentence id='409' document_id='0019-001' Author='Aristophanes' subdoc='443' corrupt=''>
 <word ref='Leuven|0019-001|409|1' id='1' form='κ-' lemma='καί' postag='b--------' relation='AuxY' head='6' gloss='1: en | ook, zelfs' sem=''/>
 <word ref='Leuven|0019-001|409|2' id='2' form='ἐντεῦθεν' lemma='ἐντεῦθεν' postag='d--------' relation='ADV' head='6' gloss='1: vandaar, vanhier' sem='time'/>
 <word ref='Leuven|0019-001|409|3' id='3' form='ἀρχὴ' lemma='ἀρχή' postag='n-s---fn-' relation='SBJ' head='6' gloss='1: begin | beginsel, principe | heerschappij | functie, magistratuur' sem=''/>

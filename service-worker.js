@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pedalion-trees/precache-manifest.df1ef8c5d75476c6ef14974df3f6e1ce.js"
+  "/pedalion-trees/precache-manifest.b101cfa2c39e3c9fef48e0c06cac17d7.js"
 );
 
 self.addEventListener('message', (event) => {
