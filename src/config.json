@@ -1,6 +1,7 @@
 {
   "title": "Pedalion Trees",
   "subtitle": "General editors: Toon Van Hal & Alek Keersmaekers",
+  "treebankReact": true,
   "report": "https://github.com/perseids-publications/pedalion-trees/issues",
   "github": "https://github.com/perseids-publications/pedalion-trees",
   "twitter": "",
