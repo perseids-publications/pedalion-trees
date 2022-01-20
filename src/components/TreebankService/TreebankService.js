@@ -7,8 +7,7 @@ import {
   WindowIframeDestination as Destination,
 } from 'alpheios-messaging';
 import { buildQueryString } from '../../lib/params';
-
-import ArethusaWrapper from '../ArethusaWrapper';
+import { alpheiosAnnotation, alpheiosFindWord } from '../../lib/parsing';
 
 const config = {
   name: 'treebank',
@@ -19,8 +18,8 @@ const config = {
 
 const error = (request, message, code) => ResponseMessage.Error(request, new Error(message), code);
 
-const redirectLink = ({ wordIds, config: c, sentenceId }) => {
-  const query = buildQueryString({ w: wordIds, config: c });
+const redirectLink = ({ wordIds, sentenceId }) => {
+  const query = buildQueryString({ w: wordIds });
 
   if (query === '') {
     return sentenceId;
@@ -33,41 +32,26 @@ class TreebankService extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      arethusaLoaded: false,
-      redirectTo: null,
-    };
+    this.state = { redirectTo: null };
     this.messageHandler = this.messageHandler.bind(this);
-    this.setArethusaLoaded = this.setArethusaLoaded.bind(this);
   }
 
   componentDidMount() {
     this.destination = new Destination({ ...config, receiverCB: this.messageHandler });
     this.service = new MessagingService('treebank-service', this.destination);
-
-    // eslint-disable-next-line no-undef
-    window.document.body.addEventListener('ArethusaLoaded', this.setArethusaLoaded);
   }
 
   componentWillUnmount() {
     this.destination.deregister();
-
-    // eslint-disable-next-line no-undef
-    window.document.body.removeEventListener('ArethusaLoaded', this.setArethusaLoaded);
-  }
-
-  setArethusaLoaded() {
-    this.setState({ arethusaLoaded: true });
   }
 
   messageHandler(request, responseFn) {
-    const { arethusa } = this.props;
-    const { arethusaLoaded } = this.state;
+    const { loaded, treebank, configuration } = this.props;
     const { body } = request;
     const [name] = Object.keys(body);
 
-    if (!arethusaLoaded) {
-      responseFn(error(request, 'Arethusa is Not Loaded', ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
+    if (!loaded) {
+      responseFn(error(request, 'Treebank is not loaded', ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
       return;
     }
 
@@ -83,22 +67,27 @@ class TreebankService extends Component {
         case 'getMorph':
           responseFn(ResponseMessage.Success(
             request,
-            arethusa.getMorph(body.getMorph.sentenceId, body.getMorph.wordId),
+            alpheiosAnnotation({
+              treebank,
+              configuration,
+              sentenceId: body.getMorph.sentenceId,
+              wordId: body.getMorph.wordId,
+            }),
           ));
           break;
         case 'refreshView':
-          responseFn(ResponseMessage.Success(request, arethusa.refreshView()));
           break;
         case 'findWord':
           responseFn(
             ResponseMessage.Success(
               request,
-              arethusa.findWord(
-                body.findWord.sentenceId,
-                body.findWord.word,
-                body.findWord.prefix,
-                body.findWord.suffix,
-              ),
+              alpheiosFindWord({
+                treebank,
+                sentenceId: body.findWord.sentenceId,
+                word: body.findWord.word,
+                prefix: body.findWord.prefix,
+                suffix: body.findWord.suffix,
+              }),
             ),
           );
           break;
@@ -120,7 +109,16 @@ class TreebankService extends Component {
 }
 
 TreebankService.propTypes = {
-  arethusa: PropTypes.instanceOf(ArethusaWrapper).isRequired,
+  loaded: PropTypes.bool.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  treebank: PropTypes.object,
+  // eslint-disable-next-line react/forbid-prop-types
+  configuration: PropTypes.object,
+};
+
+TreebankService.defaultProps = {
+  treebank: undefined,
+  configuration: undefined,
 };
 
 export default TreebankService;

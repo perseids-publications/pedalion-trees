@@ -15,16 +15,6 @@
   overflow: scroll;
 }
 
-.dummyIcon {
-  width: 0;
-}
-
-@media (min-width: 576px) {
-  .dummyIcon {
-    width: 34px;
-  }
-}
-
 a.link:focus {
   color: #f8f9fa!important;
 }

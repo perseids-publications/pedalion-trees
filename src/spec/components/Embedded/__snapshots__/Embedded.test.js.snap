@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 404 when publication not found 1`] = `
+<div>
+  <div
+    class="container pt-5"
+  >
+    <div
+      class="row col-12 pt-5 pb-3"
+    >
+      <div
+        class="col-12 text-center"
+      >
+        <h1>
+          Error 404
+        </h1>
+      </div>
+    </div>
+    <div
+      class="row col-12 pb-3"
+    >
+      <div
+        class="col-12 text-center"
+      >
+        <h2>
+          Publication not found
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders an embedded publication 1`] = `
+<div>
+  <div>
+    <div>
+      Loading...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders an embedded publication 2`] = `
+<div>
+  <div>
+    <div
+      class="treebankContainer"
+    >
+      <div
+        class="text"
+      >
+        <div
+          data-highlight=""
+          data-id="1"
+          data-treebank="1912971948"
+        >
+          Text
+        </div>
+      </div>
+      <div
+        class="graph"
+      >
+        <div
+          data-highlight=""
+          data-id="1"
+          data-treebank="1912971948"
+        >
+          Graph
+        </div>
+      </div>
+      <div
+        data-highlight=""
+        data-id="1"
+        data-treebank="1912971948"
+      >
+        PartOfSpeech
+      </div>
+      <div
+        class="links"
+      >
+        <p>
+          <a
+            href="https://www.example.com/on-the-murder-of-eratosthenes-1-50/1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Credits and more information
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`the API performs a no-op for refreshView 1`] = `
+<div>
+  <div>
+    <div
+      class="treebankContainer"
+    >
+      <div
+        class="text"
+      >
+        <div
+          data-highlight=""
+          data-id="1"
+          data-treebank="1912971948"
+        >
+          Text
+        </div>
+      </div>
+      <div
+        class="graph"
+      >
+        <div
+          data-highlight=""
+          data-id="1"
+          data-treebank="1912971948"
+        >
+          Graph
+        </div>
+      </div>
+      <div
+        data-highlight=""
+        data-id="1"
+        data-treebank="1912971948"
+      >
+        PartOfSpeech
+      </div>
+      <div
+        class="links"
+      >
+        <p>
+          <a
+            href="https://www.example.com/on-the-murder-of-eratosthenes-1-50/1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Credits and more information
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`the API supports gotoSentence 1`] = `
+<div>
+  <div>
+    <div
+      class="treebankContainer"
+    >
+      <div
+        class="text"
+      >
+        <div
+          data-highlight=""
+          data-id="5"
+          data-treebank="1912971948"
+        >
+          Text
+        </div>
+      </div>
+      <div
+        class="graph"
+      >
+        <div
+          data-highlight=""
+          data-id="5"
+          data-treebank="1912971948"
+        >
+          Graph
+        </div>
+      </div>
+      <div
+        data-highlight=""
+        data-id="5"
+        data-treebank="1912971948"
+      >
+        PartOfSpeech
+      </div>
+      <div
+        class="links"
+      >
+        <p>
+          <a
+            href="https://www.example.com/on-the-murder-of-eratosthenes-1-50/5"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Credits and more information
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`the API supports gotoSentence with highlighted words 1`] = `
+<div>
+  <div>
+    <div
+      class="treebankContainer"
+    >
+      <div
+        class="text"
+      >
+        <div
+          data-highlight="12"
+          data-id="5"
+          data-treebank="1912971948"
+        >
+          Text
+        </div>
+      </div>
+      <div
+        class="graph"
+      >
+        <div
+          data-highlight="12"
+          data-id="5"
+          data-treebank="1912971948"
+        >
+          Graph
+        </div>
+      </div>
+      <div
+        data-highlight="12"
+        data-id="5"
+        data-treebank="1912971948"
+      >
+        PartOfSpeech
+      </div>
+      <div
+        class="links"
+      >
+        <p>
+          <a
+            href="https://www.example.com/on-the-murder-of-eratosthenes-1-50/5"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Credits and more information
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

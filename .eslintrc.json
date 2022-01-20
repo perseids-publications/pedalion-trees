@@ -3,12 +3,14 @@
   "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "react/jsx-props-no-spreading": 0
+    "react/jsx-props-no-spreading": 0,
+    "no-continue": 0
   },
   "overrides": [
     {
       "files": [
-        "**/*.test.js"
+        "**/*.test.js",
+        "**/__mocks__/*.js"
       ],
       "env": {
         "jest": true

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { chunksType, publicationMatchType, locationType } from '../../lib/types';
@@ -6,7 +7,6 @@ import { chunksType, publicationMatchType, locationType } from '../../lib/types'
 import styles from './Publication.module.css';
 
 import Header from '../Header';
-import ArethusaWrapper from '../ArethusaWrapper';
 import Treebank from '../Treebank';
 import Markdown from '../Markdown';
 
@@ -60,9 +60,9 @@ const renderLocusRow = (title, text, publicationPath) => (
     <td className={styles.publicationRow}>
       {text}
       {' '}
-      <a href={`../${publicationPath}`}>
+      <Link to={`../${publicationPath}`}>
         (See all)
-      </a>
+      </Link>
     </td>
   </tr>
 );
@@ -71,52 +71,20 @@ class Publication extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      arethusaLoaded: false,
-      subDoc: '',
-    };
-
-    this.setSubdoc = this.setSubdoc.bind(this);
-
-    this.arethusa = new ArethusaWrapper();
-  }
-
-  componentDidMount() {
-    // eslint-disable-next-line no-undef
-    window.document.body.addEventListener('ArethusaLoaded', this.setSubdoc);
-  }
-
-  componentDidUpdate(prevProps) {
-    const { arethusaLoaded } = this.state;
-    const { location } = this.props;
-    const { location: prevLocation } = prevProps;
-
-    if (arethusaLoaded && location !== prevLocation) {
-      this.setSubdoc();
-    }
-  }
-
-  componentWillUnmount() {
-    // eslint-disable-next-line no-undef
-    window.document.body.removeEventListener('ArethusaLoaded', this.setSubdoc);
-  }
-
-  setSubdoc() {
-    const subDoc = this.arethusa.getSubdoc();
-    this.setState({ subDoc, arethusaLoaded: true });
+    this.state = { subDoc: '' };
   }
 
   render() {
     const {
       logo,
       link,
-      treebankReact,
       publicationPath,
       author,
       work,
       editors,
       locus,
       publicationLink,
+      license,
       notes,
       xml,
       chunks,
@@ -134,9 +102,9 @@ class Publication extends Component {
           </span>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href={`${process.env.PUBLIC_URL}/`}>
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
           </ul>
         </Header>
@@ -161,6 +129,7 @@ class Publication extends Component {
               {!!subDoc && renderRow('Reference', subDoc)}
               {!!editors && renderRow('Editors', editors)}
               {!!publicationLink && renderLinkRow('Link', publicationLink)}
+              {!!license && renderRow('License', license)}
               {!!notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
@@ -170,8 +139,6 @@ class Publication extends Component {
               chunks={chunks}
               location={location}
               match={match}
-              arethusa={this.arethusa}
-              treebankReact={treebankReact}
               setSubdoc={(s) => this.setState({ subDoc: s })}
             />
           </div>
@@ -189,7 +156,6 @@ class Publication extends Component {
 Publication.propTypes = {
   logo: PropTypes.string,
   link: PropTypes.string,
-  treebankReact: PropTypes.bool,
   publicationPath: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   work: PropTypes.string.isRequired,
@@ -199,6 +165,7 @@ Publication.propTypes = {
   ]).isRequired,
   locus: PropTypes.string.isRequired,
   publicationLink: PropTypes.string,
+  license: PropTypes.string,
   notes: PropTypes.string,
   xml: PropTypes.string.isRequired,
   chunks: chunksType.isRequired,
@@ -209,8 +176,8 @@ Publication.propTypes = {
 Publication.defaultProps = {
   logo: undefined,
   link: undefined,
-  treebankReact: false,
   publicationLink: undefined,
+  license: undefined,
   notes: undefined,
 };
 

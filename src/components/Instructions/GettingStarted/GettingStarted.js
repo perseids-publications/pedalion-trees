@@ -863,6 +863,24 @@ const GettingStarted = ({ config }) => (
                           </ul>
                         </li>
                       </ul>
+
+                      The following fields are optional and can be used for
+                      more advanced configuration:
+
+                      <ul>
+                        <li>
+                          <code>link</code>
+                          : link to an external site.
+                        </li>
+                        <li>
+                          <code>license</code>
+                          : description of the license for this treebank.
+                        </li>
+                        <li>
+                          <code>notes</code>
+                          : any additional information.
+                        </li>
+                      </ul>
                     </li>
                   </ul>
 
@@ -873,6 +891,30 @@ const GettingStarted = ({ config }) => (
                       alt="GitHub visual editor editing src/config.json"
                     />
                   </a>
+
+                  <br />
+                  The following fields are optional and can be used for
+                  more advanced configuration:
+
+                  <ul>
+                    <li>
+                      <code>hidden</code>
+                      : if set to
+                      {' '}
+                      <code>true</code>
+                      , the publication will not
+                      be displayed.
+                    </li>
+                    <li>
+                      <code>collapsed</code>
+                      : if set to
+                      {' '}
+                      <code>true</code>
+                      , the publication will link
+                      to a separate page containing a list of sections instead
+                      of listing each section on the home page.
+                    </li>
+                  </ul>
 
                 </li>
                 <li>
