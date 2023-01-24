@@ -1180,7 +1180,7 @@
 <word ref='Leuven|0006-003|80|2' id='2' form='καταλυσαίμαν' lemma='καταλύω' postag='v1saom---' relation='PRED' head='0' sem=''/>
 <word ref='Leuven|0006-003|80|3' id='3' form='βιοτάν' lemma='βιοτή' postag='a-s---fa-' relation='OBJ' head='2' sem=''/>
 <word ref='Leuven|0006-003|80|4' id='4' form='στυγεράν' lemma='στυγερός' postag='a-s---fa-' relation='ATR' head='3' sem=''/>
-<word ref='Leuven|0006-003|80|5' id='5' form='προλιποῦσα' lemma='προλείπω' postag='v-spaafn-' relation='ADV' head='2' sem=''/>
+<word ref='Leuven|0006-003|80|5' id='5' form='προλιποῦσα' lemma='προλείπω' postag='v-sppafn-' relation='ADV' head='2' sem=''/>
 <word ref='Leuven|0006-003|80|6' id='6' form='.' lemma='.' postag='u--------' relation='AuxK' head='0' sem=''/>
 </sentence>
 <sentence id='81' document_id='0006-003' Author='Euripides' subdoc='' corrupt='k'>
